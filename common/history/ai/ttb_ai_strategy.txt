@@ -1,0 +1,29 @@
+﻿AI = {
+	c:NOR = {
+		random_list = {
+			40 = { set_strategy = ai_strategy_industrial_expansion }
+			40 = { set_strategy = ai_strategy_resource_expansion }
+			20 = { set_strategy = ai_strategy_placate_population }
+		}
+		set_strategy = ai_strategy_maintain_power_balance
+		random_list = {
+			75 = { set_strategy = ai_strategy_progressive_agenda }
+			25 = { set_strategy = ai_strategy_egalitarian_agenda }
+		}
+	}
+	c:DEN = {
+		random_list = {
+			50 = { set_strategy = ai_strategy_placate_population }
+			30 = { set_strategy = ai_strategy_agricultural_expansion }
+			20 = { set_strategy = ai_strategy_resource_expansion }
+		}
+		random_list = {
+			75 = { set_strategy = ai_strategy_maintain_power_balance }
+			25 = { set_strategy = ai_strategy_colonial_expansion }
+		}
+		random_list = {
+			50 = { set_strategy = ai_strategy_progressive_agenda }
+			50 = { set_strategy = ai_strategy_conservative_agenda }
+		}
+	}
+}

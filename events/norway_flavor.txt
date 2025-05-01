@@ -1,0 +1,195 @@
+﻿namespace = norway_flavor
+
+# Local Committees Act
+norway_flavor.1 = {
+	type = country_event
+	
+	title = norway_flavor.1.t
+	desc = norway_flavor.1.d
+	flavor = norway_flavor.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	immediate = {
+		set_variable = norway_formannskapsdistrikt
+	}
+	
+	option = {
+		name = norway_flavor.1.a
+		default_option = yes
+		add_modifier = {
+			name = norway_formmanskapsdistrikt_pay
+			months = short_modifier_time
+		}
+		add_modifier = {
+			name = norway_formmanskapsdistrikt_nation
+			months = -1
+		}
+		ig:ig_rural_folk = {
+			add_modifier = {
+				name = norway_formmanskapsdistrikt
+				months = long_modifier_time
+			}
+		}
+	}
+}
+# Det store hamskiftet
+norway_flavor.2 = {
+	type = country_event
+	
+	title = norway_flavor.2.t
+	desc = norway_flavor.2.d
+	flavor = norway_flavor.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {	# Continue forward!
+		name = norway_flavor.2.a
+		default_option = yes
+		ai_chance = {
+			base = 3
+			modifier = {
+				trigger = {
+					ig:ig_industrialists = {
+						OR = {
+							is_powerful = yes
+							is_in_government = yes
+						}
+					}
+				}
+				add = 1
+			}
+		}
+		add_modifier = {
+			name = norway_det_store_hamskiftet
+			months = long_modifier_time
+		}
+		ig:ig_industrialists = {
+			add_modifier = {
+				name = norway_support_during_changing_times
+				months = normal_modifier_time
+			}
+		}
+	}
+	option = {	# Let's slow down for the farmers sake
+		name = norway_flavor.2.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				trigger = {
+					ig:ig_rural_folk = {
+						OR = {
+							is_powerful = yes
+							is_in_government = yes
+						}
+					}
+				}
+				add = 1
+			}
+		}
+		add_modifier = {
+			name = norway_det_store_hamskiftet_alt
+			months = long_modifier_time
+		}
+		ig:ig_rural_folk = {
+			add_modifier = {
+				name = norway_support_during_changing_times
+				months = normal_modifier_time
+			}
+		}
+	}
+}
+
+# The Great Merchant Navy
+norway_flavor.3 = {
+	type = country_event
+	
+	title = norway_flavor.3.t
+	desc = norway_flavor.3.d
+	flavor = norway_flavor.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_steam_ship.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {	# Continue forward!
+		name = norway_flavor.3.a
+		default_option = yes
+		add_modifier = {
+			name = norway_the_great_merchant_navy
+			months = -1
+		}
+	}
+}
+# Return of Aristocracy
+norway_flavor.4 = {
+	type = country_event
+	
+	title = norway_flavor.4.t
+	desc = norway_flavor.4.d
+	flavor = norway_flavor.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = norway_flavor.4.a
+		default_option = yes
+		remove_modifier = norway_abolishment_of_new_aristocrats
+		add_radicals = {
+			pop_type = peasants
+			value = 0.1
+		}
+		add_radicals = {
+			pop_type = farmers
+			value = 0.05
+		}
+		ig:ig_rural_folk = {
+			add_modifier = {
+				name = anti_feudal_opposition
+				months = long_modifier_time
+			}
+		}
+	}
+}

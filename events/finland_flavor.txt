@@ -1,0 +1,429 @@
+﻿namespace = finland_flavor
+
+# Language Strife
+finland_flavor.100 = {
+	type = country_event
+	
+	title = finland_flavor.100.t
+	desc = finland_flavor.100.d
+	flavor = finland_flavor.100.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = finland_flavor.100.a
+		default_option = yes
+		add_modifier = {
+			name = finland_the_strife_over_language
+			months = long_modifier_time
+		}
+		add_loyalists = {
+			culture = cu:swedish
+			strata = rich
+			value = 0.1
+		}
+		add_radicals = {
+			culture = cu:swedish
+			pop_type = academics
+			value = 0.2
+		}
+		add_radicals = {
+			culture = cu:swedish
+			pop_type = clergymen
+			value = 0.25
+		}
+	}
+}
+
+# Language Strife Solved
+finland_flavor.1 = {
+	type = country_event
+	
+	title = finland_flavor.1.t
+	desc = finland_flavor.1.d
+	flavor = finland_flavor.1.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = finland_flavor.1.a
+		default_option = yes
+		add_modifier = {
+			name = finland_language_question_solved
+			months = normal_modifier_time
+			is_decaying	= yes
+		}
+		add_loyalists = {
+			culture = cu:finnish
+			value = 0.2
+		}
+	}
+}
+
+# Language Strife Unresolved
+finland_flavor.2 = {
+	type = country_event
+	
+	title = finland_flavor.2.t
+	desc = finland_flavor.2.d
+	flavor = finland_flavor.2.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = finland_flavor.2.a
+		default_option = yes
+		add_modifier = {
+			name = finland_language_question_unsolved
+			months = long_modifier_time
+		}
+		add_loyalists = {
+			culture = cu:swedish
+			pop_type = academics
+			value = 0.5
+		}
+		add_radicals = {
+			culture = cu:finnish
+			value = 0.2
+		}
+	}
+}
+
+# Problems Between Swedes & Finnish
+finland_flavor.3 = {
+	type = country_event
+	
+	title = finland_flavor.3.t
+	desc = finland_flavor.3.d
+	flavor = finland_flavor.3.f
+	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_rich_and_poor.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = short_modifier_time }
+	
+	trigger = {
+		has_modifier = finland_our_language_outside_courts
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_pop = {
+				culture = cu:swedish
+				strata = middle
+			}
+			any_scope_pop = {
+				culture = cu:finnish
+			}
+		}
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+				any_scope_pop = {
+					culture = cu:swedish
+					strata = middle
+				}
+				any_scope_pop = {
+					culture = cu:finnish
+				}
+			}
+			save_scope_as = the_conflict_state
+		}
+	}
+	
+	option = {
+		name = finland_flavor.3.a
+		default_option = yes
+		scope:the_conflict_state = {
+			add_radicals = {
+				culture = cu:swedish
+				strata = middle
+				value = 0.1
+			}
+		}
+	}
+	option = {
+		name = finland_flavor.3.b
+		ai_chance = {
+			base = 0
+		}
+		change_variable = {
+			name = finland_language_debate_loss_var
+			add = 1
+		}
+		scope:the_conflict_state = {
+			add_radicals = {
+				culture = cu:finnish
+				value = 0.05
+			}
+		}
+	}
+}
+
+# Problems in Academia
+finland_flavor.4 = {
+	type = country_event
+	
+	title = finland_flavor.4.t
+	desc = finland_flavor.4.d
+	flavor = finland_flavor.4.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	trigger = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_pop = {
+				is_pop_type = academics
+			}
+		}
+		NOT = { has_modifier = finland_swedish_oppose_the_academics }
+	}
+	
+	option = {
+		name = finland_flavor.4.a
+		default_option = yes
+		ai_chance = {
+			base = 9
+		}
+		add_modifier = {
+			name = finland_swedish_oppose_the_academics
+			months = short_modifier_time
+		}
+		add_radicals = {
+			pop_type = academics
+			value = 0.05
+		}
+	}
+	option = {
+		name = finland_flavor.4.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					authority >= 25
+				}
+				add = 1
+			}
+		}
+		change_variable = {
+			name = finland_language_debate_loss_var
+			add = 1
+		}
+	}
+}
+
+# Problems Between Swedes & Russians
+finland_flavor.5 = {
+	type = country_event
+	
+	title = finland_flavor.5.t
+	desc = finland_flavor.5.d
+	flavor = finland_flavor.5.f
+	
+	event_image = {
+		video = "gfx/event_pictures/southamerica_war_civilians.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = short_modifier_time }
+	
+	trigger = {
+		is_subject_of = c:RUS
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_pop = {
+				culture = cu:swedish
+			}
+			any_scope_pop = {
+				culture = cu:russian
+			}
+		}
+	}
+	
+	option = {
+		name = finland_flavor.5.a
+		default_option = yes
+		ai_chance = {
+			base = 9
+		}
+		add_radicals = {
+			culture = cu:swedish
+			value = 0.1
+		}
+	}
+	option = {
+		name = finland_flavor.5.b
+		ai_chance = {
+			base = 1
+		}
+		change_variable = {
+			name = finland_language_debate_loss_var
+			add = 1
+		}
+		add_radicals = {
+			culture = cu:finnish
+			strata = poor
+			value = 0.05
+		}
+		add_radicals = {
+			culture = cu:russian
+			value = 0.05
+		}
+	}
+}
+
+# Finland Official Language
+finland_flavor.6 = {
+	type = country_event
+	
+	title = finland_flavor.6.t
+	desc = finland_flavor.6.d
+	flavor = finland_flavor.6.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = finland_flavor.6.a
+		default_option = yes
+		remove_modifier = finland_our_language_outside_courts
+	}
+}
+
+# Problems Between Swedes & Finnish
+finland_flavor.7 = {
+	type = country_event
+	
+	title = finland_flavor.7.t
+	desc = finland_flavor.7.d
+	flavor = finland_flavor.7.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	trigger = {
+		NOR = {
+			has_modifier = finland_our_language_outside_courts
+			has_modifier = finland_old_elite_opposition
+			has_modifier = finland_concessions_to_old_elite
+		}
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_pop = {
+				culture = cu:swedish
+				strata = rich
+			}
+		}
+	}
+	
+	option = {
+		name = finland_flavor.7.a
+		default_option = yes
+		ai_chance = {
+			base = 8
+		}
+		add_radicals = {
+			culture = cu:swedish
+			strata = rich
+			value = 0.1
+		}
+		add_modifier = {
+			name = finland_old_elite_opposition
+			months = short_modifier_time
+		}
+	}
+	option = {
+		name = finland_flavor.7.b
+		ai_chance = {
+			base = 2
+		}
+		change_variable = {
+			name = finland_language_debate_loss_var
+			add = 1
+		}
+		add_modifier = {
+			name = finland_concessions_to_old_elite
+			months = short_modifier_time
+		}
+	}
+}

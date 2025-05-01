@@ -1,0 +1,46 @@
+﻿CHARACTERS = {
+	c:NOR = {
+		create_character = {
+			#role = politician # Remove this line
+			first_name = "Severin"
+			last_name = "Lovenskiold"
+			birth_date = 1777.1.1
+			ig_leader = yes
+			interest_group = ig_landowners
+			ideology = ideology_royalist
+			traits = {
+				arrogant
+				basic_political_operator
+			}
+			#on_created = {
+			#	set_variable = is_lovenskiold
+			#}
+		}
+	}
+	c:DEN = {
+		create_character = {
+			#role = politician # Remove this line
+			first_name = "Carl"
+			last_name = "Christoffer"
+			birth_date = 1812.2.14
+			ig_leader = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_moderate
+			traits = {
+				reserved
+			}
+		}
+		create_character = {
+			#role = politician # Remove this line
+			first_name = "Poul"
+			last_name = "Stemann"
+			birth_date = 1764.4.14
+			ig_leader = yes
+			interest_group = ig_landowners
+			ideology = ideology_royalist
+			traits = {
+				charismatic
+			}
+		}
+	}
+}

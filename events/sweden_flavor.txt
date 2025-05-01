@@ -1,0 +1,244 @@
+﻿namespace = sweden_flavor
+
+# Successfully Lantmanna Party
+sweden_flavor.1 = {
+	type = country_event
+	
+	title = sweden_flavor.1.t
+	desc = sweden_flavor.1.d
+	flavor = sweden_flavor.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_upperclass_party.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = sweden_flavor.1.a
+		default_option = yes
+		ai_chance = {
+			base = 9
+		}
+		remove_modifier = sweden_land_based_taxation_policies
+		add_modifier = {
+			name = sweden_compromise_over_army
+			months = normal_modifier_time
+		}
+		every_interest_group = {
+			limit = {
+				is_marginal = no
+				OR = {
+					is_in_government = yes
+					has_ideology = ideology_particularist
+					leader = { has_ideology = ideology_jingoist_leader }
+				}
+			}
+			add_modifier = {
+				name = sweden_unity_behind_new_policies
+				months = short_modifier_time
+			}
+		}
+	}
+	option = {
+		name = sweden_flavor.1.b
+		ai_chance = {
+			base = 1
+		}
+		remove_modifier = sweden_land_based_taxation_policies
+		every_interest_group = {
+			limit = {
+				is_marginal = no
+				NOT = { has_ideology = ideology_particularist }
+				NOT = { has_ideology = ideology_jingoist }
+				leader = { NOT = { has_ideology = ideology_jingoist_leader } }
+			}
+			add_modifier = {
+				name = sweden_no_compromise_for_army
+				months = normal_modifier_time
+			}
+		}
+		add_radicals = {
+			pop_type = aristocrats
+			value = medium_radicals
+		}
+	}
+}
+
+# Lantmanna Party
+sweden_flavor.2 = {
+	type = country_event
+	
+	title = sweden_flavor.2.t
+	desc = sweden_flavor.2.d
+	flavor = sweden_flavor.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_election.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = sweden_flavor.2.a
+		ig:ig_rural_folk = {
+			remove_modifier = sweden_farmers_organising
+			add_modifier = {
+				name = sweden_lantmannapartiet
+				months = -1
+			}
+		}
+	}
+}
+
+# Solution Free Trade (a-historical)
+sweden_flavor.3 = {
+	type = country_event
+	
+	title = sweden_flavor.3.t
+	desc = sweden_flavor.3.d
+	flavor = sweden_flavor.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = sweden_flavor.3.a
+		add_modifier = {
+			name = sweden_spirit_of_free_trade
+			months = normal_modifier_time
+		}
+	}
+}
+
+# Solution Protectionism (historical)
+sweden_flavor.4 = {
+	type = country_event
+	
+	title = sweden_flavor.4.t
+	desc = sweden_flavor.4.d
+	flavor = sweden_flavor.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = sweden_flavor.4.a
+		add_modifier = {
+			name = sweden_spirit_of_protectionism
+			months = normal_modifier_time
+		}
+	}
+}
+
+# Spread of Awareness
+sweden_flavor.5 = {
+	type = country_event
+	
+	title = sweden_flavor.5.t
+	desc = sweden_flavor.5.d
+	flavor = sweden_flavor.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_rich_and_poor.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	trigger = {
+		ig:ig_rural_folk = {
+			NOT = { has_modifier = sweden_rise_of_awareness }
+		}
+	}
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = sweden_flavor.5.a
+		ig:ig_rural_folk = {
+			add_modifier = {
+				name = sweden_rise_of_awareness
+				months = short_modifier_time
+			}
+		}
+	}
+}
+
+# Spread of Awareness
+sweden_flavor.6 = {
+	type = country_event
+	
+	title = sweden_flavor.6.t
+	desc = sweden_flavor.6.d
+	flavor = sweden_flavor.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_rich_and_poor.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	trigger = {
+		in_election_campaign = yes
+		ig:ig_rural_folk = {
+			has_party = yes
+		}
+	}
+	
+	cancellation_trigger = {
+		in_election_campaign = no
+	}
+	
+	option = {
+		name = sweden_flavor.6.a
+		ig:ig_rural_folk = {
+			party = { add_momentum = momentum_small }
+		}
+	}
+}

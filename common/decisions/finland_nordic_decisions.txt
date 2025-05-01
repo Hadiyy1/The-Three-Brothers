@@ -1,0 +1,73 @@
+﻿promote_finnish_as_primary_language_in_official_affairs = {
+	is_shown = {
+		exists = c:FIN
+		c:FIN = THIS
+		has_modifier = finland_our_language_outside_courts
+	}
+
+	possible = {
+		is_at_war = no
+		is_subject = no
+		has_technology_researched = dialectics
+	}
+
+	when_taken = {
+		remove_modifier = finland_our_language_outside_courts
+	}
+
+	ai_chance = {
+		base = 100
+		modifier = {
+			is_diplomatic_play_committed_participant = yes
+			add = -1000
+		}
+	}
+}
+promote_finnish_as_primary_language_in_official_affairs_in_finland = {
+	is_shown = {
+		exists = c:FIN
+		exists = c:RUS
+		c:RUS = THIS
+		c:FIN = {
+			is_subject_of = c:RUS
+			has_modifier = finland_our_language_outside_courts
+		}
+	}
+
+	possible = {
+		is_at_war = no
+		c:FIN = {
+			is_subject_of = c:RUS
+			has_technology_researched = dialectics
+			relations:root >= relations_threshold:cordial
+		}
+	}
+
+	when_taken = {
+		c:FIN = {
+			show_as_tooltip = { remove_modifier = finland_our_language_outside_courts }
+			trigger_event = {
+				id = finland_flavor.6
+				days = 0
+				popup = yes
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 0
+		modifier = {
+			add = 100
+			ig:ig_intelligentsia = {
+				OR = {
+					is_powerful = yes
+					is_in_government = yes
+				}
+			}
+		}
+		modifier = {
+			is_diplomatic_play_committed_participant = yes
+			add = -1000
+		}
+	}
+}

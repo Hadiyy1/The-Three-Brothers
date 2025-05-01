@@ -1,0 +1,292 @@
+﻿# Lantmannapartiet
+swedish_the_rise_of_lantmanna_partiet = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+	
+	group = je_group_historical_content
+	
+	is_shown_when_inactive = {
+		exists = c:SWE
+		c:SWE = THIS
+	}
+	
+	possible = {
+		NOR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+		}
+		ig:ig_rural_folk = {
+			is_marginal = no
+		}
+	}
+	
+	immediate = {
+		ig:ig_rural_folk = {
+			add_modifier = {
+				name = sweden_farmers_organising
+				months = long_modifier_time
+			}
+		}
+		set_variable = {
+			name = lantmanna_partiet_organisation_var
+			value = 0
+		}
+	}
+	
+	current_value = {
+		value = var:lantmanna_partiet_organisation_var
+	}
+	
+	goal_add_value = {
+		add = 36	# 3 years
+	}
+	
+	progressbar = yes
+	
+	complete = {
+		scope:journal_entry = { is_goal_complete = yes }
+		ig:ig_rural_folk = {
+			OR = {
+				is_powerful = yes
+				is_in_government = yes
+			}
+		}
+	}
+	on_monthly_pulse = {
+		random_events = {
+			200 = 0
+			50 = sweden_flavor.5
+			50 = sweden_flavor.6
+		}
+		effect = {
+			if = {
+				limit = {
+					ig:ig_rural_folk = {
+						is_marginal = no
+					}
+				}
+				change_variable = {
+					name = lantmanna_partiet_organisation_var
+					add = 1
+				}
+			}
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = sweden_flavor.2 }
+	}
+	
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+# National Defense Question
+# Note: can still be bypassed due to leader requirement (in theory a character in government could get jingoist while all the below are done)
+swedish_champions_of_national_defence = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	group = je_group_historical_content
+	
+	is_shown_when_inactive = {
+		exists = c:SWE
+		c:SWE = THIS
+	}
+	
+	possible = {
+		any_interest_group = {
+			is_marginal = no
+			OR = {
+				has_ideology = ideology:ideology_nordic_particularist
+				has_ideology = ideology:ideology_jingoist
+			}
+		}
+	}
+	
+	complete = {
+		has_technology_researched = central_archives
+		NOR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+		}
+		NOR = {
+			has_law = law_type:law_peasant_levies
+			has_law = law_type:law_land_based_taxation
+		}
+		any_interest_group = {
+			is_in_government = yes
+			OR = {
+				has_ideology = ideology:ideology_nordic_particularist
+				leader = { has_ideology = ideology:ideology_jingoist_leader }
+			}
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = sweden_flavor.1 }
+	}
+	
+	weight = 250
+	should_be_pinned_by_default = yes
+}
+
+# Protectionism vs Free Trade
+swedish_the_trade_problems = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	group = je_group_historical_content
+	
+	is_shown_when_inactive = {
+		exists = c:SWE
+		c:SWE = THIS
+	}
+	
+	possible = {
+		NOR = {
+			has_law = law_type:law_free_trade
+			has_law = law_type:law_protectionism
+		}
+	}
+	
+	complete = {
+		OR = {
+			has_law = law_type:law_free_trade
+			has_law = law_type:law_protectionism
+		}
+		any_interest_group = {
+			OR = {
+				is_powerful = yes
+				is_in_government = yes
+			}
+			OR = {
+				has_ideology = ideology:ideology_laissez_faire
+				leader = { has_ideology = ideology:ideology_market_liberal }
+			}
+		}
+		ig:ig_rural_folk = {
+			OR = {
+				is_powerful = yes
+				is_in_government = yes
+			}
+		}
+	}
+	
+	on_complete = {
+		if = {
+			limit = { has_law = law_type:law_free_trade }
+			trigger_event = { id = sweden_flavor.3 }
+		}
+		if = {
+			limit = { has_law = law_type:law_protectionism }
+			trigger_event = { id = sweden_flavor.4 }
+		}
+		if = {	# Only for tooltip 
+			limit = {
+				NOR = {
+					has_law = law_type:law_free_trade
+					has_law = law_type:law_protectionism
+				}
+			}
+			trigger_event = { id = sweden_flavor.4 }
+		}
+	}
+	
+	weight = 250
+	should_be_pinned_by_default = yes
+}
+
+# Loss of Lantmanna Partiet's relevance
+swedish_the_end_of_lantmanna_party = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+	
+	group = je_group_historical_content
+	
+	is_shown_when_inactive = {
+		exists = c:SWE
+		c:SWE = THIS
+		ig:ig_rural_folk = {
+			has_modifier = sweden_lantmannapartiet
+		}
+	}
+	
+	possible = {
+		ig:ig_rural_folk = {
+			ig_clout < 0.1
+		}
+	}
+	
+	complete = {
+		ig:ig_rural_folk = {
+			is_in_government = no
+			ig_clout < 0.2
+		}
+		OR = {
+			ig:ig_rural_folk = {
+				is_marginal = yes
+			}
+			ig:ig_petty_bourgeoisie = {
+				is_powerful = yes
+			}
+		}
+	}
+	
+	on_complete = {
+		# Add event
+		ig:ig_rural_folk = {
+			remove_modifier = sweden_lantmannapartiet
+		}
+	}
+	
+	weight = 10
+}
+
+# The recovery of the military
+swedish_restoration_of_the_military = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	group = je_group_internal_affairs
+	
+	is_shown_when_inactive = {
+		exists = c:SWE
+		c:SWE = THIS
+		has_modifier = sweden_outdated_military
+	}
+	
+	possible = {
+		OR = {
+			has_technology_researched = general_staff
+			has_technology_researched = logistics
+		}
+		ig:ig_armed_forces = {
+			is_marginal = no
+		}
+		custom_tooltip = {
+			text = has_completed_champions_of_national_defense
+			NOT = { has_modifier = sweden_land_based_taxation_policies }
+		}
+	}
+	
+	complete = {
+		ig:ig_armed_forces = {
+			OR = {
+				is_powerful = yes
+				is_in_government = yes
+			}
+		}
+		NOT = {
+			has_law = law_type:law_peasant_levies
+		}
+		OR = {
+			has_technology_researched = wargaming
+			AND = {
+				has_technology_researched = military_statistics
+				is_at_war = yes
+			}
+		}
+	}
+	
+	on_complete = {
+		remove_modifier = sweden_outdated_military
+	}
+	
+	weight = 50
+}

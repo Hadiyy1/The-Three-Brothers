@@ -1,0 +1,39 @@
+﻿ideology_nordic_particularist = {
+	icon = "gfx/interface/icons/ideology_icons/particularist.dds"
+	
+	lawgroup_policing = {
+		law_militarized_police = strongly_disapprove
+		law_local_police = disapprove
+		law_dedicated_police = neutral
+		law_no_police = approve
+	}
+	lawgroup_army_model = {
+		law_national_militia = strongly_approve
+		law_professional_army = neutral
+		law_mass_conscription = strongly_disapprove
+		law_peasant_levies = strongly_disapprove
+	}
+	lawgroup_slavery = {
+		law_slavery_banned = neutral
+		law_legacy_slavery = neutral
+		law_debt_slavery = strongly_disapprove
+		law_slave_trade = neutral
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = neutral
+		law_anarchy = neutral
+		law_census_voting = disapprove
+		law_single_party_state = neutral
+		law_wealth_voting = strongly_disapprove
+		law_landed_voting = strongly_disapprove
+		law_technocracy = disapprove
+		law_oligarchy = neutral
+		law_autocracy = neutral
+	}
+	lawgroup_bureaucracy = {
+		law_hereditary_bureaucrats = neutral
+		law_appointed_bureaucrats = disapprove
+		law_elected_bureaucrats = neutral
+	}
+}

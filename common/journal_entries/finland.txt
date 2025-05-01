@@ -1,0 +1,96 @@
+﻿# Fennoman Movement
+finland_fennoman_movement = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	group = je_group_internal_affairs
+	
+	is_shown_when_inactive = {
+		exists = c:FIN
+		c:FIN = THIS
+		has_modifier = finland_our_language_outside_courts
+	}
+	
+	possible = {
+		has_technology_researched = dialectics
+		OR = {
+			has_technology_researched = human_rights
+			has_technology_researched = pan-nationalism
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = finland_flavor.1 }
+		show_as_tooltip = {
+			add_modifier = {
+				name = finland_language_question_solved
+				months = normal_modifier_time
+			}
+			add_loyalists = {
+				culture = cu:finnish
+				value = 0.1
+			}
+			remove_primary_culture = cu:swedish
+		}
+	}
+	on_fail = {
+		trigger_event = { id = finland_flavor.2 }
+		show_as_tooltip = {
+			add_radicals = {
+				culture = cu:finnish
+				value = 0.1
+			}
+		}
+	}
+	
+	immediate = {
+		trigger_event = { id = finland_flavor.100 }
+		set_variable = {
+			name = finland_language_debate_var
+			value = 0
+		}
+		set_variable = {
+			name = finland_language_debate_loss_var
+			value = 0
+		}
+	}
+	
+	current_value = {
+		value = root.var:finland_language_debate_var
+	}
+	
+	goal_add_value = {
+		add = 240	# 20 years
+	}
+	
+	progressbar = yes
+	
+	complete = {
+		scope:journal_entry = { is_goal_complete = yes }
+		NOT = { has_modifier = finland_our_language_outside_courts }
+	}
+	fail = {
+		custom_tooltip = {
+			text = has_made_too_many_concessions_to_swedes
+			var:finland_language_debate_loss_var >= 15
+		}
+	}
+	
+	on_monthly_pulse = {
+		random_events = {
+			900 = 0
+			25 = finland_flavor.3
+			25 = finland_flavor.4
+			25 = finland_flavor.5
+			25 = finland_flavor.7
+		}
+		effect = {
+			change_variable = {
+				name = finland_language_debate_var
+				add = 1
+			}
+		}
+	}
+	
+	weight = 100
+	should_be_pinned_by_default = yes
+}

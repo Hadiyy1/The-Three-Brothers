@@ -1,0 +1,145 @@
+﻿l_spanish:
+ # ideologías
+ ideology_nordic_pan_nationalist:0 "Pannacionalista nórdico"
+ ideology_nordic_pan_nationalist_desc:0 "Soy escandinavo".
+ ideology_nordic_particularist: "Particularista nórdico"
+ ideology_nordic_particularist_desc: "#lore Grupo que quiere una autonomía local en el trabajo, libre de las disposiciones feudales de una servidumbre no remunerada.#!"
+# Revistas
+ scandinavian_pan_nationalism:0 "Pannacionalismo escandinavo"
+ scandinavian_pan_nationalism_reason:0 "El espíritu de una Escandinavia unificada ha comenzado a extenderse en las universidades de toda Escandinavia."
+ scandinavia_monetary_union:0 "Unión Monetaria Escandinava"
+ scandinavia_monetary_union_reason:0 ""
+ scandinavia_monetary_union_swe:0 "Unión Monetaria Escandinava"
+ scandinavia_monetary_union_swe_reason:0 ""
+ scandinavia_monetary_union_nor:0 "Únete a la Unión Monetaria Escandinava"
+ scandinavia_monetary_union_nor_reason:0 ""
+ 
+ denmark_return_of_danish_dominance:0 "Regreso del dominio danés"
+ denmark_return_of_danish_dominance_reason:0 "La gente de Holstein ha evitado integrarse adecuadamente en la sociedad danesa durante años, incluso oponiéndose a algunas de nuestras nuevas políticas debido a las diferencias entre cómo consideran que debería ocurrir la regla."
+ has_no_control_over_holstein_or_scania:0 "Ha perdido todo el control sobre Schelswig-Holstein y Scania."
+ je_springtime_of_the_peoples_den:0 "La primavera de los pueblos"
+ je_springtime_of_the_peoples_den_reason:1 "El llamamiento a la revolución liberal se extiende por todo el mundo."
+ 
+ swedish_the_rise_of_lantmanna_partiet:0 "Auge de la política agraria"
+ swedish_the_rise_of_lantmanna_partiet_goal:0 "El auge de la política agraria ha ocurrido durante 3 años".
+ swedish_the_rise_of_lantmanna_partiet_reason:0 "Con el reciente cambio en la política que se aleja del absolutismo, hay muchos agricultores en Suecia que han comenzado a organizarse para tratar de conseguir su voluntad."
+ swedish_champions_of_national_defence:0 "Cuestión de defensa nacional"
+ swedish_champions_of_national_defence_reason:0 "El ejército sueco se encuentra en un estado lamentable y ha tenido un efecto negativo en nuestra reputación internacional."
+ swedish_the_trade_problems:0 "La discusión comercial"
+ swedish_the_trade_problems_reason:0 "Ha habido discusiones entre la gente rural y los partidarios de un mercado libre sobre el futuro del comercio en Suecia."
+ swedish_the_end_of_lantmanna_party:0 "Fin de la política agraria"
+ swedish_the_end_of_lantmanna_party_reason:0 "Los cambios recientes en la política han hecho que la política agraria sea cada vez menos relevante en la política moderna."
+ # Decisiones
+ the_norway_formannskapsdistrikt:0 "Fundación de Formannskapsdistrikt"
+ the_norway_formannskapsdistrikt_desc:0 "El Parlamento de Noruega se ha preparado para aprobar un proyecto de ley que crearía un sistema de municipios y reorganizaría las parroquias de la Iglesia de Noruega en distritos administrativos. Esto debería crear 396 Formannskapsdistrikt una vez hecho esto."
+ 
+ #names
+ Axel:0 "Axel"
+ Adlercreutz:0 "Adlercreutz"
+ Gerard_De_Geer:0 "Gerard De Geer"
+ Anna:0 "Anna"
+ Lindhagen:0 "Lindhagen"
+ Severin:0 "Severin"
+ Lovenskiold:0 "Lovenskiold"
+ Frederik:0 "Frederik"
+ Due:0 "Due"
+ Sverdrup:0 "Sverdrup"
+ Soren:0 "Soren"
+ Jaabaek:0 "Jaabaek"
+ Thrane:0 "Thrane"
+ Christoffer:0 "Christoffer"
+ NFS:0 "N. F. S."
+ Grundtvig:0 "Grundtvig"
+ Balthazar:0 "Balthazar"
+ Christensen:0 "Christensen"
+ Bronnum:0 "Bronnum"
+ Yrjo:0 "Yrjö"
+ Koskinen:0 "Koskinen"
+ Snellman:0 "Snellman"
+ Cygnaeus:0 "Cygnaeus"
+ 
+ August:0 "August"
+ # Shared Events
+ scandinavia_flavor.1.t:0 "Unión Monetaria Escandinava"
+ scandinavia_flavor.1.d:0 "El establecimiento de la Unión Monetaria Escandinava ha establecido una unidad monetaria común basada en el patrón oro. Esta unión proporciona tipos de cambio fijos y estabilidad en términos monetarios."
+ scandinavia_flavor.1.f:0 ""Los escandinavos trabajando juntos económicamente es el camino correcto a seguir, esto traerá prosperidad a nuestro hogar"."
+ scandinavia_flavor.1.a:0 "Esto será genial"
+ 
+ scandinavia_flavor.2.t:0 "Nacimiento del pannacionalismo"
+ scandinavia_flavor.2.d:0 "La idea de Escandinavia como una región unificada, o una nación única, basada en la herencia común de los países escandinavos ha crecido en los últimos años. Este movimiento de élite tiene sus raíces en los estudiantes universitarios. Hay algunos preguntas que han surgido por este movimiento, en particular lo que significaría ser 'escandinavo', pero en este momento debemos tomar una postura al respecto".
+ scandinavia_flavor.2.f:0 ""Juntos, los Tres Hermanos serán fuertes y prosperarán, tenemos tanto en común que sería una tontería no unirnos en una sola nación".\n\n"Este movimiento simplemente ¡borra todo lo que nos hace únicos!""
+ scandinavia_flavor.2.a:0 "Estas ideas son peligrosas"
+ scandinavia_flavor.2.b:0 "Estas ideas parecen interesantes"
+ # Eventos SWE
+ sweden_flavor.1.t:0 "La reforma del ejército"
+ sweden_flavor.1.d:0 "En los últimos años, el Ejército de Suecia ha sido superado por quienes lo rodean, lo que ha provocado que los liberales actúen y exijan acción. Acción que resultó en una nueva forma de ejército que ya no depende del sistema de viejo. Pero a medida que avanzan las discusiones, hay una demanda de compromiso para las reformas recientes realizadas ".
+ sweden_flavor.1.f:0 ""Nuestras nuevas reformas son para mejorar Suecia y el ejército".\n\n"¡Estas nuevas reformas están robando la riqueza de la gente para financiar guerras que no queremos!""
+ sweden_flavor.1.a:0 "Tenemos que hacer sacrificios"
+ sweden_flavor.1.b:0 "¿A quién le importan los reaccionarios?"
+ 
+ sweden_flavor.2.t:0 "Lantmannapartiet"
+ sweden_flavor.2.d:0 "Con la introducción del sistema bicameral en Suecia, se formó Política Agraria. Un partido que busca mejorar la vida del campesinado y proteger el agrarismo."
+ sweden_flavor.2.f:0 ""El camino hacia el liberalismo pasa por el agrarismo.""
+ sweden_flavor.2.a:0 "El campesinado se está organizando"
+ 
+ sweden_flavor.3.t:0 "Espíritu del libre comercio"
+ sweden_flavor.3.d:0 "En un intento por fortalecer la economía frente a otros mercados, se implementaron reformas de libre comercio en toda Suecia y con ellas se redujeron significativamente las barreras comerciales. Ahora los comerciantes buscan hacer uso de esto rápidamente antes que la competencia se vuelve demasiado feroz".
+ sweden_flavor.3.f:0 ""El dinero fluye a través de nosotros sin restricciones, como debe ser"."
+ sweden_flavor.3.a:0 "Esta fue la decisión correcta"
+ 
+ sweden_flavor.4.t:0 "Espíritu de proteccionismo"
+ sweden_flavor.4.d:0 "En un intento de debilitar las influencias extranjeras de la economía, se implementaron reformas proteccionistas y la gente ahora las aplaudió como el camino correcto a seguir. Encontrar una sensación de estabilidad en el comercio que de otro modo no sería posible allá."
+ sweden_flavor.4.f:0 ""Hoy se ha establecido el camino hacia la grandeza, Suecia ha dado el paso correcto para garantizar que su gente no sea explotada"."
+ sweden_flavor.4.a:0 "Este era el camino correcto a seguir"
+ 
+ sweden_flavor.5.t:0 "Difusión de conciencia"
+ sweden_flavor.5.d:0 "Cada día que nuestra población se vuelve más y más consciente de la difícil situación de los agricultores, esto ha llevado a que más personas se unan a su causa".
+ sweden_flavor.5.f:0 ""¿De qué sirve una economía nacional si no se puede alimentar a nuestros agricultores? ¿Quién será el próximo si ni siquiera pueden obtener suficiente dinero para sobrevivir?"
+ sweden_flavor.5.a:0 "Ya veremos a dónde va esto"
+ 
+ sweden_flavor.6.t:0 "Popularidad de la difícil situación de los agricultores"
+ sweden_flavor.6.d:0 "Hay muchos que parecen preocuparse por la difícil situación de los granjeros en Escandinavia, esto también es cierto para nuestra gente y tuvo un efecto en las elecciones en curso".
+ sweden_flavor.6.f:0 ""Los tiempos están cambiando, pero al menos hay algunos que nos cuidan"."
+ sweden_flavor.6.a:0 "Otro movimiento electoral en marcha..."
+# Dinamarca
+ denmark_flavor.1.t:0 "El fracaso de nuestra nación"
+ denmark_flavor.1.d:0 "La pérdida de Scania, Noruega y Schelswig-Holstein ha causado un duro golpe a la identidad danesa y ahora la gente mira todas las pérdidas territoriales y quiere mirar hacia adentro sobre lo que se debe hacer ahora. ¿Qué debe hacerse ahora depende del gobierno".
+ denmark_flavor.1.f:0 ""¿Qué significa ser danés? ¿Es solo para ser humillado una y otra vez?"
+ denmark_flavor.1.a:0 "Concentrémonos en arreglar lo que nos queda"
+ denmark_flavor.1.b:0 "¡Venganza!"
+ 
+ denmark_flavor.2.t:0 "La unificación con Holstein"
+ denmark_flavor.2.d:0 "A pesar de que las diferencias entre Schelswig-Holstein y el gobierno danés se han resuelto lentamente y nuestro pueblo se ha unido bajo un gobierno centralizado. Esto ha demostrado fortalecer en gran medida la identidad nacional de Dinamarca".
+ denmark_flavor.2.f:0 ""¡Cogidos de la mano, afrontaremos el futuro juntos!""
+ denmark_flavor.2.a:0 "Hemos tenido éxito"
+ 
+ denmark_flavor.3.t:0 "Tensiones entre Holstein y el gobierno"
+ denmark_flavor.3.d:0 "Como de costumbre, nuestro gobierno ha estado trabajando para redactar nuevas leyes, pero la nobleza de Holstein ha intervenido para tratar de socavarlas. Si aceptamos esto, nos pondrá en una posición en la que la legalización será difícil en un futuro próximo".
+ denmark_flavor.3.f:0 ""¡Hay que defender el derecho de la nobleza!""
+ denmark_flavor.3.a:0 "Tenemos que aceptarlo"
+ denmark_flavor.3.b:0 "Ignóralos"
+# Modificadores
+ denmark_national_humiliation:0 "La humillación nacional"
+ denmark_national_humiliation_desc:0 "La pérdida de gran parte de las regiones más ricas de Dinamarca nos ha causado una gran humillación nacional."
+ denmark_focus_on_agriculture:0 "Céntrate en mejorar la agricultura"
+ denmark_revanchism_modifier:0 "Revanchismo danés"
+ denmark_unification_time:0 "Sentido de unidad danesa"
+ 
+ sweden_farmers_organising:0 "Organización del movimiento agrario"
+ sweden_rise_of_awareness:0 "Aumento de la conciencia de los agricultores"
+ sweden_lantmannapartiet:0 "Fundación de la política agraria"
+ sweden_spirit_of_free_trade:0 "Espíritu del libre comercio"
+ sweden_spirit_of_protectionism:0 "Espíritu del proteccionismo"
+ sweden_compromise_over_army:0 "Compromiso sobre el ejército"
+ sweden_unity_behind_new_policies:0 "Unidad detrás de las nuevas políticas del ejército"
+ sweden_no_compromise_for_army:0 "Sin compromisos con las nuevas políticas del ejército"
+ 
+ norway_formmanskapsdistrikt_pay:0 "Implementación de Formannskapsdistrikt"
+ norway_formmanskapsdistrikt:0 "Creación de Formannskapsdistrikt"
+ norway_formmanskapsdistrikt_nation:0 "Formannskapsdistrikt"
+ 
+ scandinavia_monetary_union_mod:0 "Unión Monetaria Escandinava"
+ nordic_neg_pan_nationalism_mod:0 "Oposición al pannacionalismo nórdico"
+ nordic_pos_pan_nationalism_mod:0 "Aprobación del pannacionalismo nórdico"
+ oponer_stance_on_nordic_pan_nationalism_mod:0 "Posición opuesta al pannacionalismo nórdico"
+ support_stance_on_nordic_pan_nationalism_mod:0 "Apoya la postura sobre el pannacionalismo nórdico"

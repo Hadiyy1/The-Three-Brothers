@@ -1,0 +1,512 @@
+﻿namespace = denmark_flavor
+
+# Failure To Recover
+denmark_flavor.1 = {
+	type = country_event
+	
+	title = denmark_flavor.1.t
+	desc = denmark_flavor.1.d
+	flavor = denmark_flavor.1.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = denmark_flavor.1.a
+		default_option = yes
+		add_modifier = {
+			name = denmark_national_humiliation
+			months = long_modifier_time
+		}
+		add_modifier = {
+			name = denmark_focus_on_agriculture
+			months = normal_modifier_time
+		}
+	}
+	option = {
+		name = denmark_flavor.1.b
+		add_modifier = {
+			name = denmark_national_humiliation
+			months = long_modifier_time
+		}
+		add_modifier = {
+			name = denmark_revanchism_modifier
+			months = normal_modifier_time
+		}
+		hidden_effect = {
+			set_secret_goal = {
+				country = c:SCH
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:HOL
+				secret_goal = conquer
+			}
+		}
+	}
+}
+
+# Successful To Recover
+denmark_flavor.2 = {
+	type = country_event
+	
+	title = denmark_flavor.2.t
+	desc = denmark_flavor.2.d
+	flavor = denmark_flavor.2.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = denmark_flavor.2.a
+		default_option = yes
+		add_loyalists = {
+			culture = cu:danish
+			pop_type = aristocrats
+			value = 0.33
+		}
+		add_modifier = {
+			name = denmark_unification_time
+			months = normal_modifier_time
+		}
+	}
+}
+
+# Tensions between us and Holstein
+denmark_flavor.3 = {
+	type = country_event
+	
+	title = denmark_flavor.3.t
+	desc = denmark_flavor.3.d
+	flavor = denmark_flavor.3.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	trigger = {
+		enacting_any_law = yes	# So it'll now happen only when relevant
+		c:HOL = { is_subject_of = ROOT }
+		NOT = { has_modifier = denmark_concessions_to_holstein }
+	}
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = denmark_flavor.3.a
+		default_option = yes
+		ai_chance = {
+			base = 70
+		}
+		add_modifier = {
+			name = denmark_concessions_to_holstein
+			months = short_modifier_time
+		}
+	}
+	option = {
+		name = denmark_flavor.3.b
+		ai_chance = {
+			base = 30
+		}
+		add_radicals = {
+			culture = cu:north_german
+			value = 0.05
+		}
+		c:HOL = {
+			change_relations = { 
+				country = c:DEN
+				value = -20
+			}
+		}
+	}
+}
+
+# Death of Frederik
+denmark_flavor.4 = {
+	type = country_event
+	
+	title = denmark_flavor.4.t
+	desc = denmark_flavor.4.d
+	flavor = denmark_flavor.4.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	trigger = {
+		any_scope_character = {
+			is_ruler = yes
+			has_trait = imperious	# Just to make sure it's him, unlikely to occur otherwise
+		}
+	}
+	cooldown = { months = normal_modifier_time }
+	
+	immediate = {
+		random_scope_character = {
+			limit = {
+				is_ruler = yes
+			}
+			save_scope_as = frederik_the_monarch
+		}
+	}
+	option = {
+		name = denmark_flavor.4.a
+		default_option = yes
+		scope:frederik_the_monarch = {
+			kill_character = yes
+		}
+		if = {
+			limit = { c:HOL = { is_subject_of = c:DEN } }
+			c:HOL = {
+				change_relations = {
+					country = c:DEN
+					value = -10
+				}
+				change_relations = {
+					country = c:PRU
+					value = 10
+				}
+			}
+		}
+		if = {
+			limit = { c:SCH = { is_subject_of = c:DEN } }
+			c:SCH = {
+				change_relations = {
+					country = c:DEN
+					value = -10
+				}
+				change_relations = {
+					country = c:PRU
+					value = 10
+				}
+			}
+		}
+		c:DEN = {
+			create_character = {
+				first_name = Frederick
+				last_name = Christian
+				heir = yes
+				noble = yes
+				birth_date = 1808.10.6
+				interest_group = ig_landowners
+				ideology = ideology_moderate
+				traits = {
+					tactful
+					charismatic
+					hedonist
+				}
+				#on_created = {
+				#	set_variable = is_lovenskiold
+				#}
+			}
+		}
+	}
+}
+
+# First Schleswig War
+denmark_flavor.5 = {
+	type = country_event
+	
+	title = denmark_flavor.5.t
+	desc = denmark_flavor.5.d
+	flavor = denmark_flavor.5.f
+	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_before_the_battle.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	# If there was just a freaking way to have a country properly join a diplomatic play
+	immediate = {
+		c:SCH = {
+			make_independent = yes
+			if = {
+				limit = { is_ai = yes }
+				c:HOL = {
+				    make_independent = yes
+					create_diplomatic_pact = {
+						country = c:SCH
+						type = personal_union
+					}
+				}
+			}
+		}
+		c:SCH = {
+		    create_diplomatic_play = {
+			    name = first_schleswig_war
+				escalation = 40
+			    target_country = c:DEN
+			    type = dp_independence
+				add_initiator_backers = { 
+				    c:HOL
+				}
+			    add_war_goal = {
+				    holder = c:DEN
+				    target_country = c:HOL
+				    type = make_dominion
+		        }
+				add_war_goal = {
+                    holder = c:DEN
+                    type = conquer_state
+                    target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:SCH
+                }
+		    }
+		}
+		c:PRU = {
+			set_secret_goal = {
+				country = c:HOL
+				secret_goal = protect
+			}
+			set_secret_goal = {
+				country = c:SCH
+				secret_goal = protect
+			}
+			set_secret_goal = {
+				country = c:DEN
+				secret_goal = antagonize
+			}
+		}
+	}
+	
+	option = {
+		name = denmark_flavor.5.a
+		default_option = yes
+		if = {
+			limit = {
+				year < 1865
+			}
+			c:HOL = {
+				create_character = {
+					first_name = Frederick
+					last_name = August
+					culture = cu:danish
+					ruler = yes
+					noble = yes
+					birth_date = 1808.8.23
+					interest_group = ig_landowners
+					ideology = ideology_royalist
+					traits = {
+						reckless
+						basic_offensive_planner
+					}
+					on_created = {
+						set_variable = is_married
+					}
+				}
+			}
+		}
+		else_if = {	# Hopefully won't happen later than this but fallback
+			limit = {
+				year < 1869
+			}
+			c:HOL = {
+				create_character = {
+					first_name = Christian
+					last_name = August
+					culture = cu:danish
+					ruler = yes
+					noble = yes
+					birth_date = 1829.7.6
+					interest_group = ig_landowners
+					ideology = ideology_moderate
+					traits = {
+						romantic
+					}
+					on_created = {
+						set_variable = is_married
+					}
+				}
+			}
+		}
+		add_loyalists = {
+			culture = cu:north_german
+			value = 0.25
+		}
+		change_relations = {
+			country = c:DEN
+			value = -50
+		}
+		c:SCH = {
+			if = {
+				limit = { is_ai = no }
+				trigger_event = { id = denmark_flavor.6 }
+			}
+			else = {
+				change_relations = {
+					country = c:DEN
+					value = -50
+				}
+			}
+		}
+	}
+}
+
+# First Schleswig War
+denmark_flavor.6 = {
+	type = country_event
+	
+	title = denmark_flavor.5.t
+	desc = denmark_flavor.6.d
+	flavor = denmark_flavor.5.f
+	
+	event_image = {
+		video = "gfx/event_pictures/ep1_redcoats.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	immediate = {
+	    # sss
+	}
+	
+	option = {
+		name = denmark_flavor.5.a
+		default_option = yes
+		show_as_tooltip = {
+			create_diplomatic_play = {
+				name = first_schleswig_war
+				target_country = c:DEN
+				type = dp_independence
+			}
+		}
+		add_loyalists = {
+			culture = cu:north_german
+			value = 0.25
+		}
+		change_relations = {
+			country = c:DEN
+			value = -50
+		}
+	}
+}
+
+# First Schleswig War Won (Status Quo)
+denmark_flavor.7 = {
+	type = country_event
+	
+	title = denmark_flavor.7.t
+	desc = denmark_flavor.7.d
+	flavor = denmark_flavor.7.f
+	
+	event_image = {
+		video = "gfx/event_pictures/ep1_redcoats.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = denmark_flavor.7.a
+		default_option = yes
+		show_as_tooltip = {
+			c:HOL = {
+				create_diplomatic_play = {
+					name = first_schleswig_war
+					target_country = c:DEN
+					type = dp_independence
+				}
+			}
+		}
+	}
+}
+
+# First Schleswig War Won (Status Quo)
+denmark_flavor.8 = {
+	type = country_event
+	
+	title = denmark_flavor.8.t
+	desc = denmark_flavor.8.d
+	flavor = denmark_flavor.8.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = denmark_flavor.8.a
+		default_option = yes
+		add_modifier = {
+			name = denmark_victory_in_first_war
+			months = normal_modifier_time
+			multiplier = 2.5
+		}
+	}
+}
+
+# First Schleswig War Lost
+denmark_flavor.9 = {
+	type = country_event
+	
+	title = denmark_flavor.9.t
+	desc = denmark_flavor.9.d
+	flavor = denmark_flavor.9.f
+	
+	event_image = {
+		video = "gfx/event_pictures/asia_sepoy_mutiny.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = denmark_flavor.9.a
+		default_option = yes
+	}
+}

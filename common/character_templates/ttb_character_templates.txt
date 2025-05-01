@@ -1,0 +1,331 @@
+﻿# Sweden - SWE
+swe_louis_gerard_de_geer_template = {
+	first_name = Louis
+	last_name = Gerard_De_Geer
+	culture = cu:swedish
+	female = no
+	religion = protestant
+	ideology = ideology_radical
+	interest_group = ig_rural_folk
+	birth_date = 1818.7.18
+	traits = {
+		tactful
+		cautious
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			exists = c:SWE
+			this = c:SWE
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_rural_folk
+		}
+		earliest_usage_date = 1840.1.1
+		latest_usage_date = 1896.9.24
+		chance = 80
+	}
+}
+swe_axel_adlercreutz_template = {
+	first_name = Axel
+	last_name = Adlercreutz
+	culture = cu:swedish
+	female = no
+	religion = protestant
+	ideology = ideology_traditionalist
+	interest_group = ig_armed_forces
+	birth_date = 1821.3.2
+	traits = {
+		arrogant
+		brave
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			exists = c:SWE
+			this = c:SWE
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1845.1.1
+		latest_usage_date = 1880.5.20
+		chance = 50
+	}
+}
+# Norway - NOR
+nor_frederik_due_template = {
+	first_name = Frederik
+	last_name = Due
+	culture = cu:norwegian
+	female = no
+	religion = protestant
+	ideology = ideology_moderate
+	interest_group = ig_armed_forces
+	birth_date = 1796.4.14
+	traits = {
+		brave
+		basic_diplomat
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			exists = c:NOR
+			this = c:NOR
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1841.1.1
+		latest_usage_date = 1871.1.1
+		chance = 50
+	}
+}
+nor_johan_sverdrup_template = {
+	first_name = Johan
+	last_name = Sverdrup
+	culture = cu:norwegian
+	female = no
+	religion = protestant
+	ideology = ideology_radical
+	interest_group = ig_intelligestia
+	birth_date = 1816.7.3
+	traits = {
+		persistent
+		basic_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			exists = c:NOR
+			this = c:NOR
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			ig_clout >= 0.1
+			OR = {
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_petty_bourgeoisie
+				is_interest_group_type = ig_intelligentsia
+			}
+		}
+		earliest_usage_date = 1850.1.1
+		latest_usage_date = 1892.2.17
+		chance = 60
+	}
+}
+nor_soren_jaabaek_template = {
+	first_name = Soren
+	last_name = Jaabaek
+	culture = cu:norwegian
+	female = no
+	religion = protestant
+	ideology = ideology_feminist
+	interest_group = ig_rural_folk
+	birth_date = 1816.7.3
+	traits = {
+		persistent
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			exists = c:NOR
+			this = c:NOR
+			has_technology_researched = feminism
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_rural_folk
+		}
+		earliest_usage_date = 1850.1.1
+		latest_usage_date = 1894.1.7
+		chance = 50
+	}
+}
+nor_marcus_thrane_template = {
+	first_name = Marcus
+	last_name = Thrane
+	culture = cu:norwegian
+	female = no
+	religion = protestant
+	ideology = ideology_radical
+	interest_group = ig_trade_unions
+	birth_date = 1816.10.14
+	traits = {
+		reckless
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			exists = c:NOR
+			this = c:NOR
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_trade_unions
+		}
+		earliest_usage_date = 1847.1.1
+		latest_usage_date = 1890.3.30
+		chance = 50
+	}
+}
+# Denmark - DEN
+den_nfs_grundtvig_template = {
+	first_name = NFS
+	last_name = Grundtvig
+	culture = cu:danish
+	female = no
+	religion = protestant
+	ideology = ideology_radical
+	interest_group = ig_devout
+	birth_date = 1802.10.25
+	traits = {
+		innovative
+		pious
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			exists = c:DEN
+			this = c:DEN
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_devout
+		}
+		earliest_usage_date = 1844.1.1
+		latest_usage_date = 1872.1.1
+		chance = 50
+	}
+}
+den_balthazar_christensen_template = {
+	first_name = Balthazar
+	last_name = Christensen
+	culture = cu:danish
+	female = no
+	religion = protestant
+	ideology = ideology_moderate
+	interest_group = ig_rural_folk
+	birth_date = 1802.10.25
+	traits = {
+		persistent
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			exists = c:DEN
+			this = c:DEN
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_rural_folk
+		}
+		earliest_usage_date = 1840.1.1
+		latest_usage_date = 1866.1.1
+		chance = 80
+	}
+}
+den_jacob_bronnum_template = {
+	first_name = Jacob
+	last_name = Bronnum
+	culture = cu:danish
+	female = no
+	religion = protestant
+	ideology = ideology_reformer
+	interest_group = ig_landowners
+	birth_date = 1825.4.16
+	traits = {
+		persistent
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			exists = c:DEN
+			this = c:DEN
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_landowners
+		}
+		earliest_usage_date = 1861.1.1
+		latest_usage_date = 1900.1.1
+		chance = 50
+	}
+}
+# Finland
+fin_yrjo_koskinen_template = {
+	first_name = Yrjo
+	last_name = Koskinen
+	culture = cu:swedish
+	female = no
+	religion = protestant
+	ideology = ideology_traditionalist
+	interest_group = ig_landowners
+	birth_date = 1830.12.10
+	traits = {
+		cautious
+		reserved
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			exists = c:FIN
+			this = c:FIN
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_landowners
+		}
+		earliest_usage_date = 1850.1.1
+		latest_usage_date = 1903.11.13
+		chance = 50
+	}
+}
+fin_johan_snellman_template = {
+	first_name = Johan
+	last_name = Snellman
+	culture = cu:finnish
+	female = no
+	religion = protestant
+	ideology = ideology_radical
+	interest_group = ig_intelligentsia
+	birth_date = 1806.5.12
+	traits = {
+		reckless
+		bigoted
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			exists = c:FIN
+			this = c:FIN
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1842.1.1
+		latest_usage_date = 1881.6.4
+		chance = 60
+	}
+}
+fin_fredrik_cygnaeus_template = {
+	first_name = Fredrik
+	last_name = Cygnaeus
+	culture = cu:finnish
+	female = no
+	religion = protestant
+	ideology = ideology_moderate
+	interest_group = ig_intelligentsia
+	birth_date = 1807.4.1
+	traits = {
+		cautious
+		reserved
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			exists = c:FIN
+			this = c:FIN
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1848.1.1
+		latest_usage_date = 1881.2.7
+		chance = 50
+	}
+}

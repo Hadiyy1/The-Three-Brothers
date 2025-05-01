@@ -1,0 +1,118 @@
+﻿# This is executed last among all history
+GLOBAL = {
+	c:DEN = {
+		activate_law = law_type:law_legacy_slavery
+		ig:ig_rural_folk = {
+			remove_ideology = ideology_particularist
+			add_ideology = ideology_nordic_particularist
+		}
+		ig:ig_petty_bourgeoisie = {
+			leader = {
+				set_ideology = ideology_radical
+			}
+		}
+		trigger_event = {
+			id = denmark_flavor.4
+			days = 1432
+		}
+	}
+	c:SWE = {
+		activate_law = law_type:law_legacy_slavery
+		ig:ig_rural_folk = {
+			remove_ideology = ideology_particularist
+			add_ideology = ideology_nordic_particularist
+		}
+		add_modifier = {
+			name = sweden_outdated_military
+			months = -1
+		}
+		add_modifier = {
+			name = sweden_land_based_taxation_policies
+			months = -1
+		}
+	}
+	c:NOR = {
+		add_modifier = {
+			name = norway_abolishment_of_new_aristocrats
+			months = -1
+		}
+		ig:ig_rural_folk = {
+			remove_ideology = ideology_particularist
+			add_ideology = ideology_nordic_particularist
+			add_modifier = {
+				name = sweden_farmers_organising
+				months = long_modifier_time
+			}
+		}
+		trigger_event = {
+			id = norway_flavor.1
+			days = 730
+		}
+	}
+	c:FIN = {
+		#add_primary_culture = swedish	# Re-add if I find better implementation
+		ig:ig_rural_folk = {
+			remove_ideology = ideology_agrarian
+			add_ideology = ideology_nordic_agrarianism
+		}
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_local_police
+		activate_law = law_type:law_agrarianism
+		activate_law = law_type:law_migration_controls
+		add_modifier = {
+			name = finland_our_language_outside_courts
+			months = -1
+		}
+	}
+	
+	# Give Sweden their small colonial empire back
+	s:STATE_WEST_INDIES = {
+		set_owner_of_provinces = {
+			country = c:SWE
+			provinces = { xECC061 }
+		}
+	}
+	
+	# Move away British from East Indies to UK
+	c:GBR = {
+		random_scope_state = {
+			limit = {
+				any_scope_pop = {
+					culture = cu:british
+				}
+			}
+			save_scope_as = english_removal_state
+		}
+		c:SWE = {
+			random_scope_state = {
+				limit = {
+					any_scope_pop = {
+						culture = cu:british
+					}
+				}
+				every_scope_pop = {
+					limit = {
+						culture = cu:british
+					}
+					move_pop = scope:english_removal_state
+				}
+			}
+		}
+	}
+	
+	# Borders
+	s:STATE_SCHLESWIG_HOLSTEIN = {
+		set_owner_of_provinces = {
+			country = c:HOL
+			provinces = { xBFCC21 }
+		}
+	}
+	
+	# State Traits
+	s:STATE_NORRLAND = { add_state_trait = ttb_state_trait_scandinavian_mountains }
+	s:STATE_NORTHERN_NORWAY = { add_state_trait = ttb_state_trait_scandinavian_mountains }
+	s:STATE_EASTERN_NORWAY = { add_state_trait = ttb_state_trait_scandinavian_mountains }
+	s:STATE_WESTERN_NORWAY = { add_state_trait = ttb_state_trait_scandinavian_mountains }
+	s:STATE_GREENLAND = { add_state_trait = ttb_state_trait_north_pole add_state_trait = tt_state_trait_arctic_sea_fishing }
+	s:STATE_ICELAND = { add_state_trait = tt_state_trait_arctic_sea_fishing  add_state_trait = ttb_state_trait_volcanic_island }
+}

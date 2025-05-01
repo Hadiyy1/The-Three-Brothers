@@ -1,0 +1,143 @@
+﻿namespace = scandinavia_flavor
+
+# Scandinavian Monetary Union
+scandinavia_flavor.1 = {
+	type = country_event
+	
+	title = scandinavia_flavor.1.t
+	desc = scandinavia_flavor.1.d
+	flavor = scandinavia_flavor.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_art_gallery.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = scandinavia_flavor.1.a
+		default_option = yes
+		add_modifier = {
+			name = scandinavian_monetary_union_mod
+		}
+		# Add follow-up journal about establishing trade agreements
+		#if = {
+		#	limit = { NOT = { c:SWE = THIS } }
+		#	create_diplomatic_pact = {
+		#		country = c:SWE
+		#		type = trade_agreement
+		#	}
+		#}
+		#if = {
+		#	limit = { NOT = { c:DEN = THIS } }
+		#	create_diplomatic_pact = {
+		#		country = c:DEN
+		#		type = trade_agreement
+		#	}
+		#}
+	}
+}
+
+# Birth of Pan-Nationalism
+scandinavia_flavor.2 = {
+	type = country_event
+	
+	title = scandinavia_flavor.2.t
+	desc = scandinavia_flavor.2.d
+	flavor = scandinavia_flavor.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/votp_agitator_speaking.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = scandinavia_flavor.2.a
+		default_option = yes
+		ai_chance = {
+			base = 75
+			modifier = {
+				trigger = {
+					has_strategy = ai_strategy_conservative_agenda
+				}
+				add = 15
+			}
+		}
+		add_modifier = {
+			name = nordic_neg_pan_nationalism_mod
+			months = long_modifier_time
+		}
+		ig:ig_landowners = {
+			add_modifier = {
+				name = support_stance_on_nordic_pan_nationalism_mod
+				months = long_modifier_time
+			}
+		}
+		ig:ig_intelligentsia = {
+			add_modifier = {
+				name = oppose_stance_on_nordic_pan_nationalism_mod
+				months = long_modifier_time
+			}
+		}
+	}
+	option = {
+		name = scandinavia_flavor.2.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				trigger = {
+					NOT = { has_strategy = ai_strategy_conservative_agenda }
+				}
+				add = 15
+			}
+		}
+		add_technology_progress = { progress = 500 technology = pan-nationalism }
+		add_modifier = {
+			name = nordic_pos_pan_nationalism_mod
+			months = long_modifier_time
+		}
+		ig:ig_intelligentsia = {
+			if = {
+				limit = {
+					leader = {
+						NOT = {
+							has_ideology = ideology:ideology_nordic_pan_nationalist
+						}
+					}
+				}
+				leader = {
+					set_ideology = ideology:ideology_nordic_pan_nationalist
+				}
+			}
+			add_modifier = {
+				name = support_stance_on_nordic_pan_nationalism_mod
+				months = long_modifier_time
+			}
+		}
+		ig:ig_landowners = {
+			add_modifier = {
+				name = oppose_stance_on_nordic_pan_nationalism_mod
+				months = long_modifier_time
+			}
+		}
+		add_radicals = {
+			pop_type = aristocrats
+			value = medium_radicals
+		}
+	}
+}

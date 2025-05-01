@@ -1,0 +1,229 @@
+﻿# Denmark
+denmark_national_humiliation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_influence_mult = -0.1
+	country_prestige_mult = -0.2
+}
+denmark_focus_on_agriculture = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	building_group_bg_agriculture_throughput_add = 0.2
+	building_group_bg_ranching_throughput_add = 0.2
+	country_expenses_add = 250
+}
+denmark_revanchism_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_conscription_rate_add = 0.035
+	interest_group_ig_armed_forces_approval_add = 5
+}
+denmark_unification_time = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_prestige_mult = 0.1
+	interest_group_in_government_approval_add = 4
+}
+denmark_concessions_to_holstein = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_prestige_mult = -0.05
+	country_law_enactment_time_mult = 0.2
+}
+denmark_angered_peoples_spring = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_approval_add = -1
+	interest_group_pop_attraction_mult = 0.1
+}
+denmark_concessions_to_stave_off_masses = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_prestige_mult = -0.1
+	political_movement_support_add = 0.2
+	state_radicals_from_political_movements_mult = -0.1
+}
+denmark_victory_in_first_war = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_prestige_add = 10
+}
+
+# Sweden
+sweden_outdated_military = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_army_offense_mult = -0.05
+	unit_army_defense_mult = -0.05
+	country_prestige_mult = -0.05
+}
+sweden_land_based_taxation_policies = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	tax_land_add = 0.2
+	tax_per_capita_add = -0.1
+}
+sweden_farmers_organising = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	interest_group_pop_attraction_mult = 0.25
+}
+sweden_rise_of_awareness = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	interest_group_pol_str_mult = 0.1
+}
+sweden_lantmannapartiet = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_opposition_ig_approval_add = -1
+	interest_group_pop_attraction_mult = 0.1
+}
+
+sweden_spirit_of_free_trade = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_trade_route_competitiveness_mult = 0.25
+	country_tech_spread_mult = 0.05
+}
+sweden_spirit_of_protectionism = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_authority_mult = 0.1
+	tariff_export_add = 0.05
+}
+
+sweden_compromise_over_army = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	tax_land_add = -0.2
+}
+
+sweden_unity_behind_new_policies = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	interest_group_approval_add = 1
+	interest_group_pol_str_mult = 0.1
+}
+
+sweden_no_compromise_for_army = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_approval_add = -3
+}
+
+# Norway
+norway_abolishment_of_new_aristocrats = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_aristocrats_pol_str_mult = -0.1
+}
+norway_det_store_hamskiftet = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	interest_group_ig_industrialists_pol_str_mult = 0.1
+	building_group_bg_light_industry_throughput_add = 0.1
+}
+norway_det_store_hamskiftet_alt = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	building_group_bg_agriculture_throughput_add = 0.05
+	building_group_bg_light_industry_throughput_add = 0.05
+}
+norway_support_during_changing_times = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	interest_group_approval_add = 1
+}
+norway_formmanskapsdistrikt_pay = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_bureaucracy_add = -25
+}
+norway_formmanskapsdistrikt = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_approval_add = 3
+	interest_group_pop_attraction_mult = 0.25
+}
+norway_formmanskapsdistrikt_nation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_bureaucracy_mult = -0.05
+	country_authority_mult = 0.05
+	country_farmers_pol_str_mult = 0.25
+	country_peasants_pol_str_mult = 0.25
+	country_laborers_pol_str_mult = 0.25
+}
+norway_the_great_merchant_navy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_influence_add = 50
+	country_prestige_mult = 0.1
+}
+
+# Finland
+finland_our_language_outside_courts = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_influence_mult = -0.2
+	country_prestige_mult = -0.1
+	state_assimilation_mult = -0.1
+}
+finland_the_strife_over_language = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_authority_mult = -0.2
+	state_assimilation_mult = -0.25
+	state_radicals_from_political_movements_mult = 0.25
+}
+finland_language_question_solved = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_society_weekly_innovation_mult = 0.25
+	state_assimilation_mult = 0.1
+}
+finland_language_question_unsolved = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	state_assimilation_mult = -0.2
+	country_prestige_mult = -0.1
+	interest_group_ig_intelligentsia_approval_add = 3
+}
+finland_swedish_oppose_the_academics = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_authority_mult = 0.05
+	state_assimilation_mult = 0.05
+	country_society_tech_research_speed_mult = -0.1
+	interest_group_ig_intelligentsia_approval_add = -3
+}
+finland_old_elite_opposition = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	interest_group_ig_landowners_approval_add = -5
+	interest_group_ig_devout_approval_add = -3
+}
+finland_concessions_to_old_elite = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_authority_mult = -0.05
+	country_bureaucracy_mult = -0.05
+	state_assimilation_mult = -0.25
+}
+
+# Shared
+scandinavian_monetary_union_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_influence_mult = -0.05
+	country_minting_mult = 0.1
+	country_military_goods_cost_mult = -0.05
+	country_loyalists_from_legitimacy_mult = 0.05
+	state_loyalists_from_political_movements_mult = 0.05
+}
+
+nordic_neg_pan_nationalism_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_authority_mult = 0.1
+	country_radicalism_increases_cultural_erasure_mult = -0.1
+	country_radicalism_increases_open_prejudice_mult = -0.1
+	country_radicalism_increases_violent_hostility_mult = -0.1
+	country_radicalism_increases_second_rate_citizen_mult = -0.1
+	country_academics_pol_str_mult = -0.15
+}
+
+nordic_pos_pan_nationalism_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_academics_pol_str_mult = 0.15
+	#state_loyalists_from_sol_change_mult = 0.1
+	country_influence_mult = 0.1
+	state_radicals_from_political_movements_mult = 0.25
+}
+
+oppose_stance_on_nordic_pan_nationalism_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_approval_add = -5
+}
+support_stance_on_nordic_pan_nationalism_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	interest_group_approval_add = 5
+}
+
+nordic_ban_of_slavery = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_authority_mult = -0.1
+	country_expenses_add = 500
+	interest_group_ig_intelligentsia_approval_add = 5
+}
+
+nordic_finland_integration = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_bureaucracy_add = -100
+}

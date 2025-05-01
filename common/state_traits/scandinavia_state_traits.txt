@@ -1,0 +1,45 @@
+ttb_state_trait_north_pole = {
+	icon = "gfx/interface/icons/state_trait_icons/cold_climate.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = -0.2
+		state_construction_mult = -0.25
+		state_infrastructure_mult = -0.25
+		state_migration_pull_mult = -0.5
+	}
+}
+tt_state_trait_arctic_sea_fishing = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_fish.dds"
+	
+	modifier = {
+		building_group_bg_fishing_throughput_add = 0.1
+	}
+}
+state_trait_scandinavian_forests = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+	
+	modifier = {
+		building_group_bg_logging_throughput_add = 0.2
+		state_construction_mult = -0.05
+		state_infrastructure_mult = -0.05
+	}
+}
+ttb_state_trait_scandinavian_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_construction_mult = -0.05
+		state_infrastructure_mult = -0.1
+	}
+}
+ttb_state_trait_volcanic_island = {
+	icon = "gfx/interface/icons/state_trait_icons/unused/disaster_zone.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.10
+		building_sulfur_mine_throughput_add = 0.15
+		state_construction_mult = -0.1
+		state_infrastructure_mult = -0.1
+		state_migration_pull_mult = -0.2
+	}
+}

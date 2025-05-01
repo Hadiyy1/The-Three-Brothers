@@ -1,0 +1,111 @@
+﻿the_norway_formannskapsdistrikt = {
+	is_shown = {
+		exists = c:NOR
+		c:NOR = THIS
+		NOT = { has_variable = norway_formannskapsdistrikt }
+	}
+	
+	possible = {	# Add more later
+		bureaucracy >= 25
+		ig:ig_rural_folk = {
+			OR = {
+				is_powerful = yes
+				is_in_government = yes
+			}
+		}
+	}
+	
+	when_taken = {
+		set_variable = norway_formannskapsdistrikt
+		add_modifier = {
+			name = norway_formmanskapsdistrikt_pay
+			months = short_modifier_time
+		}
+		add_modifier = {
+			name = norway_formmanskapsdistrikt_nation
+			months = -1
+		}
+		ig:ig_rural_folk = {
+			add_modifier = {
+				name = norway_formmanskapsdistrikt
+				months = long_modifier_time
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 0.1
+		modifier = {
+			trigger = {
+				bureaucracy < 40
+			}
+			add = -100
+		}
+		modifier = {
+			trigger = {
+				NOT = { has_strategy = ai_strategy_conservative_agenda }
+			}
+			add = 10
+		}
+	}
+}
+nor_restablishment_of_new_aristocracy = {
+	is_shown = {
+		exists = c:NOR
+		c:NOR = THIS
+		has_modifier = norway_abolishment_of_new_aristocrats
+	}
+	
+	possible = {	# Add more later
+		ig:ig_landowners = {
+			ig_clout > 0.3
+			is_in_government = yes
+		}
+		OR = {
+			has_law = law_type:law_serfdom
+			has_law = law_type:law_tenant_farmers
+		}
+		has_law = law_type:law_monarchy
+		calc_true_if = {
+			amount >= 4
+			has_law = law_type:law_hereditary_bureaucrats
+			has_law = law_type:law_traditionalism
+			has_law = law_type:law_peasant_levies
+			has_law = law_type:law_local_police
+			has_law = law_type:law_debt_slavery
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_landed_voting
+		}
+	}
+	
+	when_taken = {
+		trigger_event = { id = norway_flavor.4 }
+		show_as_tooltip = {
+			add_radicals = {
+				pop_type = peasants
+				value = 0.1
+			}
+			add_radicals = {
+				pop_type = farmers
+				value = 0.05
+			}
+			remove_modifier = norway_abolishment_of_new_aristocrats
+			ig:ig_rural_folk = {
+				add_modifier = {
+					name = anti_feudal_opposition
+					months = long_modifier_time
+				}
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = {
+				has_strategy = ai_strategy_reactionary_agenda
+			}
+			add = 10
+		}
+	}
+}

@@ -1,0 +1,287 @@
+﻿# Scandinavian Pan-Nationalism
+scandinavian_pan_nationalism = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	group = je_group_historical_content
+	
+	is_shown_when_inactive = {
+		OR = {
+			AND = {
+				exists = c:SWE
+				c:SWE = THIS
+			}
+			AND = {
+				exists = c:DEN
+				c:DEN = THIS
+			}
+			AND = {
+				exists = c:NOR
+				c:NOR = THIS
+			}
+			AND = {
+				exists = c:FIN
+				c:FIN = THIS
+			}
+		}
+		NOT = { has_global_variable = nordic_pan_nationalism_var }
+	}
+	
+	possible = {
+		is_subject = no
+		any_scope_building = {
+			is_building_type = building_university
+		}
+	}
+	
+	complete = {
+		has_technology_researched = nationalism
+		any_scope_building = {
+			is_building_type = building_university
+			occupancy > 0.9
+			level >= 3
+		}
+	}
+	
+	on_complete = {
+		set_global_variable = nordic_pan_nationalism_var
+		c:SWE = {
+			trigger_event = { id = scandinavia_flavor.2 }
+		}
+		c:DEN = {
+			trigger_event = { id = scandinavia_flavor.2 }
+		}
+		c:NOR = {
+			trigger_event = { id = scandinavia_flavor.2 }
+		}
+		c:FIN = {
+			trigger_event = { id = scandinavia_flavor.2 }
+		}
+	}
+	
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+# Scandinavian Monetary Union (DEN)
+scandinavia_monetary_union = {
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	
+	group = je_group_historical_content
+	
+	is_shown_when_inactive = {
+		exists ?= c:SWE
+		exists ?= c:DEN
+		c:DEN ?= THIS
+		NOT = { has_variable = scandinvia_monetary_union_var }
+	}
+	
+	possible = {
+		is_subject = no
+	}
+	
+	complete = {
+		is_subject = no
+		is_at_war = no
+		has_technology_researched = nationalism
+		NOT = { has_law = law_type:law_isolationism }
+		custom_tooltip = {
+		    text = sweden_exists
+		    exists = c:SWE
+		}
+	    c:SWE = {
+		    is_subject = no
+		    is_at_war = no
+		    relations:root >= relations_threshold:amicable
+		    NOT = { has_law = law_type:law_isolationism }
+		    has_technology_researched = nationalism
+		}
+	}
+	
+	fail = {
+	    OR = {
+	        NOT = {
+			    custom_tooltip = {
+				    text = sweden_doesnt_exist
+		            exists = c:SWE
+				}
+		    }
+			custom_tooltip = {
+			    text = ttb_is_scandinavia
+		        c:SCA ?= THIS
+			}
+		}
+	}
+	
+	on_complete = {
+		c:SWE ?= {
+			set_variable = scandinvia_monetary_union_var
+			trigger_event = { id = scandinavia_flavor.1 }
+		}
+		c:DEN ?= {
+			set_variable = scandinvia_monetary_union_var
+			trigger_event = { id = scandinavia_flavor.1 }
+		}
+		show_as_tooltip = {
+			add_modifier = {
+				name = scandinavian_monetary_union_mod
+				months = -1
+			}
+		}
+	}
+	
+	should_be_pinned_by_default = yes
+	weight = 100
+}
+scandinavia_monetary_union_swe = {
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	
+	group = je_group_historical_content
+	
+	is_shown_when_inactive = {
+		exists ?= c:SWE
+		exists ?= c:DEN
+		c:SWE ?= THIS
+		NOT = { has_variable = scandinvia_monetary_union_var }
+	}
+	
+	possible = {
+		is_subject = no
+	}
+	
+	complete = {
+		is_subject = no
+		is_at_war = no
+		has_technology_researched = nationalism
+		NOT = { has_law = law_type:law_isolationism }
+		custom_tooltip = {
+			text = denmark_exists
+		    exists = c:DEN
+		}
+		c:DEN ?= {
+		    is_subject = no
+		    is_at_war = no
+		    relations:root >= relations_threshold:amicable
+		    has_technology_researched = nationalism
+		    NOT = { has_law = law_type:law_isolationism }
+		}
+	}
+	
+	fail = {
+	    OR = {
+	        NOT = {
+			    custom_tooltip = {
+				    text = denmark_doesnt_exist
+		            exists = c:DEN
+				}
+		    }
+			custom_tooltip = {
+			    text = ttb_is_scandinavia
+		        c:SCA ?= THIS
+			}
+		}
+	}
+	
+	on_complete = {
+		c:SWE ?= {
+			set_variable = scandinvia_monetary_union_var
+			trigger_event = { id = scandinavia_flavor.1 }
+		}
+		c:DEN ?= {
+			set_variable = scandinvia_monetary_union_var
+			trigger_event = { id = scandinavia_flavor.1 }
+		}
+		show_as_tooltip = {
+			add_modifier = {
+				name = scandinavian_monetary_union_mod
+				months = -1
+			}
+		}
+	}
+	
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+# Scandinavian Monetary Union
+scandinavia_monetary_union_nor = {
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	
+	group = je_group_historical_content
+	
+	is_shown_when_inactive = {
+		exists ?= c:NOR
+		c:NOR ?= THIS
+		OR = {
+			c:SWE = { has_variable = scandinvia_monetary_union_var }
+			c:DEN = { has_variable = scandinvia_monetary_union_var }
+		}
+		NOT = { has_variable = scandinvia_monetary_union_var }
+	}
+	
+	possible = {
+		is_subject = no
+		has_technology_researched = nationalism
+		c:DEN = {
+		    exists = yes
+			is_subject = no
+			has_technology_researched = nationalism
+		}
+		c:SWE = {
+		    exists = yes
+			is_subject = no
+			has_technology_researched = nationalism
+		}
+	}
+	
+	complete = {
+		is_subject = no
+		is_at_war = no
+		NOT = { has_law = law_type:law_isolationism }
+		custom_tooltip = {
+			text = denmark_exists
+		    exists = c:DEN
+		}
+		custom_tooltip = {
+		    text = sweden_exists
+		    exists = c:SWE
+		}
+	    c:DEN ?= {
+	        is_at_war = no
+		    relations:root >= relations_threshold:amicable
+		    NOT = { has_law = law_type:law_isolationism }
+		}
+		c:SWE ?= {
+		    is_at_war = no
+		    relations:root >= relations_threshold:amicable
+		    NOT = { has_law = law_type:law_isolationism }
+		}
+	}
+	
+	fail = {
+	    OR = {
+	        NOT = {
+			    custom_tooltip = {
+				    text = sweden_doesnt_exist
+		            exists = c:SWE
+				}
+				custom_tooltip = {
+				    text = denmark_doesnt_exist
+		            exists = c:SWE
+				}
+		    }
+			custom_tooltip = {
+			    text = ttb_is_scandinavia
+		        c:SCA ?= THIS
+			}
+		}
+	}
+	
+	on_complete = {
+		set_variable = scandinvia_monetary_union_var
+		add_modifier = {
+			name = scandinavian_monetary_union_mod
+			months = -1
+		}
+	}
+	
+	weight = 100
+	should_be_pinned_by_default = yes
+}

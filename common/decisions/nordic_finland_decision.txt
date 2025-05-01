@@ -1,0 +1,65 @@
+integrate_finland_into_scandinavia = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:swedish
+			country_has_primary_culture = cu:danish
+			country_has_primary_culture = cu:norwegian
+			country_has_primary_culture = cu:icelandic
+		}
+		exists = c:SCA
+		c:SCA = THIS
+		NOT = {
+			country_has_primary_culture = cu:finnish
+		}
+	}
+
+	possible = {
+		is_at_war = no
+		is_subject = no
+		bureaucracy >= 50
+		has_technology_researched = pan-nationalism
+		OR = {
+			AND = {
+				exists = c:FIN
+				c:FIN = { is_subject_of = ROOT }
+			}
+			calc_true_if = {
+			    amount >= 3
+				owns_entire_state_region = STATE_OSTROBOTHNIA
+				owns_entire_state_region = STATE_OULU
+				owns_entire_state_region = STATE_UUSIMAA
+				owns_entire_state_region = STATE_KUOPIO
+                owns_entire_state_region = STATE_WEST_KARELIA
+			}
+		}
+	}
+	
+	when_taken = {
+		add_modifier = {
+			name = nordic_finland_integration
+			months = long_modifier_time
+		}
+		add_primary_culture = cu:finnish
+		if = {
+			limit = {
+				exists = c:FIN
+				c:FIN = {
+					is_subject_of = ROOT
+				}
+			}
+			annex = c:FIN
+		}
+	}
+
+	ai_chance = {
+		base = 100
+		modifier = {
+			is_diplomatic_play_committed_participant = yes
+			add = -100
+		}
+		modifier = {
+			has_law = law_type:law_ethnostate
+			add = -100
+		}
+	}
+}

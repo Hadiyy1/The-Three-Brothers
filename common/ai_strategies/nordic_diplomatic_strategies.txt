@@ -1,0 +1,199 @@
+﻿ai_strategy_unify_scandinavia = {
+	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
+	
+	type = diplomatic
+	
+	undesirable_infamy_level = {
+		value = 50
+		
+		if = {
+			limit = { 
+				has_technology_researched = pan-nationalism
+			}
+			multiply = 1.5
+		}
+		else_if = {
+			limit = { 
+				has_technology_researched = nationalism
+			}
+			multiply = 1.25
+		}		
+	}
+	
+	unacceptable_infamy_level = {
+		value = 100
+	}
+	
+	ideological_opinion_effect_mult = {
+		value = 0.5
+	}
+	
+	wargoal_maneuvers_fraction = {
+		value = 0.15
+	}
+	
+	diplomatic_play_neutrality = {
+		value = 25
+	}
+	
+	diplomatic_play_boldness = {
+		value = 50
+	}
+	
+	# Added to value from default strategy
+	obligation_value = {
+		value = 0
+		if = {
+			limit = { 
+				scope:target_country = { can_form_nation = SCA }
+			}
+			add = 25
+		}
+	}			
+	
+	# Added to value from default strategy
+	recklessness = {
+		value = 0.5
+	}
+	
+	# Added to value from default strategy
+	aggression = {
+		value = 0.5
+		
+		if = {
+			limit = { 
+				scope:target_country = { can_form_nation = SCA }
+			}
+			add = 10
+		}
+		# Less aggressive against countries we're just antagonistic against, rather than belligerent/domineering
+		if = {
+			limit = {
+				has_attitude = {
+					who = scope:target_country
+					attitude = antagonistic
+				}					
+			}
+			multiply = 0.25
+		}			
+	}
+	
+	wanted_army_size = {
+	    multiply = 1.5
+	}
+	
+	wanted_navy_size = {
+		multiply = 1.25
+    }
+	
+	building_group_weights = {
+		bg_army = 1.5
+	}
+	
+	wargoal_scores = {
+		conquer_state = {
+			if = {
+				limit = {
+					scope:target_state = {				
+						state_region = {
+							OR = {
+								is_homeland = cu:swedish
+								is_homeland = cu:norwegian
+								is_homeland = cu:danish
+							}		
+						}
+					}
+					can_reach_target_state = yes
+				}
+				add = 100
+			}
+		}
+		return_state = {
+			if = {
+				limit = {
+					scope:target_state = {					
+						state_region = {
+							OR = {
+								is_homeland = cu:swedish
+								is_homeland = cu:norwegian
+								is_homeland = cu:danish
+							}
+						}	
+					}
+					can_reach_target_state = yes
+				}
+				add = 100
+			}
+		}		
+	}			
+	
+	secret_goal_scores = {
+		befriend = {		
+			if = {
+				limit = {
+					scope:target_country = {
+						can_form_nation = SCA
+					}
+				}
+				add = 200
+			}		
+		}
+		dominate = {		
+			if = {
+				limit = {
+					scope:target_country = {
+						can_form_nation = SCA
+					}
+				}
+				add = 300
+			}
+		}
+		conquer = {
+			if = {
+				limit = {
+					scope:target_country = {
+						is_subject = no
+						can_form_nation = SCA
+					}
+				}
+				add = 300
+			}
+		}
+	}
+	
+	wargoal_weights = {
+		conquer_state = 2.0
+		return_state = 2.0
+	}
+	
+	possible = {
+		NOT = { exists = c:SCA }
+		can_form_nation = SCA
+		is_unification_candidate = SCA
+	}
+	
+	weight = {
+		value = 50
+		
+		if = {
+			limit = { c:ICL = THIS }
+			add = -25
+		}
+		if = {
+			limit = { is_subject = yes }
+			add = -50
+		}
+		if = {
+			limit = { NOT = { is_country_type = unrecognized } }
+			add = 100
+		}
+		if = {
+			limit = { country_rank = rank_value:unrecognized_regional_power }
+			add = 25
+		}
+		if = {
+			limit = { country_rank = rank_value:unrecognized_major_power }
+			add = 50
+		}		
+	}
+}
