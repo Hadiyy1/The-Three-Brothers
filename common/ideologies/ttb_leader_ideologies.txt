@@ -1,0 +1,283 @@
+﻿ideology_nordic_pan_nationalist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_nationalism.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_citizenship = {
+		law_ethnostate = neutral
+		law_national_supremacy = strongly_approve
+		law_racial_segregation = approve
+		law_cultural_exclusion = approve
+		law_multicultural = strongly_disapprove
+	}
+	
+	lawgroup_migration = {
+		law_closed_borders = neutral
+		law_migration_controls = approve
+		law_no_migration_controls = disapprove
+	}
+	
+	lawgroup_church_and_state = {
+		law_state_religion = approve
+		law_freedom_of_conscience = approve
+		law_total_separation = neutral
+	}
+	country_trigger = {
+		any_primary_culture = { 
+			has_discrimination_trait = scandinavian_culture_group 
+		}
+	}
+	
+	interest_group_leader_trigger = {
+        OR = {
+			is_interest_group_type = ig_intelligentsia
+			is_interest_group_type = ig_trade_unions
+			is_interest_group_type = ig_petty_bourgeoisie
+			is_interest_group_type = ig_armed_forces
+			is_interest_group_type = ig_rural_folk
+		}
+    }
+	
+	non_interest_group_leader_trigger = {
+        interest_group = {
+            OR = {
+		    is_interest_group_type = ig_devout
+			is_interest_group_type = ig_intelligentsia
+			is_interest_group_type = ig_trade_unions
+			is_interest_group_type = ig_petty_bourgeoisie
+			is_interest_group_type = ig_armed_forces
+			is_interest_group_type = ig_rural_folk
+		    }
+        }
+    }
+	
+	interest_group_leader_weight = {
+		value = 100
+		if = { 
+			limit = {
+				owner = {
+					NOR = {
+						has_law = law_type:law_cultural_exclusion
+						has_law = law_type:law_freedom_of_conscience
+						has_law = law_type:law_migration_controls
+					}
+				}
+			}
+			add = -50
+		}
+		if = {	# Starts popping up more past once this is researched
+			limit = {
+				owner = { NOT = { has_technology_researched = nationalism } }
+			}
+			add = -50
+		}
+		# less likely for landowners
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_interest_group_type = ig_landowners
+				}
+			}
+			add = -25
+		}
+		# more likely for armed forces and intelligentsia
+		if = {
+			limit = {
+				scope:interest_group = {
+					OR = {
+						is_interest_group_type = ig_intelligentsia
+						is_interest_group_type = ig_armed_forces
+					}
+				}
+			}
+			add = 25
+		}
+		# More likely when SoL is high
+		if = {
+			limit = {
+				owner = {
+					average_sol_for_primary_cultures >= 15
+				}
+			}
+			add = 25
+		}
+		if = {
+			limit = {
+				owner = { ruler = { has_trait = romantic } }
+			}
+			add = 25
+		}
+		if = {
+			limit = { has_trait = romantic }
+			add = 50
+		}
+		if = {	# If approved of will increase chance of having it for leaders
+			limit = {
+				owner = {
+					has_modifier = promote_scandinavism
+				}
+			}
+			add = 25
+		}
+		if = {	# If approved of will increase chance of having it for leaders
+			limit = {
+				owner = {
+					has_modifier = attack_scandinavism
+				}
+			}
+			add = -25
+		}
+		if = {	# If approved of will increase chance of having it for leaders
+			limit = {
+				owner = {
+					has_modifier = failed_scandinavianism
+				}
+			}
+			add = -50
+		}
+		if = {
+			limit = {
+				owner = {
+					has_modifier = scandinavian_monetary_union_mod
+				}
+			}
+			add = 10
+		}
+		if = {
+			limit = {
+			    owner = {
+				    has_journal_entry = scandinavian_pan_nationalism
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				OR = {
+					has_variable = communist_ig_var
+					has_variable = chose_vanguardism
+					has_variable = chose_anarchism
+					has_variable = chose_communism
+					has_variable = chose_ethno_nationalism
+					has_variable = chose_fascism
+				}
+			}
+			multiply = 0.5
+		}
+	}
+	
+	non_interest_group_leader_weight = {
+	    value = 100
+		if = { 
+			limit = {
+				owner = {
+					NOR = {
+						has_law = law_type:law_cultural_exclusion
+						has_law = law_type:law_freedom_of_conscience
+						has_law = law_type:law_migration_controls
+					}
+				}
+			}
+			add = -50
+		}
+		if = {	# Starts popping up more past once this is researched
+			limit = {
+				owner = { NOT = { has_technology_researched = nationalism } }
+			}
+			add = -50
+		}
+		# less likely for landowners
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_interest_group_type = ig_landowners
+				}
+			}
+			add = -25
+		}
+		# more likely for armed forces and intelligentsia
+		if = {
+			limit = {
+				scope:interest_group = {
+					OR = {
+						is_interest_group_type = ig_intelligentsia
+						is_interest_group_type = ig_armed_forces
+					}
+				}
+			}
+			add = 25
+		}
+		# More likely when SoL is high
+		if = {
+			limit = {
+				owner = {
+					average_sol_for_primary_cultures >= 15
+				}
+			}
+			add = 25
+		}
+		if = {
+			limit = {
+				owner = { ruler = { has_trait = romantic } }
+			}
+			add = 25
+		}
+		if = {
+			limit = { has_trait = romantic }
+			add = 50
+		}
+		if = {	# If approved of will increase chance of having it for leaders
+			limit = {
+				owner = {
+					has_modifier = promote_scandinavism
+				}
+			}
+			add = 25
+		}
+		if = {	# If approved of will increase chance of having it for leaders
+			limit = {
+				owner = {
+					has_modifier = attack_scandinavism
+				}
+			}
+			add = -25
+		}
+		if = {	# If approved of will increase chance of having it for leaders
+			limit = {
+				owner = {
+					has_modifier = failed_scandinavianism
+				}
+			}
+			add = -50
+		}
+		if = {
+			limit = {
+				owner = {
+					has_modifier = scandinavian_monetary_union_mod
+				}
+			}
+			add = 10
+		}
+		if = {
+			limit = {
+			    owner = {
+				    has_journal_entry = scandinavian_pan_nationalism
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				OR = {
+					has_variable = communist_ig_var
+					has_variable = chose_vanguardism
+					has_variable = chose_anarchism
+					has_variable = chose_communism
+					has_variable = chose_ethno_nationalism
+					has_variable = chose_fascism
+				}
+			}
+			multiply = 0.5
+		}
+	}
+}

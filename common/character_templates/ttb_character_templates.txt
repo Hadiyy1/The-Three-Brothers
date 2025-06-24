@@ -168,12 +168,12 @@ nor_marcus_thrane_template = {
 }
 # Denmark - DEN
 den_nfs_grundtvig_template = {
-	first_name = NFS
+	first_name = Nikolai Frederik Severin
 	last_name = Grundtvig
 	culture = cu:danish
 	female = no
 	religion = protestant
-	ideology = ideology_radical
+	ideology = ideology_utilitarian_leader
 	interest_group = ig_devout
 	birth_date = 1802.10.25
 	traits = {

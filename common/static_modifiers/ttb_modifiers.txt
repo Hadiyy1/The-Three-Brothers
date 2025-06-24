@@ -17,8 +17,14 @@ denmark_revanchism_modifier = {
 }
 denmark_unification_time = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	country_prestige_mult = 0.1
+	country_authority_mult = 0.1
+	country_prestige_mult = 0.15
 	interest_group_in_government_approval_add = 4
+	country_loyalism_increases_cultural_erasure_mult = 0.1
+	country_loyalism_increases_open_prejudice_mult = 0.1
+	country_loyalism_increases_violent_hostility_mult = 0.1
+	country_loyalism_increases_second_rate_citizen_mult = 0.1
+	country_loyalism_increases_full_acceptance_citizen_mult = 0.1
 }
 denmark_concessions_to_holstein = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
@@ -189,22 +195,108 @@ scandinavian_monetary_union_mod = {
 	state_loyalists_from_political_movements_mult = 0.05
 }
 
-nordic_neg_pan_nationalism_mod = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	country_authority_mult = 0.1
-	country_radicalism_increases_cultural_erasure_mult = -0.1
-	country_radicalism_increases_open_prejudice_mult = -0.1
-	country_radicalism_increases_violent_hostility_mult = -0.1
-	country_radicalism_increases_second_rate_citizen_mult = -0.1
-	country_academics_pol_str_mult = -0.15
+scandinavianism_rising = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_society_tech_research_speed_mult = 0.1
+	state_assimilation_mult = 0.05
+	country_radicalism_increases_cultural_erasure_mult = 0.1
+	country_radicalism_increases_open_prejudice_mult = 0.1
+	country_radicalism_increases_violent_hostility_mult = 0.1
+	country_radicalism_increases_second_rate_citizen_mult = 0.1
+	country_academics_pol_str_mult = 0.15
 }
 
-nordic_pos_pan_nationalism_mod = {
+promote_scandinavism = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	political_movement_pop_attraction_mult = 0.15
+}
+
+scandinavism_enthusiasm = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	political_movement_pop_attraction_mult = 0.25
+}
+
+failed_scandinavianism = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	political_movement_pop_attraction_mult = -0.75
+}
+
+attack_scandinavism = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	political_movement_pop_attraction_mult = -0.1
+}
+
+scandinavian_agitator = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	character_popularity_add = 50
+}
+
+military_scandinavism = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_authority_mult = 0.1
+	state_assimilation_mult = 0.1
+	country_officers_pol_str_mult = 0.15
+	country_military_tech_research_speed_mult = 0.15
+	country_infamy_generation_mult = -0.25
+	battle_defense_owned_province_mult = 0.05
+	unit_morale_loss_mult = -0.1
+	unit_morale_recovery_mult = 0.1
+}
+
+societal_scandinavism = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_prestige_mult = 0.25
+	state_assimilation_mult = 0.15
 	country_academics_pol_str_mult = 0.15
-	#state_loyalists_from_sol_change_mult = 0.1
 	country_influence_mult = 0.1
-	state_radicals_from_political_movements_mult = 0.25
+	country_loyalism_increases_full_acceptance_mult = 0.15
+	country_society_tech_research_speed_mult = 0.1
+	country_weekly_innovation_mult = 0.05
+}
+
+scandinavism_fails = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_authority_mult = 0.15
+	country_loyalism_increases_cultural_erasure_mult = 0.15
+	country_loyalism_increases_open_prejudice_mult = 0.15
+	country_loyalism_increases_violent_hostility_mult = 0.15
+	country_loyalism_increases_second_rate_citizen_mult = 0.15
+}
+
+focus_on_integration = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    country_prestige_mult = 0.2
+	state_assimilation_mult = 0.25
+	state_conversion_mult = 0.25
+	state_education_access_add = 0.15
+	state_pop_qualifications_mult = 0.1
+	country_loyalism_increases_cultural_erasure_mult = 0.15
+	country_loyalism_increases_open_prejudice_mult = 0.15
+	country_loyalism_increases_violent_hostility_mult = 0.15
+	country_loyalism_increases_second_rate_citizen_mult = 0.15
+	country_loyalism_increases_full_acceptance_citizen_mult = 0.15
+}
+
+focus_on_power = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    country_prestige_mult = 0.2
+	country_diplomatic_play_maneuvers_add = 25
+	country_military_tech_research_speed_mult = 0.25
+	country_infamy_generation_mult = -0.25
+	unit_supply_consumption_mult = -0.25
+	country_military_goods_cost_mult = -0.25
+	building_group_bg_army_throughput_add = 0.25
+	country_max_declared_interests_add = 3
+}
+
+focus_on_economy = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    country_prestige_mult = 0.2
+	building_throughput_add = 0.1
+	country_minting_mult = 0.1
+	country_loan_interest_rate_mult = -0.25
+	country_trade_route_competitiveness_mult = 0.35
+	country_max_companies_add = 1
 }
 
 oppose_stance_on_nordic_pan_nationalism_mod = {

@@ -1,0 +1,5 @@
+﻿ttb_scripted_lists = { 
+	effect = {
+		ttb_scandinavian_countries_list = yes
+	}
+}

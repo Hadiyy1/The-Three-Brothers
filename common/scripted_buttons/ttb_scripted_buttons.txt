@@ -1,0 +1,96 @@
+﻿scandinavian_pan_nationalism_embrace_button = {
+	name = "scandinavian_pan_nationalism_embrace_button"
+	desc = "scandinavian_pan_nationalism_embrace_button_desc"
+
+	visible = { always = yes }
+	
+	ai_chance = {
+		base = 5
+	}
+
+	possible = {
+		scope:journal_entry = {
+			NOT = {
+				custom_tooltip = {
+					text = sca_cooldown_tt
+					has_variable = sca_cooldown_var
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = sca_advance_15
+			je:scandinavian_pan_nationalism = {
+				add_progress = { value = 15 name = scandinavism_progress_bar }
+			}
+		}
+		every_political_movement = {
+		    limit = {
+			    is_political_movement_type = movement_scandinavia_pan_national
+			}
+            add_modifier = {
+				name = promote_scandinavism
+				years = 2.5
+				is_decaying = yes
+			}
+		}
+		add_radicals = {
+			value = small_radicals
+			pop_type = aristocrats
+		}
+		scope:journal_entry = {
+			custom_tooltip = ttb_25_years
+			set_variable = { name = sca_cooldown_var years = 2.5 }
+		}
+	}
+}
+
+scandinavian_pan_nationalism_supress_button = {
+	name = "scandinavian_pan_nationalism_supress_button"
+	desc = "scandinavian_pan_nationalism_supress_button_desc"
+
+	visible = { always = yes }
+	
+	ai_chance = {
+		base = 5
+	}
+
+	possible = {
+		scope:journal_entry = {
+			NOT = {
+				custom_tooltip = {
+					text = sca_cooldown_tt
+					has_variable = sca_cooldown_var
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = sca_retreat_15
+			je:scandinavian_pan_nationalism = {
+				add_progress = { value = -15 name = scandinavism_progress_bar }
+			}
+		}
+		every_political_movement = {
+		    limit = {
+			    is_political_movement_type = movement_scandinavia_pan_national
+			}
+            add_modifier = {
+				name = attack_scandinavism
+				years = 2.5
+			}
+		}
+		add_radicals = {
+			value = small_radicals
+			pop_type = academics
+		}
+		scope:journal_entry = {
+			custom_tooltip = ttb_25_years
+			set_variable = { name = sca_cooldown_var years = 2.5 }
+		}
+	}
+}

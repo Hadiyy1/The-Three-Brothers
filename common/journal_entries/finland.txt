@@ -1,8 +1,8 @@
 ﻿# Fennoman Movement
 finland_fennoman_movement = {
-	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	icon = "gfx/interface/icons/invention_icons/bureaucracy.dds"
 	
-	group = je_group_internal_affairs
+	group = je_group_historical_content
 	
 	is_shown_when_inactive = {
 		exists = c:FIN
@@ -55,11 +55,11 @@ finland_fennoman_movement = {
 	}
 	
 	current_value = {
-		value = root.var:finland_language_debate_var
+		value = var:finland_language_debate_var
 	}
 	
 	goal_add_value = {
-		add = 240	# 20 years
+		add = 240
 	}
 	
 	progressbar = yes

@@ -53,91 +53,252 @@ scandinavia_flavor.2 = {
 	desc = scandinavia_flavor.2.d
 	flavor = scandinavia_flavor.2.f
 
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	event_image = {
-		video = "gfx/event_pictures/votp_agitator_speaking.bk2"
+		video = "europenorthamerica_art_gallery"
 	}
-
-	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
 	
 	duration = 3
 	
 	cooldown = { months = normal_modifier_time }
 	
 	option = {
-		name = scandinavia_flavor.2.a
+		name = scandinavia_flavor.2.a 
 		default_option = yes
-		ai_chance = {
-			base = 75
-			modifier = {
-				trigger = {
-					has_strategy = ai_strategy_conservative_agenda
-				}
-				add = 15
+		add_technology_progress = { progress = 500 technology = pan-nationalism }
+		add_journal_entry = { 
+		    type = je_form_scandinavia
+		}
+		if = {
+			limit = {
+				var:sca_progress_var >= 170
+			}	
+			add_modifier = {
+				name = military_scandinavism
+				months = long_modifier_time
+				multiplier = 1.5
 			}
 		}
-		add_modifier = {
-			name = nordic_neg_pan_nationalism_mod
-			months = long_modifier_time
-		}
-		ig:ig_landowners = {
+		else_if = {
+			limit = {
+				var:sca_progress_var >= 135
+			}	
 			add_modifier = {
-				name = support_stance_on_nordic_pan_nationalism_mod
+				name = military_scandinavism
 				months = long_modifier_time
+				multiplier = 1
 			}
 		}
-		ig:ig_intelligentsia = {
+		else = {
 			add_modifier = {
-				name = oppose_stance_on_nordic_pan_nationalism_mod
+				name = military_scandinavism
 				months = long_modifier_time
+				multiplier = 0.5
+			}
+		}
+		set_variable = pan_scandinavism_suceeds
+	}
+	
+	option = {
+		name = scandinavia_flavor.2.b
+		default_option = yes
+		if = {
+			limit = {
+				var:sca_progress_var >= 170
+			}	
+			add_modifier = {
+				name = societal_scandinavism
+				months = long_modifier_time
+				multiplier = 1.5
+			}
+		}
+		else_if = {
+			limit = {
+				var:sca_progress_var >= 135
+			}	
+			add_modifier = {
+				name = societal_scandinavism
+				months = long_modifier_time
+				multiplier = 1
+			}
+		}
+		else = {
+			add_modifier = {
+				name = societal_scandinavism
+				months = long_modifier_time
+				multiplier = 0.5
 			}
 		}
 	}
-	option = {
-		name = scandinavia_flavor.2.b
-		ai_chance = {
-			base = 10
-			modifier = {
-				trigger = {
-					NOT = { has_strategy = ai_strategy_conservative_agenda }
+}
+scandinavia_flavor.3 = {
+	type = country_event
+	placement = root
+	
+	title = scandinavia_flavor.3.t
+	desc = scandinavia_flavor.3.d
+	flavor = scandinavia_flavor.3.f
+	dlc = dlc_masir
+
+	duration = 3
+
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	cooldown = { months = normal_modifier_time }
+
+	trigger = {
+		# Triggered by JE
+	}
+	
+	immediate = {
+		create_character = {
+			is_agitator = yes
+			religion = rel:protestant
+	        ideology = ideology_nordic_pan_nationalist
+			on_created = {
+				add_modifier = {
+					name = scandinavian_agitator
 				}
-				add = 15
+				set_variable = sca_agitator_var
 			}
 		}
-		add_technology_progress = { progress = 500 technology = pan-nationalism }
-		add_modifier = {
-			name = nordic_pos_pan_nationalism_mod
-			months = long_modifier_time
+		random_scope_character = {
+			limit = {
+				has_variable = sca_agitator_var
+			}
+			save_scope_as = sca_agitator
 		}
-		ig:ig_intelligentsia = {
-			if = {
-				limit = {
-					leader = {
-						NOT = {
-							has_ideology = ideology:ideology_nordic_pan_nationalist
-						}
+		if = {
+			limit = {
+				NOT = {
+			    	any_political_movement = {
+						is_political_movement_type = movement_scandinavia_pan_national
 					}
 				}
-				leader = {
-					set_ideology = ideology:ideology_nordic_pan_nationalist
-				}
 			}
-			add_modifier = {
-				name = support_stance_on_nordic_pan_nationalism_mod
-				months = long_modifier_time
+			create_political_movement = { type = movement_scandinavia_pan_national }
+		}
+	}
+	
+	option = {
+		name = scandinavia_flavor.3.a 
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+			    is_political_movement_type = movement_scandinavia_pan_national
+			}
+            add_modifier = {
+				name = scandinavism_enthusiasm
+				months = normal_modifier_time
 			}
 		}
-		ig:ig_landowners = {
-			add_modifier = {
-				name = oppose_stance_on_nordic_pan_nationalism_mod
-				months = long_modifier_time
+		custom_tooltip = {
+			text = sca_advance_20
+			je:scandinavian_pan_nationalism ?= {
+				add_progress = { value = 20 name = scandinavism_progress_bar }
 			}
 		}
-		add_radicals = {
-			pop_type = aristocrats
-			value = medium_radicals
+	}
+
+	option = {
+		name = scandinavia_flavor.3.b
+		custom_tooltip = {
+			text = sca_advance_10
+			je:scandinavian_pan_nationalism ?= {
+				add_progress = { value = 10 name = scandinavism_progress_bar }
+			}
+		}
+	}
+}
+scandinavia_flavor.4 = {
+	type = country_event
+	
+	title = scandinavia_flavor.4.t
+	desc = scandinavia_flavor.4.d
+	flavor = scandinavia_flavor.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = scandinavia_flavor.4.a 
+		default_option = yes
+		add_modifier = {
+		    name = scandinavism_fails
+			months = long_modifier_time
+		}
+		every_political_movement = {
+		    limit = {
+			    is_political_movement_type = movement_scandinavia_pan_national
+			}
+            add_modifier = {
+				name = failed_scandinavianism
+			}
+		}
+	}
+}
+scandinavia_flavor.5 = {
+	type = country_event
+	
+	title = scandinavia_flavor.5.t
+	desc = scandinavia_flavor.5.d
+	flavor = scandinavia_flavor.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	duration = 3
+	
+	cooldown = { months = normal_modifier_time }
+	
+	option = {
+		name = scandinavia_flavor.5.a 
+		default_option = yes
+		add_modifier = {
+		    name = focus_on_integration
+			months = long_modifier_time
+		}
+		add_loyalists = {  
+	        value = 0.1
+		}
+	}
+	option = {
+		name = scandinavia_flavor.5.b
+		default_option = yes
+		add_modifier = {
+		    name = focus_on_power
+			months = long_modifier_time
+		}
+		add_loyalists = {  
+	        value = 0.1
+		}
+	}
+	option = {
+		name = scandinavia_flavor.5.c
+		default_option = yes
+		add_modifier = {
+		    name = focus_on_economy
+			months = long_modifier_time
+		}
+		add_loyalists = {  
+	        value = 0.1
 		}
 	}
 }

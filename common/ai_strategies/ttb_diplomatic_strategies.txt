@@ -194,6 +194,10 @@
 		if = {
 			limit = { country_rank = rank_value:unrecognized_major_power }
 			add = 50
-		}		
+		}
+		if = {
+		    limit = { has_journal_entry = je_form_scandinavia }
+			add = 50
+		}
 	}
 }

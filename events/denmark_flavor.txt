@@ -254,7 +254,6 @@ denmark_flavor.5 = {
 	
 	cooldown = { months = normal_modifier_time }
 	
-	# If there was just a freaking way to have a country properly join a diplomatic play
 	immediate = {
 		c:SCH = {
 			make_independent = yes

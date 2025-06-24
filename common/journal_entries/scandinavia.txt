@@ -1,271 +1,193 @@
 ﻿# Scandinavian Pan-Nationalism
 scandinavian_pan_nationalism = {
-	icon = "gfx/interface/icons/event_icons/event_military.dds"
-	
+	icon = "gfx/interface/icons/invention_icons/nationalism.dds"
 	group = je_group_historical_content
 	
+	scripted_button = scandinavian_pan_nationalism_embrace_button
+	scripted_button = scandinavian_pan_nationalism_supress_button
+	scripted_progress_bar = scandinavism_progress_bar
+	
+	modifiers_while_active = {
+		scandinavianism_rising
+	}
+	
+	immediate = {
+		show_as_tooltip = {
+			if = {
+				limit = {
+					NOT = {
+						any_political_movement = {
+							is_political_movement_type = movement_scandinavia_pan_national
+						}
+					}
+				}
+				create_political_movement = { type = movement_scandinavia_pan_national }
+			}
+		}
+		trigger_event = { id = scandinavia_flavor.3 popup = yes }
+		set_variable = scandinavism_starts
+	}
+	
 	is_shown_when_inactive = {
-		OR = {
-			AND = {
-				exists = c:SWE
-				c:SWE = THIS
-			}
-			AND = {
-				exists = c:DEN
-				c:DEN = THIS
-			}
-			AND = {
-				exists = c:NOR
-				c:NOR = THIS
-			}
-			AND = {
-				exists = c:FIN
-				c:FIN = THIS
-			}
+		any_primary_culture = {
+			has_discrimination_trait = scandinavian_culture_group
 		}
 		NOT = { has_global_variable = nordic_pan_nationalism_var }
 	}
 	
 	possible = {
-		is_subject = no
 		any_scope_building = {
 			is_building_type = building_university
+		}
+		has_technology_researched = nationalism
+		OR = {
+			is_subject = no	
+			top_overlord = {
+				any_primary_culture = {
+					has_discrimination_trait = scandinavian_culture_group
+				}
+			}
 		}
 	}
 	
 	complete = {
-		has_technology_researched = nationalism
-		any_scope_building = {
-			is_building_type = building_university
-			occupancy > 0.9
-			level >= 3
+		custom_tooltip = {
+			text = scandinavianism_progress_succeeds
+			scope:journal_entry = {
+				"scripted_bar_progress(scandinavism_progress_bar)" >= 350
+			}
 		}
 	}
+
+	on_complete ={
+		set_variable = { name = sca_progress_var value = "scope:journal_entry.scripted_bar_progress(scandinavism_progress_bar)" days = 120 }
+		trigger_event = { id = scandinavia_flavor.2 popup = yes }
+	}
 	
-	on_complete = {
-		set_global_variable = nordic_pan_nationalism_var
-		c:SWE = {
-			trigger_event = { id = scandinavia_flavor.2 }
+	timeout = 7500
+	on_timeout = {
+		set_variable = { name = sca_progress_var value = "scripted_bar_progress(scandinavism_progress_bar)" days = 120 }
+		if = {
+			limit = {
+				scope:journal_entry = {
+					"scripted_bar_progress(sca_progress_var)" >= 200
+				}
+			}
+			custom_tooltip = {
+				text = succesful_sca_movement
+				trigger_event = { id = scandinavia_flavor.2 popup = yes }
+			}
+			if = {
+				limit = {
+					scope:journal_entry = {
+						"scripted_bar_progress(sca_progress_var)" >= 300
+					}
+				}
+				custom_tooltip = sca_effects_most
+			}
+			else_if = {
+				limit = {
+					scope:journal_entry = {
+						"scripted_bar_progress(sca_progress_var)" >= 250
+					}
+				}
+				custom_tooltip = sca_effects_avg
+			}
+			else = {
+				custom_tooltip = sca_effects_least
+			}
 		}
-		c:DEN = {
-			trigger_event = { id = scandinavia_flavor.2 }
-		}
-		c:NOR = {
-			trigger_event = { id = scandinavia_flavor.2 }
-		}
-		c:FIN = {
-			trigger_event = { id = scandinavia_flavor.2 }
+		else = {
+			custom_tooltip = {
+				text = failure_pan_scan_tt
+				trigger_event = { id = scandinavia_flavor.4 popup = yes }
+			}
 		}
 	}
 	
 	should_be_pinned_by_default = yes
 	weight = 1000
 }
-# Scandinavian Monetary Union (DEN)
-scandinavia_monetary_union = {
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
-	
+je_form_scandinavia = {
+	icon = "gfx/interface/icons/event_icons/event_sca_flag.dds"
 	group = je_group_historical_content
 	
 	is_shown_when_inactive = {
-		exists ?= c:SWE
-		exists ?= c:DEN
-		c:DEN ?= THIS
-		NOT = { has_variable = scandinvia_monetary_union_var }
+		any_primary_culture = {
+			has_discrimination_trait = scandinavian_culture_group
+		}
 	}
 	
 	possible = {
-		is_subject = no
+	    custom_tooltip = {
+		    text = pan_scandinavism_suceeds_tt
+			has_variable = pan_scandinavism_suceeds
+		}
 	}
 	
 	complete = {
-		is_subject = no
-		is_at_war = no
-		has_technology_researched = nationalism
-		NOT = { has_law = law_type:law_isolationism }
+	    exists ?= c:SCA
 		custom_tooltip = {
-		    text = sweden_exists
-		    exists = c:SWE
-		}
-	    c:SWE = {
-		    is_subject = no
-		    is_at_war = no
-		    relations:root >= relations_threshold:amicable
-		    NOT = { has_law = law_type:law_isolationism }
-		    has_technology_researched = nationalism
-		}
-	}
-	
-	fail = {
-	    OR = {
-	        NOT = {
-			    custom_tooltip = {
-				    text = sweden_doesnt_exist
-		            exists = c:SWE
-				}
-		    }
-			custom_tooltip = {
-			    text = ttb_is_scandinavia
-		        c:SCA ?= THIS
-			}
+		    text = has_formed_sca
+		    c:SCA ?= THIS
 		}
 	}
 	
 	on_complete = {
-		c:SWE ?= {
-			set_variable = scandinvia_monetary_union_var
-			trigger_event = { id = scandinavia_flavor.1 }
-		}
-		c:DEN ?= {
-			set_variable = scandinvia_monetary_union_var
-			trigger_event = { id = scandinavia_flavor.1 }
-		}
-		show_as_tooltip = {
-			add_modifier = {
-				name = scandinavian_monetary_union_mod
-				months = -1
-			}
-		}
+	    trigger_event = { id = scandinavia_flavor.5 popup = yes }
 	}
 	
 	should_be_pinned_by_default = yes
-	weight = 100
+	weight = 1000
 }
-scandinavia_monetary_union_swe = {
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
 	
-	group = je_group_historical_content
-	
-	is_shown_when_inactive = {
-		exists ?= c:SWE
-		exists ?= c:DEN
-		c:SWE ?= THIS
-		NOT = { has_variable = scandinvia_monetary_union_var }
-	}
-	
-	possible = {
-		is_subject = no
-	}
-	
-	complete = {
-		is_subject = no
-		is_at_war = no
-		has_technology_researched = nationalism
-		NOT = { has_law = law_type:law_isolationism }
-		custom_tooltip = {
-			text = denmark_exists
-		    exists = c:DEN
-		}
-		c:DEN ?= {
-		    is_subject = no
-		    is_at_war = no
-		    relations:root >= relations_threshold:amicable
-		    has_technology_researched = nationalism
-		    NOT = { has_law = law_type:law_isolationism }
-		}
-	}
-	
-	fail = {
-	    OR = {
-	        NOT = {
-			    custom_tooltip = {
-				    text = denmark_doesnt_exist
-		            exists = c:DEN
-				}
-		    }
-			custom_tooltip = {
-			    text = ttb_is_scandinavia
-		        c:SCA ?= THIS
-			}
-		}
-	}
-	
-	on_complete = {
-		c:SWE ?= {
-			set_variable = scandinvia_monetary_union_var
-			trigger_event = { id = scandinavia_flavor.1 }
-		}
-		c:DEN ?= {
-			set_variable = scandinvia_monetary_union_var
-			trigger_event = { id = scandinavia_flavor.1 }
-		}
-		show_as_tooltip = {
-			add_modifier = {
-				name = scandinavian_monetary_union_mod
-				months = -1
-			}
-		}
-	}
-	
-	weight = 100
-	should_be_pinned_by_default = yes
-}
 # Scandinavian Monetary Union
-scandinavia_monetary_union_nor = {
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
-	
-	group = je_group_historical_content
+scandinavia_monetary_union = {
+	icon = "gfx/interface/icons/invention_icons/international_exchange_standards.dds"
+	group = je_group_foreign_affairs
 	
 	is_shown_when_inactive = {
-		exists ?= c:NOR
-		c:NOR ?= THIS
-		OR = {
-			c:SWE = { has_variable = scandinvia_monetary_union_var }
-			c:DEN = { has_variable = scandinvia_monetary_union_var }
+		any_primary_culture = {
+			has_discrimination_trait = scandinavian_culture_group
 		}
-		NOT = { has_variable = scandinvia_monetary_union_var }
+		NOT = { has_global_variable = scandinvia_monetary_union_var }
 	}
 	
 	possible = {
-		is_subject = no
-		has_technology_researched = nationalism
-		c:DEN = {
-		    exists = yes
-			is_subject = no
-			has_technology_researched = nationalism
-		}
-		c:SWE = {
-		    exists = yes
-			is_subject = no
-			has_technology_researched = nationalism
+		has_technology_researched = pan-nationalism
+		OR = {
+			is_subject = no	
+			top_overlord = {
+				any_primary_culture = {
+					has_discrimination_trait = scandinavian_culture_group
+				}
+			}
 		}
 	}
 	
+	invalid = {
+		has_global_variable = scandinvia_monetary_union_var
+	}
+	
 	complete = {
-		is_subject = no
-		is_at_war = no
 		NOT = { has_law = law_type:law_isolationism }
+		has_technology_researched = international_exchange_standards
 		custom_tooltip = {
-			text = denmark_exists
-		    exists = c:DEN
-		}
-		custom_tooltip = {
-		    text = sweden_exists
-		    exists = c:SWE
-		}
-	    c:DEN ?= {
-	        is_at_war = no
-		    relations:root >= relations_threshold:amicable
-		    NOT = { has_law = law_type:law_isolationism }
-		}
-		c:SWE ?= {
-		    is_at_war = no
-		    relations:root >= relations_threshold:amicable
-		    NOT = { has_law = law_type:law_isolationism }
+			text = scandinavian_monetary_union_relations_tt
+			any_in_global_list = {
+				variable = scandinavian_countries_list
+				is_subject = no	
+				NOT = { relations:root < relations_threshold:amicable }
+			}
 		}
 	}
 	
 	fail = {
 	    OR = {
 	        NOT = {
-			    custom_tooltip = {
-				    text = sweden_doesnt_exist
-		            exists = c:SWE
-				}
-				custom_tooltip = {
-				    text = denmark_doesnt_exist
-		            exists = c:SWE
-				}
+			    any_primary_culture = {
+			        has_discrimination_trait = scandinavian_culture_group
+		        }
 		    }
 			custom_tooltip = {
 			    text = ttb_is_scandinavia
@@ -275,13 +197,28 @@ scandinavia_monetary_union_nor = {
 	}
 	
 	on_complete = {
-		set_variable = scandinvia_monetary_union_var
-		add_modifier = {
-			name = scandinavian_monetary_union_mod
-			months = -1
+		set_global_variable = scandinvia_monetary_union_var
+		show_as_tooltip = {
+			add_modifier = {
+				name = scandinavian_monetary_union_mod
+			}
+		}
+		every_country = {
+			limit = { 
+				is_target_in_global_variable_list = { name = scandinavian_countries_list target = THIS }
+				OR = {
+					is_subject = no	
+					top_overlord = {
+						any_primary_culture = {
+							is_target_in_global_variable_list = { name = scandinavian_countries_list target = PREV }
+						}
+					}
+				}
+			}
+			trigger_event = { id = scandinavia_flavor.1 }
 		}
 	}
 	
-	weight = 100
 	should_be_pinned_by_default = yes
+	weight = 100
 }

@@ -1,6 +1,6 @@
 ﻿# Schleswig-Holstein Question
 denmark_return_of_danish_dominance = {
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 	
 	group = je_group_historical_content
 	
@@ -76,6 +76,7 @@ denmark_return_of_danish_dominance = {
 		}
 	}
 	
+	should_be_pinned_by_default = yes
 	weight = 100
 }
 # Schleswig-Holsteinism
@@ -114,14 +115,14 @@ denmark_rise_of_holstein_nationalism = {
 				OR = {
 					NOT = {
 						any_diplomatic_play = {
-							any_scope_play_involved = { this = c:DEN }
+							any_scope_play_involved = { this ?= c:DEN }
 						}
 					}
 					any_diplomatic_play = {
-						initiator_is = c:DEN
+						initiator_is ?= c:DEN
 						OR = {
-							target_is = c:SCH
-							target_is = c:HOL
+							target_is ?= c:SCH
+							target_is ?= c:HOL
 						}
 						OR = {
 							has_play_goal = annex_country
@@ -150,9 +151,9 @@ denmark_rise_of_holstein_nationalism = {
 			NOT = {
 				any_diplomatic_play = {
 					OR = {
-						initiator_is = c:SCH
+						initiator_is ?= c:SCH
 						#target_is = c:SCH
-						initiator_is = c:HOL
+						initiator_is ?= c:HOL
 						#target_is = c:HOL
 					}
 				}
@@ -164,8 +165,8 @@ denmark_rise_of_holstein_nationalism = {
 		is_subject = no
 		NOT = {
 			any_diplomatic_play = {
-				initiator_is = c:HOL
-				target_is = c:DEN
+				initiator_is ?= c:HOL
+				target_is ?= c:DEN
 			}
 		}
 	}
@@ -173,8 +174,8 @@ denmark_rise_of_holstein_nationalism = {
 		is_subject = yes
 		NOT = {
 			any_diplomatic_play = {
-				initiator_is = c:HOL
-				target_is = c:DEN
+				initiator_is ?= c:HOL
+				target_is ?= c:DEN
 			}
 		}
 	}
@@ -189,10 +190,8 @@ denmark_rise_of_holstein_nationalism = {
 				years = 5
 			}
 		}
-		hidden_effect = {
-			trigger_event = {
-				id = denmark_flavor.5
-			}
+		trigger_event = {
+			id = denmark_flavor.5
 		}
 	}
 	
