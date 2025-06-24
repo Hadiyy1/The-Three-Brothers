@@ -3,3 +3,34 @@
 		ttb_scandinavian_countries_list = yes
 	}
 }
+on_monthly_pulse_country = {
+    on_actions = {
+	    sweden_monthly_pulse
+	}
+}
+
+sweden_monthly_pulse = {
+	trigger = {
+		country_has_primary_culture = cu:swedisch
+	}
+	events = {
+		sweden_event.1
+        sweden_event.2
+        sweden_event.3
+        sweden_event.4
+        sweden_event.5
+        sweden_event.6
+        sweden_event.7
+        sweden_event.8
+        sweden_event.9
+        sweden_event.10
+        sweden_event.11
+        sweden_event.12
+        sweden_event.13
+        sweden_event.14
+        sweden_event.15
+        sweden_event.16
+        sweden_event.17
+        sweden_event.18
+	}
+}

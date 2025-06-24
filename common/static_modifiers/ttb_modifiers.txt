@@ -100,6 +100,137 @@ sweden_no_compromise_for_army = {
 	interest_group_approval_add = -3
 }
 
+sweden_mortala_verkstad = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_group_bg_manufacturing_throughput_add = 0.1
+}
+
+sweden_good_glass_quality = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_glassworks_throughput_add = 0.1
+}
+
+sweden_sundsvall_timber = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	building_group_bg_logging_throughput_add = 0.05
+	building_furniture_manufacturies_throughput_add = 0.05
+}
+
+sweden_retake_finland = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_influence_mult = 0.1
+	country_authority_add = 100
+}
+
+sweden_iron_production = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_iron_mine_throughput_add = 0.1
+}
+
+sweden_nobel_dynamite = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	building_explosives_factory_throughput_add = 0.1
+	country_prestige_add = 20
+}
+
+sweden_folkhemmet = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_assimilation_mult = 0.1
+	state_conversion_mult = 0.1
+}
+
+sweden_abolish_estates = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	country_bureaucracy_mult = 0.05
+}
+
+sweden_stockholm_exhibition = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_prestige_add = 30
+	state_capitalists_investment_pool_efficiency_mult = 0.05
+}
+
+sweden_railway_development = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	state_infrastructure_mult = 0.1
+}
+
+sweden_timber_export = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	building_group_bg_logging_throughput_add = 0.1
+}
+
+sweden_increased_furniture_manufactories = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_furniture_manufacturies_throughput_add = 0.1
+}
+
+sweden_trapatron = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_group_bg_logging_throughput_add = 0.1
+	interest_group_ig_industrialists_pol_str_mult = 0.05
+	interest_group_ig_landowners_pol_str_mult = 0.05
+}
+
+sweden_gothenburg = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	building_port_throughput_add = 0.1
+	building_shipyards_throughput_add = 0.05
+	building_military_shipyards_throughput_add = 0.05
+}
+
+sweden_malmo = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	building_group_bg_manufacturing_throughput_add = 0.05
+	building_port_throughput_add = 0.05
+	building_livestock_ranch_throughput_add = 0.05
+	building_rye_farm_throughput_add = 0.05
+}
+
+sweden_stockholm = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	building_government_administration_throughput_add = 0.10
+	building_university_throughput_add = 0.10
+	state_decree_cost_mult = -0.25
+}
+
+sweden_motala_strike = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_manufacturing_throughput_add = -0.2
+}
+
+sweden_temperance_revival = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	building_food_industry_throughput_add = -0.05
+}
+
+sweden_lasare_movement = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	state_conversion_mult = 0.1
+	interest_group_ig_rural_folk_approval_add = 3
+}
+
+sweden_church_support = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_clergymen_pol_str_mult = 0.1
+	interest_group_ig_devout_approval_add = 3
+}
+
+sweden_matchstick_boom = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_group_bg_manufacturing_throughput_add = 0.05
+}
+
+sweden_sundsvall_fire = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_group_bg_logging_throughput_add = 0.05
+	building_furniture_manufacturies_throughput_add = 0.05
+	building_government_administration_throughput_add = 0.05
+	building_university_throughput_add = 0.05
+	state_decree_cost_mult = -0.10
+}
+
+
 # Norway
 norway_abolishment_of_new_aristocrats = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds

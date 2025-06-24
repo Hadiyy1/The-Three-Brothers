@@ -19,14 +19,14 @@ finland_flavor.100 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	option = {
 		name = finland_flavor.100.a
 		default_option = yes
 		add_modifier = {
 			name = finland_the_strife_over_language
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 		add_loyalists = {
 			culture = cu:swedish
@@ -65,14 +65,14 @@ finland_flavor.1 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	option = {
 		name = finland_flavor.1.a
 		default_option = yes
 		add_modifier = {
 			name = finland_language_question_solved
-			months = normal_modifier_time
+			days = normal_modifier_time
 			is_decaying	= yes
 		}
 		add_loyalists = {
@@ -101,14 +101,14 @@ finland_flavor.2 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	option = {
 		name = finland_flavor.2.a
 		default_option = yes
 		add_modifier = {
 			name = finland_language_question_unsolved
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 		add_loyalists = {
 			culture = cu:swedish
@@ -141,7 +141,7 @@ finland_flavor.3 = {
 	
 	duration = 3
 	
-	cooldown = { months = short_modifier_time }
+	cooldown = { days = short_modifier_time }
 	
 	trigger = {
 		has_modifier = finland_our_language_outside_courts
@@ -221,7 +221,7 @@ finland_flavor.4 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	trigger = {
 		any_scope_state = {
@@ -241,7 +241,7 @@ finland_flavor.4 = {
 		}
 		add_modifier = {
 			name = finland_swedish_oppose_the_academics
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 		add_radicals = {
 			pop_type = academics
@@ -285,7 +285,7 @@ finland_flavor.5 = {
 	
 	duration = 3
 	
-	cooldown = { months = short_modifier_time }
+	cooldown = { days = short_modifier_time }
 	
 	trigger = {
 		is_subject_of = c:RUS
@@ -351,7 +351,7 @@ finland_flavor.6 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	option = {
 		name = finland_flavor.6.a
@@ -379,7 +379,7 @@ finland_flavor.7 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	trigger = {
 		NOR = {
@@ -409,7 +409,7 @@ finland_flavor.7 = {
 		}
 		add_modifier = {
 			name = finland_old_elite_opposition
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 	}
 	option = {
@@ -423,7 +423,7 @@ finland_flavor.7 = {
 		}
 		add_modifier = {
 			name = finland_concessions_to_old_elite
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 	}
 }

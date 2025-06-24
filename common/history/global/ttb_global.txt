@@ -15,6 +15,7 @@ GLOBAL = {
 			id = denmark_flavor.4
 			days = 1432
 		}
+		add_journal_entry = { type = denmark_return_of_danish_dominance }
 	}
 	c:SWE = {
 		activate_law = law_type:law_legacy_slavery
@@ -30,6 +31,7 @@ GLOBAL = {
 			name = sweden_land_based_taxation_policies
 			months = -1
 		}
+		add_journal_entry = { type = swedish_champions_of_national_defence }
 	}
 	c:NOR = {
 		add_modifier = {
@@ -48,6 +50,7 @@ GLOBAL = {
 			id = norway_flavor.1
 			days = 730
 		}
+		add_journal_entry = { type = nor_the_merchant_navy }
 	}
 	c:FIN = {
 		#add_primary_culture = swedish	# Re-add if I find better implementation

@@ -60,6 +60,156 @@
  sweden_flavor.6.d: "There are many who seem to care about the plight of the farmer in Scandinavia, this is true for our people as well and had an effect on the ongoing election."
  sweden_flavor.6.f: ""Times are changing, but at least there are some out there looking out for us.""
  sweden_flavor.6.a: "Another election movement happening..."
+
+ sweden_flavor.7.t: "The Forge of Swedish Industry"
+ sweden_flavor.7.d: "Born from the monumental task of constructing the Göta Canal in 1822, Motala Verkstad has grown far beyond a mere workshop. Its engineers and craftsmen, renowned for their precision and innovation, are now poised to become a vital artery of our nation's industry."
+ sweden_flavor.7.f: "The clang of hammers and the hiss of steam from Motala echo across the land, a powerful heartbeat for Swedish innovation."
+ sweden_flavor.7.a: "Elevate Our Industrial Might!"
+
+ sweden_flavor.8.t: "The Glasriket Sparkles"
+ sweden_flavor.8.d: "In the deep forests of Småland, where the ancient craft of glassmaking is experiencing a remarkable resurgence. With increasing demand for everything from windowpanes to delicate ornaments across the world, the humble glassworks of the region, long known as 'Glasriket', stand poised for unprecedented growth. Skilled artisans and entrepreneurial spirits alike see an opportunity to turn sand and fire into a gleaming fortune."
+ sweden_flavor.8.f: "The clang of the glassblower's pipe and the fiery glow of the furnaces promise prosperity for the heart of Småland, as light catches on newly forged wonders."
+ sweden_flavor.8.a: "Automate the Production Line!"
+
+ sweden_flavor.9.t: "The Roar of Sundsvall's Sawmills"
+ sweden_flavor.9.d: "Along the Selånger River and the bustling shores of the Sundsvall Bay, a new industrial center is shaping up. Sundsvall has rapidly transformed into the undeniable center of Sweden's immense timber industry, with dozens of steam-powered sawmills processing vast quantities of 'green gold' floated down from Norrland's endless forests. The sheer volume of lumber leaving its docks fuels industries across Europe, bringing immense wealth and employment to the region."
+ sweden_flavor.9.f: "The very air in Sundsvall hums with the energy of industry, thick with the scent of sawdust and the promise of prosperity forged from our forests."
+ sweden_flavor.9.a: "Capitalize on the Timber Trade!"
+
+ sweden_flavor.10.t: "Finland Liberated!"
+ sweden_flavor.10.d: "After generations under the oppressive yoke of Russian rule, Finland is finally free! Our banners fly once more over Helsinki and beyond, as the Eastern Bear has been decisively repelled, its ambitions shattered. The arduous struggle has ended, and our Finnish brothers and sisters now stand reunited with their true kin, their cries of jubilation echoing across the liberated lands."
+ sweden_flavor.10.f: "The joy of reunion washes over the land; our brave Finnish kin are at last brought home, where they belong."
+ sweden_flavor.10.a: "Embrace Our Liberated Brothers!"
+
+ sweden_flavor.11.t: "Forging the Future of Bergslagen"
+ sweden_flavor.11.d: "For centuries deep mines of Bergslagen have supplied the iron and copper that form the backbone of Swedish industry. However, as the world advances, demanding higher quantity and quality of metal, our traditional methods risk falling behind. We face a critical choice: invest heavily in modernizing these ancient operations or risk losing our competitive edge in the global market."
+ sweden_flavor.11.f: "Awaken the heart of swedish pride"
+ sweden_flavor.11.a: "Launch a national modernization program."
+
+ sweden_flavor.12.t: "The Vision of Folkhemmet"
+ sweden_flavor.12.d: "As our nation grows and modernizes, a powerful new vision is taking root: the concept of 'Folkhemmet', The People's Home. This is not merely a political platform, but a promise of a society built on solidarity, social equality, and shared welfare, where all citizens, regardless of background, are secure and contribute to the common good. It calls for comprehensive reforms in education, healthcare, social security, and housing, ensuring that prosperity benefits every Swede and lays the groundwork for a truly just society."
+ sweden_flavor.12.f: "The foundation for a truly just and prosperous society is being laid, brick by brick, by the collective will and shared purpose of our people."
+ sweden_flavor.12.a: "Commit to Building the People's Home!"
+
+ # sweden_flavor.13.t: "The Final Session of the Estates"
+ # sweden_flavor.13.d: "For centuries, the Riksdag of the Estates, representing the nobility, clergy, burghers, and peasantry, has served as Sweden's parliament. Yet, in this modern age, its antiquated structure, rooted in a bygone era of privilege and fixed social orders, has become an undeniable obstacle. The clamor for its abolition grows louder by the day, a demand for a unified, modern legislature that truly reflects the aspirations and dynamism of our evolving nation."
+ # sweden_flavor.13.f: "The sun sets on a bygone era of privilege, as Sweden prepares to embrace a new dawn of political modernity and genuine representation."
+ # sweden_flavor.13.a: "Forge a Modern Parliament!"
+
+ sweden_flavor.14.t: "The Timber Dilemma"
+ sweden_flavor.14.d: "The demand for timber across Europe continues to surge, and our vast forests provide a seemingly endless supply. Yet, many voices within our budding industrial class argue that merely exporting raw logs leaves much wealth on the table. They envision a future where Swedish timber is transformed into finished goods within our own borders, providing more jobs and greater returns."
+ sweden_flavor.14.f: "The very trees whisper of potential, but will we merely fell them or build with their bounty?"
+ sweden_flavor.14.a: "Focus on Raw Exports for now."
+ sweden_flavor.14.b: "Invest in Sawmills and Furniture Manufactories!"
+
+ # sweden_flavor.15.t: "Malmberget: The Arctic Iron Giant" 
+ # sweden_flavor.15.d: "Whispers from the desolate, frozen expanse of Lapland have solidified into a resounding truth: the mountains near Malmberget conceal an iron ore deposit of unparalleled scale and purity. This discovery promises not merely a mine, but a veritable mountain of 'iron gold' capable of supplying the demands of industrializing Europe for generations. However, the sheer remoteness and the harsh Arctic climate present immense challenges. Exploiting this treasure will require monumental investments in railways stretching across vast wilderness, advanced mining techniques, and the brave souls willing to carve a new society from the frozen north. Success could redefine Sweden's industrial future."
+ # sweden_flavor.15.f: "Where the Sami once roamed, the hammer of industry now calls."
+ # sweden_flavor.15.a: "Embark on the monumental task of developing Malmberget."
+
+ sweden_flavor.16.t: "Gothenburg: The Expanding Metropolis"
+ sweden_flavor.16.d: "Perched strategically on our western coast, Gothenburg has long been Sweden's vital link to the North Sea and the wider Atlantic world. With the relentless march of industrialization, the city has transformed into a bustling hub of commerce, shipbuilding, and a primary point of departure for countless Swedes seeking new lives abroad. Yet, the very success of Gothenburg strains its aging port infrastructure. Larger steamships demand deeper berths and longer quays, and the flow of goods and people necessitates expanded rail connections and customs facilities. Investing in its growth means solidifying our position as a major European trading power and facilitating the dreams of our emigrating population."
+ sweden_flavor.16.f: "The city's canals once echoed with Dutch tongues; now its docks resonate with the clamor of a globalizing world."
+ sweden_flavor.16.a: "Launch a major port expansion project in Gothenburg."
+
+ sweden_flavor.17.t: "Malmö: A City Forged in Industry"
+ sweden_flavor.17.d: "Located at the very tip of our southernmost province, Malmö has long been a vital link between Sweden and the European continent. As industrialization intensifies, the city is rapidly transforming from a provincial town into a powerful industrial engine. Its deep-water port, now connected to our burgeoning railway network via the Southern Main Line, is becoming an indispensable hub for both trade and heavy manufacturing, particularly in shipbuilding and engineering. The fertile farmlands of Scania feed its mills, and its proximity to the continent offers unparalleled access to markets. This rapid growth, however, demands foresight in urban planning, infrastructure, and labor management to ensure Malmö's prosperity endures."
+ sweden_flavor.17.f: "Where the Baltic meets the continent, the future of Swedish industry is being forged."
+ sweden_flavor.17.a: "Invest heavily in Malmö's industrial and farmland expansion."
+
+ sweden_flavor.18.t: "The Capital's New Face: Stockholm Rises"
+ sweden_flavor.18.d: "The ancient cobbled streets of Stockholm are giving way to grand boulevards and towering new buildings, as our capital experiences unprecedented growth and modernization. Engineers and architects are reimagining the city, planning for improved infrastructure like advanced sewage systems, public transportation, and expanded housing to accommodate a burgeoning population. This ambitious urban transformation promises to solidify Stockholm's place as a true European capital, a symbol of Swedish progress and prosperity. However, managing such rapid development also presents significant challenges: ensuring adequate housing for all, maintaining public health amidst density, and preserving the city's unique historical character."
+ sweden_flavor.18.f: "From the narrow alleys of Gamla Stan to the expansive new districts, the very stones of Stockholm whisper tales of a city ceaselessly reinventing itself."
+ sweden_flavor.18.a: "Invest in the Capital's Grand Design!"
+
+ sweden_flavor.19.t: "The Dynamite Breakthrough"
+ sweden_flavor.19.d: "A brilliant Swedish inventor, Alfred Nobel, has achieved a groundbreaking feat: the successful stabilization of nitroglycerine, leading to the invention of 'dynamite'. This powerful new explosive promises to revolutionize mining, construction, and even warfare, offering unprecedented efficiency in breaking rock and shaping landscapes. Its impact on our industries and military capabilities will be profound, accelerating progress in ways previously unimaginable."
+ sweden_flavor.19.f: "The earth trembles with the promise of a new era; excavation and demolition have just been redefined by Swedish ingenuity!"
+ sweden_flavor.19.a: "Embrace the Dynamite Revolution!"
+
+ sweden_flavor.20.t: "The Roar of the Mills: The Motala Strike"
+ sweden_flavor.20.d: "The Motala Verkstad, a symbol of Swedish industrial might, has been brought to a standstill. Workers, fed up with grueling hours, meager wages, and unsafe conditions, have laid down their tools, demanding fundamental improvements. This strike, an unprecedented display of organized labor, is quickly gaining support across the nation's industrial centers. How the government and factory owners respond will set a precedent for the future of labor relations in Sweden. Will we quell the dissent, or acknowledge the legitimate grievances of our industrial backbone?"
+ sweden_flavor.20.f: "The clang of hammers is replaced by the roar of discontent, as the working class finds its voice."
+ sweden_flavor.20.a: "Negotiate with the Strikers!"
+ sweden_flavor.20.b: "Break the Strike Forcefully!"
+
+ sweden_flavor.21.t: "The Träpatron's Dominion"
+ sweden_flavor.21.d: "As the timber industry booms in Norrland, a powerful new class of industrialist, the 'Träpatroner' (Timber Barons), has risen to prominence. These magnates, often acquiring vast tracts of forest and establishing entire company towns around their sawmills, wield immense influence over the economy and lives of thousands. Their efficient, often authoritarian, control drives unparalleled production and wealth, but their dominance also raises questions about labor conditions, local autonomy, and the concentration of power in the hands of a few formidable individuals."
+ sweden_flavor.21.f: "The smokestacks of their mills now cast long shadows over the northern landscape, symbols of their undeniable power."
+ sweden_flavor.21.a: "Acknowledge Their Indispensable Role!"
+
+ sweden_flavor.22.t: "The Sober Call: A Nation's Conscience Stirred"
+ sweden_flavor.22.d: "From the pulpits to the public squares, a powerful movement is sweeping across Sweden: the call for temperance. Advocates decry the devastating effects of alcohol on families, productivity, and moral fiber, urging for strict regulation or even prohibition. This moral crusade is particularly strong among the rural populace and the devout, but faces opposition from those who see it as an infringement on personal liberties or a threat to state revenue. The nation faces a choice between social reform and individual freedom."
+ sweden_flavor.22.f: "A sober gaze turns upon a society grappling with its vices, seeking a path to national betterment."
+ sweden_flavor.22.a: "Embrace the Temperance Cause!"
+ sweden_flavor.22.b: "Uphold Personal Liberties!"
+
+ sweden_flavor.23.t: "The Fires of Faith: Läsare Movement Resurgence"
+ sweden_flavor.23.d: "A wave of spiritual fervor is once again sweeping through parts of Sweden, particularly in rural and northern regions. The Läsare (Reader) Movement, with its emphasis on personal piety, direct interpretation of scripture, and lay preaching, is seeing a significant resurgence. This renewed religious zeal challenges the established authority of the State Church and can lead to the formation of new free churches or an increased focus on moralistic values. While it may strengthen the Devout, it could also cause friction within communities and pose questions about religious freedom and state control over faith."
+ sweden_flavor.23.f: "The Word of God burns bright in the hearts of the faithful, illuminating a path beyond the established order."
+ sweden_flavor.23.a: "Allow the Movement to Flourish!"
+ sweden_flavor.23.b: "Support the State Church's Authority!"
+
+ sweden_flavor.24.t: "The Grand Showcase: Stockholm's Exposition"
+ sweden_flavor.24.d: "Preparations are in full swing for the highly anticipated Stockholm Exhibition of 1897. This monumental event will transform Djurgården into a spectacular display of Swedish industrial prowess, artistic achievements, and technological advancements. Factories will exhibit their latest machinery, artists their finest works, and innovators their groundbreaking inventions. Beyond the domestic pride it instills, the exhibition serves as a crucial platform to attract foreign investment, stimulate trade, and enhance Sweden's international standing as a modern, progressive nation. The world will be watching to see what Sweden has to offer."
+ sweden_flavor.24.f: "The grand pavilions rise, filled with the hum of machinery and the vibrant hues of art, echoing a nation's proud declaration of progress and ambition."
+ sweden_flavor.24.a: "Open Our Doors to the World!"
+
+ sweden_flavor.25.t: "The Tinderbox Nation: Swedish Match Dominance"
+ sweden_flavor.25.d: "From humble workshops to sprawling factories, the Swedish matchstick industry is experiencing an unprecedented boom. Driven by innovative production methods, superior safety standards (especially the 'safety match' invention), and aggressive entrepreneurship, Swedish matches are rapidly gaining a global reputation for quality and reliability. Companies like Jönköpings Tändsticksfabrik are leading the charge, their products igniting markets across continents. This success promises to significantly boost light industry, create numerous jobs, and enhance Sweden's export revenue, cementing our reputation as a nation of ingenuity."
+ sweden_flavor.25.f: "A flicker of genius ignites an industrial fire, spreading Swedish innovation across the world."
+ sweden_flavor.25.a: "Capitalize on Our Advantage!"
+
+ sweden_flavor.26.t: "The Parish School Ordinance: Education for All"
+ sweden_flavor.26.d: "Sweden has long prided itself on its relatively high literacy rates, but education has often been inconsistent or limited to private means. Now, the Riksdag has passed the groundbreaking Parish School Ordinance of 1842, making it compulsory for every parish to establish and maintain a primary school. This foundational law marks Sweden's commitment to universal education, ensuring that every child, regardless of social standing, has access to basic schooling."
+ sweden_flavor.26.f: "The school bell rings across the land, calling every Swedish child to the path of knowledge."
+ sweden_flavor.26.a: "Enact the Ordinance!"
+
+ sweden_flavor.27.t: "The Guild Edict: Freeing Commerce"
+ sweden_flavor.27.d: "For centuries, the guild system has regulated trades and protected master craftsmen, but it has increasingly become a barrier to industrial growth and free competition. After decades of debate and pressure from liberal economic thinkers, the Guild Edict of 1846 has been adopted, effectively abolishing the last remnants of guild monopolies and opening up trades to all citizens."
+ sweden_flavor.27.f: "The chains of ancient privilege are broken, unleashing the full force of free enterprise."
+ sweden_flavor.27.a: "Abolish the Guilds!"
+
+ sweden_flavor.28.t: "The Poor Law: Centralizing Welfare"
+ sweden_flavor.28.d: "To address the growing problem of poverty and vagrancy in an industrializing society, Sweden has adopted a new Poor Law. This reform aims to standardize and centralize welfare efforts, shifting responsibility from individual parishes to broader municipal or county levels, and introducing more structured forms of aid, often including workhouses for the able-bodied. While designed to make poor relief more efficient and less arbitrary."
+ sweden_flavor.28.f: "The hand of the state offers relief, but with a firm grip and a watchful eye."
+ sweden_flavor.28.a: "Implement the Poor Law!"
+
+ sweden_flavor.29.t: "The Freedom of Trade and Industry Act: Economic Liberalization"
+ sweden_flavor.29.d: "Following the abolition of the guilds, Sweden takes another decisive step towards economic liberalization with the Freedom of Trade and Industry Act of 1864. This law removes most remaining restrictions on establishing and operating businesses, allowing for greater competition, innovation, and economic mobility. It is a cornerstone of a burgeoning free-market economy, attracting investment and stimulating industrial growth. However, it also means less protection for smaller businesses and artisans against larger, more competitive enterprises."
+ sweden_flavor.29.f: "The winds of economic liberty sweep across the land, clearing the path for boundless enterprise."
+ sweden_flavor.29.a: "Fully Liberalize Trade!"
+
+ sweden_flavor.30.t: "The Municipal Reform of: Local Self-Governance"
+ sweden_flavor.30.d: "To better manage local affairs and empower regional communities, Sweden has implemented the Municipal Reform of 1862. This comprehensive law grants significantly increased autonomy to municipalities (kommuner), allowing them greater control over local taxation, public services, and infrastructure development, independent of central government oversight."
+ sweden_flavor.30.f: "Power descends to the local hearths, allowing communities to forge their own destinies."
+ sweden_flavor.30.a: "Strengthen Local Autonomy!"
+
+ sweden_flavor.31.t: "Legalization of Trade Unions: Rights for Workers"
+ sweden_flavor.31.d: "After decades of informal organizing and often contentious industrial disputes, the Riksdag has finally passed legislation in 1889 officially legalizing trade unions. This landmark act grants workers the right to form and join unions, collectively bargain with employers, and conduct peaceful strikes without facing legal penalties. This is a monumental victory for the Proletariat and the burgeoning labor movement, giving them a powerful voice in their working conditions and wages, though it will undoubtedly increase pressure on industrial employers and alter the power dynamics in the workplace."
+ sweden_flavor.31.f: "The workers' voices, once isolated, now rise in a legally sanctioned chorus of collective demand."
+ sweden_flavor.31.a: "Recognize Workers' Rights!"
+
+ sweden_flavor.32.t: "The Old-Age Pension Law: A Pioneer in Social Security"
+ sweden_flavor.32.d: "Sweden has implemented the Old-Age Pension Law of 1913. This groundbreaking legislation establishes a national system of old-age pensions, providing financial support for the elderly regardless of their previous income or social status. This progressive step aims to alleviate poverty among the aged and provide a safety net for all citizens in their later years. While it sets a new standard for social welfare, it necessitates significant ongoing state funding and marks a substantial expansion of government responsibility for its citizens' well-being."
+ sweden_flavor.32.f: "The promise of dignity in old age shines bright, a beacon of a compassionate and forward-looking nation."
+ sweden_flavor.32.a: "Enact the National Pension!"
+
+ sweden_flavor.33.t: "The Women's Suffrage Act: Full Political Equality"
+ sweden_flavor.33.d: "After decades of tireless campaigning by the women's suffrage movement, supported by liberal and social democratic parties, the Riksdag has finally passed comprehensive legislation granting universal suffrage to women. This momentous act establishes full political equality between men and women, allowing all adult female citizens to vote and stand for election. It marks a profound transformation of Sweden's political landscape, doubling the electorate and bringing new perspectives to governance, solidifying Sweden as a leading nation in democratic rights."
+ sweden_flavor.33.f: "The ballot box welcomes all, as the voices of half the nation find their rightful place in democracy."
+ sweden_flavor.33.a: "Enact Women's Universal Suffrage!"
+
+ sweden_flavor.34.t: "The Right to Strike and Lockout Act: Labor's New Power"
+ sweden_flavor.34.d: "Building on the legalization of trade unions, the Riksdag has passed a pivotal law formally recognizing the right to strike for workers and the right to lockout for employers. This act establishes a legal framework for industrial disputes, acknowledging these as legitimate tools in labor relations. Empowering both labor and capital within a defined legal system and contributing to a more stable, albeit sometimes volatile, industrial landscape."
+ sweden_flavor.34.f: "The scales of industrial power tilt, balancing the rights of labor and capital under the law."
+ sweden_flavor.34.a: "Codify Strike & Lockout Rights!"
+
+ sweden_flavor.35.t: "The 'Folkskola' Revisions: Deepening Education"
+ sweden_flavor.35.d: "Building on the foundation of the 1842 Parish School Ordinance, further reforms have deepened the scope and quality of the 'Folkskola' (primary public school system). These revisions introduce longer school years, expanded curricula, and improved teacher training, aiming to provide a more thorough and equitable education for all. This continuous investment in human capital is vital for national competitiveness and social mobility, fostering a highly skilled and adaptable workforce for our age."
+ sweden_flavor.35.f: "The well of knowledge grows deeper, nurturing a more profound wisdom for every Swedish child."
+ sweden_flavor.35.a: "For The Future"
+
 # Denmark
  denmark_flavor.1.t: "Failure of Our Nation"
  denmark_flavor.1.d: "The loss of Scania, Norway and Schelswig-Holstein has caused a heavy blow to the Danish identity and now people are looking at all the territorial losses and wanting to look inwards on what should be done now. What should be done now is up to the government."

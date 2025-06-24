@@ -69,7 +69,7 @@ peoples_springtime_den.1 = {
 		scope:radical_ig = {
 			add_modifier = {
 				name = denmark_angered_peoples_spring
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -78,7 +78,7 @@ peoples_springtime_den.1 = {
 		default_option = yes
 		add_modifier = {
 			name = denmark_concessions_to_stave_off_masses
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 	}
 }
@@ -131,7 +131,7 @@ peoples_springtime_den.2 = {
 			leader = { set_ideology = ideology:ideology_radical 
 			add_modifier = {
 				name = revolutionary_hero
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 			}
 		}
@@ -145,7 +145,7 @@ peoples_springtime_den.2 = {
 			    set_ideology = ideology:ideology_radical
         	add_modifier = {
         		name = treasonous_traitor
-        		months = normal_modifier_time
+        		days = normal_modifier_time
         	}
 			}
         }
@@ -222,7 +222,7 @@ peoples_springtime_den.3 = {
 		scope:radical_ig = {
 			add_modifier = {
 				name = dissident_radical_faction
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 		}
 		default_option = yes
@@ -307,7 +307,7 @@ peoples_springtime_den.4 = {
 			}
 			add_modifier = {
 				name = spread_the_revolution
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 		}
 	}
@@ -320,7 +320,7 @@ peoples_springtime_den.4 = {
 			}
 			add_modifier = {
 				name = constrained_the_revolution
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 		}
 		default_option = yes

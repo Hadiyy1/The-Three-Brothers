@@ -290,3 +290,323 @@ swedish_restoration_of_the_military = {
 	
 	weight = 50
 }
+swedish_mortala_verkstad = {
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+		country_has_primary_culture = cu:swedish
+		owns_entire_state_region = STATE_SVEALAND
+	}
+
+	possible = {
+		has_technology_researched = mechanical_tools
+	}
+
+	complete = {
+		has_technology_researched = mechanical_tools
+		s:STATE_SVEALAND = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_tooling_workshops
+					level >= 4
+					occupancy > 0.50
+				}
+			}
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = sweden_flavor.7 }
+	}
+	weight = 100
+}
+swedish_glasriket = {
+	icon = "gfx/interface/icons/goods_icons/glass.dds"
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+		country_has_primary_culture = cu:swedish
+		owns_entire_state_region = STATE_GOTALAND
+	}
+
+	possible = {
+		has_technology_researched = crystal_glass
+	}
+
+	complete = {
+		has_technology_researched = crystal_glass
+		s:STATE_GOTALAND = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_glassworks
+					level >= 4
+					occupancy > 0.50
+				}
+			}
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = sweden_flavor.8 }
+	}
+	weight = 100
+}
+swedish_sundsvall_timber = {
+	icon = "gfx/interface/icons/goods_icons/wood.dds"
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+		country_has_primary_culture = cu:swedish
+		owns_entire_state_region = STATE_NORRLAND
+	}
+
+
+
+	complete = {
+		s:STATE_NORRLAND = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_logging_camp
+					level >= 6
+					occupancy > 0.50
+				}
+			}
+		}
+		s:STATE_NORRLAND = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_furniture_manufacturies
+					level >= 1
+					occupancy > 0.50
+				}
+			}
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = sweden_flavor.9 }
+		add_journal_entry = {
+			type = swedish_timber_export
+		}
+	}
+	weight = 100
+}
+swedish_gothenburg_port_expansion = {
+	icon = "gfx/interface/icons/invention_icons/urbanization.dds"
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+	    owns_entire_state_region = STATE_GOTALAND
+		country_has_primary_culture = cu:swedish
+	}
+
+	possible = {
+		has_technology_researched = railways
+		s:STATE_GOTALAND = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_urban_center
+					level >= 4
+				}
+			}
+		}
+	}
+
+	complete = {
+		has_technology_researched = railways
+		s:STATE_GOTALAND = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_urban_center
+					level >= 5
+				}
+			}
+		}
+		
+	}
+	
+	on_complete = {
+		trigger_event = { id = sweden_flavor.16 }
+	}
+	weight = 100
+}
+
+swedish_malmo_industrial_boom = {
+	icon = "gfx/interface/icons/invention_icons/urbanization.dds"
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+	    owns_entire_state_region = STATE_SCANIA
+		country_has_primary_culture = cu:swedish
+	}
+
+	possible = {
+		has_technology_researched = railways
+		s:STATE_SCANIA = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_urban_center
+					level >= 4
+				}
+			}
+		}
+	}
+
+	complete = {
+		has_technology_researched = railways
+		s:STATE_SCANIA = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_urban_center
+					level >= 5
+				}
+			}
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = sweden_flavor.17 }
+	}
+	weight = 100
+}
+
+swedish_stockholm_urban_growth = {
+	icon = "gfx/interface/icons/invention_icons/urbanization.dds"
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+	    owns_entire_state_region = STATE_SVEALAND
+		country_has_primary_culture = cu:swedish
+	}
+
+	possible = {
+		has_technology_researched = railways
+		s:STATE_SVEALAND = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_urban_center
+					level >= 8
+				}
+			}
+		}
+	}
+
+	complete = {
+		has_technology_researched = railways
+		s:STATE_SVEALAND = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_urban_center
+					level >= 10
+				}
+			}
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = sweden_flavor.18 }
+	}
+	weight = 100
+}
+swedish_timber_export = {
+	icon = "gfx/interface/icons/goods_icons/wood.dds"
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+
+	}
+
+	complete = {
+		s:STATE_NORRLAND = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_logging_camp
+					level >= 9
+					occupancy > 0.50
+				}
+			}
+		}
+	}
+
+
+	
+	on_complete = {
+		trigger_event = { id = sweden_flavor.14 }
+	}
+
+	
+	weight = 100
+}
+
+swedish_folkhemmet = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+	    exists = c:SWE
+		c:SWE = THIS
+		country_has_primary_culture = cu:swedish
+	}
+
+	possible = {
+		NOT = {
+			has_law = law_type:law_no_social_security
+		}
+	}
+
+	complete = {
+		institution_investment_level = {
+			institution = institution_social_security
+			value = 3
+		}
+	
+	}
+	on_complete = {
+		trigger_event = { id = sweden_flavor.12 }
+	}
+	weight = 100
+}
+
+swedish_iron_industry = {
+	icon = "gfx/interface/icons/goods_icons/prestige_goods/swedish_bar_iron_prestige.dds"
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+	    exists = c:SWE
+		c:SWE = THIS
+		country_has_primary_culture = cu:swedish
+	}
+
+	possible = {
+		has_technology_researched = mechanical_tools
+	}
+
+	complete = {
+		has_technology_researched = watertube_boiler
+		has_technology_researched = bessemer_process
+		s:STATE_SVEALAND = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_iron_mine
+					level >= 8
+					occupancy > 0.75
+				}
+			}
+		}
+		s:STATE_NORRLAND = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_iron_mine
+					level >= 4
+					occupancy > 0.50
+				}
+			}
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = sweden_flavor.11 }
+	}
+	weight = 100
+}

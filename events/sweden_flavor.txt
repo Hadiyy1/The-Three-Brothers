@@ -19,7 +19,7 @@ sweden_flavor.1 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	option = {
 		name = sweden_flavor.1.a
@@ -30,7 +30,7 @@ sweden_flavor.1 = {
 		remove_modifier = sweden_land_based_taxation_policies
 		add_modifier = {
 			name = sweden_compromise_over_army
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		every_interest_group = {
 			limit = {
@@ -43,7 +43,7 @@ sweden_flavor.1 = {
 			}
 			add_modifier = {
 				name = sweden_unity_behind_new_policies
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 		}
 	}
@@ -62,7 +62,7 @@ sweden_flavor.1 = {
 			}
 			add_modifier = {
 				name = sweden_no_compromise_for_army
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		add_radicals = {
@@ -91,7 +91,7 @@ sweden_flavor.2 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	option = {
 		name = sweden_flavor.2.a
@@ -124,13 +124,13 @@ sweden_flavor.3 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	option = {
 		name = sweden_flavor.3.a
 		add_modifier = {
 			name = sweden_spirit_of_free_trade
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 }
@@ -154,13 +154,13 @@ sweden_flavor.4 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	option = {
 		name = sweden_flavor.4.a
 		add_modifier = {
 			name = sweden_spirit_of_protectionism
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 }
@@ -190,14 +190,14 @@ sweden_flavor.5 = {
 		}
 	}
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	option = {
 		name = sweden_flavor.5.a
 		ig:ig_rural_folk = {
 			add_modifier = {
 				name = sweden_rise_of_awareness
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 		}
 	}
@@ -222,7 +222,7 @@ sweden_flavor.6 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	trigger = {
 		in_election_campaign = yes
@@ -240,5 +240,1236 @@ sweden_flavor.6 = {
 		ig:ig_rural_folk = {
 			party = { add_momentum = momentum_small }
 		}
+	}
+}
+
+sweden_flavor.7 = {
+	type = country_event
+
+	title = sweden_flavor.7.t
+	desc = sweden_flavor.7.d
+	flavor = sweden_flavor.7.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+
+	trigger = {
+		
+	}
+
+	immediate = {
+        S:STATE_SVEALAND = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						OR = {
+							c:SWE = THIS
+							c:SCA = THIS	
+						}
+						
+					}
+				}
+				save_scope_as = svea_state
+			}
+		}
+		set_variable = mortala_verkstad
+	}
+
+	placement = scope:svea_state
+
+	option = {
+		name = sweden_flavor.7.a
+		default_option = yes
+		scope:svea_state = {
+		    add_modifier = {
+				name = sweden_mortala_verkstad
+				years = 20
+			}
+		}
+	}
+}
+
+sweden_flavor.8 = {
+	type = state_event
+
+	title = sweden_flavor.8.t
+	desc = sweden_flavor.8.d
+	flavor = sweden_flavor.8.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+        s:STATE_GOTALAND = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						OR = {
+							c:SWE = THIS
+							c:SCA = THIS	
+						}
+						
+					}
+				}
+				save_scope_as = gotaland_state
+			}
+		}
+	}
+
+	placement = scope:gotaland_state
+
+	option = {
+		name = sweden_flavor.8.a
+		default_option = yes
+		scope:gotaland_state = {
+		    add_modifier = {
+				name = sweden_good_glass_quality
+				years = 20
+			}
+		}
+	}
+}
+
+sweden_flavor.9 = {
+	type = state_event
+
+	title = sweden_flavor.9.t
+	desc = sweden_flavor.9.d
+	flavor = sweden_flavor.9.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+        s:STATE_NORRLAND = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						OR = {
+							c:SWE = THIS
+							c:SCA = THIS	
+						}
+						
+					}
+				}
+				save_scope_as = norrland_state
+			}
+		}
+	}
+
+	placement = scope:norrland_state
+
+	option = {
+		name = sweden_flavor.9.a
+		default_option = yes
+		scope:norrland_state = {
+		    add_modifier = sweden_sundsvall_timber
+			
+		}
+	}
+}
+
+sweden_flavor.10 = {
+	type = country_event
+
+	title = sweden_flavor.10.t
+	desc = sweden_flavor.10.d
+	flavor = sweden_flavor.10.f
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sweden_flavor.10.a
+		default_option = yes	
+		add_modifier = {
+			name = sweden_retake_finland
+			years = 10
+		}
+		add_loyalists = {
+			value = 0.2
+		}
+		s:STATE_INGRIA = {
+			add_claim = ROOT
+		}
+		s:STATE_TALINN = {
+			add_claim = ROOT
+		}
+		s:STATE_COURLAND = {
+			add_claim = ROOT
+		}
+		s:STATE_RIGA = {
+			add_claim = ROOT
+		}
+		s:STATE_TARTU = {
+			add_claim = ROOT
+		}
+
+	}
+}
+
+sweden_flavor.11 = {
+	type = state_event
+
+	title = sweden_flavor.11.t
+	desc = sweden_flavor.11.d
+	flavor = sweden_flavor.11.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+		S:STATE_SVEALAND = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						OR = {
+							c:SWE = THIS
+							c:SCA = THIS	
+						}
+						
+					}
+				}
+				save_scope_as = svea_state
+			}
+		}
+		s:STATE_NORRLAND = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						OR = {
+							c:SWE = THIS
+							c:SCA = THIS	
+						}
+						
+					}
+				}
+				save_scope_as = norrland_state
+			}
+		}
+	}
+
+	placement = scope:svea_state
+
+	option = {
+		name = sweden_flavor.11.a
+		default_option = yes
+		scope:svea_state = {
+		    add_modifier = {
+				name = sweden_iron_production
+				years = 10
+			}
+		}
+		scope:norrland_state = {
+		    add_modifier = {
+				name = sweden_iron_production
+				years = 5
+			}
+			add_modifier = {
+				name = sweden_railway_development
+				years = 3
+			}
+		}
+		c:SWE = {
+			add_technology_progress = {
+				technology = open_hearth_process
+				progress = 10000
+			}
+		}
+	}
+}
+
+sweden_flavor.12 = {
+	type = country_event
+
+	title = sweden_flavor.12.t
+	desc = sweden_flavor.12.d
+	flavor = sweden_flavor.12.f
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = sweden_flavor.12.a
+		default_option = yes
+		add_modifier = sweden_folkhemmet
+		add_loyalists = {
+			value = 0.1
+		}
+	}
+}
+
+sweden_flavor.13 = {
+	type = country_event
+
+	title = sweden_flavor.13.t
+	desc = sweden_flavor.13.d
+	flavor = sweden_flavor.13.f
+
+	event_image = {
+		video = "europenorthamerica_rich_and_poor"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = sweden_flavor.13.a
+		default_option = yes
+		add_modifier = {
+			name = sweden_abolish_estates
+			years = 5
+		}
+	}
+}
+
+sweden_flavor.14 = {
+	type = country_event
+
+	title = sweden_flavor.14.t
+	desc = sweden_flavor.14.d
+	flavor = sweden_flavor.14.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = sweden_flavor.14.a
+		default_option = yes
+		add_modifier = {
+			name = sweden_timber_export
+			years = 3
+		}
+	}
+
+	option = {
+		name = sweden_flavor.14.b
+		add_modifier = {
+			name = sweden_increased_furniture_manufactories
+			years = 3
+		}
+	}
+}
+
+sweden_flavor.15 = {
+	type = state_event
+
+	title = sweden_flavor.15.t
+	desc = sweden_flavor.15.d
+	flavor = sweden_flavor.15.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+		s:STATE_NORRLAND = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						OR = {
+							c:SWE = THIS
+							c:SCA = THIS	
+						}
+						
+					}
+				}
+				save_scope_as = norrland_state
+			}
+		}
+	}
+
+	placement = scope:norrland_state
+
+	option = {
+		name = sweden_flavor.15.a
+		default_option = yes
+		scope:norrland_state = {
+		    add_modifier = {
+				name = sweden_iron_production
+				years = 5
+			}
+			add_modifier = {
+				name = sweden_railway_development
+				years = 3
+			}
+		}
+	}
+}
+
+sweden_flavor.16 = {
+	type = state_event
+
+	title = sweden_flavor.16.t
+	desc = sweden_flavor.16.d
+	flavor = sweden_flavor.16.f
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+        s:STATE_GOTALAND = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						OR = {
+							c:SWE = THIS
+							c:SCA = THIS	
+						}
+						
+					}
+				}
+				save_scope_as = gotaland_state
+			}
+		}
+	}
+
+	placement = scope:gotaland_state
+
+	option = {
+		name = sweden_flavor.16.a
+		default_option = yes
+		scope:gotaland_state = {
+		    add_modifier = sweden_gothenburg
+		}
+	}
+}
+
+sweden_flavor.17 = {
+	type = state_event
+
+	title = sweden_flavor.17.t
+	desc = sweden_flavor.17.d
+	flavor = sweden_flavor.17.f
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+        s:STATE_SCANIA = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						OR = {
+							c:SWE = THIS
+							c:SCA = THIS	
+						}
+						
+					}
+				}
+				save_scope_as = scania_state
+			}
+		}
+	}
+
+	placement = scope:scania_state
+
+	option = {
+		name = sweden_flavor.17.a
+		default_option = yes
+		scope:scania_state = {
+		    add_modifier = sweden_malmo
+		}
+	}
+}
+
+sweden_flavor.18 = {
+	type = state_event
+
+	title = sweden_flavor.18.t
+	desc = sweden_flavor.18.d
+	flavor = sweden_flavor.18.f
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+        s:STATE_SVEALAND = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						OR = {
+							c:SWE = THIS
+							c:SCA = THIS	
+						}
+						
+					}
+				}
+				save_scope_as = svea_state
+			}
+		}
+	}
+
+	placement = scope:svea_state
+
+	option = {
+		name = sweden_flavor.18.a
+		default_option = yes
+		scope:svea_state = {
+		    add_modifier = sweden_stockholm
+		}
+	}
+}
+sweden_flavor.19 = {
+	type = country_event
+
+	title = sweden_flavor.19.t
+	desc = sweden_flavor.19.d
+	flavor = sweden_flavor.19.f
+
+	event_image = {
+		video = "europenorthamerica_art_gallery"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		has_technology_researched = dynamite
+		NOT = {
+			has_variable = var_event_1
+		}
+	}
+
+	immediate = {
+		set_variable = var_event_1
+	}
+
+	option = {
+		name = sweden_flavor.19.a
+		default_option = yes
+		add_modifier = { 
+			name = sweden_nobel_dynamite
+			years = 10
+	}
+	}
+}
+
+sweden_flavor.20 = {
+	type = country_event
+
+	title = sweden_flavor.20.t
+	desc = sweden_flavor.20.d
+	flavor = sweden_flavor.20.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	duration = 3
+
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		has_variable = mortala_verkstad
+		has_technology_researched = labor_movement
+		NOT = {
+			has_variable = ttb_swe_var_event_2
+		}
+	}
+
+	immediate = {
+        S:STATE_SVEALAND = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						OR = {
+							c:SWE = THIS
+							c:SCA = THIS
+						}
+					}
+				}
+				save_scope_as = svea_state
+			}
+		}
+		set_variable = ttb_swe_var_event_2
+	}
+
+	placement = scope:svea_state
+
+	option = {
+		name = sweden_flavor.20.a
+		default_option = yes
+		scope:svea_state = {
+		    add_modifier = {
+				name = sweden_motala_strike
+				months = 6
+			}
+			add_loyalists = {
+				value = 0.1
+				pop_type = laborers
+			}
+		}
+	}
+
+	option = {
+		name = sweden_flavor.20.b
+		scope:svea_state = {
+		    add_modifier = {
+				name = sweden_motala_strike
+				months = 3
+			}
+			add_radicals = {
+				value = 0.1
+				pop_type = laborers
+			}
+		}
+	}
+}
+
+sweden_flavor.21 = {
+	type = country_event
+
+	title = sweden_flavor.21.t
+	desc = sweden_flavor.21.d
+	flavor = sweden_flavor.21.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		has_technology_researched = mutual_funds
+		NOT = {
+			has_variable = ttb_swe_var_event_3
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_swe_var_event_3
+	}
+
+	option = {
+		name = sweden_flavor.21.a
+		default_option = yes
+		add_modifier = {
+			name = sweden_trapatron
+			years = 10
+		}
+	}
+}
+
+sweden_flavor.22 = {
+	type = country_event
+
+	title = sweden_flavor.22.t
+	desc = sweden_flavor.22.d
+	flavor = sweden_flavor.22.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	duration = 3
+
+	trigger = {
+		has_technology_researched = fractional_distillation
+		NOT = {
+			has_variable = ttb_swe_var_event_4
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_swe_var_event_4
+	}
+
+	option = {
+		name = sweden_flavor.22.a
+		default_option = yes
+		add_modifier = {
+			name = sweden_temperance_revival
+			years = 3
+		}
+			add_radicals = {
+			value = 0.05
+		}
+	}
+	option = {
+		name = sweden_flavor.22.b
+		add_radicals = {
+			value = 0.1
+		}
+
+	}
+}
+
+sweden_flavor.23 = {
+	type = country_event
+
+	title = sweden_flavor.23.t
+	desc = sweden_flavor.23.d
+	flavor = sweden_flavor.23.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		NOT = {
+			has_law = law_type:law_religious_schools
+		}
+		NOT = {
+			has_variable = ttb_swe_var_event_5
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_swe_var_event_5
+	}
+
+	option = {
+		name = sweden_flavor.23.a
+		default_option = yes
+		add_modifier = {
+			name = sweden_lasare_movement
+			years = 4
+	    }
+	}
+	option = {
+		name = sweden_flavor.23.b
+			add_modifier = {
+			name = sweden_church_support
+			years = 4
+	    }
+
+	}
+}
+
+sweden_flavor.24 = {
+	type = country_event
+
+	title = sweden_flavor.24.t
+	desc = sweden_flavor.24.d
+	flavor = sweden_flavor.24.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		has_technology_researched = film
+		NOT = {
+			has_variable = ttb_swe_var_event_6
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_swe_var_event_6
+	}
+
+	option = {
+		name = sweden_flavor.6.a
+		default_option = yes
+		add_modifier = {
+			name = sweden_stockholm_exhibition
+			years = 10
+		}
+	}
+}
+
+sweden_flavor.25 = {
+	type = country_event
+
+	title = sweden_flavor.25.t
+	desc = sweden_flavor.25.d
+	flavor = sweden_flavor.25.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		has_technology_researched = improved_fertilizer
+		NOT = {
+			has_variable = ttb_swe_var_event_7
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_swe_var_event_7
+	}
+
+	option = {
+		name = sweden_flavor.25.a
+		default_option = yes
+		add_modifier = {
+			name = sweden_matchstick_boom
+			years = 10
+		}
+	}
+}
+
+sweden_flavor.26 = {
+	type = country_event
+
+	title = sweden_flavor.26.t
+	desc = sweden_flavor.26.d
+	flavor = sweden_flavor.26.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		has_law = law_type:law_public_schools
+		NOT = {
+			has_variable = ttb_swe_var_event_8
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_swe_var_event_8
+	}
+
+	option = {
+		name = sweden_flavor.26.a
+		default_option = yes
+	}
+}
+
+sweden_flavor.27 = {
+	type = country_event
+
+	title = sweden_flavor.27.t
+	desc = sweden_flavor.27.d
+	flavor = sweden_flavor.27.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		OR = {
+			has_law = law_type:law_free_trade
+			has_law = law_type:law_protectionism
+		}
+		
+		NOT = {
+			has_variable = ttb_swe_var_event_9
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_swe_var_event_9
+	}
+
+	option = {
+		name = sweden_flavor.27.a
+		default_option = yes
+	}
+}
+
+sweden_flavor.28 = {
+	type = country_event
+
+	title = sweden_flavor.28.t
+	desc = sweden_flavor.28.d
+	flavor = sweden_flavor.28.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		has_law = law_type:law_poor_laws
+		NOT = {
+			has_variable = ttb_swe_var_event_10
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_swe_var_event_10
+	}
+
+	option = {
+		name = sweden_flavor.28.a
+		default_option = yes
+	}
+}
+
+sweden_flavor.29 = {
+	type = country_event
+
+	title = sweden_flavor.29.t
+	desc = sweden_flavor.29.d
+	flavor = sweden_flavor.29.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		has_law = law_type:law_laissez_faire
+		NOT = {
+			has_variable = ttb_swe_var_event_11
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_swe_var_event_11
+	}
+
+	option = {
+		name = sweden_flavor.29.a
+		default_option = yes
+	}
+}
+
+sweden_flavor.30 = {
+	type = country_event
+
+	title = sweden_flavor.30.t
+	desc = sweden_flavor.30.d
+	flavor = sweden_flavor.30.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		has_law = law_type:law_elected_bureaucrats
+		NOT = {
+			has_variable = ttb_swe_var_event_12
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_swe_var_event_12
+	}
+
+	option = {
+		name = sweden_flavor.30.a
+		default_option = yes
+	}
+}
+
+sweden_flavor.31 = {
+	type = country_event
+
+	title = sweden_flavor.31.t
+	desc = sweden_flavor.31.d
+	flavor = sweden_flavor.31.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		has_law = law_type:law_regulatory_bodies
+		NOT = {
+			has_variable = ttb_swe_var_event_13
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_swe_var_event_13
+	}
+
+	option = {
+		name = sweden_flavor.31.a
+		default_option = yes
+	}
+}
+
+sweden_flavor.32 = {
+	type = country_event
+
+	title = sweden_flavor.32.t
+	desc = sweden_flavor.32.d
+	flavor = sweden_flavor.32.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		has_law = law_type:law_old_age_pension
+		NOT = {
+			has_variable = ttb_swe_var_event_14
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_swe_var_event_14
+	}
+
+	option = {
+		name = sweden_flavor.32.a
+		default_option = yes
+	}
+}
+
+sweden_flavor.33 = {
+	type = country_event
+
+	title = sweden_flavor.33.t
+	desc = sweden_flavor.33.d
+	flavor = sweden_flavor.33.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		has_law = law_type:law_womens_suffrage
+		NOT = {
+			has_variable = ttb_swe_var_event_16
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_swe_var_event_16
+	}
+
+	option = {
+		name = sweden_flavor.33.a
+		default_option = yes
+	}
+}
+
+sweden_flavor.34 = {
+	type = country_event
+
+	title = sweden_flavor.34.t
+	desc = sweden_flavor.34.d
+	flavor = sweden_flavor.34.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		has_law = law_type:law_worker_protections
+		NOT = {
+			has_variable = ttb_swe_var_event_17
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_swe_var_event_17
+	}
+
+	option = {
+		name = sweden_flavor.34.a
+		default_option = yes
+	}
+}
+
+sweden_flavor.35 = {
+	type = country_event
+
+	title = sweden_flavor.35.t
+	desc = sweden_flavor.35.d
+	flavor = sweden_flavor.35.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:swedish
+		has_law = law_type:law_compulsory_primary_school
+		has_law = law_type:law_public_schools
+		
+		NOT = {
+			has_variable = ttb_swe_var_event_18
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_swe_var_event_18
+	}
+
+	option = {
+		name = sweden_flavor.35.a
+		default_option = yes
 	}
 }

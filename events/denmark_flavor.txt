@@ -19,29 +19,29 @@ denmark_flavor.1 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	option = {
 		name = denmark_flavor.1.a
 		default_option = yes
 		add_modifier = {
 			name = denmark_national_humiliation
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 		add_modifier = {
 			name = denmark_focus_on_agriculture
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 	option = {
 		name = denmark_flavor.1.b
 		add_modifier = {
 			name = denmark_national_humiliation
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 		add_modifier = {
 			name = denmark_revanchism_modifier
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		hidden_effect = {
 			set_secret_goal = {
@@ -75,7 +75,7 @@ denmark_flavor.2 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	option = {
 		name = denmark_flavor.2.a
@@ -87,7 +87,7 @@ denmark_flavor.2 = {
 		}
 		add_modifier = {
 			name = denmark_unification_time
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 }
@@ -116,7 +116,7 @@ denmark_flavor.3 = {
 		c:HOL = { is_subject_of = ROOT }
 		NOT = { has_modifier = denmark_concessions_to_holstein }
 	}
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	option = {
 		name = denmark_flavor.3.a
@@ -126,7 +126,7 @@ denmark_flavor.3 = {
 		}
 		add_modifier = {
 			name = denmark_concessions_to_holstein
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 	}
 	option = {
@@ -172,7 +172,7 @@ denmark_flavor.4 = {
 			has_trait = imperious	# Just to make sure it's him, unlikely to occur otherwise
 		}
 	}
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	immediate = {
 		random_scope_character = {
@@ -252,7 +252,7 @@ denmark_flavor.5 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	immediate = {
 		c:SCH = {
@@ -394,7 +394,7 @@ denmark_flavor.6 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	immediate = {
 	    # sss
@@ -437,7 +437,7 @@ denmark_flavor.7 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	option = {
 		name = denmark_flavor.7.a
@@ -473,14 +473,14 @@ denmark_flavor.8 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	option = {
 		name = denmark_flavor.8.a
 		default_option = yes
 		add_modifier = {
 			name = denmark_victory_in_first_war
-			months = normal_modifier_time
+			days = normal_modifier_time
 			multiplier = 2.5
 		}
 	}
@@ -502,7 +502,7 @@ denmark_flavor.9 = {
 	
 	duration = 3
 	
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	option = {
 		name = denmark_flavor.9.a
