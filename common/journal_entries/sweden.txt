@@ -320,6 +320,7 @@ swedish_mortala_verkstad = {
 		trigger_event = { id = sweden_flavor.7 }
 	}
 	weight = 100
+	should_be_pinned_by_default = yes
 }
 swedish_glasriket = {
 	icon = "gfx/interface/icons/goods_icons/glass.dds"
@@ -351,6 +352,7 @@ swedish_glasriket = {
 		trigger_event = { id = sweden_flavor.8 }
 	}
 	weight = 100
+	should_be_pinned_by_default = yes
 }
 swedish_sundsvall_timber = {
 	icon = "gfx/interface/icons/goods_icons/wood.dds"
@@ -391,6 +393,7 @@ swedish_sundsvall_timber = {
 		}
 	}
 	weight = 100
+	should_be_pinned_by_default = yes
 }
 swedish_gothenburg_port_expansion = {
 	icon = "gfx/interface/icons/invention_icons/urbanization.dds"
@@ -537,6 +540,7 @@ swedish_timber_export = {
 
 	
 	weight = 100
+	should_be_pinned_by_default = yes
 }
 
 swedish_folkhemmet = {
@@ -566,6 +570,7 @@ swedish_folkhemmet = {
 		trigger_event = { id = sweden_flavor.12 }
 	}
 	weight = 100
+	should_be_pinned_by_default = yes
 }
 
 swedish_iron_industry = {
@@ -609,4 +614,5 @@ swedish_iron_industry = {
 		trigger_event = { id = sweden_flavor.11 }
 	}
 	weight = 100
+	should_be_pinned_by_default = yes
 }

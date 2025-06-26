@@ -1,4 +1,4 @@
-BUILDINGS={
+﻿BUILDINGS={
     s:STATE_GREENLAND={
 		region_state:DEN={
 		    create_building={

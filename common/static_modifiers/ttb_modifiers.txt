@@ -24,7 +24,7 @@ denmark_unification_time = {
 	country_loyalism_increases_open_prejudice_mult = 0.1
 	country_loyalism_increases_violent_hostility_mult = 0.1
 	country_loyalism_increases_second_rate_citizen_mult = 0.1
-	country_loyalism_increases_full_acceptance_citizen_mult = 0.1
+	country_loyalism_increases_full_acceptance_mult = 0.1
 }
 denmark_concessions_to_holstein = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
@@ -39,7 +39,7 @@ denmark_angered_peoples_spring = {
 denmark_concessions_to_stave_off_masses = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	country_prestige_mult = -0.1
-	political_movement_support_add = 0.2
+	state_pop_support_movement_radical_mult = 0.2
 	state_radicals_from_political_movements_mult = -0.1
 }
 denmark_victory_in_first_war = {
@@ -75,13 +75,13 @@ sweden_lantmannapartiet = {
 
 sweden_spirit_of_free_trade = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	country_trade_route_competitiveness_mult = 0.25
+	state_export_advantage_mult = 0.2
 	country_tech_spread_mult = 0.05
 }
 sweden_spirit_of_protectionism = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	country_authority_mult = 0.1
-	tariff_export_add = 0.05
+	state_import_advantage_mult = 0.25
 }
 
 sweden_compromise_over_army = {
@@ -288,7 +288,7 @@ finland_the_strife_over_language = {
 }
 finland_language_question_solved = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	country_society_weekly_innovation_mult = 0.25
+	country_society_tech_research_speed_mult = 0.25
 	state_assimilation_mult = 0.1
 }
 finland_language_question_unsolved = {
@@ -405,7 +405,7 @@ focus_on_integration = {
 	country_loyalism_increases_open_prejudice_mult = 0.15
 	country_loyalism_increases_violent_hostility_mult = 0.15
 	country_loyalism_increases_second_rate_citizen_mult = 0.15
-	country_loyalism_increases_full_acceptance_citizen_mult = 0.15
+	country_loyalism_increases_full_acceptance_mult = 0.15
 }
 
 focus_on_power = {
@@ -426,7 +426,7 @@ focus_on_economy = {
 	building_throughput_add = 0.1
 	country_minting_mult = 0.1
 	country_loan_interest_rate_mult = -0.25
-	country_trade_route_competitiveness_mult = 0.35
+	state_trade_advantage_mult = 0.1
 	country_max_companies_add = 1
 }
 

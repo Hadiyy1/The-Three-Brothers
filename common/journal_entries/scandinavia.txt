@@ -32,7 +32,7 @@ scandinavian_pan_nationalism = {
 		any_primary_culture = {
 			has_discrimination_trait = scandinavian_culture_group
 		}
-		NOT = { has_global_variable = nordic_pan_nationalism_var }
+		NOT = { has_variable = scandinavism_starts }
 	}
 	
 	possible = {
