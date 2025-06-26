@@ -3,6 +3,12 @@ denmark_return_of_danish_dominance = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 	
 	group = je_group_historical_content
+
+	immediate = {
+		root = { save_scope_as = den_scope }
+		c:HOL ?= { save_scope_as = hol_scope }
+		c:SCH ?= { save_scope_as = sch_scope }
+	}
 	
 	is_shown_when_inactive = {
 		exists = c:DEN

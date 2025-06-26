@@ -41,8 +41,9 @@
  je_form_scandinavia_reason: "For far too long have we been divided, it is time to unify Scandinavia once and for all."
  has_formed_sca: "Form #yellow Scandinavia#!"
  
- denmark_return_of_danish_dominance: "Return of Danish Dominance"
- denmark_return_of_danish_dominance_reason: "The people in Holstein has avoided to be integrated properly into Danish society for years, even opposing some of our new policies due to differences between how they consider the rule should occur."
+ denmark_return_of_danish_dominance: "The Unitary State"
+ denmark_return_of_danish_dominance_reason: "The [SCOPE.sCountry('den_scope').GetAdjectiveNoFormatting] realm is a royal personal union comprised of the crown of #yellow the Kingdom of #! [SCOPE.sCountry('den_scope').GetName], and the southern fiefs of #yellow the Duchy of #! [SCOPE.sCountry('sch_scope').GetName] and #yellow the Duchy of #! [SCOPE.sCountry('hol_scope').GetName]. Together, it is called #O the Unitary State#!.\n\nHowever, it is far from culturally unitary. While chiefly Danish in the rest of the realm, Germans are the predominant ethnicity in Schleswig-Holstein. Additionally, the more-or-less defunct German Confederation continues to claim that Holstein is part of it.\n\nAs a result of this situation, #O the Unitary State #!is entangled in #O the Schleswig-Holstein Question#!."
+ denmark_return_of_danish_dominance_status: "Domestic aspirations to preserve and consolidate the Unitary State, faced with German ambitions to unify the German lands, will no doubt bring things to a head..."
  has_no_control_over_holstein_or_scania: "Has lost all control over Schelswig-Holstein and Scania."
  je_springtime_of_the_peoples_den: "Springtime of the Peoples"
  je_springtime_of_the_peoples_den_reason: "The call for liberal revolution is spreading throughout Denmark."
