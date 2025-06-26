@@ -1,0 +1,9 @@
+﻿owns_the_lands_of_schelswig_and_holstein = {
+	p:x804160 = { owner = root } 
+	p:x64824C = { owner = root } 
+	p:xE000A0 = { owner = root } 
+	p:x00C060 = { owner = root } 
+	p:x78B203 = { owner = root } 
+	p:xE3C876 = { owner = root } 
+	p:xBFCC21 = { owner = root } 
+}
