@@ -23,7 +23,7 @@ finland_fennoman_movement = {
 		show_as_tooltip = {
 			add_modifier = {
 				name = finland_language_question_solved
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 			add_loyalists = {
 				culture = cu:finnish
