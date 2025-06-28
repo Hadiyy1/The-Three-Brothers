@@ -426,22 +426,6 @@ sweden_flavor.10 = {
 		add_loyalists = {
 			value = 0.2
 		}
-		s:STATE_INGRIA = {
-			add_claim = ROOT
-		}
-		s:STATE_TALINN = {
-			add_claim = ROOT
-		}
-		s:STATE_COURLAND = {
-			add_claim = ROOT
-		}
-		s:STATE_RIGA = {
-			add_claim = ROOT
-		}
-		s:STATE_TARTU = {
-			add_claim = ROOT
-		}
-
 	}
 }
 
