@@ -393,7 +393,6 @@ swedish_sundsvall_timber = {
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
 }
 swedish_gothenburg_port_expansion = {
 	icon = "gfx/interface/icons/invention_icons/urbanization.dds"
@@ -615,4 +614,27 @@ swedish_iron_industry = {
 	}
 	weight = 100
 	should_be_pinned_by_default = yes
+}
+
+swedish_retake_finland = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_foreign_affairs
+
+	is_shown_when_inactive = {
+		country_has_primary_culture = cu:swedish
+	}
+
+	complete = {
+		owns_entire_state_region = STATE_ALAND
+		owns_entire_state_region = STATE_UUSIMAA
+		owns_entire_state_region = STATE_OSTROBOTHNIA
+		owns_entire_state_region = STATE_OULU
+		owns_entire_state_region = STATE_KUOPIO
+		owns_entire_state_region = STATE_WEST_KARELIA
+	}
+	
+	on_complete = {
+		trigger_event = { id = sweden_flavor.10 }
+	}
+	weight = 100
 }
