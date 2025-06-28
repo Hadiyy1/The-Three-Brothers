@@ -3,6 +3,12 @@ denmark_return_of_danish_dominance = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 	
 	group = je_group_historical_content
+
+	immediate = {
+		root = { save_scope_as = den_scope }
+		c:HOL ?= { save_scope_as = hol_scope }
+		c:SCH ?= { save_scope_as = sch_scope }
+	}
 	
 	is_shown_when_inactive = {
 		exists = c:DEN
@@ -15,13 +21,17 @@ denmark_return_of_danish_dominance = {
 	}
 	
 	complete = {
-		cu:north_german = {
-			culture_secession_progress = {
-				target = ROOT
-				value < 0.33
-			}
+		custom_tooltip = {
+			text = je_danish_unitary_state_complete_trigger_tt
+			
+			owns_the_lands_of_schelswig_and_holstein = yes
+			
+			NOT = { exists = c:HOL }
+			NOT = { exists = c:SCH }
+			
+			is_at_war = no
+			is_diplomatic_play_committed_participant = no
 		}
-		owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
 	}
 	
 	on_complete = {
@@ -34,7 +44,7 @@ denmark_return_of_danish_dominance = {
 			}
 			add_modifier = {
 				name = denmark_unification_time
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -349,7 +359,7 @@ je_springtime_of_the_peoples_den = {
 		}
 		set_variable = {
 			name = completed_peoples_stringtime_recent
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 		trigger_event = { id = peoples_springtime.7 }
 	}
@@ -394,7 +404,7 @@ je_springtime_of_the_peoples_den = {
 		}
 		set_variable = {
 			name = completed_peoples_stringtime_recent
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 		trigger_event = { id = peoples_springtime.8 }
 	}

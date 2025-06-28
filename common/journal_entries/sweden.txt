@@ -23,7 +23,7 @@ swedish_the_rise_of_lantmanna_partiet = {
 		ig:ig_rural_folk = {
 			add_modifier = {
 				name = sweden_farmers_organising
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 		}
 		set_variable = {
