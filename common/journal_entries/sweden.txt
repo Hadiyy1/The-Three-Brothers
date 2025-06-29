@@ -116,7 +116,7 @@ swedish_champions_of_national_defence = {
 			is_in_government = yes
 			OR = {
 				has_ideology = ideology:ideology_nordic_particularist
-				leader = { has_ideology = ideology:ideology_jingoist_leader }
+				has_ideology = ideology:ideology_jingoist
 			}
 		}
 	}
@@ -276,11 +276,7 @@ swedish_restoration_of_the_military = {
 			has_law = law_type:law_peasant_levies
 		}
 		OR = {
-			has_technology_researched = wargaming
-			AND = {
-				has_technology_researched = military_statistics
-				is_at_war = yes
-			}
+			has_technology_researched = enlistment_offices
 		}
 	}
 	
@@ -289,6 +285,7 @@ swedish_restoration_of_the_military = {
 	}
 	
 	weight = 50
+	should_be_pinned_by_default = yes
 }
 swedish_mortala_verkstad = {
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
@@ -632,6 +629,26 @@ swedish_retake_finland = {
 	
 	on_complete = {
 		trigger_event = { id = sweden_flavor.10 }
+		add_journal_entry = {
+			type = swedish_reklam_the_eastern_land
+		}
+	}
+	weight = 100
+}
+
+swedish_reklam_the_eastern_land = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_foreign_affairs
+
+	complete = {
+		owns_entire_state_region = STATE_INGRIA
+		owns_entire_state_region = STATE_TALINN
+		owns_entire_state_region = STATE_RIGA
+		owns_entire_state_region = STATE_TARTU
+	}
+	
+	on_complete = {
+		trigger_event = { id = sweden_flavor.37 }
 	}
 	weight = 100
 }

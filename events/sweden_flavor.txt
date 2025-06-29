@@ -1469,7 +1469,7 @@ sweden_flavor.36 = {
 		video = "europenorthamerica_capitalists_meeting"
 	}
 
-	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
 	duration = 3
 
@@ -1516,5 +1516,37 @@ sweden_flavor.36 = {
 			
 		}
 	
+	}
+}
+
+sweden_flavor.37 = {
+	type = country_event
+
+	title = sweden_flavor.37.t
+	desc = sweden_flavor.37.d
+	flavor = sweden_flavor.37.f
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sweden_flavor.37.a
+		default_option = yes	
+		add_loyalists = {
+			value = 0.1
+		}
 	}
 }

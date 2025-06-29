@@ -216,6 +216,11 @@
  sweden_flavor.36.a: "Begin the Rebuilding of Stone!"
  sweden_sundsvall_fire: "Sundsvalls Rebirth"
 
+ sweden_flavor.37.t: "The Eastern Reclaimed"
+ sweden_flavor.37.d: "The chapter of loss, opened by the Treaty of Nystad in 1721, has finally closed. What was for centuries a pipe dream the return of our eastern territories is now a tangible reality. With the decisive actions of our forces, the region has been secured, and our administrators are already working to seamlessly integrate these vital provinces back into the Swedish realm. The yearning of generations has been fulfilled, re-establishing our rightful and strong presence on the Baltic's eastern shores."
+ sweden_flavor.37.f: "The Baltic no longer divides us from what is rightfully ours; it now binds us to a new future."
+ sweden_flavor.37.a: "A New Dawn for the East!"
+
 # Denmark
  denmark_flavor.1.t: "Failure of Our Nation"
  denmark_flavor.1.d: "The loss of Scania, Norway and Schelswig-Holstein has caused a heavy blow to the Danish identity and now people are looking at all the territorial losses and wanting to look inwards on what should be done now. What should be done now is up to the government."
