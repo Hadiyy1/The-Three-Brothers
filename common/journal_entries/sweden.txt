@@ -531,13 +531,10 @@ swedish_timber_export = {
 		}
 	}
 
-
-	
 	on_complete = {
 		trigger_event = { id = sweden_flavor.14 }
 	}
 
-	
 	weight = 100
 	should_be_pinned_by_default = yes
 }

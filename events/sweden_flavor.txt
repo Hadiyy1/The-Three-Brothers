@@ -1457,3 +1457,64 @@ sweden_flavor.35 = {
 		default_option = yes
 	}
 }
+
+sweden_flavor.36 = {
+	type = country_event
+
+	title = sweden_flavor.36.t
+	desc = sweden_flavor.36.d
+	flavor = sweden_flavor.36.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	trigger = {
+		AND = {
+			game_date >= 1888
+			NOT = {
+				has_variable = ttb_swe_var_event_36
+			}
+		}
+	}
+
+	immediate = {
+		s:STATE_NORRLAND = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						OR = {
+							c:SWE = THIS
+							c:SCA = THIS
+						}
+
+					}
+				}
+				save_scope_as = norrland_state
+			}
+		}
+		set_variable = ttb_swe_var_event_36
+	}
+
+	placement = scope:norrland_state
+
+	option = {
+		name = sweden_flavor.36.a
+		default_option = yes
+		scope:norrland_state = {
+			remove_modifier = sweden_sundsvall_timber
+			if = {
+				limit = {
+					NOT = {has_modifier = sweden_sundsvall_fire}
+				}
+				add_modifier = sweden_sundsvall_fire
+			}
+			
+		}
+	
+	}
+}

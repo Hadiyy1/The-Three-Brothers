@@ -31,5 +31,6 @@ sweden_monthly_pulse = {
         sweden_flavor.33
         sweden_flavor.34
         sweden_flavor.35
+        sweden_flavor.36
 	}
 }

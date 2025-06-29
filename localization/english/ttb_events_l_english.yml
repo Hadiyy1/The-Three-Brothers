@@ -210,6 +210,12 @@
  sweden_flavor.35.f: "The well of knowledge grows deeper, nurturing a more profound wisdom for every Swedish child."
  sweden_flavor.35.a: "For The Future"
 
+ sweden_flavor.36.t: "Sundsvall in Flames: A City Reborn"
+ sweden_flavor.36.d: "On a sweltering July day in 1888, disaster struck the bustling timber capital of Sundsvall. A spark, fanned by strong winds, ignited the city's predominantly wooden structures, leading to a cataclysmic inferno that consumed nearly every building. The roar of the blaze, coupled with the screams of the displaced, turned the prosperous city into a smoldering ruin almost overnight. Now, amidst the devastation, a monumental task lies ahead: to rebuild. The tragedy presents a unique opportunity to construct a new, modern city – a 'Stone City' of brick and stone, designed with wider streets and fire-resistant materials, ensuring that Sundsvall rises stronger and safer from its ashes."
+ sweden_flavor.36.f: "The smoke may still linger, but from the charred remains, the blueprint for a resilient and modern Sundsvall is already being drawn."
+ sweden_flavor.36.a: "Begin the Rebuilding of Stone!"
+ sweden_sundsvall_fire: "Sundsvalls Rebirth"
+
 # Denmark
  denmark_flavor.1.t: "Failure of Our Nation"
  denmark_flavor.1.d: "The loss of Scania, Norway and Schelswig-Holstein has caused a heavy blow to the Danish identity and now people are looking at all the territorial losses and wanting to look inwards on what should be done now. What should be done now is up to the government."
