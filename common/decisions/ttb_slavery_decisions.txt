@@ -27,10 +27,8 @@
 		in_default = no
 		ig:ig_intelligentsia = {
 			OR = {
-				is_powerful = yes
 				is_in_government = yes
 			}
-			ig_clout >= 0.15
 		}
 	}
 	
@@ -39,7 +37,7 @@
 		activate_law = law_type:law_slavery_banned
 		add_modifier = {
 			name = nordic_ban_of_slavery
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 	}
 
