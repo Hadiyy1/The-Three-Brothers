@@ -302,3 +302,36 @@ scandinavia_flavor.5 = {
 		}
 	}
 }
+
+# Scandinavian Pan-Nationalism random events
+scandinavia_flavor.6 = {
+	type = country_event
+
+	title = scandinavia_flavor.6.t
+	desc = scandinavia_flavor.6.d
+	flavor = scandinavia_flavor.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = scandinavia_flavor.6.a
+		default_option = yes
+	}
+
+	option = {
+		name = scandinavia_flavor.6.b
+		default_option = yes
+	}
+}

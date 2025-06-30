@@ -29,6 +29,12 @@
  scandinavia_flavor.5.b: "We must expand our power base rapidly!"
  scandinavia_flavor.5.c: "A great economy signifies a great nation."
 
+ scandinavia_flavor.6.t: "The Lund Meetings: A Seedbed of Unity"
+ scandinavia_flavor.6.d: "In the vibrant intellectual heart of #yellow Lund#!, a new kind of gathering has become increasingly common: informal meetings between #yellow Swedish and Danish#! writers and students. Due to #light_green Scania's#! close geographic ties to #yellow Denmark#!, these discussions naturally drift towards the concept of #yellow Pan-Scandinavianism#!, exploring shared cultural heritage. These assemblies are proving to be fertile ground for such ideas, attracting passionate young minds."
+ scandinavia_flavor.6.f: "The enthusiastic debates in Lund's cafés and lecture halls echo with dreams of a stronger, unified North, a vision painted with words and youthful idealism."
+ scandinavia_flavor.6.a: "Let these ideas flourish freely."
+ scandinavia_flavor.6.b: "Disrupt the pan-Scandinavian meetings."
+
 # SWE Events
  sweden_flavor.1.t: "The Army Reform"
  sweden_flavor.1.d: "In recent years the Army of Sweden has been outclassed by those around her, which has caused liberals to take action and demand action. Action which resulted in a new form of military no longer reliant on the system of old. But as discussions go on there is a demand of compromise for the recent reforms made."

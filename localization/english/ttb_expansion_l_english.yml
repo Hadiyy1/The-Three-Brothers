@@ -8,7 +8,7 @@
  ideology_nordic_particularist_desc: "#lore This group wants local autonomy in their work, free of feudal provisions of indentured servitude. They also wish to stand against ways for the aristocracy to grow stronger at the cost of others.#!"
  # Journals
  scandinavian_pan_nationalism: "Scandinavian Pan-Nationalism"
- scandinavian_pan_nationalism_reason: "The spirit of a unified Scandinavia has begun to spread throughout Scandinavia."
+ scandinavian_pan_nationalism_reason: "The spirit of a unified #yellow Scandinavia#! has begun to spread throughout the Nordic lands. What started among university students in #light_green Scania#! has now permeated to the intelligentsia in #gold Sweden and Denmark#!. Should this bold idea break free from the studies and libraries of intellectuals and take root in the cities and towns of the countryside, the dream of a united #yellow Scandinavia#! might yet become a reality, profoundly altering the balance of power in Northern Europe"
  scandinavism_progress_bar: "Scandinavism"
  scandinavism_progress_bar_desc: "Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/350)"
  scandinavism_from_movement_support_tt: "@movement_category_ideological![concept_political_movement]"
