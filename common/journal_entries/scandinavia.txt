@@ -172,14 +172,14 @@ scandinavia_monetary_union = {
 	complete = {
 		NOT = { has_law = law_type:law_isolationism }
 		has_technology_researched = international_exchange_standards
-		custom_tooltip = {
-			text = scandinavian_monetary_union_relations_tt
-			any_in_global_list = {
-				variable = scandinavian_countries_list
-				is_subject = no	
-				NOT = { relations:root < relations_threshold:amicable }
-			}
-		}
+	# 	custom_tooltip = {
+	# 		text = scandinavian_monetary_union_relations_tt
+	# 		any_in_global_list = {
+	# 			variable = scandinavian_countries_list
+	# 			is_subject = no	
+	# 			relations:root <= relations_threshold:amicable
+	# 		}
+	# 	}
 	}
 	
 	fail = {
@@ -205,15 +205,18 @@ scandinavia_monetary_union = {
 		}
 		every_country = {
 			limit = { 
-				is_target_in_global_variable_list = { name = scandinavian_countries_list target = THIS }
-				OR = {
-					is_subject = no	
-					top_overlord = {
-						any_primary_culture = {
-							is_target_in_global_variable_list = { name = scandinavian_countries_list target = PREV }
-						}
-					}
-				}
+				any_primary_culture = {
+			        has_discrimination_trait = scandinavian_culture_group
+		        }
+				# is_target_in_global_variable_list = { name = scandinavian_countries_list target = THIS }
+				# OR = {
+				# 	is_subject = no	
+				# 	top_overlord = {
+				# 		any_primary_culture = {
+				# 			is_target_in_global_variable_list = { name = scandinavian_countries_list target = PREV }
+				# 		}
+				# 	}
+				# }
 			}
 			trigger_event = { id = scandinavia_flavor.1 }
 		}
