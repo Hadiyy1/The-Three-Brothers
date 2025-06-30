@@ -97,7 +97,7 @@ swedish_champions_of_national_defence = {
 			is_marginal = no
 			OR = {
 				has_ideology = ideology:ideology_nordic_particularist
-				has_ideology = ideology:ideology_jingoist
+				leader = { has_ideology = ideology:ideology_jingoist_leader }
 			}
 		}
 	}
@@ -276,7 +276,11 @@ swedish_restoration_of_the_military = {
 			has_law = law_type:law_peasant_levies
 		}
 		OR = {
-			has_technology_researched = enlistment_offices
+			has_technology_researched = wargaming
+			AND = {
+				has_technology_researched = military_statistics
+				is_at_war = yes
+			}
 		}
 	}
 	
