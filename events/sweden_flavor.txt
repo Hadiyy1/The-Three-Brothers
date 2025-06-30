@@ -1474,14 +1474,13 @@ sweden_flavor.36 = {
 	duration = 3
 
 	trigger = {
-		AND = {
-			game_date >= 1888
-			NOT = {
-				has_variable = ttb_swe_var_event_36
-			}
+		country_has_primary_culture = cu:swedish
+		game_date >= 1888
+		NOT = {
+			has_variable = ttb_swe_var_event_36
 		}
 	}
-
+	
 	immediate = {
 		s:STATE_NORRLAND = {
 			random_scope_state = {
