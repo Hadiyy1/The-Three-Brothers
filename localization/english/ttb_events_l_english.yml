@@ -35,6 +35,19 @@
  scandinavia_flavor.6.a: "Let these ideas flourish freely."
  scandinavia_flavor.6.b: "Disrupt the pan-Scandinavian meetings."
 
+ scandinavia_flavor.7.t: "A Resounding Call in Copenhagen"
+ scandinavia_flavor.7.d: "The intellectual discussions that began in Lund have resonated deeply across the Øresund. During a recent visit by students from Lund to Copenhagen, the impassioned words of Fr. Barfod captivated his audience. His powerful address, advocating for the unity and freedom of the Nordic lands."
+ scandinavia_flavor.7.f: "The shared cheers across the hall speak volumes: the dream of a united North is finding its voice in the hearts of a new generation."
+ scandinavia_flavor.7.a: "Celebrate this display of Nordic solidarity!"
+ scandinavia_flavor.7.b: "Try to censor Fr. Barfod"
+
+ scandinavia_flavor.8.t: "Pilgrimage for Pan-Scandinavism"
+ scandinavia_flavor.8.d: "A procession with students from both Copenhagen and Lund has embarked on a symbolic journey to Uppsala. Their arrival was met with widespread enthusiasm, and numerous speeches were delivered. This highly visible demonstration, a true 'pilgrimage for pan-Scandinavism,' signals that the movement is no longer confined to academic halls but is beginning to capture the hearts and minds of the public."
+ scandinavia_flavor.8.f: "The roads echo with the footsteps of students, their voices raised in a chorus for unity, carrying the dream of a new Scandinavia from city to ancient university."
+ scandinavia_flavor.8.a: "Embrace this public display of unity!"
+ scandinavia_flavor.8.b: "Denounce these typ of events"
+ 
+
 # SWE Events
  sweden_flavor.1.t: "The Army Reform"
  sweden_flavor.1.d: "In recent years the Army of Sweden has been outclassed by those around her, which has caused liberals to take action and demand action. Action which resulted in a new form of military no longer reliant on the system of old. But as discussions go on there is a demand of compromise for the recent reforms made."
