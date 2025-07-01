@@ -1474,6 +1474,10 @@ sweden_flavor.36 = {
 	duration = 3
 
 	trigger = {
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		country_has_primary_culture = cu:swedish
 		game_date >= 1888
 		NOT = {
