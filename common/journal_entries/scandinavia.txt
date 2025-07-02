@@ -10,6 +10,51 @@ scandinavian_pan_nationalism = {
 	modifiers_while_active = {
 		scandinavianism_rising
 	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = { 
+					scope:journal_entry = {
+						"scripted_bar_progress(scandinavism_progress_bar)" >= 50
+					}
+					NOT = { has_variable = scandinavia_flavor_6_var } 
+				}
+				trigger_event = { id = scandinavia_flavor.6 }
+				set_variable = scandinavia_flavor_6_var
+			}
+			if = {
+				limit = {
+					scope:journal_entry = {
+						"scripted_bar_progress(scandinavism_progress_bar)" >= 100
+					}
+					NOT = { has_variable = scandinavia_flavor_7_var } 
+				}
+				trigger_event = { id = scandinavia_flavor.7 }
+				set_variable = scandinavia_flavor_7_var
+			}
+			if = {
+				limit = {
+					scope:journal_entry = {
+						"scripted_bar_progress(scandinavism_progress_bar)" >= 200
+					}
+					NOT = { has_variable = scandinavia_flavor_8_var }
+				}
+				trigger_event = { id = scandinavia_flavor.8 }
+				set_variable = scandinavia_flavor_8_var
+			}
+			if = {
+				limit = {
+					scope:journal_entry = {
+						"scripted_bar_progress(scandinavism_progress_bar)" >= 250
+					}
+					NOT = { has_variable = scandinavia_flavor_9_var }
+				}
+				trigger_event = { id = scandinavia_flavor.9 }
+				set_variable = scandinavia_flavor_9_var
+			}
+		}
+	}
 	
 	immediate = {
 		show_as_tooltip = {
