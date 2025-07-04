@@ -29,6 +29,31 @@
  scandinavia_flavor.5.b: "We must expand our power base rapidly!"
  scandinavia_flavor.5.c: "A great economy signifies a great nation."
 
+ scandinavia_flavor.6.t: "The Lund Meetings: A Seedbed of Unity"
+ scandinavia_flavor.6.d: "In the vibrant intellectual heart of #yellow Lund#!, a new kind of gathering has become increasingly common: informal meetings between #yellow Swedish and Danish#! writers and students. Due to #light_green Scania's#! close geographic ties to #yellow Denmark#!, these discussions naturally drift towards the concept of #yellow Pan-Scandinavianism#!, exploring shared cultural heritage. These assemblies are proving to be fertile ground for such ideas, attracting passionate young minds."
+ scandinavia_flavor.6.f: "The enthusiastic debates in Lund's cafés and lecture halls echo with dreams of a stronger, unified North, a vision painted with words and youthful idealism."
+ scandinavia_flavor.6.a: "Let these ideas flourish freely."
+ scandinavia_flavor.6.b: "Disrupt the pan-Scandinavian meetings."
+
+ scandinavia_flavor.7.t: "A Resounding Call in Copenhagen"
+ scandinavia_flavor.7.d: "The intellectual discussions that began in #yellow Lund#! have resonated deeply across the Øresund. During a recent visit by students from #yellow Lund#! to #yellow Copenhagen#!, the impassioned words of #yellow Fr. Barfod#! captivated his audience. His powerful address, advocating for the unity and freedom of the #yellow Nordic lands#!."
+ scandinavia_flavor.7.f: "The shared cheers across the hall speak volumes: the dream of a united North is finding its voice in the hearts of a new generation."
+ scandinavia_flavor.7.a: "Celebrate this display of Nordic solidarity!"
+ scandinavia_flavor.7.b: "Try to censor Fr. Barfod"
+
+ scandinavia_flavor.8.t: "Pilgrimage for Pan-Scandinavism"
+ scandinavia_flavor.8.d: "A procession with students from both #yellow Copenhagen#! and #yellow Lund#! has embarked on a symbolic journey to #yellow Uppsala#!. Their arrival was met with widespread enthusiasm, and numerous speeches were delivered. This highly visible demonstration, a true #yellow 'pilgrimage for pan-Scandinavism,'#! signals that the movement is no longer confined to academic halls but is beginning to capture the hearts and minds of the public."
+ scandinavia_flavor.8.f: "The roads echo with the footsteps of students, their voices raised in a chorus for unity, carrying the dream of a new Scandinavia from city to ancient university."
+ scandinavia_flavor.8.a: "Embrace this public display of unity!"
+ scandinavia_flavor.8.b: "Denounce these typ of events"
+
+ scandinavia_flavor.9.t: "The Royal Families' Sympathy"
+ scandinavia_flavor.9.d: "The fervent expressions of #yellow Pan-Scandinavianism#! emanating from our universities and public demonstrations have not gone unnoticed by the highest echelons of society. The #yellow royal families#! have been suspicious of the movement since its beginning, viewing it with caution. However, whispers from the royal courts of #yellow Stockholm#! and #yellow Copenhagen#! now suggest a growing, albeit tentative, interest. Certain members of both royal families, perhaps captivated by the idealism or recognizing the potential for increased regional influence, are reportedly sympathetic to the idea of a stronger, more united North. Their open endorsement could lend immense legitimacy and momentum to the cause, but it also risks entangling the crowns in the complex web of #yellow pan-nationalist#! politics."
+ scandinavia_flavor.9.f: "The gilded halls of the palaces now echo with the faint, hopeful strains of Nordic unity, a tune hummed by monarchs and statesmen alike."
+ scandinavia_flavor.9.a: "Make contact with the royal courts."
+ scandinavia_flavor.9.b: "We should not interfere with the royal families."
+ 
+
 # SWE Events
  sweden_flavor.1.t: "The Army Reform"
  sweden_flavor.1.d: "In recent years the Army of Sweden has been outclassed by those around her, which has caused liberals to take action and demand action. Action which resulted in a new form of military no longer reliant on the system of old. But as discussions go on there is a demand of compromise for the recent reforms made."
