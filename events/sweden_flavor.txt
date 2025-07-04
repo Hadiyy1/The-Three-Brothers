@@ -243,6 +243,7 @@ sweden_flavor.6 = {
 	}
 }
 
+# Mortal verkstad
 sweden_flavor.7 = {
 	type = country_event
 
@@ -295,6 +296,7 @@ sweden_flavor.7 = {
 	}
 }
 
+# Glasriket
 sweden_flavor.8 = {
 	type = state_event
 
@@ -345,6 +347,7 @@ sweden_flavor.8 = {
 	}
 }
 
+# Sundvall
 sweden_flavor.9 = {
 	type = state_event
 
@@ -393,6 +396,7 @@ sweden_flavor.9 = {
 	}
 }
 
+# Liberate Finland
 sweden_flavor.10 = {
 	type = country_event
 
@@ -429,6 +433,7 @@ sweden_flavor.10 = {
 	}
 }
 
+# Iron mining
 sweden_flavor.11 = {
 	type = state_event
 
@@ -509,6 +514,7 @@ sweden_flavor.11 = {
 	}
 }
 
+# folkhemmet
 sweden_flavor.12 = {
 	type = country_event
 
@@ -541,38 +547,39 @@ sweden_flavor.12 = {
 	}
 }
 
-sweden_flavor.13 = {
-	type = country_event
+# sweden_flavor.13 = {
+# 	type = country_event
 
-	title = sweden_flavor.13.t
-	desc = sweden_flavor.13.d
-	flavor = sweden_flavor.13.f
+# 	title = sweden_flavor.13.t
+# 	desc = sweden_flavor.13.d
+# 	flavor = sweden_flavor.13.f
 
-	event_image = {
-		video = "europenorthamerica_rich_and_poor"
-	}
+# 	event_image = {
+# 		video = "europenorthamerica_rich_and_poor"
+# 	}
 
-	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+# 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
 
-	duration = 3
+# 	duration = 3
 
-	trigger = {
+# 	trigger = {
 		
-	}
+# 	}
 
-	immediate = {
-	}
+# 	immediate = {
+# 	}
 
-	option = {
-		name = sweden_flavor.13.a
-		default_option = yes
-		add_modifier = {
-			name = sweden_abolish_estates
-			years = 5
-		}
-	}
-}
+# 	option = {
+# 		name = sweden_flavor.13.a
+# 		default_option = yes
+# 		add_modifier = {
+# 			name = sweden_abolish_estates
+# 			years = 5
+# 		}
+# 	}
+# }
 
+# Timber export
 sweden_flavor.14 = {
 	type = country_event
 
@@ -613,60 +620,61 @@ sweden_flavor.14 = {
 	}
 }
 
-sweden_flavor.15 = {
-	type = state_event
+# sweden_flavor.15 = {
+# 	type = state_event
 
-	title = sweden_flavor.15.t
-	desc = sweden_flavor.15.d
-	flavor = sweden_flavor.15.f
+# 	title = sweden_flavor.15.t
+# 	desc = sweden_flavor.15.d
+# 	flavor = sweden_flavor.15.f
 
-	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
-	}
+# 	event_image = {
+# 		video = "europenorthamerica_capitalists_meeting"
+# 	}
 
-	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+# 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
 
-	duration = 3
+# 	duration = 3
 
-	trigger = {
+# 	trigger = {
 		
-	}
+# 	}
 
-	immediate = {
-		s:STATE_NORRLAND = {
-			random_scope_state = {
-				limit = {
-					owner = {
-						OR = {
-							c:SWE = THIS
-							c:SCA = THIS	
-						}
+# 	immediate = {
+# 		s:STATE_NORRLAND = {
+# 			random_scope_state = {
+# 				limit = {
+# 					owner = {
+# 						OR = {
+# 							c:SWE = THIS
+# 							c:SCA = THIS	
+# 						}
 						
-					}
-				}
-				save_scope_as = norrland_state
-			}
-		}
-	}
+# 					}
+# 				}
+# 				save_scope_as = norrland_state
+# 			}
+# 		}
+# 	}
 
-	placement = scope:norrland_state
+# 	placement = scope:norrland_state
 
-	option = {
-		name = sweden_flavor.15.a
-		default_option = yes
-		scope:norrland_state = {
-		    add_modifier = {
-				name = sweden_iron_production
-				years = 5
-			}
-			add_modifier = {
-				name = sweden_railway_development
-				years = 3
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = sweden_flavor.15.a
+# 		default_option = yes
+# 		scope:norrland_state = {
+# 		    add_modifier = {
+# 				name = sweden_iron_production
+# 				years = 5
+# 			}
+# 			add_modifier = {
+# 				name = sweden_railway_development
+# 				years = 3
+# 			}
+# 		}
+# 	}
+# }
 
+# Gothenburg
 sweden_flavor.16 = {
 	type = state_event
 
@@ -714,6 +722,7 @@ sweden_flavor.16 = {
 	}
 }
 
+# Malmö
 sweden_flavor.17 = {
 	type = state_event
 
@@ -761,6 +770,7 @@ sweden_flavor.17 = {
 	}
 }
 
+# Stockholm
 sweden_flavor.18 = {
 	type = state_event
 
@@ -807,6 +817,8 @@ sweden_flavor.18 = {
 		}
 	}
 }
+
+# Alfred Nobel Dynamite
 sweden_flavor.19 = {
 	type = country_event
 
@@ -823,7 +835,10 @@ sweden_flavor.19 = {
 	duration = 3
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		has_technology_researched = dynamite
 		NOT = {
 			has_variable = var_event_1
@@ -844,6 +859,7 @@ sweden_flavor.19 = {
 	}
 }
 
+# Motala Strikes
 sweden_flavor.20 = {
 	type = country_event
 
@@ -861,7 +877,10 @@ sweden_flavor.20 = {
 
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		has_variable = mortala_verkstad
 		has_technology_researched = labor_movement
 		NOT = {
@@ -918,6 +937,7 @@ sweden_flavor.20 = {
 	}
 }
 
+# Träpatroner
 sweden_flavor.21 = {
 	type = country_event
 
@@ -934,7 +954,10 @@ sweden_flavor.21 = {
 	duration = 3
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		has_technology_researched = mutual_funds
 		NOT = {
 			has_variable = ttb_swe_var_event_3
@@ -955,6 +978,7 @@ sweden_flavor.21 = {
 	}
 }
 
+# Temperance
 sweden_flavor.22 = {
 	type = country_event
 
@@ -971,6 +995,10 @@ sweden_flavor.22 = {
 	duration = 3
 
 	trigger = {
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		has_technology_researched = fractional_distillation
 		NOT = {
 			has_variable = ttb_swe_var_event_4
@@ -1001,6 +1029,7 @@ sweden_flavor.22 = {
 	}
 }
 
+# Läsare Movement
 sweden_flavor.23 = {
 	type = country_event
 
@@ -1017,7 +1046,10 @@ sweden_flavor.23 = {
 	duration = 3
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		NOT = {
 			has_law = law_type:law_religious_schools
 		}
@@ -1048,6 +1080,7 @@ sweden_flavor.23 = {
 	}
 }
 
+# Stockholm's Exposition
 sweden_flavor.24 = {
 	type = country_event
 
@@ -1064,7 +1097,10 @@ sweden_flavor.24 = {
 	duration = 3
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		has_technology_researched = film
 		NOT = {
 			has_variable = ttb_swe_var_event_6
@@ -1085,6 +1121,7 @@ sweden_flavor.24 = {
 	}
 }
 
+# Match Dominance
 sweden_flavor.25 = {
 	type = country_event
 
@@ -1101,7 +1138,10 @@ sweden_flavor.25 = {
 	duration = 3
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		has_technology_researched = improved_fertilizer
 		NOT = {
 			has_variable = ttb_swe_var_event_7
@@ -1122,6 +1162,7 @@ sweden_flavor.25 = {
 	}
 }
 
+# Law events
 sweden_flavor.26 = {
 	type = country_event
 
@@ -1138,7 +1179,10 @@ sweden_flavor.26 = {
 	duration = 3
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		has_law = law_type:law_public_schools
 		NOT = {
 			has_variable = ttb_swe_var_event_8
@@ -1171,7 +1215,10 @@ sweden_flavor.27 = {
 	duration = 3
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		OR = {
 			has_law = law_type:law_free_trade
 			has_law = law_type:law_protectionism
@@ -1208,7 +1255,10 @@ sweden_flavor.28 = {
 	duration = 3
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		has_law = law_type:law_poor_laws
 		NOT = {
 			has_variable = ttb_swe_var_event_10
@@ -1241,7 +1291,10 @@ sweden_flavor.29 = {
 	duration = 3
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		has_law = law_type:law_laissez_faire
 		NOT = {
 			has_variable = ttb_swe_var_event_11
@@ -1274,7 +1327,10 @@ sweden_flavor.30 = {
 	duration = 3
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		has_law = law_type:law_elected_bureaucrats
 		NOT = {
 			has_variable = ttb_swe_var_event_12
@@ -1307,7 +1363,10 @@ sweden_flavor.31 = {
 	duration = 3
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		has_law = law_type:law_regulatory_bodies
 		NOT = {
 			has_variable = ttb_swe_var_event_13
@@ -1340,7 +1399,10 @@ sweden_flavor.32 = {
 	duration = 3
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		has_law = law_type:law_old_age_pension
 		NOT = {
 			has_variable = ttb_swe_var_event_14
@@ -1373,7 +1435,10 @@ sweden_flavor.33 = {
 	duration = 3
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		has_law = law_type:law_womens_suffrage
 		NOT = {
 			has_variable = ttb_swe_var_event_16
@@ -1406,7 +1471,10 @@ sweden_flavor.34 = {
 	duration = 3
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		has_law = law_type:law_worker_protections
 		NOT = {
 			has_variable = ttb_swe_var_event_17
@@ -1439,10 +1507,12 @@ sweden_flavor.35 = {
 	duration = 3
 
 	trigger = {
-		country_has_primary_culture = cu:swedish
+		OR = {
+			c:SWE = THIS
+			c:SCA = THIS
+		}
 		has_law = law_type:law_compulsory_primary_school
 		has_law = law_type:law_public_schools
-		
 		NOT = {
 			has_variable = ttb_swe_var_event_18
 		}
@@ -1458,6 +1528,7 @@ sweden_flavor.35 = {
 	}
 }
 
+# Sundsvall in Flames
 sweden_flavor.36 = {
 	type = country_event
 
@@ -1522,6 +1593,7 @@ sweden_flavor.36 = {
 	}
 }
 
+# The Eastern Reclaimed
 sweden_flavor.37 = {
 	type = country_event
 

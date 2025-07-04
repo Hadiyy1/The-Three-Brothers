@@ -186,12 +186,12 @@
  sweden_flavor.25.a: "Capitalize on Our Advantage!"
 
  sweden_flavor.26.t: "The Parish School Ordinance: Education for All"
- sweden_flavor.26.d: "Sweden has long prided itself on its relatively high literacy rates, but education has often been inconsistent or limited to private means. Now, the Riksdag has passed the groundbreaking Parish School Ordinance of 1842, making it compulsory for every parish to establish and maintain a primary school. This foundational law marks Sweden's commitment to universal education, ensuring that every child, regardless of social standing, has access to basic schooling."
+ sweden_flavor.26.d: "Sweden has long prided itself on its relatively high literacy rates, but education has often been inconsistent or limited to private means. Now, the Riksdag has passed the groundbreaking Parish School Ordinance, making it compulsory for every parish to establish and maintain a primary school. This foundational law marks Sweden's commitment to universal education, ensuring that every child, regardless of social standing, has access to basic schooling."
  sweden_flavor.26.f: "The school bell rings across the land, calling every Swedish child to the path of knowledge."
  sweden_flavor.26.a: "Enact the Ordinance!"
 
  sweden_flavor.27.t: "The Guild Edict: Freeing Commerce"
- sweden_flavor.27.d: "For centuries, the guild system has regulated trades and protected master craftsmen, but it has increasingly become a barrier to industrial growth and free competition. After decades of debate and pressure from liberal economic thinkers, the Guild Edict of 1846 has been adopted, effectively abolishing the last remnants of guild monopolies and opening up trades to all citizens."
+ sweden_flavor.27.d: "For centuries, the guild system has regulated trades and protected master craftsmen, but it has increasingly become a barrier to industrial growth and free competition. After decades of debate and pressure from liberal economic thinkers, the Guild Edict has been adopted, effectively abolishing the last remnants of guild monopolies and opening up trades to all citizens."
  sweden_flavor.27.f: "The chains of ancient privilege are broken, unleashing the full force of free enterprise."
  sweden_flavor.27.a: "Abolish the Guilds!"
 
@@ -201,12 +201,12 @@
  sweden_flavor.28.a: "Implement the Poor Law!"
 
  sweden_flavor.29.t: "The Freedom of Trade and Industry Act: Economic Liberalization"
- sweden_flavor.29.d: "Following the abolition of the guilds, Sweden takes another decisive step towards economic liberalization with the Freedom of Trade and Industry Act of 1864. This law removes most remaining restrictions on establishing and operating businesses, allowing for greater competition, innovation, and economic mobility. It is a cornerstone of a burgeoning free-market economy, attracting investment and stimulating industrial growth. However, it also means less protection for smaller businesses and artisans against larger, more competitive enterprises."
+ sweden_flavor.29.d: "Following the abolition of the guilds, Sweden takes another decisive step towards economic liberalization with the Freedom of Trade and Industry Act. This law removes most remaining restrictions on establishing and operating businesses, allowing for greater competition, innovation, and economic mobility. It is a cornerstone of a burgeoning free-market economy, attracting investment and stimulating industrial growth. However, it also means less protection for smaller businesses and artisans against larger, more competitive enterprises."
  sweden_flavor.29.f: "The winds of economic liberty sweep across the land, clearing the path for boundless enterprise."
  sweden_flavor.29.a: "Fully Liberalize Trade!"
 
  sweden_flavor.30.t: "The Municipal Reform of: Local Self-Governance"
- sweden_flavor.30.d: "To better manage local affairs and empower regional communities, Sweden has implemented the Municipal Reform of 1862. This comprehensive law grants significantly increased autonomy to municipalities (kommuner), allowing them greater control over local taxation, public services, and infrastructure development, independent of central government oversight."
+ sweden_flavor.30.d: "To better manage local affairs and empower regional communities, Sweden has implemented the Municipal Reform. This comprehensive law grants significantly increased autonomy to municipalities (kommuner), allowing them greater control over local taxation, public services, and infrastructure development, independent of central government oversight."
  sweden_flavor.30.f: "Power descends to the local hearths, allowing communities to forge their own destinies."
  sweden_flavor.30.a: "Strengthen Local Autonomy!"
 
@@ -216,7 +216,7 @@
  sweden_flavor.31.a: "Recognize Workers' Rights!"
 
  sweden_flavor.32.t: "The Old-Age Pension Law: A Pioneer in Social Security"
- sweden_flavor.32.d: "Sweden has implemented the Old-Age Pension Law of 1913. This groundbreaking legislation establishes a national system of old-age pensions, providing financial support for the elderly regardless of their previous income or social status. This progressive step aims to alleviate poverty among the aged and provide a safety net for all citizens in their later years. While it sets a new standard for social welfare, it necessitates significant ongoing state funding and marks a substantial expansion of government responsibility for its citizens' well-being."
+ sweden_flavor.32.d: "Sweden has implemented the Old-Age Pension Law. This groundbreaking legislation establishes a national system of old-age pensions, providing financial support for the elderly regardless of their previous income or social status. This progressive step aims to alleviate poverty among the aged and provide a safety net for all citizens in their later years. While it sets a new standard for social welfare, it necessitates significant ongoing state funding and marks a substantial expansion of government responsibility for its citizens' well-being."
  sweden_flavor.32.f: "The promise of dignity in old age shines bright, a beacon of a compassionate and forward-looking nation."
  sweden_flavor.32.a: "Enact the National Pension!"
 
@@ -231,7 +231,7 @@
  sweden_flavor.34.a: "Codify Strike & Lockout Rights!"
 
  sweden_flavor.35.t: "The 'Folkskola' Revisions: Deepening Education"
- sweden_flavor.35.d: "Building on the foundation of the 1842 Parish School Ordinance, further reforms have deepened the scope and quality of the 'Folkskola' (primary public school system). These revisions introduce longer school years, expanded curricula, and improved teacher training, aiming to provide a more thorough and equitable education for all. This continuous investment in human capital is vital for national competitiveness and social mobility, fostering a highly skilled and adaptable workforce for our age."
+ sweden_flavor.35.d: "Building on the foundation of the Parish School Ordinance, further reforms have deepened the scope and quality of the 'Folkskola' (primary public school system). These revisions introduce longer school years, expanded curricula, and improved teacher training, aiming to provide a more thorough and equitable education for all. This continuous investment in human capital is vital for national competitiveness and social mobility, fostering a highly skilled and adaptable workforce for our age."
  sweden_flavor.35.f: "The well of knowledge grows deeper, nurturing a more profound wisdom for every Swedish child."
  sweden_flavor.35.a: "For The Future"
 
