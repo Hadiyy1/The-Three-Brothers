@@ -835,9 +835,17 @@ sweden_flavor.19 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		has_technology_researched = dynamite
 		NOT = {
@@ -852,7 +860,7 @@ sweden_flavor.19 = {
 	option = {
 		name = sweden_flavor.19.a
 		default_option = yes
-		add_modifier = { 
+		add_modifier = {
 			name = sweden_nobel_dynamite
 			years = 10
 	}
@@ -877,9 +885,17 @@ sweden_flavor.20 = {
 
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		has_variable = mortala_verkstad
 		has_technology_researched = labor_movement
@@ -954,9 +970,17 @@ sweden_flavor.21 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		has_technology_researched = mutual_funds
 		NOT = {
@@ -995,9 +1019,17 @@ sweden_flavor.22 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		has_technology_researched = fractional_distillation
 		NOT = {
@@ -1046,9 +1078,17 @@ sweden_flavor.23 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		NOT = {
 			has_law = law_type:law_religious_schools
@@ -1097,9 +1137,17 @@ sweden_flavor.24 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		has_technology_researched = film
 		NOT = {
@@ -1138,9 +1186,17 @@ sweden_flavor.25 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		has_technology_researched = improved_fertilizer
 		NOT = {
@@ -1179,9 +1235,17 @@ sweden_flavor.26 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		has_law = law_type:law_public_schools
 		NOT = {
@@ -1215,9 +1279,17 @@ sweden_flavor.27 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		OR = {
 			has_law = law_type:law_free_trade
@@ -1255,9 +1327,17 @@ sweden_flavor.28 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		has_law = law_type:law_poor_laws
 		NOT = {
@@ -1291,9 +1371,17 @@ sweden_flavor.29 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		has_law = law_type:law_laissez_faire
 		NOT = {
@@ -1327,9 +1415,17 @@ sweden_flavor.30 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		has_law = law_type:law_elected_bureaucrats
 		NOT = {
@@ -1363,9 +1459,17 @@ sweden_flavor.31 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		has_law = law_type:law_regulatory_bodies
 		NOT = {
@@ -1399,9 +1503,17 @@ sweden_flavor.32 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		has_law = law_type:law_old_age_pension
 		NOT = {
@@ -1435,9 +1547,17 @@ sweden_flavor.33 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		has_law = law_type:law_womens_suffrage
 		NOT = {
@@ -1471,9 +1591,17 @@ sweden_flavor.34 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		has_law = law_type:law_worker_protections
 		NOT = {
@@ -1507,9 +1635,17 @@ sweden_flavor.35 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		has_law = law_type:law_compulsory_primary_school
 		has_law = law_type:law_public_schools
@@ -1545,9 +1681,17 @@ sweden_flavor.36 = {
 	duration = 3
 
 	trigger = {
-		OR = {
-			c:SWE = THIS
-			c:SCA = THIS
+		trigger_if = {
+			limit = {
+				exists = c:SWE
+			}
+			c:SWE = this
+		}
+		trigger_if = {
+			limit = {
+				exists = c:SCA
+			}
+			c:SCA = this
 		}
 		country_has_primary_culture = cu:swedish
 		game_date >= 1888
