@@ -87,32 +87,32 @@
  sweden_flavor.6.a: "Another election movement happening..."
 
  sweden_flavor.7.t: "The Forge of Swedish Industry"
- sweden_flavor.7.d: "Born from the monumental task of constructing the Göta Canal in 1822, Motala Verkstad has grown far beyond a mere workshop. Its engineers and craftsmen, renowned for their precision and innovation, are now poised to become a vital artery of our nation's industry."
+ sweden_flavor.7.d: "Born from the monumental task of constructing the #yellow Göta Canal#! in 1822, #gold Motala Verkstad#! has grown far beyond a mere workshop. Its engineers and craftsmen, renowned for their precision and innovation, are now poised to become a vital artery of our nation's industry."
  sweden_flavor.7.f: "The clang of hammers and the hiss of steam from Motala echo across the land, a powerful heartbeat for Swedish innovation."
  sweden_flavor.7.a: "Elevate Our Industrial Might!"
 
  sweden_flavor.8.t: "The Glasriket Sparkles"
- sweden_flavor.8.d: "In the deep forests of Småland, where the ancient craft of glassmaking is experiencing a remarkable resurgence. With increasing demand for everything from windowpanes to delicate ornaments across the world, the humble glassworks of the region, long known as 'Glasriket', stand poised for unprecedented growth. Skilled artisans and entrepreneurial spirits alike see an opportunity to turn sand and fire into a gleaming fortune."
+ sweden_flavor.8.d: "In the deep forests of #yellow Småland#!, where the ancient craft of glassmaking is experiencing a remarkable resurgence. With increasing demand for everything from windowpanes to delicate ornaments across the world, the humble glassworks of the region, long known as #yellow 'Glasriket'#!, stand poised for unprecedented growth. Skilled artisans and entrepreneurial spirits alike see an opportunity to turn sand and fire into a gleaming fortune."
  sweden_flavor.8.f: "The clang of the glassblower's pipe and the fiery glow of the furnaces promise prosperity for the heart of Småland, as light catches on newly forged wonders."
  sweden_flavor.8.a: "Automate the Production Line!"
 
  sweden_flavor.9.t: "The Roar of Sundsvall's Sawmills"
- sweden_flavor.9.d: "Along the Selånger River and the bustling shores of the Sundsvall Bay, a new industrial center is shaping up. Sundsvall has rapidly transformed into the undeniable center of Sweden's immense timber industry, with dozens of steam-powered sawmills processing vast quantities of 'green gold' floated down from Norrland's endless forests. The sheer volume of lumber leaving its docks fuels industries across Europe, bringing immense wealth and employment to the region."
+ sweden_flavor.9.d: "Along the Selånger River and the bustling shores of the #yellow Sundsvall#! Bay, a new industrial center is shaping up. #yellow Sundsvall#! has rapidly transformed into the undeniable center of #yellow Sweden's#! immense timber industry, with dozens of steam-powered sawmills processing vast quantities of #gold 'green gold'#! floated down from #light_green Norrland's#! endless forests. The sheer volume of lumber leaving its docks fuels industries across Europe, bringing immense wealth and employment to the region."
  sweden_flavor.9.f: "The very air in Sundsvall hums with the energy of industry, thick with the scent of sawdust and the promise of prosperity forged from our forests."
  sweden_flavor.9.a: "Capitalize on the Timber Trade!"
 
  sweden_flavor.10.t: "Finland Liberated!"
- sweden_flavor.10.d: "After generations under the oppressive yoke of Russian rule, Finland is finally free! Our banners fly once more over Helsinki and beyond, as the Eastern Bear has been decisively repelled, its ambitions shattered. The arduous struggle has ended, and our Finnish brothers and sisters now stand reunited with their true kin, their cries of jubilation echoing across the liberated lands."
+ sweden_flavor.10.d: "After generations under the oppressive yoke of Russian rule, #yellow Finland#! is finally free! Our banners fly once more over #yellow Helsinki#! and beyond, as the #red Eastern Bear#! has been decisively repelled, its ambitions shattered. The arduous struggle has ended, and our Finnish brothers and sisters now stand reunited with their true kin, their cries of jubilation echoing across the liberated lands."
  sweden_flavor.10.f: "The joy of reunion washes over the land; our brave Finnish kin are at last brought home, where they belong."
  sweden_flavor.10.a: "Embrace Our Liberated Brothers!"
 
  sweden_flavor.11.t: "Forging the Future of Mining"
- sweden_flavor.11.d: "For centuries deep mines of Bergslagen and the newly discovered Malberget have supplied the iron and copper that form the backbone of Swedish industry. However, as the world advances, demanding higher quantity and quality of metal, our traditional methods risk falling behind. We face a critical choice: invest heavily in modernizing these ancient operations or risk losing our competitive edge in the global market."
+ sweden_flavor.11.d: "For centuries deep mines of #yellow Bergslagen#! and the newly discovered #yellow Malberget#! have supplied the iron and copper that form the backbone of #yellow Swedish#! industry. However, as the world advances, demanding higher quantity and quality of metal, our traditional methods risk falling behind. We face a critical choice: invest heavily in modernizing these ancient operations or risk losing our competitive edge in the global market."
  sweden_flavor.11.f: "Awaken the heart of swedish pride"
  sweden_flavor.11.a: "Launch a national modernization program."
 
  sweden_flavor.12.t: "The Vision of Folkhemmet"
- sweden_flavor.12.d: "As our nation grows and modernizes, a powerful new vision is taking root: the concept of 'Folkhemmet', The People's Home. This is not merely a political platform, but a promise of a society built on solidarity, social equality, and shared welfare, where all citizens, regardless of background, are secure and contribute to the common good. It calls for comprehensive reforms in education, healthcare, social security, and housing, ensuring that prosperity benefits every Swede and lays the groundwork for a truly just society."
+ sweden_flavor.12.d: "As our nation grows and modernizes, a powerful new vision is taking root: the concept of #yellow 'Folkhemmet', The People's Home#!. This is not merely a political platform, but a promise of a society built on solidarity, social equality, and shared welfare, where all citizens, regardless of background, are secure and contribute to the common good. It calls for comprehensive reforms in education, healthcare, social security, and housing, ensuring that prosperity benefits every Swede and lays the groundwork for a truly just society."
  sweden_flavor.12.f: "The foundation for a truly just and prosperous society is being laid, brick by brick, by the collective will and shared purpose of our people."
  sweden_flavor.12.a: "Commit to Building the People's Home!"
 
@@ -122,7 +122,7 @@
  # sweden_flavor.13.a: "Forge a Modern Parliament!"
 
  sweden_flavor.14.t: "The Timber Dilemma"
- sweden_flavor.14.d: "The demand for timber across Europe continues to surge, and our vast forests provide a seemingly endless supply. Yet, many voices within our budding industrial class argue that merely exporting raw logs leaves much wealth on the table. They envision a future where Swedish timber is transformed into finished goods within our own borders, providing more jobs and greater returns."
+ sweden_flavor.14.d: "The demand for #yellow timber#! across Europe continues to surge, and our vast forests provide a seemingly endless supply. Yet, many voices within our budding industrial class argue that merely exporting raw logs leaves much wealth on the table. They envision a future where #yellow Swedish timber#! is transformed into finished goods within our own borders, providing more jobs and greater returns."
  sweden_flavor.14.f: "The very trees whisper of potential, but will we merely fell them or build with their bounty?"
  sweden_flavor.14.a: "Focus on Raw Exports for now."
  sweden_flavor.14.b: "Invest in Sawmills and Furniture Manufactories!"
@@ -133,22 +133,22 @@
  # sweden_flavor.15.a: "Embark on the monumental task of developing Malmberget."
 
  sweden_flavor.16.t: "Gothenburg: The Expanding Metropolis"
- sweden_flavor.16.d: "Perched strategically on our western coast, Gothenburg has long been Sweden's vital link to the North Sea and the wider Atlantic world. With the relentless march of industrialization, the city has transformed into a bustling hub of commerce, shipbuilding, and a primary point of departure for countless Swedes seeking new lives abroad. Yet, the very success of Gothenburg strains its aging port infrastructure. Larger steamships demand deeper berths and longer quays, and the flow of goods and people necessitates expanded rail connections and customs facilities. Investing in its growth means solidifying our position as a major European trading power and facilitating the dreams of our emigrating population."
+ sweden_flavor.16.d: "Perched strategically on our western coast, #yellow Gothenburg#! has long been Sweden's vital link to the North Sea and the wider Atlantic world. With the relentless march of industrialization, the city has transformed into a bustling hub of commerce, shipbuilding, and a primary point of departure for countless Swedes seeking new lives abroad. Yet, the very success of #yellow Gothenburg#! strains its aging port infrastructure. Larger steamships demand deeper berths and longer quays, and the flow of goods and people necessitates expanded rail connections and customs facilities. Investing in its growth means solidifying our position as a major European trading power and facilitating the dreams of our emigrating population."
  sweden_flavor.16.f: "The city's canals once echoed with Dutch tongues; now its docks resonate with the clamor of a globalizing world."
  sweden_flavor.16.a: "Launch a major port expansion project in Gothenburg."
 
  sweden_flavor.17.t: "Malmö: A City Forged in Industry"
- sweden_flavor.17.d: "Located at the very tip of our southernmost province, Malmö has long been a vital link between Sweden and the European continent. As industrialization intensifies, the city is rapidly transforming from a provincial town into a powerful industrial engine. Its deep-water port, now connected to our burgeoning railway network via the Southern Main Line, is becoming an indispensable hub for both trade and heavy manufacturing, particularly in shipbuilding and engineering. The fertile farmlands of Scania feed its mills, and its proximity to the continent offers unparalleled access to markets. This rapid growth, however, demands foresight in urban planning, infrastructure, and labor management to ensure Malmö's prosperity endures."
+ sweden_flavor.17.d: "Located at the very tip of our southernmost province, #yellow Malmö#! has long been a vital link between Sweden and the European continent. As industrialization intensifies, the city is rapidly transforming from a provincial town into a powerful industrial engine. Its deep-water port, now connected to our burgeoning railway network via the Southern Main Line, is becoming an indispensable hub for both trade and heavy manufacturing, particularly in shipbuilding and engineering. The fertile farmlands of Scania feed its mills, and its proximity to the continent offers unparalleled access to markets. This rapid growth, however, demands foresight in urban planning, infrastructure, and labor management to ensure #yellow Malmö's#! prosperity endures."
  sweden_flavor.17.f: "Where the Baltic meets the continent, the future of Swedish industry is being forged."
  sweden_flavor.17.a: "Invest heavily in Malmö's industrial and farmland expansion."
 
  sweden_flavor.18.t: "The Capital's New Face: Stockholm Rises"
- sweden_flavor.18.d: "The ancient cobbled streets of Stockholm are giving way to grand boulevards and towering new buildings, as our capital experiences unprecedented growth and modernization. Engineers and architects are reimagining the city, planning for improved infrastructure like advanced sewage systems, public transportation, and expanded housing to accommodate a burgeoning population. This ambitious urban transformation promises to solidify Stockholm's place as a true European capital, a symbol of Swedish progress and prosperity. However, managing such rapid development also presents significant challenges: ensuring adequate housing for all, maintaining public health amidst density, and preserving the city's unique historical character."
+ sweden_flavor.18.d: "The ancient cobbled streets of #yellow Stockholm#! are giving way to grand boulevards and towering new buildings, as our capital experiences unprecedented growth and modernization. Engineers and architects are reimagining the city, planning for improved infrastructure like advanced sewage systems, public transportation, and expanded housing to accommodate a burgeoning population. This ambitious urban transformation promises to solidify #yellow Stockholm's#! place as a true European capital, a symbol of Swedish progress and prosperity. However, managing such rapid development also presents significant challenges: ensuring adequate housing for all, maintaining public health amidst density, and preserving the city's unique historical character."
  sweden_flavor.18.f: "From the narrow alleys of Gamla Stan to the expansive new districts, the very stones of Stockholm whisper tales of a city ceaselessly reinventing itself."
  sweden_flavor.18.a: "Invest in the Capital's Grand Design!"
 
  sweden_flavor.19.t: "The Dynamite Breakthrough"
- sweden_flavor.19.d: "A brilliant Swedish inventor, Alfred Nobel, has achieved a groundbreaking feat: the successful stabilization of nitroglycerine, leading to the invention of 'dynamite'. This powerful new explosive promises to revolutionize mining, construction, and even warfare, offering unprecedented efficiency in breaking rock and shaping landscapes. Its impact on our industries and military capabilities will be profound, accelerating progress in ways previously unimaginable."
+ sweden_flavor.19.d: "A brilliant Swedish inventor, #gold Alfred Nobel#!, has achieved a groundbreaking feat: the successful stabilization of nitroglycerine, leading to the invention of #yellow 'dynamite'#!. This powerful new explosive promises to revolutionize mining, construction, and even warfare, offering unprecedented efficiency in breaking rock and shaping landscapes. Its impact on our industries and military capabilities will be profound, accelerating progress in ways previously unimaginable."
  sweden_flavor.19.f: "The earth trembles with the promise of a new era; excavation and demolition have just been redefined by Swedish ingenuity!"
  sweden_flavor.19.a: "Embrace the Dynamite Revolution!"
 
@@ -159,7 +159,7 @@
  sweden_flavor.20.b: "Break the Strike Forcefully!"
 
  sweden_flavor.21.t: "The Träpatron's Dominion"
- sweden_flavor.21.d: "As the timber industry booms in Norrland, a powerful new class of industrialist, the 'Träpatroner' (Timber Barons), has risen to prominence. These magnates, often acquiring vast tracts of forest and establishing entire company towns around their sawmills, wield immense influence over the economy and lives of thousands. Their efficient, often authoritarian, control drives unparalleled production and wealth, but their dominance also raises questions about labor conditions, local autonomy, and the concentration of power in the hands of a few formidable individuals."
+ sweden_flavor.21.d: "As the timber industry booms in #light_green Norrland#!, a powerful new class of industrialist, the #gold 'Träpatroner' (Timber Barons)#!, has risen to prominence. These magnates, often acquiring vast tracts of forest and establishing entire company towns around their sawmills, wield immense influence over the economy and lives of thousands. Their efficient, often authoritarian, control drives unparalleled production and wealth, but their dominance also raises questions about labor conditions, local autonomy, and the concentration of power in the hands of a few formidable individuals."
  sweden_flavor.21.f: "The smokestacks of their mills now cast long shadows over the northern landscape, symbols of their undeniable power."
  sweden_flavor.21.a: "Acknowledge Their Indispensable Role!"
 
