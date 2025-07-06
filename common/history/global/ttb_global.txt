@@ -55,8 +55,8 @@ GLOBAL = {
 	c:FIN = {
 		#add_primary_culture = swedish	# Re-add if I find better implementation
 		ig:ig_rural_folk = {
-			remove_ideology = ideology_agrarian
-			add_ideology = ideology_nordic_agrarianism
+			remove_ideology = ideology_particularist
+			add_ideology = ideology_nordic_particularist
 		}
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_local_police
