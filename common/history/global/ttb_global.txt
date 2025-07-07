@@ -8,7 +8,7 @@ GLOBAL = {
 		}
 		ig:ig_petty_bourgeoisie = {
 			leader = {
-				set_ideology = ideology_radical
+				set_ideology = ideology:ideology_radical
 			}
 		}
 		trigger_event = {
