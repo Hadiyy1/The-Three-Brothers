@@ -246,8 +246,6 @@ swedish_restoration_of_the_military = {
 	group = je_group_internal_affairs
 	
 	is_shown_when_inactive = {
-		exists = c:SWE
-		c:SWE = THIS
 		has_modifier = sweden_outdated_military
 	}
 	
@@ -301,7 +299,7 @@ swedish_mortala_verkstad = {
 	}
 
 	possible = {
-		has_technology_researched = mechanical_tools
+
 	}
 
 	complete = {
@@ -333,7 +331,7 @@ swedish_glasriket = {
 	}
 
 	possible = {
-		has_technology_researched = crystal_glass
+
 	}
 
 	complete = {
@@ -405,7 +403,6 @@ swedish_gothenburg_port_expansion = {
 	}
 
 	possible = {
-		has_technology_researched = railways
 		s:STATE_GOTALAND = {
 		    any_scope_state = {
 				any_scope_building = {
@@ -445,7 +442,6 @@ swedish_malmo_industrial_boom = {
 	}
 
 	possible = {
-		has_technology_researched = railways
 		s:STATE_SCANIA = {
 		    any_scope_state = {
 				any_scope_building = {
@@ -484,7 +480,6 @@ swedish_stockholm_urban_growth = {
 	}
 
 	possible = {
-		has_technology_researched = railways
 		s:STATE_SVEALAND = {
 		    any_scope_state = {
 				any_scope_building = {
@@ -575,8 +570,8 @@ swedish_iron_industry = {
 	group = je_group_internal_affairs
 
 	is_shown_when_inactive = {
-	    exists = c:SWE
-		c:SWE = THIS
+		owns_entire_state_region = STATE_SVEALAND
+		owns_entire_state_region = STATE_NORRLAND
 		country_has_primary_culture = cu:swedish
 	}
 
@@ -620,6 +615,7 @@ swedish_retake_finland = {
 
 	is_shown_when_inactive = {
 		country_has_primary_culture = cu:swedish
+		owns_entire_state_region = STATE_SVEALAND
 	}
 
 	complete = {
