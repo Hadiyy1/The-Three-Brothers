@@ -230,6 +230,13 @@ sweden_sundsvall_fire = {
 	state_decree_cost_mult = -0.10
 }
 
+sweden_snilleindustri = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	state_trade_advantage_mult = 0.15
+	building_group_bg_manufacturing_throughput_add = 0.1
+	country_production_tech_research_speed_mult = 0.1
+}
+
 
 # Norway
 norway_abolishment_of_new_aristocrats = {

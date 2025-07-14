@@ -246,6 +246,11 @@
  sweden_flavor.37.f: "The Baltic no longer divides us from what is rightfully ours; it now binds us to a new future."
  sweden_flavor.37.a: "A New Dawn for the East!"
 
+ sweden_flavor.38.t: "The Snilleindustri: Engineering Excellence Takes Hold"
+ sweden_flavor.38.d: "Beyond the roar of our sawmills and the clang of our iron foundries, a more subtle, yet profoundly powerful, industrial revolution is taking shape. #yellow Swedish 'snilleindustri'#! our industry of geniuses , driven by brilliant minds like  #yellow Ericsson#!,  #yellow De Laval#!,  #yellow SKF#!,  #yellow ASEA#! and others. These #white innovators#! are not merely exploiting #light_green raw materials#!, but are designing and manufacturing #blue complex machinery#!, #blue advanced electrical equipment#!, #blue precision instruments#!, and #blue specialized tools#! that are becoming vital to global industry. This shift towards knowledge-intensive production marks a new chapter for Sweden, promising immense value creation, high-skill employment, and an international reputation for unparalleled engineering quality."
+ sweden_flavor.38.f: "From quiet workshops to bustling laboratories, the hum of inventive minds and the intricate dance of gears herald a new age where Swedish ingenuity leads the way."
+ sweden_flavor.38.a: "Champion Our Industrial Innovators!"
+
 # Denmark
  denmark_flavor.1.t: "Failure of Our Nation"
  denmark_flavor.1.d: "The loss of Scania, Norway and Schelswig-Holstein has caused a heavy blow to the Danish identity and now people are looking at all the territorial losses and wanting to look inwards on what should be done now. What should be done now is up to the government."

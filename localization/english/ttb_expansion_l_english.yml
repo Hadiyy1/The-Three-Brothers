@@ -94,6 +94,9 @@
  swedish_gothenburg_port_expansion_reason: "As industrialization takes hold and emigration swells, #yellow Gothenburg's#! role as Sweden's premier western port becomes ever more critical. Expanding its capacity is vital for our trade and global connections."
  swedish_reklam_the_eastern_land: "Reclaim the Eastern Territories"
  swedish_reklam_the_eastern_land_reason: "Our most eastern territories were ceded by the #yellow Treaty of Nystad#! in 1721. While their reclamation has been a long-held aspiration, now, in the wake of our decisive #yellow Victory in Finland#!, #r Russia#! finds itself weakened. This presents a unique window of opportunity to potentially regain these lands, and we should consider acting decisively."
+ swedish_snilleindustri: "The Dawn of Genius Industry"
+ swedish_snilleindustri_reason: "#yellow Sweden#! is witnessing an explosion of innovation, as brilliant #yellow engineers and entrepreneurial#! spirits establish a new wave of specialized, high-tech industries. Moving beyond the mere exploitation of raw materials towards sophisticated engineering, precision manufacturing, and groundbreaking technological advancements that are poised to cement our nation's reputation for ingenuity on the global stage."
+ snilleindustri_complete: "#white Has completed:#! \n#yellow The Motala Workshop#!\n#yellow The Iron Heart Awakens#!\n#yellow The Kingdom of Glass#!\n#yellow The Green Gold Export#!"
 
  nor_the_great_transformation: "The Great Transformation"
  nor_the_great_transformation_reason: "Norway has taken the first steps towards industrialising it's industries, all it got to do now is to become more reliant on itself to become a competetive force in the Western world."
@@ -168,6 +171,7 @@
  sweden_compromise_over_army: "Compromise Over Army"
  sweden_unity_behind_new_policies: "Unity Behind New Army Policies"
  sweden_no_compromise_for_army: "No Compromise About New Army Policies"
+ sweden_snilleindustri: "Swedish Engineering Focus"
  
  norway_abolishment_of_new_aristocrats: "Abolished Creation of New Aristocrat Titles"
  norway_det_store_hamskiftet: "Det store hamskiftet"

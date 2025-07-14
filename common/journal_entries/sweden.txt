@@ -317,6 +317,7 @@ swedish_mortala_verkstad = {
 	
 	on_complete = {
 		trigger_event = { id = sweden_flavor.7 }
+		set_variable = ttb_snilleindustri_mortala
 	}
 	weight = 100
 	should_be_pinned_by_default = yes
@@ -349,6 +350,7 @@ swedish_glasriket = {
 	
 	on_complete = {
 		trigger_event = { id = sweden_flavor.8 }
+		set_variable = ttb_snilleindustri_glasriket
 	}
 	weight = 100
 	should_be_pinned_by_default = yes
@@ -361,8 +363,6 @@ swedish_sundsvall_timber = {
 		country_has_primary_culture = cu:swedish
 		owns_entire_state_region = STATE_NORRLAND
 	}
-
-
 
 	complete = {
 		s:STATE_NORRLAND = {
@@ -525,10 +525,20 @@ swedish_timber_export = {
 				}
 			}
 		}
+		s:STATE_NORRLAND = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_furniture_manufacturies
+					level >= 2
+					occupancy > 0.50
+				}
+			}
+		}
 	}
 
 	on_complete = {
 		trigger_event = { id = sweden_flavor.14 }
+		set_variable = ttb_snilleindustri_timber
 	}
 
 	weight = 100
@@ -604,6 +614,7 @@ swedish_iron_industry = {
 	
 	on_complete = {
 		trigger_event = { id = sweden_flavor.11 }
+		set_variable = ttb_snilleindustri_iron
 	}
 	weight = 100
 	should_be_pinned_by_default = yes
@@ -651,4 +662,34 @@ swedish_reklam_the_eastern_land = {
 		trigger_event = { id = sweden_flavor.37 }
 	}
 	weight = 100
+}
+
+swedish_snilleindustri = {
+	icon = "gfx/interface/icons/invention_icons/telephone.dds"
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+		country_has_primary_culture = cu:swedish
+		owns_entire_state_region = STATE_SVEALAND
+	}
+
+	possible = {
+		has_technology_researched = rotary_valve_engine
+	}
+
+	complete = {
+		custom_tooltip ={
+			text = snilleindustri_complete
+			has_variable = ttb_snilleindustri_mortala
+			has_variable = ttb_snilleindustri_glasriket
+			has_variable = ttb_snilleindustri_timber
+			has_variable = ttb_snilleindustri_iron
+		}
+		has_technology_researched = electrical_generation
+	}
+	on_complete = {
+		trigger_event = { id = sweden_flavor.38 }
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
 }

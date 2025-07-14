@@ -256,6 +256,7 @@ sweden_flavor.7 = {
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
 
 	duration = 3
 
@@ -1766,6 +1767,39 @@ sweden_flavor.37 = {
 		default_option = yes	
 		add_loyalists = {
 			value = 0.1
+		}
+	}
+}
+
+sweden_flavor.38 = {
+	type = country_event
+
+	title = sweden_flavor.38.t
+	desc = sweden_flavor.38.d
+	flavor = sweden_flavor.38.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sweden_flavor.38.a
+		default_option = yes	
+		add_modifier = {
+			name = sweden_snilleindustri
+			years = 10
 		}
 	}
 }
