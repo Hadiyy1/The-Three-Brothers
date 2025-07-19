@@ -433,8 +433,7 @@ focus_on_economy = {
 	building_throughput_add = 0.1
 	country_minting_mult = 0.1
 	country_loan_interest_rate_mult = -0.25
-	state_trade_advantage_mult = 0.1
-	country_max_companies_add = 1
+	state_trade_advantage_mult = 0.20
 }
 
 oppose_stance_on_nordic_pan_nationalism_mod = {

@@ -512,7 +512,9 @@ swedish_timber_export = {
 	group = je_group_internal_affairs
 
 	is_shown_when_inactive = {
-
+	}
+	
+	possible = {
 	}
 
 	complete = {
@@ -679,10 +681,19 @@ swedish_snilleindustri = {
 
 	complete = {
 		custom_tooltip ={
-			text = snilleindustri_complete
+			text = snilleindustri_mortala_complete
 			has_variable = ttb_snilleindustri_mortala
+		}
+		custom_tooltip ={
+			text = snilleindustri_glasriket_complete
 			has_variable = ttb_snilleindustri_glasriket
+		}
+		custom_tooltip ={
+			text = snilleindustri_timber_complete
 			has_variable = ttb_snilleindustri_timber
+		}
+		custom_tooltip ={
+			text = snilleindustri_iron_complete
 			has_variable = ttb_snilleindustri_iron
 		}
 		has_technology_researched = electrical_generation

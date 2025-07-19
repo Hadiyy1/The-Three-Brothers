@@ -506,12 +506,6 @@ sweden_flavor.11 = {
 				years = 3
 			}
 		}
-		c:SWE = {
-			add_technology_progress = {
-				technology = open_hearth_process
-				progress = 10000
-			}
-		}
 	}
 }
 
@@ -1094,6 +1088,7 @@ sweden_flavor.23 = {
 		NOT = {
 			has_law = law_type:law_religious_schools
 		}
+		has_technology_researched = corporatism
 		NOT = {
 			has_variable = ttb_swe_var_event_5
 		}
