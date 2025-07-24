@@ -483,9 +483,8 @@ scandinavia_flavor.9 = {
 			    is_political_movement_type = movement_scandinavia_pan_national
 			}
             add_modifier = {
-				name = scandinavism_enthusiasm
+				name = scandinavism_royal_intrig
 				years = 2
-				is_decaying = yes
 			}
 		}
 		add_radicals = {

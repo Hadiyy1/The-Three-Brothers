@@ -1,4 +1,23 @@
 ﻿CHARACTERS = {
+	c:SWE = {
+		create_character = {
+			first_name = Erik_Gustaf
+			last_name = Geijer
+			historical = yes
+			culture = cu:swedish
+			female = no
+			religion = protestant
+			ideology = ideology_abolitionist
+			interest_group = ig_intelligentsia
+			birth_date = 1783.1.12
+			ig_leader = yes
+			traits = {
+				literary
+				aesthete
+				experienced_political_operator
+			}
+		}
+	}
 	c:NOR = {
 		create_character = {
 			#role = politician # Remove this line

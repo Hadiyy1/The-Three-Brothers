@@ -349,6 +349,11 @@ promote_scandinavism = {
 	political_movement_pop_attraction_mult = 0.15
 }
 
+scandinavism_royal_intrig = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	political_movement_pop_attraction_mult = 0.33
+}
+
 scandinavism_enthusiasm = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	political_movement_pop_attraction_mult = 0.25

@@ -54,6 +54,46 @@ swe_axel_adlercreutz_template = {
 		chance = 50
 	}
 }
+swe_andré_oscar_wallenberg_template = {
+	first_name = André_Oscar
+	last_name = Wallenberg
+	historical = yes
+	culture = cu:swedish
+	female = no
+	religion = protestant
+	ideology = ideology_market_liberal
+	interest_group = ig_industrialists
+	birth_date = 1816.11.19
+	traits = {
+		ambitious
+		innovative
+		direct
+		expert_entrepreneur
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			trigger_if = {
+				limit = {
+					exists = c:SWE
+				}
+				this = c:SWE
+			}
+			trigger_if = {
+				limit = {
+					exists = c:SCA
+				}
+				this = c:SCA
+			}
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1886.1.1
+		chance = 80
+	}
+}
 # Norway - NOR
 nor_frederik_due_template = {
 	first_name = Frederik
@@ -89,7 +129,7 @@ nor_johan_sverdrup_template = {
 	female = no
 	religion = protestant
 	ideology = ideology_radical
-	interest_group = ig_intelligestia
+	interest_group = ig_intelligentsia
 	birth_date = 1816.7.3
 	traits = {
 		persistent

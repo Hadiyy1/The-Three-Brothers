@@ -46,7 +46,7 @@ scandinavian_pan_nationalism = {
 			if = {
 				limit = {
 					scope:journal_entry = {
-						"scripted_bar_progress(scandinavism_progress_bar)" >= 250
+						"scripted_bar_progress(scandinavism_progress_bar)" >= 300
 					}
 					NOT = { has_variable = scandinavia_flavor_9_var }
 				}
