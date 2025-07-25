@@ -10,7 +10,7 @@
 			ideology = ideology_abolitionist
 			interest_group = ig_intelligentsia
 			birth_date = 1783.1.12
-			ig_leader = yes
+			is_agitator = yes
 			traits = {
 				literary
 				aesthete
