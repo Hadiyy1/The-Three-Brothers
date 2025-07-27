@@ -94,6 +94,44 @@ swe_andré_oscar_wallenberg_template = {
 		chance = 80
 	}
 }
+swe_hjalmar_branting_template = {
+	first_name = Hjalmar
+	last_name = Branting
+	historical = yes
+	culture = cu:swedish
+	female = no
+	religion = protestant
+	ideology = ideology_social_democrat
+	interest_group = ig_trade_unions
+	birth_date = 1860.11.23
+	traits = {
+		inspirational_orator
+		charismatic
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			trigger_if = {
+				limit = {
+					exists = c:SWE
+				}
+				this = c:SWE
+			}
+			trigger_if = {
+				limit = {
+					exists = c:SCA
+				}
+				this = c:SCA
+			}
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_trade_unions
+		}
+		earliest_usage_date = 1880.1.1
+		latest_usage_date = 1920.1.1
+		chance = 80
+	}
+}
 # Norway - NOR
 nor_frederik_due_template = {
 	first_name = Frederik
