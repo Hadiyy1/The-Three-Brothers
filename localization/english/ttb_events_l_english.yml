@@ -52,6 +52,19 @@
  scandinavia_flavor.9.f: "The gilded halls of the palaces now echo with the faint, hopeful strains of Nordic unity, a tune hummed by monarchs and statesmen alike."
  scandinavia_flavor.9.a: "Make contact with the royal courts."
  scandinavia_flavor.9.b: "We should not interfere with the royal families."
+
+ scandinavia_flavor.10.t: "The Draft"
+ scandinavia_flavor.10.d: "In the historic halls of #yellow Kalmar#!, representatives from every walk of life are engaged in a monumental task: drafting our foundational constitution. From venerable #white clergy#! to influential #blue landowners#!, from #blue captains of industry#! to seasoned #blue politicians#!, and from the venerable #red Royal Houses#! to the lowborn #green farmers#! all voices are being heard, each representing distinct interests and aspirations. \n\nAfter intense deliberation and spirited debate, the time has come to finalize this pivotal document and submit it for ratification by the newly formed #yellow legislature#!. This compact will define the very structure of our unified nation."
+ scandinavia_flavor.10.f: "The ink flowing on parchment this day shall form the enduring bedrock for a mighty and prosperous Scandinavia, charting its course for centuries to come."
+ scandinavia_flavor.10.a: "A strong, centralized Scandinavia will ensure effective governance and control over our vast lands."
+ scandinavia_flavor.10.b: "A balanced federation will foster harmony and uphold peace between our brother nations."
+ scandinavia_flavor.10.c: "Grant significant autonomy to the former Nordic countries, respecting their distinct identities and traditions."
+ 
+ scandinavia_flavor.11.t: "The Kalmar Constitution Passes!"
+ scandinavia_flavor.11.d: "After weeks of intense debate the newly formed #yellow Scandinavian#! legislature, the #yellow Kalmar Constitution#! has finally been ratified! Cheers erupt in the chambers, echoing throughout the united nation as the news spreads. This historic document, forged through compromise and foresight, now stands as the supreme law of the land. It formally establishes the political framework for our unified nation, defining the rights and responsibilities of its citizens, the powers of its government, and the relationship between the former #blue kingdoms#!. A new era, built on this foundational compact, has truly begun for #yellow Scandinavia#!."
+ scandinavia_flavor.11.f: "The parchment, once a mere draft, now breathes life into the very fabric of our united homeland, cementing our future with the force of law."
+ scandinavia_flavor.11.a: "Our unified nation is now formally established!"
+ 
  
 
 # SWE Events

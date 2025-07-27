@@ -461,3 +461,31 @@ nordic_finland_integration = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
 	country_bureaucracy_add = -100
 }
+
+scandinavia_low_local_autonomy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_bureaucracy_mult = 0.05
+	country_authority_mult = 0.05
+	state_assimilation_mult = 0.05
+	state_conversion_mult = 0.05
+	country_bureaucrats_pol_str_mult = 0.1
+	country_academics_pol_str_mult = 0.05
+}
+
+scandinavia_medium_local_autonomy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_bureaucracy_mult = 0.05
+	country_authority_mult = 0.05
+}
+
+scandinavia_high_local_autonomy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_bureaucracy_mult = -0.05
+	country_aristocrats_pol_str_mult = 0.05
+	country_farmers_pol_str_mult = 0.05
+	country_loyalism_increases_cultural_erasure_mult = 0.05
+	country_loyalism_increases_open_prejudice_mult = 0.05
+	country_loyalism_increases_violent_hostility_mult = 0.05
+	country_loyalism_increases_second_rate_citizen_mult = 0.05
+	country_loyalism_increases_full_acceptance_mult = 0.05
+}

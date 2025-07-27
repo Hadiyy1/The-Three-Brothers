@@ -270,3 +270,52 @@ scandinavia_monetary_union = {
 	should_be_pinned_by_default = yes
 	weight = 100
 }
+
+# The Kalmar Constitution
+scandinavia_kalmar_constitution = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_internal_affairs
+
+	scripted_progress_bar = kalmar_constitution_progress_bar
+
+	should_be_pinned_by_default = yes
+
+	is_shown_when_inactive = {
+		exists = c:SCA
+		c:SCA = this
+	}
+
+	possible = {
+		exists = c:SCA
+		c:SCA = this
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = { 
+					scope:journal_entry = {
+						"scripted_bar_progress(kalmar_constitution_progress_bar)" >= 60
+					}
+					NOT = { has_variable = scandinavia_flavor_10_var } 
+				}
+				trigger_event = { id = scandinavia_flavor.10 popup = yes }
+				set_variable = scandinavia_flavor_10_var
+			}
+	
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = kalmar_constitution_progress_succeeds
+			scope:journal_entry = {
+				"scripted_bar_progress(kalmar_constitution_progress_bar)" >= 120
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = scandinavia_flavor.11 popup = yes }
+	}
+}

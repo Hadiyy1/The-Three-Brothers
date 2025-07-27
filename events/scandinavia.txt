@@ -498,3 +498,75 @@ scandinavia_flavor.9 = {
 		default_option = yes
 	}
 }
+
+scandinavia_flavor.10 = {
+	type = country_event
+
+	title = scandinavia_flavor.10.t
+	desc = scandinavia_flavor.10.d
+	flavor = scandinavia_flavor.10.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = scandinavia_flavor.10.a
+		add_modifier = scandinavia_low_local_autonomy
+		add_radicals = {
+			value = 0.10
+		}
+	}
+
+	option = {
+		name = scandinavia_flavor.10.b
+		add_modifier = scandinavia_medium_local_autonomy
+		default_option = yes
+	}
+
+	option = {
+		name = scandinavia_flavor.10.c
+		add_modifier = scandinavia_high_local_autonomy
+		add_loyalists = {
+			value = 0.10
+		}
+	}
+}
+
+scandinavia_flavor.11 = {
+	type = country_event
+
+	title = scandinavia_flavor.11.t
+	desc = scandinavia_flavor.11.d
+	flavor = scandinavia_flavor.11.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = scandinavia_flavor.11.a
+
+	}
+
+}
