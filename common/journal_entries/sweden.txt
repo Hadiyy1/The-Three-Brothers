@@ -5,8 +5,7 @@ swedish_the_rise_of_lantmanna_partiet = {
 	group = je_group_historical_content
 	
 	is_shown_when_inactive = {
-		exists = c:SWE
-		c:SWE = THIS
+		has_modifier = sweden_outdated_military
 	}
 	
 	possible = {
@@ -88,8 +87,7 @@ swedish_champions_of_national_defence = {
 	group = je_group_internal_affairs
 	
 	is_shown_when_inactive = {
-		exists = c:SWE
-		c:SWE = THIS
+		has_modifier = sweden_outdated_military
 	}
 	
 	possible = {
@@ -201,8 +199,8 @@ swedish_the_end_of_lantmanna_party = {
 	group = je_group_historical_content
 	
 	is_shown_when_inactive = {
-		exists = c:SWE
-		c:SWE = THIS
+		country_has_primary_culture = cu:swedish
+		owns_entire_state_region = STATE_SVEALAND
 		ig:ig_rural_folk = {
 			has_modifier = sweden_lantmannapartiet
 		}

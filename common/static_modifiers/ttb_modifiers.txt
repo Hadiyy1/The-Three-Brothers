@@ -468,7 +468,7 @@ scandinavia_low_local_autonomy = {
 	country_authority_mult = 0.05
 	state_assimilation_mult = 0.05
 	state_conversion_mult = 0.05
-	country_bureaucrats_pol_str_mult = 0.1
+	country_bureaucrats_pol_str_mult = 0.05
 	country_academics_pol_str_mult = 0.05
 }
 

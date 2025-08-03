@@ -436,7 +436,7 @@ sweden_flavor.10 = {
 
 # Iron mining
 sweden_flavor.11 = {
-	type = state_event
+	type = country_event
 
 	title = sweden_flavor.11.t
 	desc = sweden_flavor.11.d
@@ -506,6 +506,11 @@ sweden_flavor.11 = {
 				years = 3
 			}
 		}
+		if = {
+			limit = { NOT = {has_technology_researched = open_hearth_process} }
+			add_technology_researched = open_hearth_process
+		}
+
 	}
 }
 
