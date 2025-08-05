@@ -390,6 +390,7 @@ swedish_sundsvall_timber = {
 		}
 	}
 	weight = 100
+	should_be_pinned_by_default = yes
 }
 swedish_gothenburg_port_expansion = {
 	icon = "gfx/interface/icons/invention_icons/urbanization.dds"
@@ -645,6 +646,7 @@ swedish_retake_finland = {
 		}
 	}
 	weight = 100
+	should_be_pinned_by_default = yes
 }
 
 swedish_reklam_the_eastern_land = {

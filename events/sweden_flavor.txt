@@ -1796,10 +1796,10 @@ sweden_flavor.38 = {
 
 	option = {
 		name = sweden_flavor.38.a
-		default_option = yes	
+		default_option = yes
 		add_modifier = {
 			name = sweden_snilleindustri
-			years = 10
+			years = 15
 		}
 	}
 }

@@ -23,6 +23,10 @@ GLOBAL = {
 			remove_ideology = ideology_particularist
 			add_ideology = ideology_nordic_particularist
 		}
+		ig:ig_intelligentsia = {
+			remove_ideology = ideology_republican
+			add_ideology = ideology_constitutionalist
+		}
 		add_modifier = {
 			name = sweden_outdated_military
 			months = -1
