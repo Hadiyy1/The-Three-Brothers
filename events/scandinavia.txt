@@ -522,7 +522,10 @@ scandinavia_flavor.10 = {
 
 	option = {
 		name = scandinavia_flavor.10.a
-		add_modifier = scandinavia_low_local_autonomy
+		add_modifier = {
+			name = scandinavia_low_local_autonomy
+			years = 20
+		}
 		add_radicals = {
 			value = 0.10
 		}
@@ -530,13 +533,19 @@ scandinavia_flavor.10 = {
 
 	option = {
 		name = scandinavia_flavor.10.b
-		add_modifier = scandinavia_medium_local_autonomy
+		add_modifier = {
+			name =  scandinavia_medium_local_autonomy
+			years = 20
+		}
 		default_option = yes
 	}
 
 	option = {
 		name = scandinavia_flavor.10.c
-		add_modifier = scandinavia_high_local_autonomy
+		add_modifier = { 
+			name = scandinavia_high_local_autonomy 
+			years = 20
+		}
 		add_loyalists = {
 			value = 0.10
 		}
