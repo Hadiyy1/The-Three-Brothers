@@ -547,7 +547,7 @@ scandinavia_flavor.10 = {
 			years = 20
 		}
 		add_loyalists = {
-			value = 0.10
+			value = 0.05
 		}
 	}
 }
