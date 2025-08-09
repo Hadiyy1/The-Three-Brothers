@@ -704,3 +704,36 @@ swedish_snilleindustri = {
 	weight = 100
 	should_be_pinned_by_default = yes
 }
+
+swedish_the_forestry_act = {
+	icon = "gfx/interface/icons/ig_icons/rural_folk.dds"
+	group = je_group_foreign_affairs
+
+	is_shown_when_inactive = {
+		country_has_primary_culture = cu:swedish
+		owns_entire_state_region = STATE_SVEALAND
+		owns_entire_state_region = STATE_NORRLAND
+	}
+
+	possible = {
+		has_technology_researched = steam_donkey
+	}
+
+	complete = {
+		has_technology_researched = threshing_machine
+		OR = {
+			ig:ig_rural_folk = {
+				is_in_government = yes
+			}
+			ig:ig_intelligentsia = {
+				is_in_government = yes
+			}
+		}
+	}
+	
+	on_complete = {
+		add_modifier = sweden_forestry_act
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}

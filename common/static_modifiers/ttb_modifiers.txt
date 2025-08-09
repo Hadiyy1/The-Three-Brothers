@@ -237,6 +237,11 @@ sweden_snilleindustri = {
 	country_production_tech_research_speed_mult = 0.1
 }
 
+sweden_forestry_act = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	state_pollution_reduction_health_mult = -0.05
+}
+
 
 # Norway
 norway_abolishment_of_new_aristocrats = {
