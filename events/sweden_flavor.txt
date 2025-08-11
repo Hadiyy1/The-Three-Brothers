@@ -542,7 +542,7 @@ sweden_flavor.12 = {
 		default_option = yes
 		add_modifier = sweden_folkhemmet
 		add_loyalists = {
-			value = 0.1
+			value = 0.05
 		}
 	}
 }
@@ -932,7 +932,7 @@ sweden_flavor.20 = {
 				months = 6
 			}
 			add_loyalists = {
-				value = 0.1
+				value = 0.05
 				pop_type = laborers
 			}
 		}
@@ -946,7 +946,7 @@ sweden_flavor.20 = {
 				months = 3
 			}
 			add_radicals = {
-				value = 0.1
+				value = 0.05
 				pop_type = laborers
 			}
 		}
@@ -1049,13 +1049,13 @@ sweden_flavor.22 = {
 			years = 3
 		}
 			add_radicals = {
-			value = 0.05
+			value = 0.03
 		}
 	}
 	option = {
 		name = sweden_flavor.22.b
 		add_radicals = {
-			value = 0.1
+			value = 0.05
 		}
 
 	}
@@ -1312,49 +1312,49 @@ sweden_flavor.27 = {
 	}
 }
 
-sweden_flavor.28 = {
-	type = country_event
+# sweden_flavor.28 = {
+# 	type = country_event
 
-	title = sweden_flavor.28.t
-	desc = sweden_flavor.28.d
-	flavor = sweden_flavor.28.f
+# 	title = sweden_flavor.28.t
+# 	desc = sweden_flavor.28.d
+# 	flavor = sweden_flavor.28.f
 
-	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
-	}
+# 	event_image = {
+# 		video = "europenorthamerica_capitalists_meeting"
+# 	}
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+# 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
-	duration = 3
+# 	duration = 3
 
-	trigger = {
-		trigger_if = {
-			limit = {
-				exists = c:SWE
-			}
-			c:SWE = this
-		}
-		trigger_if = {
-			limit = {
-				exists = c:SCA
-			}
-			c:SCA = this
-		}
-		has_law = law_type:law_poor_laws
-		NOT = {
-			has_variable = ttb_swe_var_event_10
-		}
-	}
+# 	trigger = {
+# 		trigger_if = {
+# 			limit = {
+# 				exists = c:SWE
+# 			}
+# 			c:SWE = this
+# 		}
+# 		trigger_if = {
+# 			limit = {
+# 				exists = c:SCA
+# 			}
+# 			c:SCA = this
+# 		}
+# 		has_law = law_type:law_poor_laws
+# 		NOT = {
+# 			has_variable = ttb_swe_var_event_10
+# 		}
+# 	}
 
-	immediate = {
-		set_variable = ttb_swe_var_event_10
-	}
+# 	immediate = {
+# 		set_variable = ttb_swe_var_event_10
+# 	}
 
-	option = {
-		name = sweden_flavor.28.a
-		default_option = yes
-	}
-}
+# 	option = {
+# 		name = sweden_flavor.28.a
+# 		default_option = yes
+# 	}
+# }
 
 sweden_flavor.29 = {
 	type = country_event
@@ -1488,93 +1488,93 @@ sweden_flavor.31 = {
 	}
 }
 
-sweden_flavor.32 = {
-	type = country_event
+# sweden_flavor.32 = {
+# 	type = country_event
 
-	title = sweden_flavor.32.t
-	desc = sweden_flavor.32.d
-	flavor = sweden_flavor.32.f
+# 	title = sweden_flavor.32.t
+# 	desc = sweden_flavor.32.d
+# 	flavor = sweden_flavor.32.f
 
-	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
-	}
+# 	event_image = {
+# 		video = "europenorthamerica_capitalists_meeting"
+# 	}
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+# 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
-	duration = 3
+# 	duration = 3
 
-	trigger = {
-		trigger_if = {
-			limit = {
-				exists = c:SWE
-			}
-			c:SWE = this
-		}
-		trigger_if = {
-			limit = {
-				exists = c:SCA
-			}
-			c:SCA = this
-		}
-		has_law = law_type:law_old_age_pension
-		NOT = {
-			has_variable = ttb_swe_var_event_14
-		}
-	}
+# 	trigger = {
+# 		trigger_if = {
+# 			limit = {
+# 				exists = c:SWE
+# 			}
+# 			c:SWE = this
+# 		}
+# 		trigger_if = {
+# 			limit = {
+# 				exists = c:SCA
+# 			}
+# 			c:SCA = this
+# 		}
+# 		has_law = law_type:law_old_age_pension
+# 		NOT = {
+# 			has_variable = ttb_swe_var_event_14
+# 		}
+# 	}
 
-	immediate = {
-		set_variable = ttb_swe_var_event_14
-	}
+# 	immediate = {
+# 		set_variable = ttb_swe_var_event_14
+# 	}
 
-	option = {
-		name = sweden_flavor.32.a
-		default_option = yes
-	}
-}
+# 	option = {
+# 		name = sweden_flavor.32.a
+# 		default_option = yes
+# 	}
+# }
 
-sweden_flavor.33 = {
-	type = country_event
+# sweden_flavor.33 = {
+# 	type = country_event
 
-	title = sweden_flavor.33.t
-	desc = sweden_flavor.33.d
-	flavor = sweden_flavor.33.f
+# 	title = sweden_flavor.33.t
+# 	desc = sweden_flavor.33.d
+# 	flavor = sweden_flavor.33.f
 
-	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
-	}
+# 	event_image = {
+# 		video = "europenorthamerica_capitalists_meeting"
+# 	}
 
-	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+# 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
 
-	duration = 3
+# 	duration = 3
 
-	trigger = {
-		trigger_if = {
-			limit = {
-				exists = c:SWE
-			}
-			c:SWE = this
-		}
-		trigger_if = {
-			limit = {
-				exists = c:SCA
-			}
-			c:SCA = this
-		}
-		has_law = law_type:law_womens_suffrage
-		NOT = {
-			has_variable = ttb_swe_var_event_16
-		}
-	}
+# 	trigger = {
+# 		trigger_if = {
+# 			limit = {
+# 				exists = c:SWE
+# 			}
+# 			c:SWE = this
+# 		}
+# 		trigger_if = {
+# 			limit = {
+# 				exists = c:SCA
+# 			}
+# 			c:SCA = this
+# 		}
+# 		has_law = law_type:law_womens_suffrage
+# 		NOT = {
+# 			has_variable = ttb_swe_var_event_16
+# 		}
+# 	}
 
-	immediate = {
-		set_variable = ttb_swe_var_event_16
-	}
+# 	immediate = {
+# 		set_variable = ttb_swe_var_event_16
+# 	}
 
-	option = {
-		name = sweden_flavor.33.a
-		default_option = yes
-	}
-}
+# 	option = {
+# 		name = sweden_flavor.33.a
+# 		default_option = yes
+# 	}
+# }
 
 sweden_flavor.34 = {
 	type = country_event

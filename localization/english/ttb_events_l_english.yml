@@ -208,10 +208,10 @@
  sweden_flavor.27.f: "The chains of ancient privilege are broken, unleashing the full force of free enterprise."
  sweden_flavor.27.a: "Abolish the Guilds!"
 
- sweden_flavor.28.t: "The Poor Law: Centralizing Welfare"
- sweden_flavor.28.d: "To address the growing problem of poverty and vagrancy in an industrializing society, Sweden has adopted a new Poor Law. This reform aims to standardize and centralize welfare efforts, shifting responsibility from individual parishes to broader municipal or county levels, and introducing more structured forms of aid, often including workhouses for the able-bodied. While designed to make poor relief more efficient and less arbitrary."
- sweden_flavor.28.f: "The hand of the state offers relief, but with a firm grip and a watchful eye."
- sweden_flavor.28.a: "Implement the Poor Law!"
+ #  sweden_flavor.28.t: "The Poor Law: Centralizing Welfare"
+ #  sweden_flavor.28.d: "To address the growing problem of poverty and vagrancy in an industrializing society, Sweden has adopted a new Poor Law. This reform aims to standardize and centralize welfare efforts, shifting responsibility from individual parishes to broader municipal or county levels, and introducing more structured forms of aid, often including workhouses for the able-bodied. While designed to make poor relief more efficient and less arbitrary."
+ #  sweden_flavor.28.f: "The hand of the state offers relief, but with a firm grip and a watchful eye."
+ #  sweden_flavor.28.a: "Implement the Poor Law!"
 
  sweden_flavor.29.t: "The Freedom of Trade and Industry Act: Economic Liberalization"
  sweden_flavor.29.d: "Following the abolition of the guilds, Sweden takes another decisive step towards economic liberalization with the Freedom of Trade and Industry Act. This law removes most remaining restrictions on establishing and operating businesses, allowing for greater competition, innovation, and economic mobility. It is a cornerstone of a burgeoning free-market economy, attracting investment and stimulating industrial growth. However, it also means less protection for smaller businesses and artisans against larger, more competitive enterprises."
@@ -228,15 +228,15 @@
  sweden_flavor.31.f: "The workers' voices, once isolated, now rise in a legally sanctioned chorus of collective demand."
  sweden_flavor.31.a: "Recognize Workers' Rights!"
 
- sweden_flavor.32.t: "The Old-Age Pension Law: A Pioneer in Social Security"
- sweden_flavor.32.d: "Sweden has implemented the Old-Age Pension Law. This groundbreaking legislation establishes a national system of old-age pensions, providing financial support for the elderly regardless of their previous income or social status. This progressive step aims to alleviate poverty among the aged and provide a safety net for all citizens in their later years. While it sets a new standard for social welfare, it necessitates significant ongoing state funding and marks a substantial expansion of government responsibility for its citizens' well-being."
- sweden_flavor.32.f: "The promise of dignity in old age shines bright, a beacon of a compassionate and forward-looking nation."
- sweden_flavor.32.a: "Enact the National Pension!"
+ #  sweden_flavor.32.t: "The Old-Age Pension Law: A Pioneer in Social Security"
+ #  sweden_flavor.32.d: "Sweden has implemented the Old-Age Pension Law. This groundbreaking legislation establishes a national system of old-age pensions, providing financial support for the elderly regardless of their previous income or social status. This progressive step aims to alleviate poverty among the aged and provide a safety net for all citizens in their later years. While it sets a new standard for social welfare, it necessitates significant ongoing state funding and marks a substantial expansion of government responsibility for its citizens' well-being."
+ #  sweden_flavor.32.f: "The promise of dignity in old age shines bright, a beacon of a compassionate and forward-looking nation."
+ #  sweden_flavor.32.a: "Enact the National Pension!"
 
- sweden_flavor.33.t: "The Women's Suffrage Act: Full Political Equality"
- sweden_flavor.33.d: "After decades of tireless campaigning by the women's suffrage movement, supported by liberal and social democratic parties, the Riksdag has finally passed comprehensive legislation granting universal suffrage to women. This momentous act establishes full political equality between men and women, allowing all adult female citizens to vote and stand for election. It marks a profound transformation of Sweden's political landscape, doubling the electorate and bringing new perspectives to governance, solidifying Sweden as a leading nation in democratic rights."
- sweden_flavor.33.f: "The ballot box welcomes all, as the voices of half the nation find their rightful place in democracy."
- sweden_flavor.33.a: "Enact Women's Universal Suffrage!"
+ #  sweden_flavor.33.t: "The Women's Suffrage Act: Full Political Equality"
+ #  sweden_flavor.33.d: "After decades of tireless campaigning by the women's suffrage movement, supported by liberal and social democratic parties, the Riksdag has finally passed comprehensive legislation granting universal suffrage to women. This momentous act establishes full political equality between men and women, allowing all adult female citizens to vote and stand for election. It marks a profound transformation of Sweden's political landscape, doubling the electorate and bringing new perspectives to governance, solidifying Sweden as a leading nation in democratic rights."
+ #  sweden_flavor.33.f: "The ballot box welcomes all, as the voices of half the nation find their rightful place in democracy."
+ #  sweden_flavor.33.a: "Enact Women's Universal Suffrage!"
 
  sweden_flavor.34.t: "The Right to Strike and Lockout Act: Labor's New Power"
  sweden_flavor.34.d: "Building on the legalization of trade unions, the Riksdag has passed a pivotal law formally recognizing the right to strike for workers and the right to lockout for employers. This act establishes a legal framework for industrial disputes, acknowledging these as legitimate tools in labor relations. Empowering both labor and capital within a defined legal system and contributing to a more stable, albeit sometimes volatile, industrial landscape."
