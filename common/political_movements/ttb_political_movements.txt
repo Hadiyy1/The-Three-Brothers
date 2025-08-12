@@ -7,6 +7,10 @@ movement_scandinavia_pan_national = {
 		ideology_ethno_nationalist
 		ideology_jingoist_leader
 	}
+	disband_trigger = {
+		exists = c:SCA
+		has_variable = scandinavian_pan_nationalism_done
+	}
 	
 	creation_trigger = {
 		any_primary_culture = {
