@@ -622,7 +622,7 @@ swedish_iron_industry = {
 }
 
 swedish_retake_finland = {
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = "gfx/interface/icons/event_icons/ttb_finland_map.dds"
 	group = je_group_foreign_affairs
 
 	is_shown_when_inactive = {

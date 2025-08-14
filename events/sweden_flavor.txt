@@ -9,7 +9,7 @@ sweden_flavor.1 = {
 	flavor = sweden_flavor.1.f
 
 	event_image = {
-		video = "gfx/event_pictures/middleeast_upperclass_party.bk2"
+		texture = "gfx/event_pictures/ttb_last_day_of_riskdag.dds"
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
