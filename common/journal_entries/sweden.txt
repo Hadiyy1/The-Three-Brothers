@@ -287,7 +287,7 @@ swedish_restoration_of_the_military = {
 	weight = 50
 	should_be_pinned_by_default = yes
 }
-swedish_mortala_verkstad = {
+swedish_motala_verkstad = {
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
 	group = je_group_internal_affairs
 
@@ -622,7 +622,7 @@ swedish_iron_industry = {
 }
 
 swedish_retake_finland = {
-	icon = "gfx/interface/icons/event_icons/ttb_finland_map.dds"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 	group = je_group_foreign_affairs
 
 	is_shown_when_inactive = {

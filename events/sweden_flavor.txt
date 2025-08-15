@@ -243,7 +243,7 @@ sweden_flavor.6 = {
 	}
 }
 
-# Mortal verkstad
+# Motala verkstad
 sweden_flavor.7 = {
 	type = country_event
 
@@ -252,7 +252,7 @@ sweden_flavor.7 = {
 	flavor = sweden_flavor.7.f
 
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		texture = "gfx/event_pictures/ttb_motala_verkstad.dds"
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
@@ -357,7 +357,7 @@ sweden_flavor.9 = {
 	flavor = sweden_flavor.9.f
 
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		texture = "gfx/event_pictures/ttb_sundsvall_harbour.dds"
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
@@ -406,7 +406,7 @@ sweden_flavor.10 = {
 	flavor = sweden_flavor.10.f
 
 	event_image = {
-		video = "europenorthamerica_before_the_battle"
+		texture = "gfx/event_pictures/ttb_finland_map.dds"
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
