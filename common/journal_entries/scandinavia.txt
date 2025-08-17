@@ -96,12 +96,23 @@ scandinavian_pan_nationalism = {
 	}
 	
 	complete = {
-		custom_tooltip = {
-			text = scandinavianism_progress_succeeds
-			scope:journal_entry = {
-				"scripted_bar_progress(scandinavism_progress_bar)" >= 350
+		OR = {
+			custom_tooltip = {
+				text = scandinavianism_progress_succeeds
+				scope:journal_entry = {
+					"scripted_bar_progress(scandinavism_progress_bar)" >= 350
+				}
 			}
+			AND = {
+				exists ?= c:SCA
+				custom_tooltip = {
+		   			text = has_formed_sca
+		    		c:SCA ?= THIS
+				}
+			}
+
 		}
+
 	}
 
 	on_complete ={
