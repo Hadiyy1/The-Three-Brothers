@@ -1803,3 +1803,395 @@ sweden_flavor.38 = {
 		}
 	}
 }
+
+sweden_flavor.39 = {
+	type = country_event
+
+	title = sweden_flavor.39.t
+	desc = sweden_flavor.39.d
+	flavor = sweden_flavor.39.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:swedish_king
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_variable = speech_from_the_throne }
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = swedish_king
+		}
+		set_variable = speech_from_the_throne
+	}
+
+	option = {
+		name = sweden_flavor.39.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 2
+			}
+		}
+	}
+	option = {
+		name = sweden_flavor.39.b
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_suppress
+				years = 2
+			}
+		}
+	}
+}
+
+sweden_flavor.40 = {
+	type = country_event
+
+	title = sweden_flavor.40.t
+	desc = sweden_flavor.40.d
+	flavor = sweden_flavor.40.f
+
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sweden_flavor.40.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 2
+			}
+		}
+	}
+}
+
+sweden_flavor.41 = {
+	type = country_event
+
+	title = sweden_flavor.41.t
+	desc = sweden_flavor.41.d
+	flavor = sweden_flavor.41.f
+
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_variable = a_defense_of_the_crown }
+	}
+
+	immediate = {
+		set_variable = a_defense_of_the_crown
+	}
+
+	option = {
+		name = sweden_flavor.41.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 2
+			}
+		}
+	}
+	option = {
+		name = sweden_flavor.41.b
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_suppress
+				years = 2
+			}
+		}
+	}
+}
+
+sweden_flavor.42 = {
+	type = country_event
+
+	title = sweden_flavor.42.t
+	desc = sweden_flavor.42.d
+	flavor = sweden_flavor.42.f
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_variable = the_king's_effigy }
+	}
+
+	immediate = {
+		set_variable = the_king's_effigy
+	}
+
+	option = {
+		name = sweden_flavor.42.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 2
+			}
+		}
+		add_loyalists = {
+			value = 0.02
+		}
+	}
+	option = {
+		name = sweden_flavor.42.b
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_suppress
+				years = 2
+			}
+		}
+		add_radicals = {
+			value = 0.02
+		}
+	}
+}
+
+sweden_flavor.43 = {
+	type = country_event
+
+	title = sweden_flavor.43.t
+	desc = sweden_flavor.43.d
+	flavor = sweden_flavor.43.f
+
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_variable = the_lecture_hall's_acclamation }
+	}
+
+	immediate = {
+		set_variable = the_lecture_hall's_acclamation
+	}
+
+	option = {
+		name = sweden_flavor.43.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 2
+			}
+		}
+	}
+	option = {
+		name = sweden_flavor.43.b
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_suppress
+				years = 2
+			}
+		}
+	}
+}
+
+sweden_flavor.44 = {
+	type = country_event
+
+	title = sweden_flavor.44.t
+	desc = sweden_flavor.44.d
+	flavor = sweden_flavor.44.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:swedish_king
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_variable = A_question_of_inheritance }
+		ruler = {
+			has_template = swe_oscar_bernadotte_template
+		}
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = swedish_king
+		}
+		set_variable = A_question_of_inheritance
+
+	}
+
+	option = {
+		name = sweden_flavor.44.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+					is_political_movement_type = movement_liberal
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 2
+			}
+		}
+	}
+	option = {
+		name = sweden_flavor.44.b
+		add_loyalists = {
+			value = 0.05
+			pop_type = aristocrats
+		}
+		add_loyalists = {
+			value = 0.05
+			pop_type = clergymen
+		}
+	}
+}
+
+sweden_flavor.45 = {
+	type = country_event
+
+	title = sweden_flavor.45.t
+	desc = sweden_flavor.45.d
+	flavor = sweden_flavor.45.f
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_variable = the_debate_on_the_crown }
+	}
+
+	immediate = {	
+		set_variable = the_debate_on_the_crown
+	}
+
+	option = {
+		name = sweden_flavor.45.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 2
+			}
+		}
+	}
+	option = {
+		name = sweden_flavor.43.b
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_suppress
+				years = 2
+			}
+		}
+	}
+}

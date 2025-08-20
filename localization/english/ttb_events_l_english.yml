@@ -264,6 +264,47 @@
  sweden_flavor.38.f: "From quiet workshops to bustling laboratories, the hum of inventive minds and the intricate dance of gears herald a new age where Swedish ingenuity leads the way."
  sweden_flavor.38.a: "Champion Our Industrial Innovators!"
 
+ sweden_flavor.39.t: "Speech From The Throne"
+ sweden_flavor.39.d: "[SCOPE.sCharacter('swedish_king').GetFullName] is holding his speech from the throne. Even if this is an ordinary formal ceremony it still gives normal men a chance to see and hear the King"
+ sweden_flavor.39.f: "The crown hold a place in heart of men like our own flag"
+ sweden_flavor.39.a: "Hear the speech"
+ sweden_flavor.39.b: "try to redirect from the speech"
+
+ sweden_flavor.40.t: "The Crown Endures"
+ sweden_flavor.40.d: "The House of Bernadotte has maintained it position in are nation, their line a steadfast symbol of Swedish continuity in a world of ever-shifting ideologies. So long as the people hold fast to their traditions, the monarchy shall remain a cornerstone of the nation."
+ sweden_flavor.40.f: "Some men may speak of 'republican liberty' and 'proletarian rule,' but I say this: the King is the first man of Sweden, and the last. So long as there is a throne, there is a Fatherland."
+ sweden_flavor.40.a: "Long live the King!"
+
+ sweden_flavor.41.t: "A Defense of the Crown"
+ sweden_flavor.41.d: "A prominent article has appeared in the daily papers, penned by a celebrated intellectual. The author passionately defends the institution of the monarchy not as a relic of a bygone era, but as a living symbol of national unity and historical continuity. The article argues that in a time of radical change and social upheaval, the Crown serves as a vital anchor for the nation's identity."
+ sweden_flavor.41.f: "The article, a piece of well-reasoned and elegant prose, has proven immensely popular, selling out of every newsstand within hours. It closes with a simple, yet powerful line: 'To abandon the Crown is to abandon our history. To embrace it, is to embrace a common future.'"
+ sweden_flavor.41.a: "The people should be reminded of the value of their traditions."
+ sweden_flavor.41.b: "Newspapers should not be used for monarchical propaganda."
+
+ sweden_flavor.42.t: "The King's Effigy"
+ sweden_flavor.42.d: "A proposal to erect a grand monument in the capital has been met with great popular enthusiasm. The monument would honor the enduring reign of our King and serve as a powerful testament to the stability of the Swedish monarchy in an age of change. The location has been selected, a prominent public square, and the most renowned sculptors have submitted their designs for the monarch's approval."
+ sweden_flavor.42.f: "The mayor of Stockholm, speaking before the city council, declared, 'Let us build a monument not of cold marble, but of national unity. Let this effigy stand as a reminder that the Crown, like our history, is built upon the firm foundations of the people's will.'"
+ sweden_flavor.42.a: "A fitting tribute to a beloved sovereign."
+ sweden_flavor.42.b: "The public funds would be better spent on social programs."
+
+ sweden_flavor.43.t: "The Lecture Hall's Acclamation"
+ sweden_flavor.43.d: "A highly anticipated public lecture, delivered by a renowned historian, has been a resounding success. The lecture, titled 'The Crown: A Bulwark Against Chaos,' argued for the vital role of the monarchy as a force for stability and national identity. The lecture hall was filled to capacity, with many more turned away at the door, demonstrating the public's eagerness to engage with the topic."
+ sweden_flavor.43.f: "The historian, a man known for his erudition and fiery rhetoric, concluded his address to a standing ovation. 'Let our neighbors embrace the fleeting whims of the popular vote,' he declared, 'but let Sweden's soul be anchored in the steadfast continuity of our Crown, a beacon of order in a world adrift in republican fervor.' His final words were drowned out by the thunderous applause of the crowd, eager to affirm their loyalty."
+ sweden_flavor.43.a: "This proves that the people stand with the King."
+ sweden_flavor.43.b: "It is merely the opinion of a single academic."
+
+ sweden_flavor.44.t: "A Question of Inheritance"
+ sweden_flavor.44.d: "King Oscar I has personally championed and seen through the passage of a new law regarding inheritance. The legislation, a radical break from ancient tradition, dictates that in the absence of a will, brothers and sisters shall have an equal right to inherit. This is a monumental step towards gender equality and signals a new direction for the Crown in matters of social progress."
+ sweden_flavor.44.f: "An editorial in a liberal-leaning newspaper praised the King's decision, saying, 'The monarch has declared that a daughter's worth is no less than a son's. He has chosen to cast off the shackles of an antiquated past and, with a single stroke of the pen, affirmed the equality of the Swedish family.'"
+ sweden_flavor.44.a: "A wise and modern reform."
+ sweden_flavor.44.b: "Tradition should have prevailed."
+
+ sweden_flavor.45.t: "The Debate on the Crown"
+ sweden_flavor.45.d: "A high-profile meeting of ministers and parliamentary leaders has been convened to address the role and relevance of the monarchy in modern Sweden. The discussion, though private, has quickly become the talk of the capital, with rumors of heated arguments and passionate speeches. In an age of rising republicanism, the question of the Crown's future is a matter of paramount importance."
+ sweden_flavor.45.f: "A junior minister, exiting the meeting late in the evening, was accosted by a throng of journalists. Exhausted, he merely said, 'The question is no longer whether we should have a monarch, but what kind of monarch we want. Is the Crown a relic of the past, or a compass for the future?' He refused to elaborate."
+ sweden_flavor.45.a: "The monarchy must be a symbol, not a source of power."
+ sweden_flavor.45.b: "The King's authority must not be diminished."
+
 # Denmark
  denmark_flavor.1.t: "Failure of Our Nation"
  denmark_flavor.1.d: "The loss of Scania, Norway and Schelswig-Holstein has caused a heavy blow to the Danish identity and now people are looking at all the territorial losses and wanting to look inwards on what should be done now. What should be done now is up to the government."

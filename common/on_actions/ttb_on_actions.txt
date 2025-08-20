@@ -23,12 +23,12 @@ sweden_monthly_pulse = {
         sweden_flavor.25
         sweden_flavor.26
         sweden_flavor.27
-        sweden_flavor.28
+        # sweden_flavor.28
         sweden_flavor.29
         sweden_flavor.30
         sweden_flavor.31
-        sweden_flavor.32
-        sweden_flavor.33
+        # sweden_flavor.32
+        # sweden_flavor.33
         sweden_flavor.34
         sweden_flavor.35
         sweden_flavor.36

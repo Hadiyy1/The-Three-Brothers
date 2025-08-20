@@ -36,6 +36,7 @@ GLOBAL = {
 			months = -1
 		}
 		add_journal_entry = { type = swedish_champions_of_national_defence }
+		add_journal_entry = { type = swedish_nordic_monarchy }
 	}
 	c:NOR = {
 		add_modifier = {

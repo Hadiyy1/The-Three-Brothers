@@ -242,6 +242,16 @@ sweden_forestry_act = {
 	state_pollution_reduction_health_mult = -0.05
 }
 
+sweden_royal_support = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	political_movement_pop_attraction_mult = 0.25
+}
+
+sweden_royal_suppress = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	political_movement_pop_attraction_mult = -0.1
+}
+
 
 # Norway
 norway_abolishment_of_new_aristocrats = {

@@ -108,6 +108,9 @@
  snilleindustri_iron_complete: "#yellow The Iron Heart Awakens#! completed"
  swedish_the_forestry_act: "The Forestry Act"
  swedish_the_forestry_act_reason: "For generations, the #light_green forest#! has been the very heart of the #yellow Swedish soul#!, a source of both livelihood and deep-seated identity. But the great #blue sawmill industry#! and the #blue charcoal kilns#! of #yellow Bergslagen#! have taken a heavy toll on this ancient relationship. The ceaseless demand for timber has left our once endless bounty looking thin and worn. Yet, a new idea is taking root. A #white 'conservation movement'#! is stirring in the Parliament, arguing that our forests are a finite inheritance to be managed, not simply exploited.\n\nThe debates are often heated, but the direction seems clear. The new #gold Forestry Act (Skogsvårdslagen)#!, which requires replanting and oversight from forestry inspectors. There are also more ambitious calls to preserve entire landscapes, creating vast #gold national parks#! for #blue science#! and #blue tourism#!. This is a moment of truth for our nation commitment to safeguarding the wild beauty that has long defined us."
+ swedish_nordic_monarchy: "The House of Bernadotte"
+ swedish_nordic_monarchy_reason: "#yellow The House of Bernadotte#!, founded by the former French marshal\n#yellow Karl XIV Johan#!, is a relatively new dynasty in #yellow Sweden#!.\nWhile the legitimacy of royal houses is increasingly called into question by republican and nationalist passions across Europe, the #yellow Bernadottes#! have defied this trend, earning overwhelming popular support among the Swedish people.\n\nTo endure, the dynasty must cement its place not through ancient right, but through its continued ability to appeal to a broad range of subjects and adapt to the changing political landscape."
+ swedish_nordic_monarchy_goal: "The House of Bernadotte maintains its widespread support, ensuring the monarchy's future."
 
  nor_the_great_transformation: "The Great Transformation"
  nor_the_great_transformation_reason: "Norway has taken the first steps towards industrialising it's industries, all it got to do now is to become more reliant on itself to become a competetive force in the Western world."
@@ -211,6 +214,8 @@
  sweden_good_glass_quality: "Glasriket"
  sweden_mortala_verkstad: "Motalas Industrial Prowess"
  sweden_forestry_act: "The Forestry Act"
+ sweden_royal_support: "Royal support"
+ sweden_royal_suppress: "Royal suppression"
 
  norway_abolishment_of_new_aristocrats: "Abolished Creation of New Aristocrat Titles"
  norway_det_store_hamskiftet: "Det store hamskiftet"

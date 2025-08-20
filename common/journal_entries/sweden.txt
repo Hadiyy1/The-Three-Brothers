@@ -707,7 +707,7 @@ swedish_snilleindustri = {
 
 swedish_the_forestry_act = {
 	icon = "gfx/interface/icons/ig_icons/rural_folk.dds"
-	group = je_group_foreign_affairs
+	group = je_group_internal_affairs
 
 	is_shown_when_inactive = {
 		country_has_primary_culture = cu:swedish
@@ -736,4 +736,62 @@ swedish_the_forestry_act = {
 	}
 	weight = 100
 	should_be_pinned_by_default = yes
+}
+
+swedish_nordic_monarchy = {
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+	group = je_group_internal_affairs
+
+	should_be_pinned_by_default = yes
+
+	immediate = {
+		set_variable = {
+			name = swedish_monarchy_progress_var
+			value = 0
+		}
+	}
+
+	current_value = {
+		value = var:swedish_monarchy_progress_var
+	}
+
+	goal_add_value = {
+		add = 240
+	}
+	
+	progressbar = yes
+
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = swedish_monarchy_progress_var
+				add = 1
+			}
+		}
+	}
+
+	on_yearly_pulse = {
+		random_events = {
+			10 = sweden_flavor.39
+			10 = sweden_flavor.41
+			10 = sweden_flavor.42
+			10 = sweden_flavor.43
+			10 = sweden_flavor.44
+			10 = sweden_flavor.45
+		}
+	}
+
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+
+	complete = {
+		scope:journal_entry = { is_goal_complete = yes }
+	}
+
+	on_complete = {
+		trigger_event = { id = sweden_flavor.40 popup = yes }
+	}
 }
