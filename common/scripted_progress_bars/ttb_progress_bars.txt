@@ -60,3 +60,89 @@ kalmar_constitution_progress_bar = {
 	min_value = 0
 	max_value = 120
 }
+
+crowns_control_progress_bar = {
+	name = crowns_control_progress_bar
+	desc = crowns_control_progress_bar_desc
+
+	double_sided_bad = yes
+
+	monthly_progress = {
+		add = {
+			desc = "ttb_royalist_absolutist_movements"
+			every_political_movement = {
+				limit = {
+					OR = {
+						is_political_movement_type = movement_royalist_absolutist
+						is_political_movement_type = movement_royalist_constitutional
+
+					}
+				}
+				add = {
+					value = this.political_movement_support
+					multiply = 2
+				}
+			}
+		}
+
+		add = {
+			desc = "ttb_radical_movements"
+			every_political_movement = {
+				limit = {
+					is_political_movement_type = movement_radical
+				}
+				subtract = {
+					value = this.political_movement_support
+					multiply = 2
+				}
+			}
+		}
+
+		add = {
+			desc = "ttb_anti_monarchist_in_government"
+			owner = {
+				every_interest_group = {
+					limit = {
+						is_in_government = yes
+						leader = {
+							OR = {
+								has_ideology = ideology:ideology_republican_leader
+								has_ideology = ideology:ideology_radical	
+								has_ideology = ideology:ideology_anarchist
+								has_ideology = ideology:ideology_communist
+							}
+						}
+					}
+					subtract = {
+						value = 0.5
+					}
+				}
+			}
+		}
+
+		add = {
+			desc = "ttb_monarchist_in_government"
+			owner = {
+				every_interest_group = {
+					limit = {
+						is_in_government = yes
+						leader = {
+							OR = {
+								has_ideology = ideology:ideology_royalist
+								has_ideology = ideology:ideology_authoritarian			
+							}
+						}
+					}
+					add = {
+						value = 0.5
+					}
+				}
+			}
+		}
+
+	}
+
+	start_value = 150
+	min_value = 0
+	max_value = 300
+}

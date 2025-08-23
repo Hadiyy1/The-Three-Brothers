@@ -744,6 +744,8 @@ swedish_nordic_monarchy = {
 
 	should_be_pinned_by_default = yes
 
+	scripted_progress_bar = crowns_control_progress_bar
+
 	immediate = {
 		set_variable = {
 			name = swedish_monarchy_progress_var
@@ -792,6 +794,22 @@ swedish_nordic_monarchy = {
 	}
 
 	on_complete = {
-		trigger_event = { id = sweden_flavor.40 popup = yes }
+		if = {
+			limit = { 
+				scope:journal_entry = {
+					"scripted_bar_progress(crowns_control_progress_bar)" >= 150
+				}
+			}
+			trigger_event = { id = sweden_flavor.40 popup = yes }
+		}
+		if = {
+			limit = { 
+				scope:journal_entry = {
+					"scripted_bar_progress(crowns_control_progress_bar)" < 150
+				}
+			}
+			trigger_event = { id = sweden_flavor.46 popup = yes }
+		}
+		
 	}
 }

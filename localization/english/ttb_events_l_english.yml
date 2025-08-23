@@ -305,6 +305,12 @@
  sweden_flavor.45.a: "The monarchy must be a symbol, not a source of power."
  sweden_flavor.45.b: "The King's authority must not be diminished."
 
+ sweden_flavor.46.t: "The Crown's Fading Influence"
+ sweden_flavor.46.d: "Though the Crown remains the most venerated institution in Sweden, its once-absolute authority is gradually being absorbed by other branches of government. The King's influence over the appointment of ministers, the shaping of foreign policy, and the command of the armed forces has waned, a quiet but undeniable shift that has left many wondering about the future role of the monarchy."
+ sweden_flavor.46.f: "A retired general, a man who had served under three kings, lamented the change to a younger officer. 'In my day,' he said with a nostalgic sigh, 'the King's word was law. We knew where the authority lay, and we knew what was expected of us. Now, it seems, we must await the dictates of a committee of men of varying quality of mind in frock coats and top hats, all of whom have their own private interests at heart. The Crown has become a silent partner, a beautiful shadow of its former self.'"
+ sweden_flavor.46.a: "This is a necessary step towards a modern state."
+
+
 # Denmark
  denmark_flavor.1.t: "Failure of Our Nation"
  denmark_flavor.1.d: "The loss of Scania, Norway and Schelswig-Holstein has caused a heavy blow to the Danish identity and now people are looking at all the territorial losses and wanting to look inwards on what should be done now. What should be done now is up to the government."

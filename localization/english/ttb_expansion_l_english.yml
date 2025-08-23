@@ -111,6 +111,12 @@
  swedish_nordic_monarchy: "The House of Bernadotte"
  swedish_nordic_monarchy_reason: "#yellow The House of Bernadotte#!, founded by the former French marshal\n#yellow Karl XIV Johan#!, is a relatively new dynasty in #yellow Sweden#!.\nWhile the legitimacy of royal houses is increasingly called into question by republican and nationalist passions across Europe, the #yellow Bernadottes#! have defied this trend, earning overwhelming popular support among the Swedish people.\n\nTo endure, the dynasty must cement its place not through ancient right, but through its continued ability to appeal to a broad range of subjects and adapt to the changing political landscape."
  swedish_nordic_monarchy_goal: "The House of Bernadotte maintains its widespread support, ensuring the monarchy's future."
+ crowns_control_progress_bar: "The Crown Control on The Government"
+ crowns_control_progress_bar_desc: ""
+ ttb_royalist_absolutist_movements: "Royalist and Absolutism movements"
+ ttb_radical_movements: "Radical movements"
+ ttb_anti_monarchist_in_government: "Anti-Monarchists in government"
+ ttb_monarchist_in_government: "Monarchists in government"
 
  nor_the_great_transformation: "The Great Transformation"
  nor_the_great_transformation_reason: "Norway has taken the first steps towards industrialising it's industries, all it got to do now is to become more reliant on itself to become a competetive force in the Western world."
@@ -216,6 +222,9 @@
  sweden_forestry_act: "The Forestry Act"
  sweden_royal_support: "Royal support"
  sweden_royal_suppress: "Royal suppression"
+ sweden_monarchy_influence: "Monarchy Influence"
+ sweden_monarchy_diminishing_influence: "Monarchy diminishing Influence"
+ sweden_strong_king: "Strong King"
 
  norway_abolishment_of_new_aristocrats: "Abolished Creation of New Aristocrat Titles"
  norway_det_store_hamskiftet: "Det store hamskiftet"

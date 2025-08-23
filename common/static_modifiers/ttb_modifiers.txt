@@ -252,6 +252,26 @@ sweden_royal_suppress = {
 	political_movement_pop_attraction_mult = -0.1
 }
 
+sweden_monarchy_influence = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_legitimacy_base_add = 5
+	interest_group_in_government_attraction_mult = 0.1
+	country_aristocrats_pol_str_mult = 0.1
+	country_clergymen_pol_str_mult = 0.1
+	country_officers_pol_str_mult = 0.05
+}
+
+sweden_monarchy_diminishing_influence = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_aristocrats_pol_str_mult = -0.1
+	country_clergymen_pol_str_mult = -0.1
+}
+
+sweden_strong_king = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	character_popularity_add = 20
+}
+
 
 # Norway
 norway_abolishment_of_new_aristocrats = {

@@ -1845,6 +1845,12 @@ sweden_flavor.39 = {
 				years = 2
 			}
 		}
+		je:swedish_nordic_monarchy = {
+			add_progress = {
+				name = crowns_control_progress_bar
+				value = 5
+			}
+		}			
 	}
 	option = {
 		name = sweden_flavor.39.b
@@ -1860,6 +1866,12 @@ sweden_flavor.39 = {
 				years = 2
 			}
 		}
+		je:swedish_nordic_monarchy = {
+			add_progress = {
+				name = crowns_control_progress_bar
+				value = -5
+			}
+		}	
 	}
 }
 
@@ -1874,7 +1886,7 @@ sweden_flavor.40 = {
 		video = "votp_monarch_holding_court"
 	}
 
-	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
 
 	duration = 3
 
@@ -1883,7 +1895,9 @@ sweden_flavor.40 = {
 	}
 
 	immediate = {
-
+		ruler = {
+			save_scope_as = swedish_king
+		}
 	}
 
 	option = {
@@ -1898,7 +1912,17 @@ sweden_flavor.40 = {
 			}
             add_modifier = {
 				name = sweden_royal_support
-				years = 2
+				years = 5
+			}
+		}
+		add_modifier = {
+			name = sweden_monarchy_influence
+			years = 5
+		}
+		scope:swedish_king = {
+			add_modifier = {
+				name = sweden_strong_king
+				years = 10
 			}
 		}
 	}
@@ -1943,6 +1967,12 @@ sweden_flavor.41 = {
 				years = 2
 			}
 		}
+		je:swedish_nordic_monarchy = {
+			add_progress = {
+				name = crowns_control_progress_bar
+				value = 5
+			}
+		}	
 	}
 	option = {
 		name = sweden_flavor.41.b
@@ -1956,6 +1986,12 @@ sweden_flavor.41 = {
             add_modifier = {
 				name = sweden_royal_suppress
 				years = 2
+			}
+		}
+		je:swedish_nordic_monarchy = {
+			add_progress = {
+				name = crowns_control_progress_bar
+				value = -5
 			}
 		}
 	}
@@ -2002,6 +2038,12 @@ sweden_flavor.42 = {
 		add_loyalists = {
 			value = 0.02
 		}
+		je:swedish_nordic_monarchy = {
+			add_progress = {
+				name = crowns_control_progress_bar
+				value = 5
+			}
+		}	
 	}
 	option = {
 		name = sweden_flavor.42.b
@@ -2019,6 +2061,12 @@ sweden_flavor.42 = {
 		}
 		add_radicals = {
 			value = 0.02
+		}
+		je:swedish_nordic_monarchy = {
+			add_progress = {
+				name = crowns_control_progress_bar
+				value = -5
+			}
 		}
 	}
 }
@@ -2062,6 +2110,12 @@ sweden_flavor.43 = {
 				years = 2
 			}
 		}
+		je:swedish_nordic_monarchy = {
+			add_progress = {
+				name = crowns_control_progress_bar
+				value = 5
+			}
+		}	
 	}
 	option = {
 		name = sweden_flavor.43.b
@@ -2075,6 +2129,12 @@ sweden_flavor.43 = {
             add_modifier = {
 				name = sweden_royal_suppress
 				years = 2
+			}
+		}
+		je:swedish_nordic_monarchy = {
+			add_progress = {
+				name = crowns_control_progress_bar
+				value = -5
 			}
 		}
 	}
@@ -2126,6 +2186,12 @@ sweden_flavor.44 = {
 				years = 2
 			}
 		}
+		je:swedish_nordic_monarchy = {
+			add_progress = {
+				name = crowns_control_progress_bar
+				value = 5
+			}
+		}	
 	}
 	option = {
 		name = sweden_flavor.44.b
@@ -2136,6 +2202,12 @@ sweden_flavor.44 = {
 		add_loyalists = {
 			value = 0.05
 			pop_type = clergymen
+		}
+		je:swedish_nordic_monarchy = {
+			add_progress = {
+				name = crowns_control_progress_bar
+				value = -5
+			}
 		}
 	}
 }
@@ -2178,9 +2250,15 @@ sweden_flavor.45 = {
 				years = 2
 			}
 		}
+		je:swedish_nordic_monarchy = {
+			add_progress = {
+				name = crowns_control_progress_bar
+				value = 5
+			}
+		}	
 	}
 	option = {
-		name = sweden_flavor.43.b
+		name = sweden_flavor.45.b
 		every_political_movement = {
 		    limit = {
 				OR = {
@@ -2192,6 +2270,57 @@ sweden_flavor.45 = {
 				name = sweden_royal_suppress
 				years = 2
 			}
+		}
+		je:swedish_nordic_monarchy = {
+			add_progress = {
+				name = crowns_control_progress_bar
+				value = -5
+			}
+		}
+	}
+}
+
+sweden_flavor.46 = {
+	type = country_event
+
+	title = sweden_flavor.46.t
+	desc = sweden_flavor.46.d
+	flavor = sweden_flavor.46.f
+
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sweden_flavor.46.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_suppress
+				years = 3
+			}
+		}
+		add_modifier = {
+			name = sweden_monarchy_diminishing_influence
+			years = 5
 		}
 	}
 }
