@@ -2324,3 +2324,129 @@ sweden_flavor.46 = {
 		}
 	}
 }
+
+sweden_flavor.47 = {
+	type = country_event
+
+	title = sweden_flavor.47.t
+	desc = sweden_flavor.47.d
+	flavor = sweden_flavor.47.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:swedish_king
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_variable = ttb_the_kings_health }
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = swedish_king
+		}
+		set_variable = ttb_the_kings_health
+	}
+
+	option = {
+		name = sweden_flavor.47.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 1
+			}
+		}
+		scope:swedish_king = {
+			add_modifier = sweden_rally_around_the_king
+		}
+	}
+}
+
+sweden_flavor.48 = {
+	type = country_event
+
+	title = sweden_flavor.48.t
+	desc = sweden_flavor.48.d
+	flavor = sweden_flavor.48.f
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		ruler = {
+			has_template = swe_oscar_bernadotte_template
+		}
+		NOT = { has_variable = a_reform_from_the_crown }
+		
+	}
+
+	immediate = {	
+		ruler = {
+			save_scope_as = swedish_king
+		}
+		set_variable = a_reform_from_the_crown
+	}
+
+	option = {
+		name = sweden_flavor.48.a
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+					is_political_movement_type = movement_liberal
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 2
+			}
+		}
+		je:swedish_nordic_monarchy = {
+			add_progress = {
+				name = crowns_control_progress_bar
+				value = 10
+			}
+		}
+		scope:swedish_king = {
+			add_modifier = sweden_rally_around_the_king
+		}	
+	}
+	option = {
+		name = sweden_flavor.48.b
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_suppress
+				years = 2
+			}
+		}
+		je:swedish_nordic_monarchy = {
+			add_progress = {
+				name = crowns_control_progress_bar
+				value = -10
+			}
+		}
+	}
+}

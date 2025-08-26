@@ -758,7 +758,7 @@ swedish_nordic_monarchy = {
 	}
 
 	goal_add_value = {
-		add = 240
+		add = 360
 	}
 	
 	progressbar = yes
@@ -769,17 +769,30 @@ swedish_nordic_monarchy = {
 				name = swedish_monarchy_progress_var
 				add = 1
 			}
+
+			if = {
+				limit = {
+					game_date = 1839.1.1
+					ruler = {
+						has_template = swe_karl_johan_bernadotte_template
+						
+					}
+				}
+				trigger_event = sweden_flavor.47
+			}
 		}
 	}
 
 	on_yearly_pulse = {
 		random_events = {
+			20 = 0
 			10 = sweden_flavor.39
 			10 = sweden_flavor.41
 			10 = sweden_flavor.42
 			10 = sweden_flavor.43
 			10 = sweden_flavor.44
 			10 = sweden_flavor.45
+			10 = sweden_flavor.38
 		}
 	}
 

@@ -302,13 +302,25 @@
  sweden_flavor.45.t: "The Debate on the Crown"
  sweden_flavor.45.d: "A high-profile meeting of ministers and parliamentary leaders has been convened to address the role and relevance of the monarchy in modern Sweden. The discussion, though private, has quickly become the talk of the capital, with rumors of heated arguments and passionate speeches. In an age of rising republicanism, the question of the Crown's future is a matter of paramount importance."
  sweden_flavor.45.f: "A junior minister, exiting the meeting late in the evening, was accosted by a throng of journalists. Exhausted, he merely said, 'The question is no longer whether we should have a monarch, but what kind of monarch we want. Is the Crown a relic of the past, or a compass for the future?' He refused to elaborate."
- sweden_flavor.45.a: "The monarchy must be a symbol, not a source of power."
- sweden_flavor.45.b: "The King's authority must not be diminished."
+ sweden_flavor.45.a: "The King's authority must not be diminished."
+ sweden_flavor.45.b: "The monarchy must be a symbol, not a source of power."
+ 
 
  sweden_flavor.46.t: "The Crown's Fading Influence"
  sweden_flavor.46.d: "Though the Crown remains the most venerated institution in Sweden, its once-absolute authority is gradually being absorbed by other branches of government. The King's influence over the appointment of ministers, the shaping of foreign policy, and the command of the armed forces has waned, a quiet but undeniable shift that has left many wondering about the future role of the monarchy."
  sweden_flavor.46.f: "A retired general, a man who had served under three kings, lamented the change to a younger officer. 'In my day,' he said with a nostalgic sigh, 'the King's word was law. We knew where the authority lay, and we knew what was expected of us. Now, it seems, we must await the dictates of a committee of men of varying quality of mind in frock coats and top hats, all of whom have their own private interests at heart. The Crown has become a silent partner, a beautiful shadow of its former self.'"
  sweden_flavor.46.a: "This is a necessary step towards a modern state."
+
+ sweden_flavor.47.t: "The King's Health"
+ sweden_flavor.47.d: "The King, our beloved Karl XIV Johan, has fallen ill. His advanced age and increasingly frail health have become a subject of great concern for the government and the public alike. Though he continues to perform his duties with a steady hand, the succession is on the minds of many, with Crown Prince Oscar ready to take up the mantle of the Crown."
+ sweden_flavor.47.f: "A doctor was seen rushing from the palace, his face grim and solemn. 'His Majesty is resting,' was all he would say, but the city knows well enough what that means. The bells of the churches toll, not in sorrow, but in a quiet prayer for the King's health, and the future of the nation."
+ sweden_flavor.47.a: "We pray for the King's swift recovery, but we need to be ready for the worst."
+
+ sweden_flavor.48.t: "A Reform from the Crown"
+ sweden_flavor.48.d: "King Oscar I, a monarch with a reformist agenda, has used his royal prerogative to champion a new set of reforms aimed at improving the lives of the working class. However, in an unusual and controversial move, the King has chosen to make his case not through the proper parliamentary channels, but by a series of public speeches and pronouncements aimed directly at the people. This unprecedented sidestepping of the Riksdag has created a constitutional crisis, with many accusing the King of trying to bypass the democratic process."
+ sweden_flavor.48.f: "An editorial in a conservative newspaper condemned the King's actions, writing, 'The King's voice is not a megaphone for popular appeal. His will is expressed through the law, and the law is forged in the hallowed halls of the Riksdag, not in the clamor of the public square. This is a dangerous precedent, and a profound disrespect for the very institution that grants him his crown.'"
+ sweden_flavor.48.a: "His Majesty is merely fulfilling his duty to the people."
+ sweden_flavor.48.b: "This royal overreach is an affront to our nascent democracy."
 
 
 # Denmark
