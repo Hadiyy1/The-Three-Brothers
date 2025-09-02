@@ -37,6 +37,7 @@ GLOBAL = {
 		}
 		add_journal_entry = { type = swedish_champions_of_national_defence }
 		add_journal_entry = { type = swedish_nordic_monarchy }
+		add_journal_entry = { type = swedish_retake_finland }
 	}
 	c:NOR = {
 		add_modifier = {

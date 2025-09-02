@@ -429,6 +429,7 @@ swedish_gothenburg_port_expansion = {
 		trigger_event = { id = sweden_flavor.16 }
 	}
 	weight = 100
+	should_be_pinned_by_default = yes
 }
 
 swedish_malmo_industrial_boom = {
@@ -466,7 +467,9 @@ swedish_malmo_industrial_boom = {
 	on_complete = {
 		trigger_event = { id = sweden_flavor.17 }
 	}
-	weight = 100
+	weight = 50
+	should_be_pinned_by_default = yes
+	
 }
 
 swedish_stockholm_urban_growth = {
@@ -504,7 +507,8 @@ swedish_stockholm_urban_growth = {
 	on_complete = {
 		trigger_event = { id = sweden_flavor.18 }
 	}
-	weight = 100
+	weight = 50
+	should_be_pinned_by_default = yes
 }
 swedish_timber_export = {
 	icon = "gfx/interface/icons/goods_icons/wood.dds"
@@ -521,7 +525,7 @@ swedish_timber_export = {
 		    any_scope_state = {
 				any_scope_building = {
 					is_building_type = building_logging_camp
-					level >= 9
+					level >= 10
 					occupancy > 0.50
 				}
 			}
@@ -530,7 +534,7 @@ swedish_timber_export = {
 		    any_scope_state = {
 				any_scope_building = {
 					is_building_type = building_furniture_manufacturies
-					level >= 2
+					level >= 3
 					occupancy > 0.50
 				}
 			}
@@ -551,8 +555,7 @@ swedish_folkhemmet = {
 	group = je_group_internal_affairs
 
 	is_shown_when_inactive = {
-	    exists = c:SWE
-		c:SWE = THIS
+		owns_entire_state_region = STATE_SVEALAND
 		country_has_primary_culture = cu:swedish
 	}
 
@@ -572,7 +575,7 @@ swedish_folkhemmet = {
 	on_complete = {
 		trigger_event = { id = sweden_flavor.12 }
 	}
-	weight = 100
+	weight = 75
 	should_be_pinned_by_default = yes
 }
 
@@ -624,11 +627,6 @@ swedish_iron_industry = {
 swedish_retake_finland = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 	group = je_group_foreign_affairs
-
-	is_shown_when_inactive = {
-		country_has_primary_culture = cu:swedish
-		owns_entire_state_region = STATE_SVEALAND
-	}
 
 	complete = {
 		owns_entire_state_region = STATE_ALAND
@@ -743,6 +741,8 @@ swedish_nordic_monarchy = {
 	group = je_group_internal_affairs
 
 	should_be_pinned_by_default = yes
+	weight = 1000
+
 
 	scripted_progress_bar = crowns_control_progress_bar
 
@@ -792,7 +792,7 @@ swedish_nordic_monarchy = {
 			10 = sweden_flavor.43
 			10 = sweden_flavor.44
 			10 = sweden_flavor.45
-			10 = sweden_flavor.38
+			10 = sweden_flavor.48
 		}
 	}
 

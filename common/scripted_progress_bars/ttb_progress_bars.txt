@@ -114,7 +114,7 @@ crowns_control_progress_bar = {
 						}
 					}
 					subtract = {
-						value = 0.5
+						value = 0.3
 					}
 				}
 			}
@@ -134,7 +134,7 @@ crowns_control_progress_bar = {
 						}
 					}
 					add = {
-						value = 0.5
+						value = 0.3
 					}
 				}
 			}

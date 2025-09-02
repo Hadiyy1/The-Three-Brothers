@@ -2300,7 +2300,7 @@ sweden_flavor.46 = {
 	}
 
 	immediate = {
-
+		
 	}
 
 	option = {
@@ -2321,6 +2321,17 @@ sweden_flavor.46 = {
 		add_modifier = {
 			name = sweden_monarchy_diminishing_influence
 			years = 5
+		}
+		if = {
+			limit = { 
+				ig:ig_intelligentsia = {
+					has_ideology = ideology:ideology_constitutionalist
+				}
+			}
+			ig:ig_intelligentsia = {
+				remove_ideology = ideology_constitutionalist
+				add_ideology = ideology_republican
+			}
 		}
 	}
 }
