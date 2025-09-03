@@ -146,3 +146,72 @@ crowns_control_progress_bar = {
 	min_value = 0
 	max_value = 300
 }
+
+ttb_reforming_swedish_army_progress_bar = {
+	name = ttb_reforming_swedish_army_progress_bar
+	desc = ttb_reforming_swedish_army_progress_bar_desc
+
+	default = yes
+
+	monthly_progress = {
+		add = {
+			desc = "ttb_armed_forces_in_government"
+			owner = {
+				every_interest_group = {
+					limit = {
+						is_in_government = yes
+						is_interest_group_type = ig_armed_forces
+					}
+					add = 0.5
+				}
+			}
+		}
+
+		add = {
+			desc = "ttb_technology_general_staff_researched"
+			owner = {
+				if = {
+					limit = {
+						has_technology_researched = general_staff
+					}
+					add = 1
+				}
+			}
+		}
+
+		add = {
+			desc = "ttb_technology_electric_telegraph_researched"
+			owner = {
+				if = {
+					limit = {
+						has_technology_researched = electric_telegraph
+					}
+					add = 1
+				}
+			}
+		}
+
+		add = {
+			desc = "ttb_technology_enlistment_offices_researched"
+			owner = {
+				if = {
+					limit = {
+						has_technology_researched = enlistment_offices
+					}
+					add = 1
+				}
+			}
+		}
+
+		add = {
+			desc = "ttb_army_power_projection"
+			owner = {
+				value = this.army_power_projection
+				divide = 1000
+			}
+		}
+	}
+	start_value = 0
+	min_value = 0
+	max_value = 400
+}

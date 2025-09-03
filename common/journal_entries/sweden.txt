@@ -242,19 +242,14 @@ swedish_restoration_of_the_military = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	
 	group = je_group_internal_affairs
+
+	scripted_progress_bar = ttb_reforming_swedish_army_progress_bar
 	
 	is_shown_when_inactive = {
 		has_modifier = sweden_outdated_military
 	}
 	
 	possible = {
-		OR = {
-			has_technology_researched = general_staff
-			has_technology_researched = logistics
-		}
-		ig:ig_armed_forces = {
-			is_marginal = no
-		}
 		custom_tooltip = {
 			text = has_completed_champions_of_national_defense
 			NOT = { has_modifier = sweden_land_based_taxation_policies }
@@ -262,20 +257,10 @@ swedish_restoration_of_the_military = {
 	}
 	
 	complete = {
-		ig:ig_armed_forces = {
-			OR = {
-				is_powerful = yes
-				is_in_government = yes
-			}
-		}
-		NOT = {
-			has_law = law_type:law_peasant_levies
-		}
-		OR = {
-			has_technology_researched = wargaming
-			AND = {
-				has_technology_researched = military_statistics
-				is_at_war = yes
+		custom_tooltip = {
+			text = ttb_reforming_swedish_army_progress_succeeds
+			scope:journal_entry = {
+				"scripted_bar_progress(ttb_reforming_swedish_army_progress_bar)" >= 400
 			}
 		}
 	}

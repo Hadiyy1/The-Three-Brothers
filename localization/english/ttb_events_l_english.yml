@@ -54,7 +54,7 @@
  scandinavia_flavor.9.b: "We should not interfere with the royal families."
 
  scandinavia_flavor.10.t: "The Draft"
- scandinavia_flavor.10.d: "In the historic halls of #yellow Kalmar#!, representatives from every walk of life are engaged in a monumental task: drafting our foundational constitution. From venerable #white clergy#! to influential #blue landowners#!, from #blue captains of industry#! to seasoned #blue politicians#!, and from the venerable #red Royal Houses#! to the lowborn #green farmers#! all voices are being heard, each representing distinct interests and aspirations. \n\nAfter intense deliberation and spirited debate, the time has come to finalize this pivotal document and submit it for ratification by the newly formed #yellow legislature#!. This compact will define the very structure of our unified nation."
+ scandinavia_flavor.10.d: "In the historic halls of #yellow Kalmar#!, representatives from every walk of life are engaged in a monumental task: drafting our foundational constitution. From venerable #white clergy#! to influential #blue landowners#!, from #blue captains of industry#! to seasoned #blue politicians#!, and from the venerable #gold Royal court#! to the lowborn #green farmers#! all voices are being heard, each representing distinct interests and aspirations. \n\nAfter intense deliberation and spirited debate, the time has come to finalize this pivotal document and submit it for ratification by the newly formed #yellow legislature#!. This compact will define the very structure of our unified nation."
  scandinavia_flavor.10.f: "The ink flowing on parchment this day shall form the enduring bedrock for a mighty and prosperous Scandinavia, charting its course for centuries to come."
  scandinavia_flavor.10.a: "A strong, centralized Scandinavia will ensure effective governance and control over our vast lands."
  scandinavia_flavor.10.b: "A balanced federation will foster harmony and uphold peace between our brother nations."
@@ -129,21 +129,11 @@
  sweden_flavor.12.f: "The foundation for a truly just and prosperous society is being laid, brick by brick, by the collective will and shared purpose of our people."
  sweden_flavor.12.a: "Commit to Building the People's Home!"
 
- # sweden_flavor.13.t: "The Final Session of the Estates"
- # sweden_flavor.13.d: "For centuries, the Riksdag of the Estates, representing the nobility, clergy, burghers, and peasantry, has served as Sweden's parliament. Yet, in this modern age, its antiquated structure, rooted in a bygone era of privilege and fixed social orders, has become an undeniable obstacle. The clamor for its abolition grows louder by the day, a demand for a unified, modern legislature that truly reflects the aspirations and dynamism of our evolving nation."
- # sweden_flavor.13.f: "The sun sets on a bygone era of privilege, as Sweden prepares to embrace a new dawn of political modernity and genuine representation."
- # sweden_flavor.13.a: "Forge a Modern Parliament!"
-
  sweden_flavor.14.t: "The Timber Dilemma"
  sweden_flavor.14.d: "The demand for #yellow timber#! across Europe continues to surge, and our vast forests provide a seemingly endless supply. Yet, many voices within our budding industrial class argue that merely exporting raw logs leaves much wealth on the table. They envision a future where #yellow Swedish timber#! is transformed into finished goods within our own borders, providing more jobs and greater returns."
  sweden_flavor.14.f: "The very trees whisper of potential, but will we merely fell them or build with their bounty?"
  sweden_flavor.14.a: "Focus on Raw Exports for now."
  sweden_flavor.14.b: "Invest in Sawmills and Furniture Manufactories!"
-
- # sweden_flavor.15.t: "Malmberget: The Arctic Iron Giant" 
- # sweden_flavor.15.d: "Whispers from the desolate, frozen expanse of Lapland have solidified into a resounding truth: the mountains near Malmberget conceal an iron ore deposit of unparalleled scale and purity. This discovery promises not merely a mine, but a veritable mountain of 'iron gold' capable of supplying the demands of industrializing Europe for generations. However, the sheer remoteness and the harsh Arctic climate present immense challenges. Exploiting this treasure will require monumental investments in railways stretching across vast wilderness, advanced mining techniques, and the brave souls willing to carve a new society from the frozen north. Success could redefine Sweden's industrial future."
- # sweden_flavor.15.f: "Where the Sami once roamed, the hammer of industry now calls."
- # sweden_flavor.15.a: "Embark on the monumental task of developing Malmberget."
 
  sweden_flavor.16.t: "Gothenburg: The Expanding Metropolis"
  sweden_flavor.16.d: "Perched strategically on our western coast, #yellow Gothenburg#! has long been Sweden's vital link to the North Sea and the wider Atlantic world. With the relentless march of industrialization, the city has transformed into a bustling hub of commerce, shipbuilding, and a primary point of departure for countless Swedes seeking new lives abroad. Yet, the very success of #yellow Gothenburg#! strains its aging port infrastructure. Larger steamships demand deeper berths and longer quays, and the flow of goods and people necessitates expanded rail connections and customs facilities. Investing in its growth means solidifying our position as a major European trading power and facilitating the dreams of our emigrating population."
@@ -208,11 +198,6 @@
  sweden_flavor.27.f: "The chains of ancient privilege are broken, unleashing the full force of free enterprise."
  sweden_flavor.27.a: "Abolish the Guilds!"
 
- #  sweden_flavor.28.t: "The Poor Law: Centralizing Welfare"
- #  sweden_flavor.28.d: "To address the growing problem of poverty and vagrancy in an industrializing society, Sweden has adopted a new Poor Law. This reform aims to standardize and centralize welfare efforts, shifting responsibility from individual parishes to broader municipal or county levels, and introducing more structured forms of aid, often including workhouses for the able-bodied. While designed to make poor relief more efficient and less arbitrary."
- #  sweden_flavor.28.f: "The hand of the state offers relief, but with a firm grip and a watchful eye."
- #  sweden_flavor.28.a: "Implement the Poor Law!"
-
  sweden_flavor.29.t: "The Freedom of Trade and Industry Act: Economic Liberalization"
  sweden_flavor.29.d: "Following the abolition of the guilds, Sweden takes another decisive step towards economic liberalization with the Freedom of Trade and Industry Act. This law removes most remaining restrictions on establishing and operating businesses, allowing for greater competition, innovation, and economic mobility. It is a cornerstone of a burgeoning free-market economy, attracting investment and stimulating industrial growth. However, it also means less protection for smaller businesses and artisans against larger, more competitive enterprises."
  sweden_flavor.29.f: "The winds of economic liberty sweep across the land, clearing the path for boundless enterprise."
@@ -227,16 +212,6 @@
  sweden_flavor.31.d: "After decades of informal organizing and often contentious industrial disputes, the Riksdag has finally passed legislation in 1889 officially legalizing trade unions. This landmark act grants workers the right to form and join unions, collectively bargain with employers, and conduct peaceful strikes without facing legal penalties. This is a monumental victory for the Proletariat and the burgeoning labor movement, giving them a powerful voice in their working conditions and wages, though it will undoubtedly increase pressure on industrial employers and alter the power dynamics in the workplace."
  sweden_flavor.31.f: "The workers' voices, once isolated, now rise in a legally sanctioned chorus of collective demand."
  sweden_flavor.31.a: "Recognize Workers' Rights!"
-
- #  sweden_flavor.32.t: "The Old-Age Pension Law: A Pioneer in Social Security"
- #  sweden_flavor.32.d: "Sweden has implemented the Old-Age Pension Law. This groundbreaking legislation establishes a national system of old-age pensions, providing financial support for the elderly regardless of their previous income or social status. This progressive step aims to alleviate poverty among the aged and provide a safety net for all citizens in their later years. While it sets a new standard for social welfare, it necessitates significant ongoing state funding and marks a substantial expansion of government responsibility for its citizens' well-being."
- #  sweden_flavor.32.f: "The promise of dignity in old age shines bright, a beacon of a compassionate and forward-looking nation."
- #  sweden_flavor.32.a: "Enact the National Pension!"
-
- #  sweden_flavor.33.t: "The Women's Suffrage Act: Full Political Equality"
- #  sweden_flavor.33.d: "After decades of tireless campaigning by the women's suffrage movement, supported by liberal and social democratic parties, the Riksdag has finally passed comprehensive legislation granting universal suffrage to women. This momentous act establishes full political equality between men and women, allowing all adult female citizens to vote and stand for election. It marks a profound transformation of Sweden's political landscape, doubling the electorate and bringing new perspectives to governance, solidifying Sweden as a leading nation in democratic rights."
- #  sweden_flavor.33.f: "The ballot box welcomes all, as the voices of half the nation find their rightful place in democracy."
- #  sweden_flavor.33.a: "Enact Women's Universal Suffrage!"
 
  sweden_flavor.34.t: "The Right to Strike and Lockout Act: Labor's New Power"
  sweden_flavor.34.d: "Building on the legalization of trade unions, the Riksdag has passed a pivotal law formally recognizing the right to strike for workers and the right to lockout for employers. This act establishes a legal framework for industrial disputes, acknowledging these as legitimate tools in labor relations. Empowering both labor and capital within a defined legal system and contributing to a more stable, albeit sometimes volatile, industrial landscape."

@@ -547,37 +547,6 @@ sweden_flavor.12 = {
 	}
 }
 
-# sweden_flavor.13 = {
-# 	type = country_event
-
-# 	title = sweden_flavor.13.t
-# 	desc = sweden_flavor.13.d
-# 	flavor = sweden_flavor.13.f
-
-# 	event_image = {
-# 		video = "europenorthamerica_rich_and_poor"
-# 	}
-
-# 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
-
-# 	duration = 3
-
-# 	trigger = {
-		
-# 	}
-
-# 	immediate = {
-# 	}
-
-# 	option = {
-# 		name = sweden_flavor.13.a
-# 		default_option = yes
-# 		add_modifier = {
-# 			name = sweden_abolish_estates
-# 			years = 5
-# 		}
-# 	}
-# }
 
 # Timber export
 sweden_flavor.14 = {
@@ -620,59 +589,6 @@ sweden_flavor.14 = {
 	}
 }
 
-# sweden_flavor.15 = {
-# 	type = state_event
-
-# 	title = sweden_flavor.15.t
-# 	desc = sweden_flavor.15.d
-# 	flavor = sweden_flavor.15.f
-
-# 	event_image = {
-# 		video = "europenorthamerica_capitalists_meeting"
-# 	}
-
-# 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
-
-# 	duration = 3
-
-# 	trigger = {
-		
-# 	}
-
-# 	immediate = {
-# 		s:STATE_NORRLAND = {
-# 			random_scope_state = {
-# 				limit = {
-# 					owner = {
-# 						OR = {
-# 							c:SWE = THIS
-# 							c:SCA = THIS	
-# 						}
-						
-# 					}
-# 				}
-# 				save_scope_as = norrland_state
-# 			}
-# 		}
-# 	}
-
-# 	placement = scope:norrland_state
-
-# 	option = {
-# 		name = sweden_flavor.15.a
-# 		default_option = yes
-# 		scope:norrland_state = {
-# 		    add_modifier = {
-# 				name = sweden_iron_production
-# 				years = 5
-# 			}
-# 			add_modifier = {
-# 				name = sweden_railway_development
-# 				years = 3
-# 			}
-# 		}
-# 	}
-# }
 
 # Gothenburg
 sweden_flavor.16 = {
@@ -1312,50 +1228,6 @@ sweden_flavor.27 = {
 	}
 }
 
-# sweden_flavor.28 = {
-# 	type = country_event
-
-# 	title = sweden_flavor.28.t
-# 	desc = sweden_flavor.28.d
-# 	flavor = sweden_flavor.28.f
-
-# 	event_image = {
-# 		video = "europenorthamerica_capitalists_meeting"
-# 	}
-
-# 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-
-# 	duration = 3
-
-# 	trigger = {
-# 		trigger_if = {
-# 			limit = {
-# 				exists = c:SWE
-# 			}
-# 			c:SWE = this
-# 		}
-# 		trigger_if = {
-# 			limit = {
-# 				exists = c:SCA
-# 			}
-# 			c:SCA = this
-# 		}
-# 		has_law = law_type:law_poor_laws
-# 		NOT = {
-# 			has_variable = ttb_swe_var_event_10
-# 		}
-# 	}
-
-# 	immediate = {
-# 		set_variable = ttb_swe_var_event_10
-# 	}
-
-# 	option = {
-# 		name = sweden_flavor.28.a
-# 		default_option = yes
-# 	}
-# }
-
 sweden_flavor.29 = {
 	type = country_event
 
@@ -1487,94 +1359,6 @@ sweden_flavor.31 = {
 		default_option = yes
 	}
 }
-
-# sweden_flavor.32 = {
-# 	type = country_event
-
-# 	title = sweden_flavor.32.t
-# 	desc = sweden_flavor.32.d
-# 	flavor = sweden_flavor.32.f
-
-# 	event_image = {
-# 		video = "europenorthamerica_capitalists_meeting"
-# 	}
-
-# 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-
-# 	duration = 3
-
-# 	trigger = {
-# 		trigger_if = {
-# 			limit = {
-# 				exists = c:SWE
-# 			}
-# 			c:SWE = this
-# 		}
-# 		trigger_if = {
-# 			limit = {
-# 				exists = c:SCA
-# 			}
-# 			c:SCA = this
-# 		}
-# 		has_law = law_type:law_old_age_pension
-# 		NOT = {
-# 			has_variable = ttb_swe_var_event_14
-# 		}
-# 	}
-
-# 	immediate = {
-# 		set_variable = ttb_swe_var_event_14
-# 	}
-
-# 	option = {
-# 		name = sweden_flavor.32.a
-# 		default_option = yes
-# 	}
-# }
-
-# sweden_flavor.33 = {
-# 	type = country_event
-
-# 	title = sweden_flavor.33.t
-# 	desc = sweden_flavor.33.d
-# 	flavor = sweden_flavor.33.f
-
-# 	event_image = {
-# 		video = "europenorthamerica_capitalists_meeting"
-# 	}
-
-# 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
-
-# 	duration = 3
-
-# 	trigger = {
-# 		trigger_if = {
-# 			limit = {
-# 				exists = c:SWE
-# 			}
-# 			c:SWE = this
-# 		}
-# 		trigger_if = {
-# 			limit = {
-# 				exists = c:SCA
-# 			}
-# 			c:SCA = this
-# 		}
-# 		has_law = law_type:law_womens_suffrage
-# 		NOT = {
-# 			has_variable = ttb_swe_var_event_16
-# 		}
-# 	}
-
-# 	immediate = {
-# 		set_variable = ttb_swe_var_event_16
-# 	}
-
-# 	option = {
-# 		name = sweden_flavor.33.a
-# 		default_option = yes
-# 	}
-# }
 
 sweden_flavor.34 = {
 	type = country_event
@@ -1771,6 +1555,7 @@ sweden_flavor.37 = {
 	}
 }
 
+### House of Bernadotte events ###
 sweden_flavor.38 = {
 	type = country_event
 
