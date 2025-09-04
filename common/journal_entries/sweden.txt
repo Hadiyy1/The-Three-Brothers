@@ -243,6 +243,10 @@ swedish_restoration_of_the_military = {
 	
 	group = je_group_internal_affairs
 
+	scripted_button = ttb_reforming_swedish_army_material_button
+
+	scripted_button = ttb_reforming_swedish_army_training_button
+
 	scripted_progress_bar = ttb_reforming_swedish_army_progress_bar
 	
 	is_shown_when_inactive = {

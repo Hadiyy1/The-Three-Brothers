@@ -174,7 +174,7 @@ ttb_reforming_swedish_army_progress_bar = {
 					limit = {
 						has_technology_researched = general_staff
 					}
-					add = 1
+					add = 0.5
 				}
 			}
 		}
@@ -186,7 +186,7 @@ ttb_reforming_swedish_army_progress_bar = {
 					limit = {
 						has_technology_researched = electric_telegraph
 					}
-					add = 1
+					add = 0.5
 				}
 			}
 		}
@@ -198,7 +198,7 @@ ttb_reforming_swedish_army_progress_bar = {
 					limit = {
 						has_technology_researched = enlistment_offices
 					}
-					add = 1
+					add = 0.5
 				}
 			}
 		}
@@ -208,6 +208,25 @@ ttb_reforming_swedish_army_progress_bar = {
 			owner = {
 				value = this.army_power_projection
 				divide = 1000
+			}
+		}
+
+		add = {
+			desc = "ttb_army_investments"
+			owner = {
+				if = {
+					limit = {
+						has_modifier = sweden_army_material_investment
+					}
+					add = 0.5
+				}
+
+				if = {
+					limit = {
+						has_modifier = sweden_army_training_investment
+					}
+					add = 0.5
+				}
 			}
 		}
 	}
