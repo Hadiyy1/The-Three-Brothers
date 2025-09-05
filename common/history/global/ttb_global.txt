@@ -3,7 +3,7 @@ GLOBAL = {
 	c:DEN = {
 		activate_law = law_type:law_legacy_slavery
 		ig:ig_rural_folk = {
-			remove_ideology = ideology_particularist
+			#remove_ideology = ideology_particularist
 			add_ideology = ideology_nordic_particularist
 		}
 		ig:ig_petty_bourgeoisie = {
@@ -19,8 +19,9 @@ GLOBAL = {
 	}
 	c:SWE = {
 		activate_law = law_type:law_legacy_slavery
+		activate_law = law_type:law_homesteading
 		ig:ig_rural_folk = {
-			remove_ideology = ideology_particularist
+			#remove_ideology = ideology_particularist
 			add_ideology = ideology_nordic_particularist
 		}
 		ig:ig_intelligentsia = {
@@ -45,7 +46,7 @@ GLOBAL = {
 			months = -1
 		}
 		ig:ig_rural_folk = {
-			remove_ideology = ideology_particularist
+			#remove_ideology = ideology_particularist
 			add_ideology = ideology_nordic_particularist
 			add_modifier = {
 				name = sweden_farmers_organising
@@ -61,7 +62,7 @@ GLOBAL = {
 	c:FIN = {
 		#add_primary_culture = swedish	# Re-add if I find better implementation
 		ig:ig_rural_folk = {
-			remove_ideology = ideology_particularist
+			#remove_ideology = ideology_particularist
 			add_ideology = ideology_nordic_particularist
 		}
 		activate_law = law_type:law_appointed_bureaucrats
