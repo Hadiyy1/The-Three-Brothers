@@ -243,8 +243,6 @@ swedish_restoration_of_the_military = {
 	
 	group = je_group_internal_affairs
 
-	scripted_button = ttb_reforming_swedish_army_material_button
-
 	scripted_button = ttb_reforming_swedish_army_training_button
 
 	scripted_progress_bar = ttb_reforming_swedish_army_progress_bar
@@ -271,6 +269,12 @@ swedish_restoration_of_the_military = {
 	
 	on_complete = {
 		remove_modifier = sweden_outdated_military
+		if = {
+			limit = {
+				has_modifier = sweden_army_investment
+			}
+			remove_modifier = sweden_army_investment
+		}
 	}
 	
 	weight = 50
@@ -774,7 +778,7 @@ swedish_nordic_monarchy = {
 
 	on_yearly_pulse = {
 		random_events = {
-			20 = 0
+			30 = 0
 			10 = sweden_flavor.39
 			10 = sweden_flavor.41
 			10 = sweden_flavor.42

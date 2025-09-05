@@ -276,19 +276,13 @@ sweden_rally_around_the_king = {
 	character_popularity_add = 10
 }
 
-sweden_army_material_investment = {
+sweden_army_investment = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
 	interest_group_ig_armed_forces_approval_add = 1
 	interest_group_ig_armed_forces_pol_str_mult = 0.05
-	country_military_goods_cost_mult = 0.15
-}
-
-sweden_army_training_investment = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
-	interest_group_ig_armed_forces_approval_add = 1
-	interest_group_ig_armed_forces_pol_str_mult = 0.05
+	country_military_goods_cost_mult = 0.05
 	country_military_wages_mult = 0.2
-	unit_experience_gain_mult = 0.05
+	unit_experience_gain_mult = 0.1
 }
 
 

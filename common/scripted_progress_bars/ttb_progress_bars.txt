@@ -207,7 +207,7 @@ ttb_reforming_swedish_army_progress_bar = {
 			desc = "ttb_army_power_projection"
 			owner = {
 				value = this.army_power_projection
-				divide = 1000
+				divide = 2000
 			}
 		}
 
@@ -216,17 +216,11 @@ ttb_reforming_swedish_army_progress_bar = {
 			owner = {
 				if = {
 					limit = {
-						has_modifier = sweden_army_material_investment
+						has_modifier = sweden_army_investment
 					}
-					add = 0.5
+					add = 1
 				}
 
-				if = {
-					limit = {
-						has_modifier = sweden_army_training_investment
-					}
-					add = 0.5
-				}
 			}
 		}
 	}

@@ -95,30 +95,6 @@ scandinavian_pan_nationalism_supress_button = {
 	}
 }
 
-ttb_reforming_swedish_army_material_button = {
-	name = "ttb_reforming_swedish_army_material_button"
-	desc = "ttb_reforming_swedish_army_material_button_desc"
-
-	visible = { always = yes }
-	
-	ai_chance = {
-		base = 2
-	}
-
-	possible = {
-		NOT = {
-			has_modifier = sweden_army_material_investment
-		}
-	}
-
-	effect = {
-		add_modifier = {
-			name = sweden_army_material_investment
-			years = 3
-		}
-	}
-}
-
 ttb_reforming_swedish_army_training_button = {
 	name = "ttb_reforming_swedish_army_training_button"
 	desc = "ttb_reforming_swedish_army_training_button_desc"
@@ -131,14 +107,14 @@ ttb_reforming_swedish_army_training_button = {
 
 	possible = {
 		NOT = {
-			has_modifier = sweden_army_training_investment
+			has_modifier = sweden_army_investment
 		}
 	}
 
 	effect = {
 		add_modifier = {
-			name = sweden_army_training_investment
-			years = 3
+			name = sweden_army_investment
+			years = 4
 		}
 	}
 }
