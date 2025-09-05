@@ -23,6 +23,10 @@ GLOBAL = {
 		ig:ig_rural_folk = {
 			#remove_ideology = ideology_particularist
 			add_ideology = ideology_nordic_particularist
+			add_modifier = {
+				name = sweden_strong_independent_farmer_culture
+				years = 15
+			}
 		}
 		ig:ig_intelligentsia = {
 			remove_ideology = ideology_republican
@@ -48,10 +52,6 @@ GLOBAL = {
 		ig:ig_rural_folk = {
 			#remove_ideology = ideology_particularist
 			add_ideology = ideology_nordic_particularist
-			add_modifier = {
-				name = sweden_farmers_organising
-				months = long_modifier_time
-			}
 		}
 		trigger_event = {
 			id = norway_flavor.1

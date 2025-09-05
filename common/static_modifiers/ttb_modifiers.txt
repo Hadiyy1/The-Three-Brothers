@@ -285,6 +285,11 @@ sweden_army_investment = {
 	unit_experience_gain_mult = 0.1
 }
 
+sweden_strong_independent_farmer_culture = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	interest_group_pop_attraction_mult = 0.25
+}
+
 
 # Norway
 norway_abolishment_of_new_aristocrats = {
