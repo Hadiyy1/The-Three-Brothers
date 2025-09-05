@@ -1,0 +1,239 @@
+﻿# Chr. Hansens teknisk-kemiske Laboratorium A/S
+company_chr_hansens = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/denmark_chr_hansens_teknisk_kemiske_laboratorium.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rye.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_ZEALAND }
+
+	building_types = {
+		building_food_industry
+		building_chemical_plants
+	}
+
+	extension_building_types = {
+		building_synthetics_plants
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_groceries
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_groceries_complete_tt
+			has_variable = prestige_good_generic_groceries_var
+		}
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_baltic
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_ZEALAND
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_ZEALAND
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_food_industry
+					is_building_type = building_chemical_plants
+				}
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_livestock_ranch_throughput_add = 0.1
+		state_birth_rate_mult = 0.03
+		#building_fishing_wharf_throughput_add = 0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_ZEALAND
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_food_industry = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_ZEALAND
+			}
+		}
+		building_chemical_plants = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_ZEALAND
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# A.P. Møller (later Mærsk)
+company_ap_moller = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/ap_moller.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_ZEALAND }
+
+	building_types = {
+		building_port
+	}
+
+	extension_building_types = {
+		building_shipyards
+		building_logging_camp
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_merchant_marine
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_merchant_marine_complete_tt
+			has_variable = prestige_good_generic_merchant_marine_var
+		}
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_baltic
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_ZEALAND
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_ZEALAND
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_shipyards
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		state_trade_capacity_mult = 0.15
+		#country_convoys_capacity_mult = 0.2
+		interest_group_ig_industrialists_pop_attraction_mult = 0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_ZEALAND
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_shipyards = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_ZEALAND
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+
+# Carlsberg
+company_Carlsberg_beer = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/carlsberg_beer.png"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	
+	flavored_company = yes
+	preferred_headquarters = { STATE_ZEALAND }
+	
+	possible_prestige_goods = {
+		prestige_good_carlsberg_beer
+	}
+	
+	building_types = {  #25
+		building_food_industry
+		building_rye_farm
+	}
+	
+	extension_building_types = {
+		building_wheat_farm
+		building_vineyard_plantation
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_baltic
+		has_game_rule = ttb_companies_enabled
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_ZEALAND
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_ZEALAND
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_food_industry
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_assimilation_mult = 0.05
+		state_loyalists_from_political_movements_mult = 0.05
+	}	
+	
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_ZEALAND
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_food_industry = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_ZEALAND
+			}
+		}
+	}
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}

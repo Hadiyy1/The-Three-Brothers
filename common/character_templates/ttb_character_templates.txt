@@ -132,6 +132,74 @@ swe_hjalmar_branting_template = {
 		chance = 80
 	}
 }
+# executives
+swe_goran_goransson = { # Göran Fredrik Göransson, Sandvikens Jernverks AB
+    first_name = Goran_Fredrik
+    last_name = Goransson
+    historical = yes
+    birth_date = 1819.1.20
+    culture = cu:swedish
+    interest_group = ig_industrialists
+    ideology = ideology_modernizer_leader
+    traits = {
+        ambitious
+        innovative
+        experienced_entrepreneur
+    }
+    executive_usage = {
+
+        company_trigger = {
+            is_company_type = company_type:company_sandvikens
+        }
+        earliest_usage_date = 1858.1.1
+        latest_usage_date = 1901.1.1
+        chance = 100
+    }
+}
+swe_gustaf_larson = { # Erik Gustaf Larson, Volvo
+    first_name = Erik_Gustaf
+    last_name = Larson
+    historical = yes
+    birth_date = 1891.8.13
+    culture = cu:swedish
+    interest_group = ig_industrialists
+    ideology = ideology_modernizer_leader
+    traits = {
+        engineer
+        innovative
+        meticulous
+    }
+    executive_usage = {
+        company_trigger = {
+            is_company_type = company_type:company_volvo_auto
+        }
+        earliest_usage_date = 1917.1.1
+        latest_usage_date = 1962.1.1
+        chance = 100
+    }
+}
+swe_assar_gabrielsson = { # Assar Gabrielsson, Volvo
+    first_name = Assar_Thorvald_Nathanael
+    last_name = Gabrielsson
+    historical = yes
+    birth_date = 1887.7.4
+    culture = cu:swedish
+    interest_group = ig_industrialists
+    ideology = ideology_modernizer_leader
+    traits = {
+        charismatic
+        innovative
+        experienced_entrepreneur
+    }
+    executive_usage = {
+        company_trigger = {
+            is_company_type = company_type:company_volvo_auto
+        }
+        earliest_usage_date = 1917.1.1
+        latest_usage_date = 1968.1.1
+        chance = 100
+    }
+}
 # Norway - NOR
 nor_frederik_due_template = {
 	first_name = Frederik
@@ -244,6 +312,174 @@ nor_marcus_thrane_template = {
 		chance = 50
 	}
 }
+#executives
+nor_fredrik_meyn = { # Fredrik Meyn, Kongsberg Våpenfabrikk
+	first_name = Fredrik
+    last_name = Meyn
+    historical = yes
+    birth_date = 1790.3.28
+    culture = cu:danish
+    interest_group = ig_armed_forces
+    ideology = ideology_moderate
+    traits = {
+		experienced_artillery_commander
+		traditionalist_commander
+		basic_political_operator
+    }
+	executive_usage = {
+
+		company_trigger = {
+			is_company_type = company_type:company_kongsberg_vapenfabrikk
+		}
+	    earliest_usage_date = 1824.1.1
+	    latest_usage_date = 1842.1.1
+		chance = 100
+	}
+}
+
+nor_peder_holst = { # Peder Christian Holst, Kongsberg Våpenfabrikk
+	first_name = Peder_Christian
+    last_name = Holst
+    historical = yes
+    birth_date = 1798.3.27
+    culture = cu:norwegian
+    interest_group = ig_armed_forces
+    ideology = ideology_moderate
+    traits = {
+		cautious
+		basic_political_operator
+    }
+	executive_usage = {
+
+		company_trigger = {
+			is_company_type = company_type:company_kongsberg_vapenfabrikk
+		}
+	    earliest_usage_date = 1842.1.1
+	    latest_usage_date = 1854.1.1
+		chance = 100
+	}
+}
+
+nor_jens_landmark = { # Jens Landmark, Kongsberg Våpenfabrikk
+	first_name = Jens
+    last_name = Landmark
+    historical = yes
+    birth_date = 1811.12.17
+    culture = cu:norwegian
+    interest_group = ig_armed_forces
+    ig_leader = yes
+    ideology = ideology_modernizer_leader
+    traits = {
+		basic_entrepreneur
+		innovative
+		basic_political_operator
+    }
+	executive_usage = {
+
+		company_trigger = {
+			is_company_type = company_type:company_kongsberg_vapenfabrikk
+		}
+	    earliest_usage_date = 1854.1.1
+	    latest_usage_date = 1880.1.1
+		chance = 100
+	}
+}
+
+nor_ole_krag = { # Ole Herman Krag, Kongsberg Våpenfabrikk
+	first_name = Ole_Herman
+    last_name = Krag
+    historical = yes
+    birth_date = 1837.3.7
+    culture = cu:norwegian
+    interest_group = ig_armed_forces
+    ig_leader = yes
+    ideology = ideology_modernizer_leader
+    traits = {
+		engineer
+		innovative
+		experienced_artillery_commander
+    }
+	executive_usage = {
+
+		company_trigger = {
+			is_company_type = company_type:company_kongsberg_vapenfabrikk
+		}
+	    earliest_usage_date = 1880.1.1
+	    latest_usage_date = 1895.1.1
+		chance = 100
+	}
+}
+
+nor_jacob_paaske = { # Jacob Maximillian Gran Paaske, Kongsberg Våpenfabrikk
+	first_name = Jacob_Maximillian_Gran
+    last_name = Paaske
+    historical = yes
+    birth_date = 1863.1.1
+    culture = cu:norwegian
+    interest_group = ig_armed_forces
+    ideology = ideology_moderate
+    traits = {
+		tactful
+		basic_entrepreneur
+    }
+	executive_usage = {
+
+		company_trigger = {
+			is_company_type = company_type:company_kongsberg_vapenfabrikk
+		}
+	    earliest_usage_date = 1895.1.1
+	    latest_usage_date = 1912.1.1
+		chance = 100
+	}
+}
+
+nor_johan_schwartz = { # Johan Jørgen Schwartz, Kongsberg Våpenfabrikk
+	first_name = Johan_Jørgen
+    last_name = Schwartz
+    historical = yes
+    birth_date = 1877.9.2
+    culture = cu:norwegian
+    interest_group = ig_armed_forces
+    ideology = ideology_moderate
+    traits = {
+		meticulous
+		basic_artillery_commander
+    }
+	executive_usage = {
+
+		company_trigger = {
+			is_company_type = company_type:company_kongsberg_vapenfabrikk
+		}
+	    earliest_usage_date = 1912.1.1
+	    latest_usage_date = 1926.1.1
+		chance = 100
+	}
+}
+
+nor_haakon_finne = { # Haakon Finne, Kongsberg Våpenfabrikk
+	first_name = Haakon
+    last_name = Finne
+    historical = yes
+    birth_date = 1881.7.7
+    culture = cu:norwegian
+    interest_group = ig_armed_forces
+    ideology = ideology_moderate
+    traits = {
+		charismatic
+		basic_defensive_strategist
+		basic_entrepreneur
+    }
+	executive_usage = {
+
+		company_trigger = {
+			is_company_type = company_type:company_kongsberg_vapenfabrikk
+		}
+	    earliest_usage_date = 1926.1.1
+	    latest_usage_date = 1940.1.1
+		chance = 100
+	}
+}
+
 # Denmark - DEN
 den_nfs_grundtvig_template = {
 	first_name = Nikolai Frederik Severin
@@ -325,6 +561,57 @@ den_jacob_bronnum_template = {
 		chance = 50
 	}
 }
+#executives
+den_jc_jacobsen = { # Jacob Christian Jacobsen, Carlsberg
+    first_name = Jacob_Christian
+    last_name = Jacobsen
+    historical = yes
+    culture = cu:danish
+    birth_date = 1811.9.2
+   
+    interest_group = ig_industrialists
+    ideology = ideology_moderate
+    traits = {
+        innovative
+		meticulous
+        experienced_entrepreneur
+    }
+    executive_usage = {
+
+		company_trigger = {
+			is_company_type = company_type:company_carlsberg_beer
+		}
+		earliest_usage_date = 1847.1.1
+		latest_usage_date = 1888.1.1
+		chance = 100
+    }
+}
+
+den_carl_jacobsen = { # Carl Christian Hillman Jacobsen, Carlsberg
+    first_name = Carl_Christian_Hillman 
+    last_name = Jacobsen
+    historical = yes
+    culture = cu:danish
+    birth_date = 1842.3.2
+    ig_leader = yes
+    interest_group = ig_industrialists
+    ideology = ideology_modernizer_leader
+    traits = {
+        imposing
+        ambitious
+        expert_entrepreneur
+    }
+    executive_usage = {
+
+		company_trigger = {
+			is_company_type = company_type:company_carlsberg_beer
+		}
+		earliest_usage_date = 1876.1.1
+		latest_usage_date = 1915.1.1
+		chance = 100
+    }
+}
+
 # Finland
 fin_yrjo_koskinen_template = {
 	first_name = Yrjo

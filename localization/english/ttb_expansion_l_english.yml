@@ -185,7 +185,42 @@
  Geijer: "Geijer"
  Hjalmar: "Hjalmar"
  Branting: "Branting"
- 
+ Fredrik: "Fredrik"
+ Meyn: "Meyn"
+ Peder_Christian: "Peder Christian"
+ Holst: "Holst"
+ Jens: "Jens"
+ Landmark: "Landmark"
+ Ole_Herman: "Ole Herman"
+ Krag: "Krag"
+ Jacob_Maximillian_Gran: "Jacob Maximillian Gran"
+ Paaske: "Paaske"
+ Johan_Jørgen: "Johan Jørgen"
+ Schwartz: "Schwartz"
+ Haakon: "Haakon"
+ Finne: "Finne"
+ Jacob_Christian: "Jacob Christian"
+ Jacobsen: "Jacobsen"
+ Carl_Christian_Hillman: "Carl Christian Hillman"
+ Jacobsen: "Jacobsen"
+ Goran_Fredrik: Göran Fredrik
+ Goransson: "Göransson"
+ Erik_Gustaf: "Erik Gustaf"
+ Larson: "Larson"
+ Assar_Thorvald_Nathanael: "Assar Thorvald Nathanael"
+ Gabrielsson: "Gabrielsson"
+
+ # Companies
+ company_Kongsberg_vapenfabrikk: "Kongsberg Våpenfabrikk"
+ company_Carlsberg_beer: "Carlsberg"
+ company_volvo_auto: "Volvo"
+ company_sandvikens: "Sandvikens Jernverks AB"
+
+ # Prestige goods
+ prestige_krag_jorgensen: "Krag Jorgensen"
+ prestige_good_carlsberg_beer: "Carlsberg Pilsner"
+ prestige_volvo_ov4: "Volvo ÖV4"
+
  August: "August"
  # Modifiers
  denmark_national_humiliation: "The National Humiliation"
@@ -287,3 +322,10 @@
  tt_state_trait_arctic_sea_fishing: "Artic Fishing"
  ttb_state_trait_scandinavian_mountains: "Scandinavian Mountains"
  ttb_state_trait_volcanic_island: "Volcanic Island"
+
+ # Game Rules
+ rule_ttb_companies_game_rule: "Use Companies from The three Brothers"
+ setting_ttb_companies_enabled: "Companies Enabled"
+ setting_ttb_companies_enabled_desc: "Companies from the mod will show up in the game."
+ setting_ttb_companies_disabled: "Companies Disabled"
+ setting_ttb_companies_disabled_desc: "Companies from the mod will not show up in the game"

@@ -1,0 +1,9 @@
+﻿ttb_companies_game_rule = {
+	default = ttb_companies_enabled
+
+	ttb_companies_enabled = {	
+	}
+
+	ttb_companies_disabled = {
+	}
+}
