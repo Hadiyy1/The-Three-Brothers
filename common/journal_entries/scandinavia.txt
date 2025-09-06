@@ -118,12 +118,13 @@ scandinavian_pan_nationalism = {
 	on_complete ={
 		set_variable = { name = sca_progress_var value = "scope:journal_entry.scripted_bar_progress(scandinavism_progress_bar)" days = 120 }
 		trigger_event = { id = scandinavia_flavor.2 popup = yes }
-		set_variable = scandinavian_pan_nationalism_done
 	}
 	
 	timeout = 7500
 	on_timeout = {
 		set_variable = { name = sca_progress_var value = "scripted_bar_progress(scandinavism_progress_bar)" days = 120 }
+		set_variable = scandinavian_pan_nationalism_fails
+
 		if = {
 			limit = {
 				scope:journal_entry = {
@@ -160,7 +161,6 @@ scandinavian_pan_nationalism = {
 				trigger_event = { id = scandinavia_flavor.4 popup = yes }
 			}
 		}
-		set_variable = scandinavian_pan_nationalism_done
 	}
 	
 	should_be_pinned_by_default = yes

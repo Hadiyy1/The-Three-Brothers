@@ -1555,7 +1555,6 @@ sweden_flavor.37 = {
 	}
 }
 
-### House of Bernadotte events ###
 sweden_flavor.38 = {
 	type = country_event
 
@@ -1589,6 +1588,7 @@ sweden_flavor.38 = {
 	}
 }
 
+### House of Bernadotte events ###
 sweden_flavor.39 = {
 	type = country_event
 
@@ -1630,10 +1630,13 @@ sweden_flavor.39 = {
 				years = 2
 			}
 		}
-		je:swedish_nordic_monarchy = {
-			add_progress = {
+		custom_tooltip = {
+			text = ttb_add_5_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
 				name = crowns_control_progress_bar
 				value = 5
+				}
 			}
 		}			
 	}
@@ -1651,12 +1654,15 @@ sweden_flavor.39 = {
 				years = 2
 			}
 		}
-		je:swedish_nordic_monarchy = {
-			add_progress = {
-				name = crowns_control_progress_bar
-				value = -5
-			}
-		}	
+		custom_tooltip = {
+			text = ttb_remove_5_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = -5
+				}
+			}	
+		}
 	}
 }
 
@@ -1752,12 +1758,15 @@ sweden_flavor.41 = {
 				years = 2
 			}
 		}
-		je:swedish_nordic_monarchy = {
-			add_progress = {
+		custom_tooltip = {
+			text = ttb_add_5_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
 				name = crowns_control_progress_bar
 				value = 5
+				}
 			}
-		}	
+		}
 	}
 	option = {
 		name = sweden_flavor.41.b
@@ -1773,11 +1782,14 @@ sweden_flavor.41 = {
 				years = 2
 			}
 		}
-		je:swedish_nordic_monarchy = {
-			add_progress = {
-				name = crowns_control_progress_bar
-				value = -5
-			}
+		custom_tooltip = {
+			text = ttb_remove_5_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = -5
+				}
+			}	
 		}
 	}
 }
@@ -1823,10 +1835,13 @@ sweden_flavor.42 = {
 		add_loyalists = {
 			value = 0.02
 		}
-		je:swedish_nordic_monarchy = {
-			add_progress = {
+		custom_tooltip = {
+			text = ttb_add_5_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
 				name = crowns_control_progress_bar
 				value = 5
+				}
 			}
 		}	
 	}
@@ -1847,11 +1862,14 @@ sweden_flavor.42 = {
 		add_radicals = {
 			value = 0.02
 		}
-		je:swedish_nordic_monarchy = {
-			add_progress = {
-				name = crowns_control_progress_bar
-				value = -5
-			}
+		custom_tooltip = {
+			text = ttb_remove_5_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = -5
+				}
+			}	
 		}
 	}
 }
@@ -1895,10 +1913,13 @@ sweden_flavor.43 = {
 				years = 2
 			}
 		}
-		je:swedish_nordic_monarchy = {
-			add_progress = {
+		custom_tooltip = {
+			text = ttb_add_5_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
 				name = crowns_control_progress_bar
 				value = 5
+				}
 			}
 		}	
 	}
@@ -1916,11 +1937,14 @@ sweden_flavor.43 = {
 				years = 2
 			}
 		}
-		je:swedish_nordic_monarchy = {
-			add_progress = {
-				name = crowns_control_progress_bar
-				value = -5
-			}
+		custom_tooltip = {
+			text = ttb_remove_5_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = -5
+				}
+			}	
 		}
 	}
 }
@@ -1971,10 +1995,13 @@ sweden_flavor.44 = {
 				years = 2
 			}
 		}
-		je:swedish_nordic_monarchy = {
-			add_progress = {
+		custom_tooltip = {
+			text = ttb_add_5_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
 				name = crowns_control_progress_bar
 				value = 5
+				}
 			}
 		}	
 	}
@@ -1988,11 +2015,14 @@ sweden_flavor.44 = {
 			value = 0.05
 			pop_type = clergymen
 		}
-		je:swedish_nordic_monarchy = {
-			add_progress = {
-				name = crowns_control_progress_bar
-				value = -5
-			}
+		custom_tooltip = {
+			text = ttb_remove_5_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = -5
+				}
+			}	
 		}
 	}
 }
@@ -2035,10 +2065,13 @@ sweden_flavor.45 = {
 				years = 2
 			}
 		}
-		je:swedish_nordic_monarchy = {
-			add_progress = {
+		custom_tooltip = {
+			text = ttb_add_5_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
 				name = crowns_control_progress_bar
 				value = 5
+				}
 			}
 		}	
 	}
@@ -2056,11 +2089,14 @@ sweden_flavor.45 = {
 				years = 2
 			}
 		}
-		je:swedish_nordic_monarchy = {
-			add_progress = {
-				name = crowns_control_progress_bar
-				value = -5
-			}
+		custom_tooltip = {
+			text = ttb_remove_5_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = -5
+				}
+			}	
 		}
 	}
 }
@@ -2213,10 +2249,14 @@ sweden_flavor.48 = {
 				years = 2
 			}
 		}
-		je:swedish_nordic_monarchy = {
-			add_progress = {
-				name = crowns_control_progress_bar
-				value = 10
+		
+		custom_tooltip = {
+			text = ttb_add_10_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = 10
+				}
 			}
 		}
 		scope:swedish_king = {
@@ -2238,10 +2278,13 @@ sweden_flavor.48 = {
 				years = 2
 			}
 		}
-		je:swedish_nordic_monarchy = {
-			add_progress = {
-				name = crowns_control_progress_bar
-				value = -10
+		custom_tooltip = {
+			text = ttb_remove_10_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = -10
+				}
 			}
 		}
 	}

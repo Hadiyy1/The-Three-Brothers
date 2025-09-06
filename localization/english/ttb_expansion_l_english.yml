@@ -128,6 +128,10 @@
  ttb_radical_movements: "Radical movements"
  ttb_anti_monarchist_in_government: "Anti-Monarchists in government"
  ttb_monarchist_in_government: "Monarchists in government"
+ ttb_add_5_progress_crown_control: "Advances #bold Crown Control#! by #p 5#!"
+ ttb_remove_5_progress_crown_control: "Regresses #bold Crown Control#! by #n 5#!"
+ ttb_add_10_progress_crown_control: "Advances #bold Crown Control#! by #p 10#!"
+ ttb_remove_10_progress_crown_control: "Regresses #bold Crown Control#! by #n 10#!"
 
  nor_the_great_transformation: "The Great Transformation"
  nor_the_great_transformation_reason: "Norway has taken the first steps towards industrialising it's industries, all it got to do now is to become more reliant on itself to become a competetive force in the Western world."
