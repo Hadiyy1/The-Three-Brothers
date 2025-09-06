@@ -211,10 +211,10 @@
  Gabrielsson: "Gabrielsson"
 
  # Companies
- company_Kongsberg_vapenfabrikk: "Kongsberg Våpenfabrikk"
- company_Carlsberg_beer: "Carlsberg"
- company_volvo_auto: "Volvo"
- company_sandvikens: "Sandvikens Jernverks AB"
+ ttb_company_Kongsberg_vapenfabrikk: "Kongsberg Våpenfabrikk"
+ ttb_company_Carlsberg_beer: "Carlsberg"
+ ttb_company_volvo_auto: "Volvo"
+ ttb_company_sandvikens: "Sandvikens Jernverks AB"
 
  # Prestige goods
  prestige_krag_jorgensen: "Krag Jorgensen"

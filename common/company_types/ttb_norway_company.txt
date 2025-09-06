@@ -144,7 +144,7 @@ company_aker_mek = {
 }
 
 # Kongsberg Våpenfabrikk
-company_Kongsberg_vapenfabrikk = {
+ttb_company_Kongsberg_vapenfabrikk = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/kongsberg_vapenfabrikk.png"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	

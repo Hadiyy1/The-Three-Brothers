@@ -167,7 +167,7 @@ company_ap_moller = {
 
 
 # Carlsberg
-company_Carlsberg_beer = {
+ttb_company_Carlsberg_beer = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/carlsberg_beer.png"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	

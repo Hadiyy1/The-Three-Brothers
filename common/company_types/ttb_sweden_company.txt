@@ -1,5 +1,5 @@
 ﻿
-company_sandvikens = {
+ttb_company_sandvikens = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/sandvik_jernverk.png"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
@@ -76,7 +76,7 @@ company_sandvikens = {
 
 
 # Volvo
-company_volvo_auto = {
+ttb_company_volvo_auto = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/Volvo.png"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
