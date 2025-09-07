@@ -409,7 +409,7 @@ sweden_flavor.10 = {
 		texture = "gfx/event_pictures/ttb_finland_map.dds"
 	}
 
-	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
 	duration = 3
 

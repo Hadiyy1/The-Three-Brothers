@@ -133,7 +133,7 @@ swe_hjalmar_branting_template = {
 	}
 }
 # executives
-swe_goran_goransson = { # Göran Fredrik Göransson, Sandvikens Jernverks AB
+swe_goran_goransson_template = { # Göran Fredrik Göransson, Sandvikens Jernverks AB
     first_name = Goran_Fredrik
     last_name = Goransson
     historical = yes
@@ -149,14 +149,14 @@ swe_goran_goransson = { # Göran Fredrik Göransson, Sandvikens Jernverks AB
     executive_usage = {
 
         company_trigger = {
-            is_company_type = company_type:company_sandvikens
+            is_company_type = company_type:ttb_company_sandvikens
         }
         earliest_usage_date = 1858.1.1
         latest_usage_date = 1901.1.1
         chance = 100
     }
 }
-swe_gustaf_larson = { # Erik Gustaf Larson, Volvo
+swe_gustaf_larson_template = { # Erik Gustaf Larson, Volvo
     first_name = Erik_Gustaf
     last_name = Larson
     historical = yes
@@ -171,14 +171,14 @@ swe_gustaf_larson = { # Erik Gustaf Larson, Volvo
     }
     executive_usage = {
         company_trigger = {
-            is_company_type = company_type:company_volvo_auto
+            is_company_type = company_type:ttb_company_volvo_auto
         }
         earliest_usage_date = 1917.1.1
         latest_usage_date = 1962.1.1
         chance = 100
     }
 }
-swe_assar_gabrielsson = { # Assar Gabrielsson, Volvo
+swe_assar_gabrielsson_template = { # Assar Gabrielsson, Volvo
     first_name = Assar_Thorvald_Nathanael
     last_name = Gabrielsson
     historical = yes
@@ -193,10 +193,95 @@ swe_assar_gabrielsson = { # Assar Gabrielsson, Volvo
     }
     executive_usage = {
         company_trigger = {
-            is_company_type = company_type:company_volvo_auto
+            is_company_type = company_type:ttb_company_volvo_auto
         }
         earliest_usage_date = 1917.1.1
         latest_usage_date = 1968.1.1
+        chance = 100
+    }
+}
+swe_daniel_fraser_template = { # Daniel Fraser, Motala Verkstad
+    first_name = Daniel
+    last_name = Fraser
+    historical = yes
+    birth_date = 1787.11.5
+    culture = cu:british
+    interest_group = ig_industrialists
+    ideology = ideology_market_liberal
+    traits = {
+        innovative
+        engineer
+        experienced_entrepreneur
+    }
+    executive_usage = {
+        company_trigger = {
+            is_company_type = company_type:ttb_company_motala_verkstad
+        }
+        earliest_usage_date = 1836.1.1
+        latest_usage_date = 1943.1.1
+        chance = 100
+    }
+}
+swe_otto_edvard_carlsund_template = { # Otto Edvard Carlsund, Motala Verkstad
+    first_name = Otto_Edvard
+    last_name = Carlsund
+    historical = yes
+    birth_date = 1809.9.1
+    culture = cu:swedish
+    interest_group = ig_industrialists
+    ideology = ideology_market_liberal
+    traits = {
+        engineer
+        experienced_entrepreneur
+    }
+    executive_usage = {
+        company_trigger = {
+            is_company_type = company_type:ttb_company_motala_verkstad
+        }
+        earliest_usage_date = 1843.1.1
+        latest_usage_date = 1870.1.1
+        chance = 100
+    }
+}
+swe_johan_carl_kempe_template = { # Johan Carl Kempe, Mo och Domsjö AB
+    first_name = Johan_Carl
+    last_name = Kempe
+    historical = yes
+    birth_date = 1799.11.19
+    culture = cu:swedish
+    interest_group = ig_industrialists
+    ideology = ideology_market_liberal
+    traits = {
+        experienced_entrepreneur
+		honorable
+    }
+    executive_usage = {
+        company_trigger = {
+            is_company_type = company_type:ttb_company_mo_och_domsjö_ab
+        }
+        earliest_usage_date = 1836.1.1
+        latest_usage_date = 1865.1.1
+        chance = 100
+    }
+}
+swe_frans_kristopher_kempe_template = { # frans kristopher Kempe, Mo och Domsjö AB
+    first_name = Frans_Kristopher
+    last_name = Kempe
+    historical = yes
+    birth_date = 1847.3.5
+    culture = cu:swedish
+    interest_group = ig_industrialists
+    ideology = ideology_market_liberal
+    traits = {
+        experienced_entrepreneur
+		honorable
+    }
+    executive_usage = {
+        company_trigger = {
+            is_company_type = company_type:ttb_company_mo_och_domsjö_ab
+        }
+        earliest_usage_date = 1884.1.1
+        latest_usage_date = 1917.1.1
         chance = 100
     }
 }
@@ -313,7 +398,7 @@ nor_marcus_thrane_template = {
 	}
 }
 #executives
-nor_fredrik_meyn = { # Fredrik Meyn, Kongsberg Våpenfabrikk
+nor_fredrik_meyn_template = { # Fredrik Meyn, Kongsberg Våpenfabrikk
 	first_name = Fredrik
     last_name = Meyn
     historical = yes
@@ -329,7 +414,7 @@ nor_fredrik_meyn = { # Fredrik Meyn, Kongsberg Våpenfabrikk
 	executive_usage = {
 
 		company_trigger = {
-			is_company_type = company_type:company_kongsberg_vapenfabrikk
+			is_company_type = company_type:ttb_company_kongsberg_vapenfabrikk
 		}
 	    earliest_usage_date = 1824.1.1
 	    latest_usage_date = 1842.1.1
@@ -337,7 +422,7 @@ nor_fredrik_meyn = { # Fredrik Meyn, Kongsberg Våpenfabrikk
 	}
 }
 
-nor_peder_holst = { # Peder Christian Holst, Kongsberg Våpenfabrikk
+nor_peder_holst_template = { # Peder Christian Holst, Kongsberg Våpenfabrikk
 	first_name = Peder_Christian
     last_name = Holst
     historical = yes
@@ -352,7 +437,7 @@ nor_peder_holst = { # Peder Christian Holst, Kongsberg Våpenfabrikk
 	executive_usage = {
 
 		company_trigger = {
-			is_company_type = company_type:company_kongsberg_vapenfabrikk
+			is_company_type = company_type:ttb_company_kongsberg_vapenfabrikk
 		}
 	    earliest_usage_date = 1842.1.1
 	    latest_usage_date = 1854.1.1
@@ -360,7 +445,7 @@ nor_peder_holst = { # Peder Christian Holst, Kongsberg Våpenfabrikk
 	}
 }
 
-nor_jens_landmark = { # Jens Landmark, Kongsberg Våpenfabrikk
+nor_jens_landmark_template = { # Jens Landmark, Kongsberg Våpenfabrikk
 	first_name = Jens
     last_name = Landmark
     historical = yes
@@ -377,7 +462,7 @@ nor_jens_landmark = { # Jens Landmark, Kongsberg Våpenfabrikk
 	executive_usage = {
 
 		company_trigger = {
-			is_company_type = company_type:company_kongsberg_vapenfabrikk
+			is_company_type = company_type:ttb_company_kongsberg_vapenfabrikk
 		}
 	    earliest_usage_date = 1854.1.1
 	    latest_usage_date = 1880.1.1
@@ -385,7 +470,7 @@ nor_jens_landmark = { # Jens Landmark, Kongsberg Våpenfabrikk
 	}
 }
 
-nor_ole_krag = { # Ole Herman Krag, Kongsberg Våpenfabrikk
+nor_ole_krag_template = { # Ole Herman Krag, Kongsberg Våpenfabrikk
 	first_name = Ole_Herman
     last_name = Krag
     historical = yes
@@ -402,7 +487,7 @@ nor_ole_krag = { # Ole Herman Krag, Kongsberg Våpenfabrikk
 	executive_usage = {
 
 		company_trigger = {
-			is_company_type = company_type:company_kongsberg_vapenfabrikk
+			is_company_type = company_type:ttb_company_kongsberg_vapenfabrikk
 		}
 	    earliest_usage_date = 1880.1.1
 	    latest_usage_date = 1895.1.1
@@ -410,7 +495,7 @@ nor_ole_krag = { # Ole Herman Krag, Kongsberg Våpenfabrikk
 	}
 }
 
-nor_jacob_paaske = { # Jacob Maximillian Gran Paaske, Kongsberg Våpenfabrikk
+nor_jacob_paaske_template = { # Jacob Maximillian Gran Paaske, Kongsberg Våpenfabrikk
 	first_name = Jacob_Maximillian_Gran
     last_name = Paaske
     historical = yes
@@ -425,7 +510,7 @@ nor_jacob_paaske = { # Jacob Maximillian Gran Paaske, Kongsberg Våpenfabrikk
 	executive_usage = {
 
 		company_trigger = {
-			is_company_type = company_type:company_kongsberg_vapenfabrikk
+			is_company_type = company_type:ttb_company_kongsberg_vapenfabrikk
 		}
 	    earliest_usage_date = 1895.1.1
 	    latest_usage_date = 1912.1.1
@@ -433,7 +518,7 @@ nor_jacob_paaske = { # Jacob Maximillian Gran Paaske, Kongsberg Våpenfabrikk
 	}
 }
 
-nor_johan_schwartz = { # Johan Jørgen Schwartz, Kongsberg Våpenfabrikk
+nor_johan_schwartz_template = { # Johan Jørgen Schwartz, Kongsberg Våpenfabrikk
 	first_name = Johan_Jørgen
     last_name = Schwartz
     historical = yes
@@ -448,7 +533,7 @@ nor_johan_schwartz = { # Johan Jørgen Schwartz, Kongsberg Våpenfabrikk
 	executive_usage = {
 
 		company_trigger = {
-			is_company_type = company_type:company_kongsberg_vapenfabrikk
+			is_company_type = company_type:ttb_company_kongsberg_vapenfabrikk
 		}
 	    earliest_usage_date = 1912.1.1
 	    latest_usage_date = 1926.1.1
@@ -456,7 +541,7 @@ nor_johan_schwartz = { # Johan Jørgen Schwartz, Kongsberg Våpenfabrikk
 	}
 }
 
-nor_haakon_finne = { # Haakon Finne, Kongsberg Våpenfabrikk
+nor_haakon_finne_template = { # Haakon Finne, Kongsberg Våpenfabrikk
 	first_name = Haakon
     last_name = Finne
     historical = yes
@@ -472,7 +557,7 @@ nor_haakon_finne = { # Haakon Finne, Kongsberg Våpenfabrikk
 	executive_usage = {
 
 		company_trigger = {
-			is_company_type = company_type:company_kongsberg_vapenfabrikk
+			is_company_type = company_type:ttb_company_kongsberg_vapenfabrikk
 		}
 	    earliest_usage_date = 1926.1.1
 	    latest_usage_date = 1940.1.1
@@ -562,7 +647,7 @@ den_jacob_bronnum_template = {
 	}
 }
 #executives
-den_jc_jacobsen = { # Jacob Christian Jacobsen, Carlsberg
+den_jc_jacobsen_template = { # Jacob Christian Jacobsen, Carlsberg
     first_name = Jacob_Christian
     last_name = Jacobsen
     historical = yes
@@ -579,7 +664,7 @@ den_jc_jacobsen = { # Jacob Christian Jacobsen, Carlsberg
     executive_usage = {
 
 		company_trigger = {
-			is_company_type = company_type:company_carlsberg_beer
+			is_company_type = company_type:ttb_company_carlsberg_beer
 		}
 		earliest_usage_date = 1847.1.1
 		latest_usage_date = 1888.1.1
@@ -587,7 +672,7 @@ den_jc_jacobsen = { # Jacob Christian Jacobsen, Carlsberg
     }
 }
 
-den_carl_jacobsen = { # Carl Christian Hillman Jacobsen, Carlsberg
+den_carl_jacobsen_template = { # Carl Christian Hillman Jacobsen, Carlsberg
     first_name = Carl_Christian_Hillman 
     last_name = Jacobsen
     historical = yes
@@ -604,7 +689,7 @@ den_carl_jacobsen = { # Carl Christian Hillman Jacobsen, Carlsberg
     executive_usage = {
 
 		company_trigger = {
-			is_company_type = company_type:company_carlsberg_beer
+			is_company_type = company_type:ttb_company_carlsberg_beer
 		}
 		earliest_usage_date = 1876.1.1
 		latest_usage_date = 1915.1.1

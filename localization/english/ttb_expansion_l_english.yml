@@ -213,12 +213,22 @@
  Larson: "Larson"
  Assar_Thorvald_Nathanael: "Assar Thorvald Nathanael"
  Gabrielsson: "Gabrielsson"
+ Daniel: "Daniel"
+ Fraser: "Fraser"
+ Otto_Edvard: "Otto Edvard"
+ Carlsund: "Carlsund"
+ Johan_Carl: "Johan Carl"
+ Kempe: "Kempe"
+ Frans_Kristopher: "Frans Kristian"
+ #  Kempe: "Kempe"
 
  # Companies
  ttb_company_Kongsberg_vapenfabrikk: "Kongsberg Våpenfabrikk"
  ttb_company_Carlsberg_beer: "Carlsberg"
  ttb_company_volvo_auto: "Volvo"
  ttb_company_sandvikens: "Sandvikens Jernverks AB"
+ ttb_company_motala_verkstad: "Motala Verkstad"
+ ttb_company_mo_och_domsjö_ab: "Mo och Domsjö AB"
 
  # Prestige goods
  prestige_krag_jorgensen: "Krag Jorgensen"

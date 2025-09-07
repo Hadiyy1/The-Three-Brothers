@@ -152,3 +152,145 @@ ttb_company_volvo_auto = {
 	}
 }
 
+ttb_company_motala_verkstad = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/motala_verkstad.png"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_SVEALAND }
+
+	building_types = {
+		building_tooling_workshops
+		building_shipyards
+	}
+
+	extension_building_types = {
+		building_railway
+		building_motor_industry
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_tools
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_baltic
+		has_game_rule = ttb_companies_enabled
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_SVEALAND
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_SVEALAND
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_tooling_workshops
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		country_prestige_mult = 0.05
+		country_production_tech_spread_mult = 0.1
+		building_shipyards_throughput_add = 0.10
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_SVEALAND
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_tooling_workshops = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_SVEALAND
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+ttb_company_mo_och_domsjö_ab = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/mo_och_domsjo_ab.png"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+
+	flavored_company = yes
+
+	building_types = {
+		building_logging_camp
+		building_paper_mills
+	}
+
+	extension_building_types = {
+		building_furniture_manufacturies
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_paper
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_baltic
+		has_game_rule = ttb_companies_enabled
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_NORRLAND
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_NORRLAND
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_logging_camp
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		state_trade_advantage_mult = 0.1
+		building_group_bg_logging_throughput_add = 0.10
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_NORRLAND
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_tooling_workshops = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_NORRLAND
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
