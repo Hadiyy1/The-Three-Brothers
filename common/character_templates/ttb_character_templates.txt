@@ -55,7 +55,7 @@ swe_axel_adlercreutz_template = {
 	}
 }
 swe_andré_oscar_wallenberg_template = {
-	first_name = André_Oscar
+	first_name = Andre_Oscar
 	last_name = Wallenberg
 	historical = yes
 	culture = cu:swedish
@@ -257,7 +257,7 @@ swe_johan_carl_kempe_template = { # Johan Carl Kempe, Mo och Domsjö AB
     }
     executive_usage = {
         company_trigger = {
-            is_company_type = company_type:ttb_company_mo_och_domsjö_ab
+            is_company_type = company_type:ttb_company_mo_och_domsjo_ab
         }
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1865.1.1
@@ -278,10 +278,51 @@ swe_frans_kristopher_kempe_template = { # frans kristopher Kempe, Mo och Domsjö
     }
     executive_usage = {
         company_trigger = {
-            is_company_type = company_type:ttb_company_mo_och_domsjö_ab
+            is_company_type = company_type:ttb_company_mo_och_domsjo_ab
         }
         earliest_usage_date = 1884.1.1
         latest_usage_date = 1917.1.1
+        chance = 100
+    }
+}
+swe_pehr_lagerhjelm_template = { # Pehr Lagerhjelm, Bofors AB
+    first_name = Pehr
+    last_name = Lagerhjelm
+    historical = yes
+    birth_date = 1787.2.12
+    culture = cu:swedish
+    interest_group = ig_armed_forces
+    ideology = ideology_moderate
+    traits = {
+        experienced_entrepreneur
+		innovative
+    }
+    executive_usage = {
+        company_trigger = {
+            is_company_type = company_type:ttb_company_bofors
+        }
+        earliest_usage_date = 1836.1.1
+        latest_usage_date = 1852.1.1
+        chance = 100
+    }
+}
+swe_pehr_erland_lagerhjelm_template = { # Pehr Erland Lagerhjelm, Bofors AB
+    first_name = Pehr_Erland
+    last_name = Lagerhjelm
+    historical = yes
+    birth_date = 1829.5.28
+    culture = cu:swedish
+    interest_group = ig_armed_forces
+    ideology = ideology_moderate
+    traits = {
+        experienced_entrepreneur
+    }
+    executive_usage = {
+        company_trigger = {
+            is_company_type = company_type:ttb_company_bofors
+        }
+        earliest_usage_date = 1853.1.1
+        latest_usage_date = 1879.1.1
         chance = 100
     }
 }
@@ -519,7 +560,7 @@ nor_jacob_paaske_template = { # Jacob Maximillian Gran Paaske, Kongsberg Våpenf
 }
 
 nor_johan_schwartz_template = { # Johan Jørgen Schwartz, Kongsberg Våpenfabrikk
-	first_name = Johan_Jørgen
+	first_name = Johan_Jorgen
     last_name = Schwartz
     historical = yes
     birth_date = 1877.9.2
@@ -567,7 +608,7 @@ nor_haakon_finne_template = { # Haakon Finne, Kongsberg Våpenfabrikk
 
 # Denmark - DEN
 den_nfs_grundtvig_template = {
-	first_name = Nikolai Frederik Severin
+	first_name = Nikolai_Frederik_Severin
 	last_name = Grundtvig
 	culture = cu:danish
 	female = no

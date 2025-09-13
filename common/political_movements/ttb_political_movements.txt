@@ -1,4 +1,4 @@
-movement_scandinavia_pan_national = {
+﻿movement_scandinavia_pan_national = {
 	category = movement_category_pan_national
 
 	ideology = ideology_nordic_pan_nationalist

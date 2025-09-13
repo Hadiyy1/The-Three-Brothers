@@ -221,7 +221,7 @@ sweden_matchstick_boom = {
 	building_group_bg_manufacturing_throughput_add = 0.05
 }
 
-sweden_sundsvall_fire = {
+sweden_sundsvall_fire_modi = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	building_group_bg_logging_throughput_add = 0.05
 	building_furniture_manufacturies_throughput_add = 0.05
@@ -289,7 +289,6 @@ sweden_strong_independent_farmer_culture = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	interest_group_pop_attraction_mult = 0.25
 }
-
 
 # Norway
 norway_abolishment_of_new_aristocrats = {
@@ -481,7 +480,7 @@ focus_on_power = {
 	country_infamy_generation_mult = -0.25
 	unit_supply_consumption_mult = -0.25
 	country_military_goods_cost_mult = -0.25
-	building_group_bg_army_throughput_add = 0.25
+	building_group_bg_military_throughput_add = 0.25
 	country_max_declared_interests_add = 3
 }
 

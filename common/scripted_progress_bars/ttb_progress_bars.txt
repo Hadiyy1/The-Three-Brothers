@@ -1,4 +1,4 @@
-scandinavism_progress_bar = {
+﻿scandinavism_progress_bar = {
 	name = "scandinavism_progress_bar"
 	desc = "scandinavism_progress_bar_desc"
 
@@ -80,7 +80,7 @@ crowns_control_progress_bar = {
 				}
 				add = {
 					value = this.political_movement_support
-					multiply = 2
+					multiply = 10
 				}
 			}
 		}
@@ -93,7 +93,7 @@ crowns_control_progress_bar = {
 				}
 				subtract = {
 					value = this.political_movement_support
-					multiply = 2
+					multiply = 10
 				}
 			}
 		}
@@ -114,7 +114,7 @@ crowns_control_progress_bar = {
 						}
 					}
 					subtract = {
-						value = 0.3
+						value = 2.5
 					}
 				}
 			}
@@ -134,17 +134,34 @@ crowns_control_progress_bar = {
 						}
 					}
 					add = {
-						value = 0.3
+						value = 2.5
 					}
 				}
 			}
 		}
 
+		add = {
+			desc = "ttb_drawn_to_status_quo"
+			#owner = {
+				if = {
+					limit = {
+						je:swedish_nordic_monarchy = {
+							"scripted_bar_progress(crowns_control_progress_bar)" <= 750
+						}
+					}
+					add = 1
+				}
+				else = {
+					add = -1
+				}
+			#}
+		}
+
 	}
 
-	start_value = 150
+	start_value = 750
 	min_value = 0
-	max_value = 300
+	max_value = 1500
 }
 
 ttb_reforming_swedish_army_progress_bar = {

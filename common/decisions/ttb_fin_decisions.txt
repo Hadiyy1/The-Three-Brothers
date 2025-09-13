@@ -1,4 +1,4 @@
-integrate_finland_into_scandinavia = {
+﻿integrate_finland_into_scandinavia = {
 	is_shown = {
 		OR = {
 			country_has_primary_culture = cu:swedish

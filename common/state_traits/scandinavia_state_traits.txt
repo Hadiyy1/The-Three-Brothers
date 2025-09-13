@@ -1,4 +1,4 @@
-ttb_state_trait_north_pole = {
+﻿ttb_state_trait_north_pole = {
 	icon = "gfx/interface/icons/state_trait_icons/cold_climate.dds"
 	
 	modifier = {

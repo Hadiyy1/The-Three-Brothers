@@ -263,7 +263,7 @@
  sweden_flavor.42.b: "The public funds would be better spent on social programs."
 
  sweden_flavor.43.t: "The Lecture Hall's Acclamation"
- sweden_flavor.43.d: "A highly anticipated public lecture, delivered by a renowned historian, has been a resounding success. The lecture, titled 'The Crown: A Bulwark Against Chaos,' argued for the vital role of the monarchy as a force for stability and national identity. The lecture hall was filled to capacity, with many more turned away at the door, demonstrating the public's eagerness to engage with the topic."
+ sweden_flavor.43.d: "A highly anticipated public lecture, delivered by a renowned historian in #yellow Uppsala#!, has been a resounding success. The lecture, titled 'The Crown: A Bulwark Against Chaos,' argued for the vital role of the monarchy as a force for stability and national identity. The lecture hall was filled to capacity, with many more turned away at the door, demonstrating the public's eagerness to engage with the topic."
  sweden_flavor.43.f: "The historian, a man known for his erudition and fiery rhetoric, concluded his address to a standing ovation. 'Let our neighbors embrace the fleeting whims of the popular vote,' he declared, 'but let Sweden's soul be anchored in the steadfast continuity of our Crown, a beacon of order in a world adrift in republican fervor.' His final words were drowned out by the thunderous applause of the crowd, eager to affirm their loyalty."
  sweden_flavor.43.a: "This proves that the people stand with the King."
  sweden_flavor.43.b: "It is merely the opinion of a single academic."
@@ -274,11 +274,11 @@
  sweden_flavor.44.a: "A wise and modern reform."
  sweden_flavor.44.b: "Tradition should have prevailed."
 
- sweden_flavor.45.t: "The Debate on the Crown"
- sweden_flavor.45.d: "A high-profile meeting of ministers and parliamentary leaders has been convened to address the role and relevance of the monarchy in modern Sweden. The discussion, though private, has quickly become the talk of the capital, with rumors of heated arguments and passionate speeches. In an age of rising republicanism, the question of the Crown's future is a matter of paramount importance."
- sweden_flavor.45.f: "A junior minister, exiting the meeting late in the evening, was accosted by a throng of journalists. Exhausted, he merely said, 'The question is no longer whether we should have a monarch, but what kind of monarch we want. Is the Crown a relic of the past, or a compass for the future?' He refused to elaborate."
- sweden_flavor.45.a: "The King's authority must not be diminished."
- sweden_flavor.45.b: "The monarchy must be a symbol, not a source of power."
+ sweden_flavor.45.t: "Kungen, Rådet och Riksdagen"
+ sweden_flavor.45.d: "The relationship between the King, the Council of State (Statsrådet), and the Riksdag has become the central political question of our time. In the halls of power in Stockholm, liberal voices demand a new interpretation of the Instrument of Government, arguing that ministers must be accountable to the Riksdag, not solely to the King. Conservatives and royalists fiercely oppose this, viewing it as a dangerous attack on the Crown's authority and the stability of the Swedish state."
+ sweden_flavor.45.f: "A liberal member of the Second Chamber, emerging late from the Riksdag building, was cornered by journalists from Aftonbladet. 'We debate budgets and railways by day,' he said with a weary sigh, 'but by night, we debate the very foundation of Sweden. Does the King rule the nation through his Council, or does the nation rule through the King? Until that question is answered, all else is temporary.'"
+ sweden_flavor.45.a: "The King's authority, vested in the Council, is paramount."
+ sweden_flavor.45.b: "The Council of State must answer to the Riksdag."
  
 
  sweden_flavor.46.t: "The Crown's Fading Influence"
@@ -296,7 +296,6 @@
  sweden_flavor.48.f: "An editorial in a conservative newspaper condemned the King's actions, writing, 'The King's voice is not a megaphone for popular appeal. His will is expressed through the law, and the law is forged in the hallowed halls of the Riksdag, not in the clamor of the public square. This is a dangerous precedent, and a profound disrespect for the very institution that grants him his crown.'"
  sweden_flavor.48.a: "His Majesty is merely fulfilling his duty to the people."
  sweden_flavor.48.b: "This royal overreach is an affront to our nascent democracy."
-
 
 # Denmark
  denmark_flavor.1.t: "Failure of Our Nation"
