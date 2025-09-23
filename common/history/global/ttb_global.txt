@@ -1,7 +1,7 @@
 ﻿# This is executed last among all history
 GLOBAL = {
 	c:DEN = {
-		activate_law = law_type:law_legacy_slavery
+		# activate_law = law_type:law_legacy_slavery
 		ig:ig_rural_folk = {
 			#remove_ideology = ideology_particularist
 			add_ideology = ideology_nordic_particularist
@@ -18,8 +18,9 @@ GLOBAL = {
 		add_journal_entry = { type = denmark_return_of_danish_dominance }
 	}
 	c:SWE = {
-		activate_law = law_type:law_legacy_slavery
+		activate_law = law_type:law_colonial_slavery
 		activate_law = law_type:law_homesteading
+		activate_law = law_type:law_guild_system
 		ig:ig_rural_folk = {
 			#remove_ideology = ideology_particularist
 			add_ideology = ideology_nordic_particularist
