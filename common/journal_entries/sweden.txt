@@ -769,6 +769,9 @@ swedish_nordic_monarchy = {
 			1 = sweden_flavor.44
 			1 = sweden_flavor.45
 			1 = sweden_flavor.48
+			1 = sweden_flavor.49
+			1 = sweden_flavor.50
+			1 = sweden_flavor.51
 		}
 	}
 
@@ -778,7 +781,7 @@ swedish_nordic_monarchy = {
 		}
 	}
 
-	timeout = 11000
+	timeout = 10960
 	on_timeout = {
 		if = {
 			limit = { 

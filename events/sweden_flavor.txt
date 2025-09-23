@@ -1180,97 +1180,97 @@ sweden_flavor.26 = {
 	}
 }
 
-sweden_flavor.27 = {
-	type = country_event
+# sweden_flavor.27 = {
+# 	type = country_event
 
-	title = sweden_flavor.27.t
-	desc = sweden_flavor.27.d
-	flavor = sweden_flavor.27.f
+# 	title = sweden_flavor.27.t
+# 	desc = sweden_flavor.27.d
+# 	flavor = sweden_flavor.27.f
 
-	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
-	}
+# 	event_image = {
+# 		video = "europenorthamerica_capitalists_meeting"
+# 	}
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+# 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
-	duration = 3
+# 	duration = 3
 
-	trigger = {
-		trigger_if = {
-			limit = {
-				exists = c:SWE
-			}
-			c:SWE = this
-		}
-		trigger_if = {
-			limit = {
-				exists = c:SCA
-			}
-			c:SCA = this
-		}
-		OR = {
-			has_law = law_type:law_free_trade
-			has_law = law_type:law_protectionism
-		}
+# 	trigger = {
+# 		trigger_if = {
+# 			limit = {
+# 				exists = c:SWE
+# 			}
+# 			c:SWE = this
+# 		}
+# 		trigger_if = {
+# 			limit = {
+# 				exists = c:SCA
+# 			}
+# 			c:SCA = this
+# 		}
+# 		OR = {
+# 			has_law = law_type:law_free_trade
+# 			has_law = law_type:law_protectionism
+# 		}
 		
-		NOT = {
-			has_variable = ttb_swe_var_event_9
-		}
-	}
+# 		NOT = {
+# 			has_variable = ttb_swe_var_event_9
+# 		}
+# 	}
 
-	immediate = {
-		set_variable = ttb_swe_var_event_9
-	}
+# 	immediate = {
+# 		set_variable = ttb_swe_var_event_9
+# 	}
 
-	option = {
-		name = sweden_flavor.27.a
-		default_option = yes
-	}
-}
+# 	option = {
+# 		name = sweden_flavor.27.a
+# 		default_option = yes
+# 	}
+# }
 
-sweden_flavor.29 = {
-	type = country_event
+# sweden_flavor.29 = {
+# 	type = country_event
 
-	title = sweden_flavor.29.t
-	desc = sweden_flavor.29.d
-	flavor = sweden_flavor.29.f
+# 	title = sweden_flavor.29.t
+# 	desc = sweden_flavor.29.d
+# 	flavor = sweden_flavor.29.f
 
-	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
-	}
+# 	event_image = {
+# 		video = "europenorthamerica_capitalists_meeting"
+# 	}
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+# 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
-	duration = 3
+# 	duration = 3
 
-	trigger = {
-		trigger_if = {
-			limit = {
-				exists = c:SWE
-			}
-			c:SWE = this
-		}
-		trigger_if = {
-			limit = {
-				exists = c:SCA
-			}
-			c:SCA = this
-		}
-		has_law = law_type:law_laissez_faire
-		NOT = {
-			has_variable = ttb_swe_var_event_11
-		}
-	}
+# 	trigger = {
+# 		trigger_if = {
+# 			limit = {
+# 				exists = c:SWE
+# 			}
+# 			c:SWE = this
+# 		}
+# 		trigger_if = {
+# 			limit = {
+# 				exists = c:SCA
+# 			}
+# 			c:SCA = this
+# 		}
+# 		has_law = law_type:law_laissez_faire
+# 		NOT = {
+# 			has_variable = ttb_swe_var_event_11
+# 		}
+# 	}
 
-	immediate = {
-		set_variable = ttb_swe_var_event_11
-	}
+# 	immediate = {
+# 		set_variable = ttb_swe_var_event_11
+# 	}
 
-	option = {
-		name = sweden_flavor.29.a
-		default_option = yes
-	}
-}
+# 	option = {
+# 		name = sweden_flavor.29.a
+# 		default_option = yes
+# 	}
+# }
 
 sweden_flavor.30 = {
 	type = country_event
@@ -2213,7 +2213,7 @@ sweden_flavor.48 = {
 		ruler = {
 			has_template = swe_oscar_bernadotte_template
 		}
-		NOT = { has_variable = a_reform_from_the_crown }
+		NOT = { has_variable = ttb_a_reform_from_the_crown }
 		
 	}
 
@@ -2221,7 +2221,7 @@ sweden_flavor.48 = {
 		ruler = {
 			save_scope_as = swedish_king
 		}
-		set_variable = a_reform_from_the_crown
+		set_variable = ttb_a_reform_from_the_crown
 	}
 
 	option = {
@@ -2288,7 +2288,7 @@ sweden_flavor.49 = {
 	flavor = sweden_flavor.49.f
 
 	event_image = {
-		video = "votp_monarch_holding_court"
+		video = "unspecific_politicians_arguing"
 	}
 
 	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
@@ -2296,68 +2296,243 @@ sweden_flavor.49 = {
 	duration = 3
 
 	trigger = {
-		
+		exists = c:NOR
+		c:NOR = {
+			is_subject_of = c:SWE
+		}
+		NOT = {
+			has_variable = ttb_the_consulate_question
+		}
 	}
 
 	immediate = {
-		ruler = {
-			save_scope_as = swedish_king
-		}
+		set_variable = ttb_the_consulate_question
 	}
 
 	option = {
 		name = sweden_flavor.49.a
 		default_option = yes
-		every_political_movement = {
-		    limit = {
-				OR = {
-					is_political_movement_type = movement_royalist_absolutist
-					is_political_movement_type = movement_royalist_constitutional
-				}
+		c:NOR = {
+			change_relations = {
+				country = c:SWE
+				value = -10
 			}
-            add_modifier = {
-				name = sweden_royal_support
-				years = 5
-			}
-		}
-		add_modifier = {
-			name = sweden_monarchy_influence
-			years = 5
-		}
-		scope:swedish_king = {
-			add_modifier = {
-				name = sweden_strong_king
-				years = 10
-			}
-		}
-		if = {
-			limit = { 
-				ig:ig_intelligentsia = {
-					has_ideology = ideology:ideology_constitutionalist
-				}
-			}
-			ig:ig_intelligentsia = {
-				remove_ideology = ideology_constitutionalist
-				add_ideology = ideology_republican
+			add_radicals = {
+				value = 0.05
 			}
 		}
 	}
 	option = {
 		name = sweden_flavor.49.b
+		c:NOR = {
+			change_relations = {
+				country = c:SWE
+				value = 10
+			}
+			add_loyalists = {
+				value = 0.05
+			}
+		}
 		add_modifier = {
-			name = sweden_monarchy_influence
-			years = 5
+			name = sweden_caved_to_norway
+			years = 3
 		}
-		if = {
-			limit = { 
-				ig:ig_intelligentsia = {
-					has_ideology = ideology:ideology_constitutionalist
-				}
+	}
+}
+
+sweden_flavor.50 = {
+	type = country_event
+
+	title = sweden_flavor.50.t
+	desc = sweden_flavor.50.d
+	flavor = sweden_flavor.50.f
+
+	event_image = {
+		video = "votp_gunboat_diplomacy"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:NOR
+		c:NOR = {
+			is_subject_of = c:SWE
+		}
+		NOT = {
+			has_variable = ttb_a_pure_flag_for_norway
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_a_pure_flag_for_norway
+	}
+
+	option = {
+		name = sweden_flavor.50.a
+		default_option = yes
+		c:NOR = {
+			change_relations = {
+				country = c:SWE
+				value = -10
 			}
-			ig:ig_intelligentsia = {
-				remove_ideology = ideology_constitutionalist
-				add_ideology = ideology_republican
+			add_radicals = {
+				value = 0.05
 			}
 		}
+	}
+	option = {
+		name = sweden_flavor.50.b
+		c:NOR = {
+			change_relations = {
+				country = c:SWE
+				value = 10
+			}
+			add_loyalists = {
+				value = 0.05
+			}
+		}
+		add_modifier = {
+			name = sweden_caved_to_norway
+			years = 3
+		}
+	}
+}
+
+sweden_flavor.51 = {
+	type = country_event
+
+	title = sweden_flavor.51.t
+	desc = sweden_flavor.51.d
+	flavor = sweden_flavor.51.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:NOR
+		c:NOR = {
+			is_subject_of = c:SWE
+		}
+		NOT = {
+			has_variable = ttb_the_stortings_defiance
+		}
+		has_variable = ttb_a_pure_flag_for_norway
+		has_variable = ttb_the_consulate_question
+	}
+
+	immediate = {
+		set_variable = ttb_the_stortings_defiance
+	}
+
+	option = {
+		name = sweden_flavor.51.a
+		c:NOR = {
+			change_relations = {
+				country = c:SWE
+				value = -20
+			}
+			add_radicals = {
+				value = 0.20
+			}
+		}
+		change_infamy = 10
+		trigger_event = sweden_flavor.52
+	}
+	option = {
+		name = sweden_flavor.51.b
+		default_option = yes
+		c:NOR = {
+			change_relations = {
+				country = c:SWE
+				value = 10
+			}
+			add_loyalists = {
+				value = 0.10
+			}
+		}
+		add_modifier = {
+			name = sweden_caved_to_norway
+			years = 3
+		}
+	}
+	option = {
+		name = sweden_flavor.51.c
+		c:NOR = {
+			change_relations = {
+				country = c:SWE
+				value = 50
+			}
+			add_loyalists = {
+				value = 0.20
+			}
+			make_independent = yes
+		}
+	}
+}
+
+sweden_flavor.52 = {
+	type = country_event
+
+	title = sweden_flavor.52.t
+	desc = sweden_flavor.52.d
+	flavor = sweden_flavor.52.f
+
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = sweden_flavor.52.a
+		c:NOR = {
+			activate_law = law_type:law_autocracy
+			add_modifier = {
+				name = norway_military_government_imposed
+				years = 15
+				is_decaying = yes
+			}
+			add_radicals = {
+				value = 0.10
+			}
+		}
+	}
+	option = {
+		name = sweden_flavor.52.b
+		default_option = yes
+		c:NOR = {
+			activate_law = law_type:law_oligarchy
+			add_modifier = {
+				name = norway_loyal_government_imposed
+				years = 15
+				is_decaying = yes
+			}
+			add_radicals = {
+				value = 0.10
+			}
+		}
+	}
+	option = {
+		name = sweden_flavor.52.c
+		annex = c:NOR
+		add_radicals = {
+			value = 0.10
+		}
+		change_infamy = 30
 	}
 }

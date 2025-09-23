@@ -193,15 +193,15 @@
  sweden_flavor.26.f: "The school bell rings across the land, calling every Swedish child to the path of knowledge."
  sweden_flavor.26.a: "Enact the Ordinance!"
 
- sweden_flavor.27.t: "The Guild Edict: Freeing Commerce"
- sweden_flavor.27.d: "For centuries, the guild system has regulated trades and protected master craftsmen, but it has increasingly become a barrier to industrial growth and free competition. After decades of debate and pressure from liberal economic thinkers, the Guild Edict has been adopted, effectively abolishing the last remnants of guild monopolies and opening up trades to all citizens."
- sweden_flavor.27.f: "The chains of ancient privilege are broken, unleashing the full force of free enterprise."
- sweden_flavor.27.a: "Abolish the Guilds!"
+ #  sweden_flavor.27.t: "The Guild Edict: Freeing Commerce"
+ #  sweden_flavor.27.d: "For centuries, the guild system has regulated trades and protected master craftsmen, but it has increasingly become a barrier to industrial growth and free competition. After decades of debate and pressure from liberal economic thinkers, the Guild Edict has been adopted, effectively abolishing the last remnants of guild monopolies and opening up trades to all citizens."
+ #  sweden_flavor.27.f: "The chains of ancient privilege are broken, unleashing the full force of free enterprise."
+ #  sweden_flavor.27.a: "Abolish the Guilds!"
 
- sweden_flavor.29.t: "The Freedom of Trade and Industry Act: Economic Liberalization"
- sweden_flavor.29.d: "Following the abolition of the guilds, Sweden takes another decisive step towards economic liberalization with the Freedom of Trade and Industry Act. This law removes most remaining restrictions on establishing and operating businesses, allowing for greater competition, innovation, and economic mobility. It is a cornerstone of a burgeoning free-market economy, attracting investment and stimulating industrial growth. However, it also means less protection for smaller businesses and artisans against larger, more competitive enterprises."
- sweden_flavor.29.f: "The winds of economic liberty sweep across the land, clearing the path for boundless enterprise."
- sweden_flavor.29.a: "Fully Liberalize Trade!"
+ #  sweden_flavor.29.t: "The Freedom of Trade and Industry Act: Economic Liberalization"
+ #  sweden_flavor.29.d: "Following the abolition of the guilds, Sweden takes another decisive step towards economic liberalization with the Freedom of Trade and Industry Act. This law removes most remaining restrictions on establishing and operating businesses, allowing for greater competition, innovation, and economic mobility. It is a cornerstone of a burgeoning free-market economy, attracting investment and stimulating industrial growth. However, it also means less protection for smaller businesses and artisans against larger, more competitive enterprises."
+ #  sweden_flavor.29.f: "The winds of economic liberty sweep across the land, clearing the path for boundless enterprise."
+ #  sweden_flavor.29.a: "Fully Liberalize Trade!"
 
  sweden_flavor.30.t: "The Municipal Reform of: Local Self-Governance"
  sweden_flavor.30.d: "To better manage local affairs and empower regional communities, Sweden has implemented the Municipal Reform. This comprehensive law grants significantly increased autonomy to municipalities (kommuner), allowing them greater control over local taxation, public services, and infrastructure development, independent of central government oversight."
@@ -296,6 +296,32 @@
  sweden_flavor.48.f: "An editorial in a conservative newspaper condemned the King's actions, writing, 'The King's voice is not a megaphone for popular appeal. His will is expressed through the law, and the law is forged in the hallowed halls of the Riksdag, not in the clamor of the public square. This is a dangerous precedent, and a profound disrespect for the very institution that grants him his crown.'"
  sweden_flavor.48.a: "His Majesty is merely fulfilling his duty to the people."
  sweden_flavor.48.b: "This royal overreach is an affront to our nascent democracy."
+
+ sweden_flavor.49.t: "The Consulate Question"
+ sweden_flavor.49.d: "The Norwegian Storting, emboldened by the economic power of their vast merchant fleet, is once again demanding a separate consular service. In Stockholm, this is viewed not as an administrative request, but as a deliberate step towards full independence that would shatter the union's common foreign policy. The Crown has made it clear that any such bill would be met with a royal veto, setting the stage for a serious political confrontation."
+ sweden_flavor.49.f: "'Our ships sail every ocean, our trade buoys the economies of both our kingdoms,' argued a Norwegian representative in Stockholm. 'To deny us our own consuls is to deny us the tools to manage our own prosperity. Is this a union of equals, or is Norway merely a province of Sweden?'"
+ sweden_flavor.49.a: "A common foreign policy requires a common consular service."
+ sweden_flavor.49.b: "Perhaps the existing service can be reformed to better serve their needs."
+
+ sweden_flavor.50.t: "A Pure Flag for Norway"
+ sweden_flavor.50.d: "The Norwegian Storting has passed a motion to remove the union badge from their merchant flag, allowing ships to fly a 'pure' Norwegian tricolor. Nationalists in both kingdoms are watching our response closely. For them, this is not a matter of cloth, but of sovereignty and national pride."
+ sweden_flavor.50.f: "The 'sildesalaten' they call our union mark! The 'herring salad'! They mock the symbol of our shared crown. To allow them to strike it from their banners is to admit that the union itself is a temporary convenience, not a sacred bond."
+ sweden_flavor.50.a: "The King must veto this bill. The union flag will fly."
+ sweden_flavor.50.b: "Allow it. It is only a merchant flag, after all."
+
+ sweden_flavor.51.t: "The Storting's Defiance"
+ sweden_flavor.51.d: "In a momentous and unprecedented act, the Norwegian Storting has responded to King [ROOT.GetCountry.GetRuler.GetFirstName]'s veto of the Consulate Law by unanimously declaring the union with Sweden dissolved. They argue that by refusing to form a new Norwegian government that would sanction the law, the King has abandoned his constitutional duties and has therefore ceased to reign as King of Norway. This act of constitutional rebellion has plunged the two kingdoms into a profound crisis."
+ sweden_flavor.51.f: "'Revolution in the guise of law!'' thundered a conservative member of the Riksdag. 'They have used our King's adherence to the union's integrity as a pretext to tear up its foundations. This is not a legal proceeding; it is a declaration of rebellion by another name. The honor of Sweden and the integrity of the Crown are at stake!'"
+ sweden_flavor.51.a: "Send in the army and take control over the sorting"
+ sweden_flavor.51.b: "Negotiate with the Storting and find a compromise"
+ sweden_flavor.51.c: "Perhaps it is time to let them go their own way."
+
+ sweden_flavor.52.t: "The Occupation of the Storting"
+ sweden_flavor.52.d: "Following the King's orders, Swedish regiments have marched into Christiania and, after a brief but bloody skirmish with royal Norwegian guards, have seized the Storting building. Key leaders of the independence movement have been arrested within its halls, while others have fled the city. The pure Norwegian tricolor has been torn down and the union flag raised over the occupied parliament. While we have decapitated their government, the city is seething with resentment, and reports confirm the Norwegian army is mobilizing in the countryside to resist us."
+ sweden_flavor.52.f: "A telegram arrives from the commanding general in Christiania: 'Per His Majesty's command, the Storting is secure. Norwegian guard units offered spirited resistance but have been neutralized. The primary secessionist leaders are in custody. The city is now quiet, but it is the quiet of a coiled snake. Awaiting further orders on the administration of the occupation.'"
+ sweden_flavor.52.a: "Appoint a military governor. We will crush all resistance."
+ sweden_flavor.52.b: "A new, loyalist Norwegian government will be formed."
+ sweden_flavor.52.c: "We are done with this, end the union"
 
 # Denmark
  denmark_flavor.1.t: "Failure of Our Nation"
