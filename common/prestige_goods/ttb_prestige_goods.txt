@@ -4,11 +4,12 @@
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/carlsberg_beer_prestige.dds"
 }
 
-prestige_krag_jorgensen = {
-	base_good = small_arms
-	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/krag_jorgensen_prestige.dds"
-}
+# To stop exceeding maximum amount of Prestige Goods per Goods for small_arms (3)
+# prestige_krag_jorgensen = {
+# 	base_good = small_arms
+# 	prestige_bonus = 0.1
+# 	texture = "gfx/interface/icons/goods_icons/prestige_goods/krag_jorgensen_prestige.dds"
+# }
 
 prestige_volvo_ov4 = {
 	base_good = automobiles

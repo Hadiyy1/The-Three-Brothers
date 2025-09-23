@@ -152,7 +152,7 @@ ttb_company_Kongsberg_vapenfabrikk = {
 	preferred_headquarters = { STATE_EASTERN_NORWAY }
 	
 	possible_prestige_goods = {
-		#prestige_krag_jorgensen # To stop exceeding maximum amount of Prestige Goods per Goods for small_arms (3)
+		# prestige_krag_jorgensen # To stop exceeding maximum amount of Prestige Goods per Goods for small_arms (3)
 		prestige_good_generic_small_arms
 	}
 

@@ -1,5 +1,5 @@
 ﻿# root = political_movement
 
 movement_support_scandanavian = {
-	name = scandinavian_culture_group
+	name = language_scandinavian
 }

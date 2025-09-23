@@ -55,7 +55,7 @@ promote_finnish_as_primary_language_in_official_affairs_in_finland = {
 	}
 
 	ai_chance = {
-		base = 0
+		value = 0
 		modifier = {
 			add = 100
 			ig:ig_intelligentsia = {

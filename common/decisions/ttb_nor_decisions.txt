@@ -34,7 +34,7 @@
 	}
 
 	ai_chance = {
-		base = 0.1
+		value = 0.1
 		modifier = {
 			trigger = {
 				bureaucracy < 40
@@ -100,7 +100,7 @@ nor_restablishment_of_new_aristocracy = {
 	}
 	
 	ai_chance = {
-		base = 0
+		value = 0
 		modifier = {
 			trigger = {
 				has_strategy = ai_strategy_reactionary_agenda

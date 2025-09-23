@@ -75,7 +75,7 @@ scandinavian_pan_nationalism = {
 	
 	is_shown_when_inactive = {
 		any_primary_culture = {
-			has_discrimination_trait = scandinavian_culture_group
+			has_discrimination_trait = language_scandinavian
 		}
 		NOT = { has_variable = scandinavism_starts }
 	}
@@ -89,7 +89,7 @@ scandinavian_pan_nationalism = {
 			is_subject = no	
 			top_overlord = {
 				any_primary_culture = {
-					has_discrimination_trait = scandinavian_culture_group
+					has_discrimination_trait = language_scandinavian
 				}
 			}
 		}
@@ -172,7 +172,7 @@ je_form_scandinavia = {
 	
 	is_shown_when_inactive = {
 		any_primary_culture = {
-			has_discrimination_trait = scandinavian_culture_group
+			has_discrimination_trait = language_scandinavian
 		}
 	}
 	
@@ -206,7 +206,7 @@ scandinavia_monetary_union = {
 	
 	is_shown_when_inactive = {
 		any_primary_culture = {
-			has_discrimination_trait = scandinavian_culture_group
+			has_discrimination_trait = language_scandinavian
 		}
 		NOT = { has_global_variable = scandinvia_monetary_union_var }
 	}
@@ -217,7 +217,7 @@ scandinavia_monetary_union = {
 			is_subject = no	
 			top_overlord = {
 				any_primary_culture = {
-					has_discrimination_trait = scandinavian_culture_group
+					has_discrimination_trait = language_scandinavian
 				}
 			}
 		}
@@ -244,7 +244,7 @@ scandinavia_monetary_union = {
 	    OR = {
 	        NOT = {
 			    any_primary_culture = {
-			        has_discrimination_trait = scandinavian_culture_group
+			        has_discrimination_trait = language_scandinavian
 		        }
 		    }
 			custom_tooltip = {
@@ -264,7 +264,7 @@ scandinavia_monetary_union = {
 		every_country = {
 			limit = { 
 				any_primary_culture = {
-			        has_discrimination_trait = scandinavian_culture_group
+			        has_discrimination_trait = language_scandinavian
 		        }
 				# is_target_in_global_variable_list = { name = scandinavian_countries_list target = THIS }
 				# OR = {

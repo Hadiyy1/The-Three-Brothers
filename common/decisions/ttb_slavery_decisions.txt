@@ -43,7 +43,7 @@
 	}
 
 	ai_chance = {
-		base = 0
+		value = 0
 		modifier = {
 			trigger = {
 				has_strategy = ai_strategy_colonial_expansion

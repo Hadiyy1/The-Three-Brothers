@@ -5,7 +5,7 @@
 	visible = { always = yes }
 	
 	ai_chance = {
-		base = 5
+		value = 10
 	}
 
 	possible = {
@@ -54,7 +54,7 @@ scandinavian_pan_nationalism_supress_button = {
 	visible = { always = yes }
 	
 	ai_chance = {
-		base = 5
+		value = 5
 	}
 
 	possible = {
@@ -102,7 +102,7 @@ ttb_reforming_swedish_army_training_button = {
 	visible = { always = yes }
 	
 	ai_chance = {
-		base = 2
+		value = 5
 	}
 
 	possible = {
