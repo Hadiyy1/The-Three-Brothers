@@ -255,9 +255,6 @@ sweden_royal_suppress = {
 sweden_monarchy_influence = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	interest_group_in_government_attraction_mult = 0.1
-	country_aristocrats_pol_str_mult = 0.1
-	country_officers_pol_str_mult = 0.1
-	country_clergymen_pol_str_mult = 0.1
 }
 
 sweden_monarchy_diminishing_influence = {
@@ -338,20 +335,25 @@ norway_the_great_merchant_navy = {
 }
 norway_military_government_imposed = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_prestige_mult = -0.1
-	country_officers_pol_str_mult = 1.5
+	country_prestige_mult = -0.15
+	country_officers_pol_str_mult = 2
+	interest_group_ig_armed_forces_pol_str_mult = 3
+	country_soldiers_pol_str_mult = 0.75
 	country_aristocrats_pol_str_mult = 0.75
 	country_law_enactment_time_mult = 0.5
-	country_liberty_desire_add = -0.10
+	country_liberty_desire_add = -0.25
 }
+
 norway_loyal_government_imposed = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_prestige_mult = -0.1
+	country_prestige_mult = -0.15
 	country_officers_pol_str_mult = 0.75
-	country_aristocrats_pol_str_mult = 1.5
+	country_aristocrats_pol_str_mult = 2
+	interest_group_ig_landowners_pol_str_mult = 3
 	country_law_enactment_time_mult = 0.5
-	country_liberty_desire_add = -0.10
+	country_liberty_desire_add = -0.25
 }
+
 
 # Finland
 finland_our_language_outside_courts = {

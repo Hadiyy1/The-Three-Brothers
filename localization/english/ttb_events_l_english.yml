@@ -312,16 +312,16 @@
  sweden_flavor.51.t: "The Storting's Defiance"
  sweden_flavor.51.d: "In a momentous and unprecedented act, the Norwegian Storting has responded to King [ROOT.GetCountry.GetRuler.GetFirstName]'s veto of the Consulate Law by unanimously declaring the union with Sweden dissolved. They argue that by refusing to form a new Norwegian government that would sanction the law, the King has abandoned his constitutional duties and has therefore ceased to reign as King of Norway. This act of constitutional rebellion has plunged the two kingdoms into a profound crisis."
  sweden_flavor.51.f: "'Revolution in the guise of law!'' thundered a conservative member of the Riksdag. 'They have used our King's adherence to the union's integrity as a pretext to tear up its foundations. This is not a legal proceeding; it is a declaration of rebellion by another name. The honor of Sweden and the integrity of the Crown are at stake!'"
- sweden_flavor.51.a: "Send in the army and take control over the sorting"
+ sweden_flavor.51.a: "Send in the army and take control over the Sorting"
  sweden_flavor.51.b: "Negotiate with the Storting and find a compromise"
  sweden_flavor.51.c: "Perhaps it is time to let them go their own way."
 
  sweden_flavor.52.t: "The Occupation of the Storting"
- sweden_flavor.52.d: "Following the King's orders, Swedish regiments have marched into Christiania and, after a brief but bloody skirmish with royal Norwegian guards, have seized the Storting building. Key leaders of the independence movement have been arrested within its halls, while others have fled the city. The pure Norwegian tricolor has been torn down and the union flag raised over the occupied parliament. While we have decapitated their government, the city is seething with resentment, and reports confirm the Norwegian army is mobilizing in the countryside to resist us."
+ sweden_flavor.52.d: "On the King's command, Norwegian officers still loyal to the crown marched on Christiania. They were met with fierce resistance from barricades manned by mutinous soldiers and citizen militias. For two days, the capital was a battlefield. The tide turned only with the arrival of loyal, Swedish-born regiments, whose reinforcements allowed our forces to break through the defenses and seize the Storting building. Key independence leaders have been arrested, while others have fled into the countryside. The Norwegian tricolor has been torn down and the union flag raised over the occupied parliament. While we may have decapitated their government, the city is seething with resentment, and the regular Norwegian army continues to mobilize against us."
  sweden_flavor.52.f: "A telegram arrives from the commanding general in Christiania: 'Per His Majesty's command, the Storting is secure. Norwegian guard units offered spirited resistance but have been neutralized. The primary secessionist leaders are in custody. The city is now quiet, but it is the quiet of a coiled snake. Awaiting further orders on the administration of the occupation.'"
  sweden_flavor.52.a: "Appoint a military governor. We will crush all resistance."
  sweden_flavor.52.b: "A new, loyalist Norwegian government will be formed."
- sweden_flavor.52.c: "We are done with this, end the union"
+ sweden_flavor.52.c: "We are done with this, end the union and occupy Norway"
 
 # Denmark
  denmark_flavor.1.t: "Failure of Our Nation"

@@ -1686,6 +1686,9 @@ sweden_flavor.40 = {
 	}
 
 	immediate = {
+		ruler = {
+			save_scope_as = swedish_king
+		}
 	}
 
 	option = {
@@ -1705,6 +1708,13 @@ sweden_flavor.40 = {
 		}
 		add_loyalists = {
 			value = 0.1
+		}
+		add_modifier = {
+			name = sweden_monarchy_influence
+			years = 5
+		}
+		scope:swedish_king = {
+			add_modifier = sweden_strong_king
 		}
 	}
 }
@@ -2433,6 +2443,9 @@ sweden_flavor.51 = {
 
 	option = {
 		name = sweden_flavor.51.a
+		ai_chance = {
+			base = 10
+		}
 		c:NOR = {
 			change_relations = {
 				country = c:SWE
@@ -2448,6 +2461,9 @@ sweden_flavor.51 = {
 	option = {
 		name = sweden_flavor.51.b
 		default_option = yes
+		ai_chance = {
+			base = 20
+		}
 		c:NOR = {
 			change_relations = {
 				country = c:SWE
@@ -2464,6 +2480,9 @@ sweden_flavor.51 = {
 	}
 	option = {
 		name = sweden_flavor.51.c
+		ai_chance = {
+			base = 0.5
+		}
 		c:NOR = {
 			change_relations = {
 				country = c:SWE
@@ -2500,20 +2519,26 @@ sweden_flavor.52 = {
 
 	option = {
 		name = sweden_flavor.52.a
+		ai_chance = {
+			base = 10
+		}
 		c:NOR = {
-			activate_law = law_type:law_autocracy
+			activate_law = law_type:law_oligarchy
 			add_modifier = {
 				name = norway_military_government_imposed
 				years = 15
 				is_decaying = yes
 			}
 			add_radicals = {
-				value = 0.10
+				value = 0.20
 			}
 		}
 	}
 	option = {
 		name = sweden_flavor.52.b
+		ai_chance = {
+			base = 10
+		}
 		default_option = yes
 		c:NOR = {
 			activate_law = law_type:law_oligarchy
@@ -2523,16 +2548,23 @@ sweden_flavor.52 = {
 				is_decaying = yes
 			}
 			add_radicals = {
-				value = 0.10
+				value = 0.20
 			}
 		}
 	}
 	option = {
 		name = sweden_flavor.52.c
+		ai_chance = {
+			base = 1
+		}
 		annex = c:NOR
 		add_radicals = {
 			value = 0.10
 		}
-		change_infamy = 30
+		add_radicals = {
+			value = 0.40
+			culture = cu:norwegian
+		}
+		change_infamy = 40
 	}
 }
