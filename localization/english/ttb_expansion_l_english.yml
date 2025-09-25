@@ -349,7 +349,7 @@
  scandinavia_medium_local_autonomy: "Kalmar Constitution"
  scandinavia_high_local_autonomy: "Kalmar Constitution"
 
-# State Traits
+ # State Traits
  ttb_state_trait_north_pole: "North Pole"
  tt_state_trait_arctic_sea_fishing: "Artic Fishing"
  ttb_state_trait_scandinavian_mountains: "Scandinavian Mountains"
@@ -361,3 +361,7 @@
  setting_ttb_companies_enabled_desc: "Companies from the mod will show up in the game."
  setting_ttb_companies_disabled: "Companies Disabled"
  setting_ttb_companies_disabled_desc: "Companies from the mod will not show up in the game"
+
+ #Laws
+ law_riksdag_of_the_estates: "Riksdag of the Estates"
+ law_riksdag_of_the_estates_desc: "A four-chamber parliament where each of the Four Estates of the realm Nobility, Clergy, Burghers, and Peasants deliberates on law and shares legislative authority with the King."
