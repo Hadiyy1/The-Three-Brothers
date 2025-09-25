@@ -792,7 +792,7 @@ sweden_flavor.20 = {
 	flavor = sweden_flavor.20.f
 
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		video = "asia_union_leader"
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
@@ -813,6 +813,7 @@ sweden_flavor.20 = {
 			}
 			c:SCA = this
 		}
+		owns_entire_state_region = STATE_SVEALAND
 		has_variable = mortala_verkstad
 		has_technology_researched = labor_movement
 		NOT = {
@@ -898,6 +899,7 @@ sweden_flavor.21 = {
 			}
 			c:SCA = this
 		}
+		owns_entire_state_region = STATE_NORRLAND
 		has_technology_researched = mutual_funds
 		NOT = {
 			has_variable = ttb_swe_var_event_3
@@ -911,10 +913,21 @@ sweden_flavor.21 = {
 	option = {
 		name = sweden_flavor.21.a
 		default_option = yes
+		add_radicals = {
+			value = 0.05
+			pop_type = laborers
+		}
 		add_modifier = {
 			name = sweden_trapatron
 			years = 10
 		}
+	}
+	option = {
+		name = sweden_flavor.21.b
+		add_loyalists = {
+			value = 0.10
+			pop_type = laborers
+		}	
 	}
 }
 
@@ -927,7 +940,7 @@ sweden_flavor.22 = {
 	flavor = sweden_flavor.22.f
 
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		video = "unspecific_temperance_movement"
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
@@ -986,7 +999,7 @@ sweden_flavor.23 = {
 	flavor = sweden_flavor.23.f
 
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		video = "southamerica_christianity"
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
@@ -1046,7 +1059,7 @@ sweden_flavor.24 = {
 	flavor = sweden_flavor.24.f
 
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		video = "unspecific_world_fair"
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
@@ -1081,7 +1094,7 @@ sweden_flavor.24 = {
 		default_option = yes
 		add_modifier = {
 			name = sweden_stockholm_exhibition
-			years = 10
+			years = 5
 		}
 	}
 }
@@ -1144,7 +1157,7 @@ sweden_flavor.26 = {
 	flavor = sweden_flavor.26.f
 
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		video = "unspecific_politicians_arguing"
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
@@ -1280,7 +1293,7 @@ sweden_flavor.30 = {
 	flavor = sweden_flavor.30.f
 
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		video = "unspecific_politicians_arguing"
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
@@ -1324,7 +1337,7 @@ sweden_flavor.31 = {
 	flavor = sweden_flavor.31.f
 
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		video = "unspecific_politicians_arguing"
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
@@ -1368,7 +1381,7 @@ sweden_flavor.34 = {
 	flavor = sweden_flavor.34.f
 
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		video = "unspecific_politicians_arguing"
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
@@ -1412,7 +1425,7 @@ sweden_flavor.35 = {
 	flavor = sweden_flavor.35.f
 
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		video = "unspecific_politicians_arguing"
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
@@ -1458,7 +1471,7 @@ sweden_flavor.36 = {
 	flavor = sweden_flavor.36.f
 
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		video = "unspecific_fire"
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
@@ -2456,7 +2469,7 @@ sweden_flavor.51 = {
 			}
 		}
 		change_infamy = 10
-		trigger_event = sweden_flavor.52
+		trigger_event = { id = sweden_flavor.52 popup = yes days = 5 }
 	}
 	option = {
 		name = sweden_flavor.51.b
