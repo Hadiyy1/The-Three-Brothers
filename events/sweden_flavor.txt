@@ -2448,6 +2448,9 @@ sweden_flavor.51 = {
 		}
 		has_variable = ttb_a_pure_flag_for_norway
 		has_variable = ttb_the_consulate_question
+		c:NOR = {
+			is_player = no
+		}
 	}
 
 	immediate = {
@@ -2457,7 +2460,7 @@ sweden_flavor.51 = {
 	option = {
 		name = sweden_flavor.51.a
 		ai_chance = {
-			base = 10
+			base = 5
 		}
 		c:NOR = {
 			change_relations = {
