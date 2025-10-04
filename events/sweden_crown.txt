@@ -1,0 +1,982 @@
+﻿namespace = sweden_crown
+
+### House of Bernadotte events ###
+sweden_crown.1 = {
+	type = country_event
+
+	title = sweden_crown.1.t
+	desc = sweden_crown.1.d
+	flavor = sweden_crown.1.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:swedish_king
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_variable = speech_from_the_throne }
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = swedish_king
+		}
+		set_variable = speech_from_the_throne
+	}
+
+	option = {
+		name = sweden_crown.1.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 2
+			}
+		}
+		custom_tooltip = {
+			text = ttb_add_25_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+				name = crowns_control_progress_bar
+				value = 25
+				}
+			}
+		}			
+	}
+	option = {
+		name = sweden_crown.1.b
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_suppress
+				years = 2
+			}
+		}
+		custom_tooltip = {
+			text = ttb_remove_25_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = -25
+				}
+			}	
+		}
+	}
+}
+
+sweden_crown.2 = {
+	type = country_event
+
+	title = sweden_crown.2.t
+	desc = sweden_crown.2.d
+	flavor = sweden_crown.2.f
+
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = swedish_king
+		}
+	}
+
+	option = {
+		name = sweden_crown.2.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 5
+			}
+		}
+		add_loyalists = {
+			value = 0.1
+		}
+		add_modifier = {
+			name = sweden_monarchy_influence
+			years = 5
+		}
+		scope:swedish_king = {
+			add_modifier = sweden_strong_king
+		}
+	}
+}
+
+sweden_crown.3 = {
+	type = country_event
+
+	title = sweden_crown.3.t
+	desc = sweden_crown.3.d
+	flavor = sweden_crown.3.f
+
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_variable = a_defense_of_the_crown }
+	}
+
+	immediate = {
+		set_variable = a_defense_of_the_crown
+	}
+
+	option = {
+		name = sweden_crown.3.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 2
+			}
+		}
+		custom_tooltip = {
+			text = ttb_add_25_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+				name = crowns_control_progress_bar
+				value = 25
+				}
+			}
+		}
+	}
+	option = {
+		name = sweden_crown.3.b
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_suppress
+				years = 2
+			}
+		}
+		custom_tooltip = {
+			text = ttb_remove_25_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = -25
+				}
+			}	
+		}
+	}
+}
+
+sweden_crown.4 = {
+	type = country_event
+
+	title = sweden_crown.4.t
+	desc = sweden_crown.4.d
+	flavor = sweden_crown.4.f
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_variable = ttb_the_kings_effigy }
+	}
+
+	immediate = {
+		set_variable = ttb_the_kings_effigy
+	}
+
+	option = {
+		name = sweden_crown.4.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 2
+			}
+		}
+		add_loyalists = {
+			value = 0.02
+		}
+		custom_tooltip = {
+			text = ttb_add_25_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+				name = crowns_control_progress_bar
+				value = 25
+				}
+			}
+		}	
+	}
+	option = {
+		name = sweden_crown.4.b
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_suppress
+				years = 2
+			}
+		}
+		add_radicals = {
+			value = 0.02
+		}
+		custom_tooltip = {
+			text = ttb_remove_25_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = -25
+				}
+			}	
+		}
+	}
+}
+
+sweden_crown.5 = {
+	type = country_event
+
+	title = sweden_crown.5.t
+	desc = sweden_crown.5.d
+	flavor = sweden_crown.5.f
+
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_variable = ttb_the_lecture_halls_acclamation }
+	}
+
+	immediate = {
+		set_variable = ttb_the_lecture_halls_acclamation
+	}
+
+	option = {
+		name = sweden_crown.5.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 2
+			}
+		}
+		custom_tooltip = {
+			text = ttb_add_25_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+				name = crowns_control_progress_bar
+				value = 25
+				}
+			}
+		}	
+	}
+	option = {
+		name = sweden_crown.5.b
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_suppress
+				years = 2
+			}
+		}
+		custom_tooltip = {
+			text = ttb_remove_25_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = -25
+				}
+			}	
+		}
+	}
+}
+
+sweden_crown.6 = {
+	type = country_event
+
+	title = sweden_crown.6.t
+	desc = sweden_crown.6.d
+	flavor = sweden_crown.6.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:swedish_king
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_variable = A_question_of_inheritance }
+		ruler = {
+			has_template = swe_oscar_bernadotte_template
+		}
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = swedish_king
+		}
+		set_variable = A_question_of_inheritance
+
+	}
+
+	option = {
+		name = sweden_crown.6.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+					is_political_movement_type = movement_liberal
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 2
+			}
+		}
+		custom_tooltip = {
+			text = ttb_add_25_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+				name = crowns_control_progress_bar
+				value = 25
+				}
+			}
+		}	
+	}
+	option = {
+		name = sweden_crown.6.b
+		add_loyalists = {
+			value = 0.05
+			pop_type = aristocrats
+		}
+		add_loyalists = {
+			value = 0.05
+			pop_type = clergymen
+		}
+		custom_tooltip = {
+			text = ttb_remove_25_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = -25
+				}
+			}	
+		}
+	}
+}
+
+sweden_crown.7 = {
+	type = country_event
+
+	title = sweden_crown.7.t
+	desc = sweden_crown.7.d
+	flavor = sweden_crown.7.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_variable = the_debate_on_the_crown }
+	}
+
+	immediate = {	
+		set_variable = the_debate_on_the_crown
+	}
+
+	option = {
+		name = sweden_crown.7.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 2
+			}
+		}
+		custom_tooltip = {
+			text = ttb_add_60_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+				name = crowns_control_progress_bar
+				value = 60
+				}
+			}
+		}	
+	}
+	option = {
+		name = sweden_crown.7.b
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_suppress
+				years = 2
+			}
+		}
+		custom_tooltip = {
+			text = ttb_remove_60_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = -60
+				}
+			}	
+		}
+	}
+}
+
+sweden_crown.8 = {
+	type = country_event
+
+	title = sweden_crown.8.t
+	desc = sweden_crown.8.d
+	flavor = sweden_crown.8.f
+
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = sweden_crown.8.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_suppress
+				years = 3
+			}
+		}
+		add_modifier = {
+			name = sweden_monarchy_diminishing_influence
+			years = 5
+		}
+		if = {
+			limit = { 
+				ig:ig_intelligentsia = {
+					has_ideology = ideology:ideology_constitutionalist
+				}
+			}
+			ig:ig_intelligentsia = {
+				remove_ideology = ideology_constitutionalist
+				add_ideology = ideology_republican
+			}
+		}
+	}
+}
+
+sweden_crown.9 = {
+	type = country_event
+
+	title = sweden_crown.9.t
+	desc = sweden_crown.9.d
+	flavor = sweden_crown.9.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:swedish_king
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_variable = ttb_the_kings_health }
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = swedish_king
+		}
+		set_variable = ttb_the_kings_health
+	}
+
+	option = {
+		name = sweden_crown.9.a
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 1
+			}
+		}
+		scope:swedish_king = {
+			add_modifier = sweden_rally_around_the_king
+		}
+	}
+}
+
+sweden_crown.10 = {
+	type = country_event
+
+	title = sweden_crown.10.t
+	desc = sweden_crown.10.d
+	flavor = sweden_crown.10.f
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		ruler = {
+			has_template = swe_oscar_bernadotte_template
+		}
+		NOT = { has_variable = ttb_a_reform_from_the_crown }
+		
+	}
+
+	immediate = {	
+		ruler = {
+			save_scope_as = swedish_king
+		}
+		set_variable = ttb_a_reform_from_the_crown
+	}
+
+	option = {
+		name = sweden_crown.10.a
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+					is_political_movement_type = movement_liberal
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_support
+				years = 2
+			}
+		}
+		
+		custom_tooltip = {
+			text = ttb_add_50_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = 50
+				}
+			}
+		}
+		scope:swedish_king = {
+			add_modifier = sweden_rally_around_the_king
+		}	
+	}
+	option = {
+		name = sweden_crown.10.b
+		default_option = yes
+		every_political_movement = {
+		    limit = {
+				OR = {
+					is_political_movement_type = movement_royalist_absolutist
+					is_political_movement_type = movement_royalist_constitutional
+				}
+			}
+            add_modifier = {
+				name = sweden_royal_suppress
+				years = 2
+			}
+		}
+		custom_tooltip = {
+			text = ttb_remove_50_progress_crown_control
+			je:swedish_nordic_monarchy = {
+				add_progress = {
+					name = crowns_control_progress_bar
+					value = -50
+				}
+			}
+		}
+	}
+}
+
+sweden_crown.11 = {
+	type = country_event
+
+	title = sweden_crown.11.t
+	desc = sweden_crown.11.d
+	flavor = sweden_crown.11.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:NOR
+		c:NOR = {
+			is_subject_of = c:SWE
+		}
+		NOT = {
+			has_variable = ttb_the_consulate_question
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_the_consulate_question
+	}
+
+	option = {
+		name = sweden_crown.11.a
+		default_option = yes
+		c:NOR = {
+			change_relations = {
+				country = c:SWE
+				value = -10
+			}
+			add_radicals = {
+				value = 0.05
+			}
+		}
+	}
+	option = {
+		name = sweden_crown.11.b
+		c:NOR = {
+			change_relations = {
+				country = c:SWE
+				value = 10
+			}
+			add_loyalists = {
+				value = 0.05
+			}
+		}
+		add_modifier = {
+			name = sweden_caved_to_norway
+			years = 3
+		}
+	}
+}
+
+sweden_crown.12 = {
+	type = country_event
+
+	title = sweden_crown.12.t
+	desc = sweden_crown.12.d
+	flavor = sweden_crown.12.f
+
+	event_image = {
+		video = "votp_gunboat_diplomacy"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:NOR
+		c:NOR = {
+			is_subject_of = c:SWE
+		}
+		NOT = {
+			has_variable = ttb_a_pure_flag_for_norway
+		}
+	}
+
+	immediate = {
+		set_variable = ttb_a_pure_flag_for_norway
+	}
+
+	option = {
+		name = sweden_crown.12.a
+		default_option = yes
+		c:NOR = {
+			change_relations = {
+				country = c:SWE
+				value = -10
+			}
+			add_radicals = {
+				value = 0.05
+			}
+		}
+	}
+	option = {
+		name = sweden_crown.12.b
+		c:NOR = {
+			change_relations = {
+				country = c:SWE
+				value = 10
+			}
+			add_loyalists = {
+				value = 0.05
+			}
+		}
+		add_modifier = {
+			name = sweden_caved_to_norway
+			years = 3
+		}
+	}
+}
+
+sweden_crown.13 = {
+	type = country_event
+
+	title = sweden_crown.13.t
+	desc = sweden_crown.13.d
+	flavor = sweden_crown.13.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:NOR
+		c:NOR = {
+			is_subject_of = c:SWE
+		}
+		NOT = {
+			has_variable = ttb_the_stortings_defiance
+		}
+		has_variable = ttb_a_pure_flag_for_norway
+		has_variable = ttb_the_consulate_question
+	}
+
+	immediate = {
+		set_variable = ttb_the_stortings_defiance
+	}
+
+	option = {
+		name = sweden_crown.13.a
+		ai_chance = {
+			base = 10
+		}
+		c:NOR = {
+			change_relations = {
+				country = c:SWE
+				value = -20
+			}
+			add_radicals = {
+				value = 0.20
+			}
+		}
+		change_infamy = 10
+		trigger_event = { id = sweden_crown.14 popup = yes days = 5 }
+	}
+	option = {
+		name = sweden_crown.13.b
+		default_option = yes
+		ai_chance = {
+			base = 20
+		}
+		c:NOR = {
+			change_relations = {
+				country = c:SWE
+				value = 10
+			}
+			add_loyalists = {
+				value = 0.10
+			}
+		}
+		add_modifier = {
+			name = sweden_caved_to_norway
+			years = 3
+		}
+	}
+	option = {
+		name = sweden_crown.13.c
+		ai_chance = {
+			base = 0.5
+		}
+		c:NOR = {
+			change_relations = {
+				country = c:SWE
+				value = 50
+			}
+			add_loyalists = {
+				value = 0.20
+			}
+			make_independent = yes
+		}
+	}
+}
+
+sweden_crown.14 = {
+	type = country_event
+
+	title = sweden_crown.14.t
+	desc = sweden_crown.14.d
+	flavor = sweden_crown.14.f
+
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = sweden_crown.14.a
+		ai_chance = {
+			base = 10
+		}
+		c:NOR = {
+			activate_law = law_type:law_oligarchy
+			add_modifier = {
+				name = norway_military_government_imposed
+				years = 15
+				is_decaying = yes
+			}
+			add_radicals = {
+				value = 0.20
+			}
+		}
+	}
+	option = {
+		name = sweden_crown.14.b
+		ai_chance = {
+			base = 10
+		}
+		default_option = yes
+		c:NOR = {
+			activate_law = law_type:law_oligarchy
+			add_modifier = {
+				name = norway_loyal_government_imposed
+				years = 15
+				is_decaying = yes
+			}
+			add_radicals = {
+				value = 0.20
+			}
+		}
+	}
+	option = {
+		name = sweden_crown.14.c
+		ai_chance = {
+			base = 1
+		}
+		annex = c:NOR
+		add_radicals = {
+			value = 0.10
+		}
+		add_radicals = {
+			value = 0.40
+			culture = cu:norwegian
+		}
+		change_infamy = 40
+	}
+}

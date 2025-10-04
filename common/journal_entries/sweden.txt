@@ -754,7 +754,7 @@ swedish_nordic_monarchy = {
 						
 					}
 				}
-				trigger_event = sweden_flavor.47
+				trigger_event = sweden_crown.9
 			}
 		}
 	}
@@ -764,16 +764,16 @@ swedish_nordic_monarchy = {
 
 			chance_to_happen = 60
 
-			1 = sweden_flavor.39
-			1 = sweden_flavor.41
-			1 = sweden_flavor.42
-			1 = sweden_flavor.43
-			1 = sweden_flavor.44
-			1 = sweden_flavor.45
-			1 = sweden_flavor.48
-			1 = sweden_flavor.49
-			1 = sweden_flavor.50
-			1 = sweden_flavor.51
+			1 = sweden_crown.1
+			1 = sweden_crown.3
+			1 = sweden_crown.4
+			1 = sweden_crown.5
+			1 = sweden_crown.6
+			1 = sweden_crown.7
+			1 = sweden_crown.10
+			1 = sweden_crown.11
+			1 = sweden_crown.12
+			1 = sweden_crown.13
 		}
 	}
 
@@ -791,10 +791,10 @@ swedish_nordic_monarchy = {
 					"scripted_bar_progress(crowns_control_progress_bar)" >= 700
 				}
 			}
-			trigger_event = { id = sweden_flavor.40 popup = yes }
+			trigger_event = { id = sweden_crown.2 popup = yes }
 		}
 		else = {
-			trigger_event = { id = sweden_flavor.46 popup = yes }
+			trigger_event = { id = sweden_crown.8 popup = yes }
 		}
 	}
 }
