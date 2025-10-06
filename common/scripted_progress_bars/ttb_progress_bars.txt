@@ -62,8 +62,9 @@ kalmar_constitution_progress_bar = {
 }
 
 crowns_control_progress_bar = {
-	name = crowns_control_progress_bar
-	desc = crowns_control_progress_bar_desc
+	name = "crowns_control_progress_bar"
+	desc = "crowns_control_progress_bar_desc"
+	second_desc = "crowns_control_progress_bar_desc"
 
 	double_sided_bad = yes
 
