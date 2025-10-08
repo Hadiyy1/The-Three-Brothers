@@ -137,18 +137,18 @@
 
  sweden_flavor.16.t: "Gothenburg: The Expanding Metropolis"
  sweden_flavor.16.d: "Perched strategically on our western coast, #yellow Gothenburg#! has long been Sweden's vital link to the North Sea and the wider Atlantic world. With the relentless march of industrialization, the city has transformed into a bustling hub of commerce, shipbuilding, and a primary point of departure for countless Swedes seeking new lives abroad. Yet, the very success of #yellow Gothenburg#! strains its aging port infrastructure. Larger steamships demand deeper berths and longer quays, and the flow of goods and people necessitates expanded rail connections and customs facilities. Investing in its growth means solidifying our position as a major European trading power and facilitating the dreams of our emigrating population."
- sweden_flavor.16.f: "The city's canals once echoed with Dutch tongues; now its docks resonate with the clamor of a globalizing world."
- sweden_flavor.16.a: "Launch a major port expansion project in Gothenburg."
+ sweden_flavor.16.f: "From the docks of the Stora Hamnkanalen, one can hear a symphony of languages, a testament to the city's role as a global crossroads. Where Dutch planners once laid out its canals, Swedish engineers now dream of dredging deeper channels and raising steel gantries to the sky. The city's future, and perhaps that of Sweden itself, will be decided in its harbor."
+ sweden_flavor.16.a: "Authorize the expansion of the Port of Gothenburg."
 
  sweden_flavor.17.t: "Malmö: A City Forged in Industry"
  sweden_flavor.17.d: "Located at the very tip of our southernmost province, #yellow Malmö#! has long been a vital link between Sweden and the European continent. As industrialization intensifies, the city is rapidly transforming from a provincial town into a powerful industrial engine. Its deep-water port, now connected to our burgeoning railway network via the Southern Main Line, is becoming an indispensable hub for both trade and heavy manufacturing, particularly in shipbuilding and engineering. The fertile farmlands of Scania feed its mills, and its proximity to the continent offers unparalleled access to markets. This rapid growth, however, demands foresight in urban planning, infrastructure, and labor management to ensure #yellow Malmö's#! prosperity endures."
- sweden_flavor.17.f: "Where the Baltic meets the continent, the future of Swedish industry is being forged."
- sweden_flavor.17.a: "Invest heavily in Malmö's industrial and farmland expansion."
+ sweden_flavor.17.f: "The old burghers of Stortorget can scarcely recognize their city. The quiet market square now bustles with factory workers and merchants from across the Baltic. From the ramparts of Malmö's Castle, one can see not just the shores of Denmark, but the dawning of a new industrial age for Sweden."
+ sweden_flavor.17.a: "Designate Malmö a center for industrial investment."
 
  sweden_flavor.18.t: "The Capital's New Face: Stockholm Rises"
  sweden_flavor.18.d: "The ancient cobbled streets of #yellow Stockholm#! are giving way to grand boulevards and towering new buildings, as our capital experiences unprecedented growth and modernization. Engineers and architects are reimagining the city, planning for improved infrastructure like advanced sewage systems, public transportation, and expanded housing to accommodate a burgeoning population. This ambitious urban transformation promises to solidify #yellow Stockholm's#! place as a true European capital, a symbol of Swedish progress and prosperity. However, managing such rapid development also presents significant challenges: ensuring adequate housing for all, maintaining public health amidst density, and preserving the city's unique historical character."
- sweden_flavor.18.f: "From the narrow alleys of Gamla Stan to the expansive new districts, the very stones of Stockholm whisper tales of a city ceaselessly reinventing itself."
- sweden_flavor.18.a: "Invest in the Capital's Grand Design!"
+ sweden_flavor.18.f: "From the narrow alleys of Gamla Stan to the wide, planned avenues of Östermalm, the capital is a city of contrasts. The very stones seem to whisper of a past being built over, of a future rising."
+ sweden_flavor.18.a: "Authorize the city's modernization plans."
 
  sweden_flavor.19.t: "The Dynamite Breakthrough"
  sweden_flavor.19.d: "A brilliant Swedish inventor, #gold Alfred Nobel#!, has achieved a groundbreaking feat: the successful stabilization of nitroglycerine, leading to the invention of #yellow 'dynamite'#!. This powerful new explosive promises to revolutionize mining, construction, and even warfare, offering unprecedented efficiency in breaking rock and shaping landscapes. Its impact on our industries and military capabilities will be profound, accelerating progress in ways previously unimaginable."
@@ -320,9 +320,8 @@
  sweden_crown.14.t: "The Occupation of the Storting"
  sweden_crown.14.d: "On the King's command, Norwegian officers still loyal to the crown marched on Christiania. They were met with fierce resistance from barricades manned by mutinous soldiers and citizen militias. For two days, the capital was a battlefield. The tide turned only with the arrival of loyal, Swedish-born regiments, whose reinforcements allowed our forces to break through the defenses and seize the Storting building. Key independence leaders have been arrested, while others have fled into the countryside. The Norwegian tricolor has been torn down and the union flag raised over the occupied parliament. While we may have decapitated their government, the city is seething with resentment, and the regular Norwegian army continues to mobilize against us."
  sweden_crown.14.f: "A telegram arrives from the commanding general in Christiania: 'Per His Majesty's command, the Storting is secure. Norwegian guard units offered spirited resistance but have been neutralized. The primary secessionist leaders are in custody. The city is now quiet, but it is the quiet of a coiled snake. Awaiting further orders on the administration of the occupation.'"
- sweden_crown.14.a: "Appoint a military governor. We will crush all resistance."
- sweden_crown.14.b: "A new, loyalist Norwegian government will be formed."
- sweden_crown.14.c: "We are done with this, end the union and occupy Norway"
+ sweden_crown.14.a: "A new, loyalist Norwegian government will be formed."
+ sweden_crown.14.b: "We have maid are point lets not push this any further"
 
 # Denmark
  denmark_flavor.1.t: "Failure of Our Nation"

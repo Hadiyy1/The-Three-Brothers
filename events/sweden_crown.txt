@@ -856,7 +856,7 @@ sweden_crown.13 = {
 	option = {
 		name = sweden_crown.13.a
 		ai_chance = {
-			base = 10
+			base = 1
 		}
 		c:NOR = {
 			change_relations = {
@@ -893,7 +893,7 @@ sweden_crown.13 = {
 	option = {
 		name = sweden_crown.13.c
 		ai_chance = {
-			base = 0.5
+			base = 0.1
 		}
 		c:NOR = {
 			change_relations = {
@@ -931,14 +931,14 @@ sweden_crown.14 = {
 
 	option = {
 		name = sweden_crown.14.a
+		default_option = yes
 		ai_chance = {
 			base = 10
 		}
 		c:NOR = {
-			activate_law = law_type:law_oligarchy
 			add_modifier = {
-				name = norway_military_government_imposed
-				years = 15
+				name = norway_loyal_government_imposed
+				years = 10
 				is_decaying = yes
 			}
 			add_radicals = {
@@ -946,37 +946,24 @@ sweden_crown.14 = {
 			}
 		}
 	}
+
 	option = {
 		name = sweden_crown.14.b
 		ai_chance = {
 			base = 10
 		}
-		default_option = yes
+		add_loyalists = {
+			value = 0.05
+		}
 		c:NOR = {
-			activate_law = law_type:law_oligarchy
+			add_radicals = {
+				value = 0.05
+			}
 			add_modifier = {
-				name = norway_loyal_government_imposed
-				years = 15
+				name = norway_lost_the_union_crises
+				years = 10
 				is_decaying = yes
 			}
-			add_radicals = {
-				value = 0.20
-			}
 		}
-	}
-	option = {
-		name = sweden_crown.14.c
-		ai_chance = {
-			base = 1
-		}
-		annex = c:NOR
-		add_radicals = {
-			value = 0.10
-		}
-		add_radicals = {
-			value = 0.40
-			culture = cu:norwegian
-		}
-		change_infamy = 40
 	}
 }
