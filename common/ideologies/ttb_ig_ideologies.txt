@@ -22,14 +22,14 @@
 	
 	lawgroup_distribution_of_power = {
 		law_universal_suffrage = neutral
-		law_anarchy = neutral
+		law_anarchy = disapprove
 		law_census_voting = disapprove
 		law_single_party_state = neutral
-		law_wealth_voting = strongly_disapprove
-		law_landed_voting = strongly_disapprove
+		law_wealth_voting = neutral
+		law_landed_voting = disapprove
 		law_technocracy = disapprove
 		law_oligarchy = neutral
-		law_autocracy = neutral
+		law_autocracy = strongly_disapprove
 	}
 	lawgroup_bureaucracy = {
 		law_hereditary_bureaucrats = neutral

@@ -267,7 +267,7 @@ norway_flavor.6 = {
 		c:SWE = {
 			change_relations = {
 				country = c:NOR
-				value = -10
+				value = -20
 			}
 			trigger_event = { id = sweden_crown.12 popup = yes }
 		}
@@ -310,6 +310,7 @@ norway_flavor.7 = {
 		c:SWE = {
 			trigger_event = { id = sweden_crown.13 popup = yes }
 		}
+		set_variable = ttb_norway_push_for_independence
 	}
 	option = {
 		name = norway_flavor.7.b
@@ -325,7 +326,7 @@ norway_flavor.8 = {
 	flavor = norway_flavor.8.f
 
 	event_image = {
-		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+		video = "europenorthamerica_before_the_battle"
 	}
 
 
@@ -347,7 +348,7 @@ norway_flavor.9 = {
 	flavor = norway_flavor.9.f
 
 	event_image = {
-		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+		video = "europenorthamerica_springtime_of_nations"
 	}
 
 
@@ -394,7 +395,7 @@ norway_flavor.11 = {
 	flavor = norway_flavor.11.f
 
 	event_image = {
-		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+		video = "unspecific_signed_contract"
 	}
 
 

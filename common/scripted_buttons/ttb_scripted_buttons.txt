@@ -148,7 +148,7 @@ ttb_nor_union_consular_button = {
 		set_variable = ttb_nor_union_consular_button_var
 		add_modifier = { 
 			name = norway_union_incident
-			years = 1
+			years = 2
 		}
 	}
 }
@@ -179,7 +179,7 @@ ttb_nor_union_flag_button = {
 		set_variable = ttb_nor_union_flag_button_var
 		add_modifier = { 
 			name = norway_union_incident
-			years = 1
+			years = 2
 		}
 	}
 }
@@ -194,12 +194,13 @@ ttb_nor_union_storting_call_button = {
 		value = 5
 	}
 
+
 	possible = {
 		custom_tooltip = {
 			text = ttb_has_done_nor_demands
 			has_variable = ttb_norway_consular_demands_rejected
 			has_variable = ttb_norway_the_flag_controversy
-			NOT = { has_variable = ttb_nor_union_storting_call_button_var }
+			NOT = { has_variable = ttb_norway_push_for_independence }
 		}
 		NOT = {
 			has_modifier = norway_union_incident
@@ -208,6 +209,5 @@ ttb_nor_union_storting_call_button = {
 
 	effect = {
 		trigger_event = { id = norway_flavor.7 popup = yes }
-		set_variable = ttb_nor_union_storting_call_button_var
 	}
 }

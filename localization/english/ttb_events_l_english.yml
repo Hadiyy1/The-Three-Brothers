@@ -434,7 +434,7 @@
  norway_flavor.10.a: "Agree to negotiate, but prepare for the worst."
 
  norway_flavor.11.t: "Independence Achieved: The Karlstad Accord"
- norway_flavor.11.d: "Victory through diplomacy! The tense negotiations in Karlstad have borne fruit. King [ROOT.GetCountry.GetRuler.GetFirstName] and the Swedish government, recognizing the Storting's resolve, have formally agreed to dissolve the Personal Union. After decades of striving for equality and autonomy, Norway stands once again as a fully sovereign nation, its destiny entirely in its own hands."
+ norway_flavor.11.d: "Victory through diplomacy! The tense negotiations in Karlstad have borne fruit. The Swedish government, recognizing the Storting's resolve, have formally agreed to dissolve the Personal Union. After decades of striving for equality and autonomy, Norway stands once again as a fully sovereign nation, its destiny entirely in its own hands."
  norway_flavor.11.f: "The Swedish flag is lowered, the pure Norwegian tricolor rises in its place! Cannons salute from Akershus Fortress! From Hammerfest to Lindesnes, the nation celebrates! Ninety years under a shared crown have ended not in war, but in mutual recognition. A new era dawns for Norway!"
  norway_flavor.11.a: "A New Dawn for Norway!"
 

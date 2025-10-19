@@ -947,7 +947,7 @@ sweden_crown.14 = {
 	option = {
 		name = sweden_crown.14.b
 		ai_chance = {
-			base = 10
+			base = 20
 		}
 		add_loyalists = {
 			value = 0.05
@@ -973,7 +973,7 @@ sweden_crown.15 = {
 	flavor = sweden_crown.15.f
 
 	event_image = {
-		video = "europenorthamerica_springtime_of_nations"
+		video = "ep1_clandestine_meeting"
 	}
 
 	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
