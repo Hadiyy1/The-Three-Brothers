@@ -144,6 +144,20 @@
  nor_the_merchant_navy: "Norwegian Merchant Marine"
  nor_the_merchant_navy_reason: "Norway is slowly building up a respectable Merchant Marine which it's putting to use to improve it's standing in the world, however to do so it must become large enough to be competetive with the world around it."
  
+ nor_union: "The Unequal Union"
+ nor_union_reason: "Bound to Sweden by the Kiel Treaty and the Convention of Moss in 1814, Norway endures a union under one crown but with two distinct national spirits. While our cherished Constitution grants domestic autonomy through the Storting, foreign policy and the ultimate authority rest uncomfortably in Stockholm. Norwegian nationalism stirs, fueled by memories of Eidsvoll and a growing sense that our nation is but a junior partner in Sweden's shadow.\n\nWe must assert Norway's unique identity and rights within this union. Strengthening the Storting's power, challenging Swedish dominance in shared affairs like foreign representation, and fostering national pride are paramount. Each victory brings us closer to true equality, or perhaps, ultimate independence. Yet, pushing too hard risks provoking Swedish reaction and tightening the bonds we seek to loosen."
+ nor_union_status: "Manage the relationship with Sweden while strengthening Norwegian autonomy and national identity."
+ nor_union_complete: "The Union between Norway and Sweden is dissolved."
+ ttb_nor_union_consular_button: "Demand Separate Consular Service"
+ ttb_nor_union_consular_button_desc: "Our maritime trade and citizens abroad suffer under a foreign service prioritizing Swedish needs. Establishing our own consulates is a vital step towards asserting national sovereignty."
+ ttb_has_completed_nor_the_merchant_navy: "Has completed Norwegian Merchant Navy Journal Entry"
+ ttb_nor_union_flag_button: "Assert National Symbols"
+ ttb_nor_union_flag_button_desc: "Promoting distinct Norwegian symbols, like our own merchant flag without the union mark, strengthens national identity and signals our desire for equality."
+ ttb_nor_union_storting_call_button: "Challenge the Royal Veto"
+ ttb_nor_union_storting_call_button_desc: "King [ROOT.GetCountry.GetRuler.GetFirstName] refuses to sanction the Consulate Law or appoint a government that supports it. Shall the Storting force the issue, asserting its authority against the Crown? This action will precipitate a '#bold Constitutional Crisis#!', potentially escalating tensions dramatically.\n\n@warning! If they have a #bold Domineering#! attitude towards us, this defiance significantly increases the risk of a Swedish #bold military intervention#! that Norway may not be able to withstand.#!"
+ ttb_has_done_nor_demands: "'Has done Demand Separate Consular Service' and 'Assert National Symbols'"
+
+
  finland_fennoman_movement: "The Language Strife"
  finland_fennoman_movement_goal: "The Language Strife has gone on for 20 years without being undermined by the Old Swedish Elite."
  finland_fennoman_movement_reason: "There is a national awakening in Finland, springing up from the Swedish-speaking upper classes who has chosen to promote Finnish culture and language. These Finnish Swedes has become known as the Fennomans, but it's clear that there is opposition to this within our country..."
@@ -314,6 +328,7 @@
  norway_the_great_merchant_navy: "The Great Merchant Marine"
  norway_lost_the_union_crises: "Lost the Union Crises"
  norway_loyal_government_imposed: "Loyal Government Imposed"
+ norway_union_incident: "Union Incident"
 
  
  finland_our_language_outside_courts: "Our Language Outside Courts"

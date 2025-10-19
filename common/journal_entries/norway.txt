@@ -54,30 +54,19 @@ nor_the_merchant_navy = {
 
 	group = je_group_internal_affairs
 	
-	is_shown_when_inactive = {
-		exists = c:NOR
-		c:NOR = THIS
-	}
-	
-	possible = {
-		any_scope_building = {
-			is_building_type = building_port
-		}
-	}
-	
 	complete = {
 		in_default = no
 		NOT = { has_law = law_type:law_isolationism }
 		any_scope_building = {
 			is_building_type = building_shipyards
 			occupancy > 0.9
-			level >= 2
+			level >= 4
 		}
-		any_scope_building = {	# Increase later?
+		any_scope_building = {
 			is_building_type = building_port
 			NOT = { has_active_production_method = pm_anchorage }
 			occupancy > 0.9
-			level >= 5
+			level >= 8
 		}
 	}
 	
@@ -89,6 +78,28 @@ nor_the_merchant_navy = {
 				months = -1
 			}
 		}
+		set_variable = ttb_nor_the_merchant_navy
+	}
+	
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+nor_union = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	group = je_group_internal_affairs
+
+	scripted_button = ttb_nor_union_consular_button
+	scripted_button = ttb_nor_union_flag_button
+	scripted_button = ttb_nor_union_storting_call_button
+	
+	
+	complete = {
+		is_subject = no
+	}
+	
+	on_complete = {
 	}
 	
 	weight = 100

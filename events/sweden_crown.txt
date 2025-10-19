@@ -1,6 +1,8 @@
 ﻿namespace = sweden_crown
 
 ### House of Bernadotte events ###
+
+# Speech From The Throne
 sweden_crown.1 = {
 	type = country_event
 
@@ -78,6 +80,7 @@ sweden_crown.1 = {
 	}
 }
 
+# The Crown Endures
 sweden_crown.2 = {
 	type = country_event
 
@@ -131,6 +134,7 @@ sweden_crown.2 = {
 	}
 }
 
+# A Defense of the Crown
 sweden_crown.3 = {
 	type = country_event
 
@@ -206,6 +210,7 @@ sweden_crown.3 = {
 	}
 }
 
+# The King's Effigy
 sweden_crown.4 = {
 	type = country_event
 
@@ -286,6 +291,7 @@ sweden_crown.4 = {
 	}
 }
 
+# The Lecture Hall's Acclamation
 sweden_crown.5 = {
 	type = country_event
 
@@ -361,6 +367,7 @@ sweden_crown.5 = {
 	}
 }
 
+# A Question of Inheritance
 sweden_crown.6 = {
 	type = country_event
 
@@ -439,6 +446,7 @@ sweden_crown.6 = {
 	}
 }
 
+# Kungen, Rådet och Riksdagen
 sweden_crown.7 = {
 	type = country_event
 
@@ -513,6 +521,7 @@ sweden_crown.7 = {
 	}
 }
 
+# The Crown's Fading Influence
 sweden_crown.8 = {
 	type = country_event
 
@@ -569,6 +578,7 @@ sweden_crown.8 = {
 	}
 }
 
+# The King's Health
 sweden_crown.9 = {
 	type = country_event
 
@@ -616,6 +626,7 @@ sweden_crown.9 = {
 	}
 }
 
+# A Reform from the Crown
 sweden_crown.10 = {
 	type = country_event
 
@@ -702,6 +713,7 @@ sweden_crown.10 = {
 	}
 }
 
+# The Consulate Question
 sweden_crown.11 = {
 	type = country_event
 
@@ -717,15 +729,6 @@ sweden_crown.11 = {
 
 	duration = 3
 
-	trigger = {
-		exists = c:NOR
-		c:NOR = {
-			is_subject_of = c:SWE
-		}
-		NOT = {
-			has_variable = ttb_the_consulate_question
-		}
-	}
 
 	immediate = {
 		set_variable = ttb_the_consulate_question
@@ -742,6 +745,7 @@ sweden_crown.11 = {
 			add_radicals = {
 				value = 0.05
 			}
+			trigger_event = { id = norway_flavor.5 popup = yes }
 		}
 	}
 	option = {
@@ -754,6 +758,7 @@ sweden_crown.11 = {
 			add_loyalists = {
 				value = 0.05
 			}
+			trigger_event = { id = norway_flavor.5 popup = yes }
 		}
 		add_modifier = {
 			name = sweden_caved_to_norway
@@ -762,6 +767,7 @@ sweden_crown.11 = {
 	}
 }
 
+# A Pure Flag for Norway
 sweden_crown.12 = {
 	type = country_event
 
@@ -777,15 +783,7 @@ sweden_crown.12 = {
 
 	duration = 3
 
-	trigger = {
-		exists = c:NOR
-		c:NOR = {
-			is_subject_of = c:SWE
-		}
-		NOT = {
-			has_variable = ttb_a_pure_flag_for_norway
-		}
-	}
+
 
 	immediate = {
 		set_variable = ttb_a_pure_flag_for_norway
@@ -822,6 +820,7 @@ sweden_crown.12 = {
 	}
 }
 
+# The Storting's Defiance
 sweden_crown.13 = {
 	type = country_event
 
@@ -837,26 +836,28 @@ sweden_crown.13 = {
 
 	duration = 3
 
-	trigger = {
-		exists = c:NOR
-		c:NOR = {
-			is_subject_of = c:SWE
-		}
-		NOT = {
-			has_variable = ttb_the_stortings_defiance
-		}
-		has_variable = ttb_a_pure_flag_for_norway
-		has_variable = ttb_the_consulate_question
-	}
 
 	immediate = {
 		set_variable = ttb_the_stortings_defiance
+		c:NOR = {
+			save_scope_as = NOR
+		}
 	}
 
 	option = {
 		name = sweden_crown.13.a
 		ai_chance = {
-			base = 1
+			base = 0
+			modifier = {
+				trigger = {
+					has_attitude = {
+ 					who = c:NOR
+ 					attitude = domineering
+					}
+				}
+				add = 30
+			}
+				
 		}
 		c:NOR = {
 			change_relations = {
@@ -864,8 +865,9 @@ sweden_crown.13 = {
 				value = -20
 			}
 			add_radicals = {
-				value = 0.20
+				value = 0.1
 			}
+			trigger_event = { id = norway_flavor.8 popup = yes }
 		}
 		change_infamy = 10
 		trigger_event = { id = sweden_crown.14 popup = yes days = 5 }
@@ -874,7 +876,13 @@ sweden_crown.13 = {
 		name = sweden_crown.13.b
 		default_option = yes
 		ai_chance = {
-			base = 20
+			base = 10
+			modifier = { 
+				trigger = {
+					c:NOR = { army_power_projection > root.army_power_projection }
+				}
+			add = 60
+			}
 		}
 		c:NOR = {
 			change_relations = {
@@ -884,30 +892,16 @@ sweden_crown.13 = {
 			add_loyalists = {
 				value = 0.10
 			}
+			trigger_event = { id = norway_flavor.10 popup = yes }
 		}
 		add_modifier = {
 			name = sweden_caved_to_norway
 			years = 3
 		}
 	}
-	option = {
-		name = sweden_crown.13.c
-		ai_chance = {
-			base = 0.1
-		}
-		c:NOR = {
-			change_relations = {
-				country = c:SWE
-				value = 50
-			}
-			add_loyalists = {
-				value = 0.20
-			}
-			make_independent = yes
-		}
-	}
 }
 
+# The Occupation of the Storting
 sweden_crown.14 = {
 	type = country_event
 
@@ -927,13 +921,16 @@ sweden_crown.14 = {
 	}
 
 	immediate = {
+		c:NOR = {
+			trigger_event = { id = norway_flavor.9 popup = yes }
+		}
 	}
 
 	option = {
 		name = sweden_crown.14.a
 		default_option = yes
 		ai_chance = {
-			base = 10
+			base = 1
 		}
 		c:NOR = {
 			add_modifier = {
@@ -965,5 +962,81 @@ sweden_crown.14 = {
 				is_decaying = yes
 			}
 		}
+	}
+}
+
+sweden_crown.15 = {
+	type = country_event
+
+	title = sweden_crown.15.t
+	desc = sweden_crown.15.d
+	flavor = sweden_crown.15.f
+
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+
+	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = sweden_crown.15.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		add_radicals = {
+			value = 0.05
+		}
+		c:NOR = {
+			make_independent = yes
+			trigger_event = { id = norway_flavor.11 popup = yes }
+		}
+	}
+
+	option = {
+		name = sweden_crown.15.b
+		ai_chance = {
+			base = 0
+		}
+		add_loyalists = {
+			value = 0.05
+		}
+		change_relations = {
+			country = c:NOR
+			value = 30
+		}
+		c:NOR = {
+			add_loyalists = {
+				value = 0.10
+			}
+			change_relations = {
+				country = c:SWE
+				value = 30
+			}
+		}
+	}
+
+	option = {
+		name = sweden_crown.15.c
+		ai_chance = {
+			base = 0
+		}
+		c:NOR = {
+			change_relations = {
+				country = c:SWE
+				value = -20
+			}
+			add_radicals = {
+				value = 0.1
+			}
+			trigger_event = { id = norway_flavor.5 popup = yes }
+		}
+		change_infamy = 10
+		trigger_event = { id = sweden_crown.14 popup = yes days = 5 }
 	}
 }

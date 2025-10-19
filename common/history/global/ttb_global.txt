@@ -60,6 +60,7 @@ GLOBAL = {
 			days = 730
 		}
 		add_journal_entry = { type = nor_the_merchant_navy }
+		add_journal_entry = { type = nor_union }
 	}
 	c:FIN = {
 		#add_primary_culture = swedish	# Re-add if I find better implementation

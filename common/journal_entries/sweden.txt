@@ -771,9 +771,6 @@ swedish_nordic_monarchy = {
 			1 = sweden_crown.6
 			1 = sweden_crown.7
 			1 = sweden_crown.10
-			1 = sweden_crown.11
-			1 = sweden_crown.12
-			1 = sweden_crown.13
 		}
 	}
 

@@ -315,13 +315,19 @@
  sweden_crown.13.f: "'Revolution in the guise of law!'' thundered a conservative member of the Riksdag. 'They have used our King's adherence to the union's integrity as a pretext to tear up its foundations. This is not a legal proceeding; it is a declaration of rebellion by another name. The honor of Sweden and the integrity of the Crown are at stake!'"
  sweden_crown.13.a: "Send in the army and take control over the Sorting"
  sweden_crown.13.b: "Negotiate with the Storting and find a compromise"
- sweden_crown.13.c: "Perhaps it is time to let them go their own way."
 
  sweden_crown.14.t: "The Occupation of the Storting"
  sweden_crown.14.d: "On the King's command, Norwegian officers still loyal to the crown marched on Christiania. They were met with fierce resistance from barricades manned by mutinous soldiers and citizen militias. For two days, the capital was a battlefield. The tide turned only with the arrival of loyal, Swedish-born regiments, whose reinforcements allowed our forces to break through the defenses and seize the Storting building. Key independence leaders have been arrested, while others have fled into the countryside. The Norwegian tricolor has been torn down and the union flag raised over the occupied parliament. While we may have decapitated their government, the city is seething with resentment, and the regular Norwegian army continues to mobilize against us."
  sweden_crown.14.f: "A telegram arrives from the commanding general in Christiania: 'Per His Majesty's command, the Storting is secure. Norwegian guard units offered spirited resistance but have been neutralized. The primary secessionist leaders are in custody. The city is now quiet, but it is the quiet of a coiled snake. Awaiting further orders on the administration of the occupation.'"
  sweden_crown.14.a: "A new, loyalist Norwegian government will be formed."
  sweden_crown.14.b: "We have maid are point lets not push this any further"
+
+ sweden_crown.15.t: "The Karlstad Negotiations: A Union's End?"
+ sweden_crown.15.d: "Delegates from both kingdoms have gathered in Karlstad. The Norwegians, buoyed by the Storting's defiant declaration, demand nothing less than the full dissolution of the union. Continued insistence on maintaining the union likely means war, a costly prospect with uncertain international backing. Accepting dissolution, while damaging to our prestige, prevents bloodshed and recognizes the seemingly irreconcilable differences between the two peoples."
+ sweden_crown.15.f: "For ninety years, our crowns were linked. We shared monarchs, faced the world with a single voice, however strained. But the Norwegian spirit, nurtured by their Storting and their separate identity, chafes under any shared yoke. Perhaps it is wiser to part as friends, however reluctantly, than to let this union curdle into enmity and war."
+ sweden_crown.15.a: "Accept the dissolution. Norway shall be independent." # AI should heavily favor this
+ sweden_crown.15.b: "Offer them dominion status, a final compromise." # Option if you want complexity, but user requested AI always grants independence
+ sweden_crown.15.c: "This defiance cannot stand, Send in the army." # Option if you want complexity
 
 # Denmark
  denmark_flavor.1.t: "Failure of Our Nation"
@@ -392,6 +398,46 @@
  norway_flavor.4.d: "As laws in Norway have turned more and more in favor of landowners, there has been a petition to reverse some old laws that forbade the establishment of new Aristocratic titles. With the law repealed the aristocracy is once again a force to be reconed with in Norway."
  norway_flavor.4.f: ""Glory to our past, the past we forgot but shall never forget again!""
  norway_flavor.4.a: "We've taken a proud step back!"
+
+ norway_flavor.5.t: "Consular Demands Rejected"
+ norway_flavor.5.d: "Word has arrived from Stockholm: King [ROOT.GetCountry.GetRuler.GetFirstName] and the Swedish government have formally rejected the Storting's demand for a separate Norwegian consular service, citing the need for a 'common foreign policy'. The decision is seen across Norway as a blatant disregard for our national interests and a confirmation of our subordinate status within the Union."
+ norway_flavor.5.f: "Once again, the interests of Norwegian sailors and merchants are sacrificed on the altar of Swedish control! They speak of a 'common foreign policy,' but it is clear this means a Swedish foreign policy imposed upon us, ignoring the unique needs of our vast merchant fleet. How long must we endure this inequality?"
+ norway_flavor.5.a: "An insult to our nation! Norway's rights must be secured!"
+ norway_flavor.5.b: "Preserving the Union requires difficult compromises."
+
+ norway_flavor.6.t: "The Flag Controversy"
+ norway_flavor.6.d: "Following calls to assert national symbols, proposals for a 'pure' Norwegian merchant flag, omitting the Swedish union badge, have gained widespread support in the Storting. Adopting such a flag would be a powerful symbol of Norwegian autonomy, but would surely antagonize Stockholm."
+ norway_flavor.6.f: "The 'herring salad' badge is an insult! A constant reminder of our subordinate position. Our ships sail the world's oceans; let them fly a flag that is purely Norwegian, representing our nation alone!"
+ norway_flavor.6.a: "Lets pass a motion to remove the union badge from our merchant flag"
+ norway_flavor.6.b: "Pass the motion and hoist the pure flag on all state vessels!"
+
+ norway_flavor.7.t: "Constitutional Crisis: The King Refuses"
+ norway_flavor.7.d: "Despite the clear will of the Storting and the Norwegian people, King [ROOT.GetCountry.GetRuler.GetFirstName] has not only vetoed the law establishing a separate Norwegian consular service but has also refused to appoint a Norwegian government willing to sanction it. This deadlock strikes at the heart of our autonomy. The Storting must decide how to respond to what many see as the King abandoning his constitutional duties as monarch of Norway."
+ norway_flavor.7.f: "He reigns from Stockholm, advised by Swedes, and now denies Norway's government the right to enact laws passed by its own elected body. By refusing to facilitate the formation of a government that respects the Storting's decision, has the King not, in effect, ceased to function as 'our' King? Is the Union itself still constitutionally valid?"
+ norway_flavor.7.a: "The King has broken the contract. The Union is dissolved!"
+ norway_flavor.7.b: "Accept the Royal Veto. The time is not right."
+
+ norway_flavor.8.t: "War for Independence!"
+ norway_flavor.8.d: "Stockholm has responded to our declaration of dissolution not with diplomacy, but with bayonets! Swedish troops, alongside Norwegian units still loyal to the Swedish Crown, are marching on Christiania with orders to seize the Storting and arrest our government. The time for talk is over; Norway must now defend its sovereignty by force of arms."
+ norway_flavor.8.f: "So be it! If the King in Stockholm believes he can crush the will of the Norwegian people underfoot, he will find our resolve is forged in the fires of 1814! To arms! For Norge!"
+ norway_flavor.8.a: "Mobilize the nation! Defend the Storting!"
+ norway_flavor.8.a.t: "Norway enters a state of #bold war#! against #bold Sweden#!.\nGain modifier #bold Norwegian War of Independence#!, significantly boosting military mobilization and defense.\nSignificant increase in #bold Radicals#! and #bold Republican#! momentum."
+
+ norway_flavor.9.t: "Christiania Occupied!"
+ norway_flavor.9.d: "Despite valiant resistance by loyal soldiers and citizens, Swedish-led forces have stormed Christiania and seized control of the Storting building. Key members of our government have been arrested, though many continue the fight from the countryside. The union flag flies over our occupied capital, a bitter symbol of Swedish oppression, but the Norwegian spirit remains unbroken."
+ norway_flavor.9.f: "They hold the stones of the Storting, but they do not hold the hearts of Norwegians! From the fjords to the mountains, the call to resist echoes. This occupation will galvanize our people, not break them. The fight for freedom has just begun!"
+ norway_flavor.9.a: "The capital has fallen... perhaps negotiation is now our only path."
+
+ norway_flavor.10.t: "Karlstad Negotiations Proposed"
+ norway_flavor.10.d: "Faced with the Storting's unanimous declaration, King [ROOT.GetCountry.GetRuler.GetFirstName] and the Swedish government have blinked. Instead of resorting immediately to force, they have proposed negotiations in the neutral town of Karlstad to discuss the terms of the union's future, potentially including its dissolution. While this avoids immediate bloodshed, Swedish intentions remain unclear."
+ norway_flavor.10.f: "They call us to talk, now that our resolve is clear. Do they seek a peaceful parting, or merely to stall while their armies gather? We must proceed with caution, but the door to independence, opened by our own hands, may yet be passed through without war."
+ norway_flavor.10.a: "Agree to negotiate, but prepare for the worst."
+
+ norway_flavor.11.t: "Independence Achieved: The Karlstad Accord"
+ norway_flavor.11.d: "Victory through diplomacy! The tense negotiations in Karlstad have borne fruit. King [ROOT.GetCountry.GetRuler.GetFirstName] and the Swedish government, recognizing the Storting's resolve, have formally agreed to dissolve the Personal Union. After decades of striving for equality and autonomy, Norway stands once again as a fully sovereign nation, its destiny entirely in its own hands."
+ norway_flavor.11.f: "The Swedish flag is lowered, the pure Norwegian tricolor rises in its place! Cannons salute from Akershus Fortress! From Hammerfest to Lindesnes, the nation celebrates! Ninety years under a shared crown have ended not in war, but in mutual recognition. A new era dawns for Norway!"
+ norway_flavor.11.a: "A New Dawn for Norway!"
+
 # Finland
  finland_flavor.100.t: "Language Strife"
  finland_flavor.100.d: "For generations Swedish has been the spoken tongue in Finland, the administration and education has been used Swedish and it continued to be used in administration even after the establishment of the Grand Duchy of Finland.\nHowever recently there has been a movement to promote the Finnish as the national language and it is building momentum...and with it a growing opposition."

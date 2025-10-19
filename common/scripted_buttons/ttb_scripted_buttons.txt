@@ -118,3 +118,96 @@ ttb_reforming_swedish_army_training_button = {
 		}
 	}
 }
+
+ttb_nor_union_consular_button = {
+	name = "ttb_nor_union_consular_button"
+	desc = "ttb_nor_union_consular_button_desc"
+
+	visible = { always = yes }
+	
+	ai_chance = {
+		value = 5
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = ttb_has_completed_nor_the_merchant_navy
+			has_variable = ttb_nor_the_merchant_navy
+			NOT = { has_variable = ttb_nor_union_consular_button_var }
+		}
+		NOT = {
+			has_modifier = norway_union_incident
+		}
+
+	}
+
+	effect = {
+		c:SWE = {
+			trigger_event = { id = sweden_crown.11 popup = yes}
+		}
+		set_variable = ttb_nor_union_consular_button_var
+		add_modifier = { 
+			name = norway_union_incident
+			years = 1
+		}
+	}
+}
+
+ttb_nor_union_flag_button = {
+	name = "ttb_nor_union_flag_button"
+	desc = "ttb_nor_union_flag_button_desc"
+
+	visible = { always = yes }
+	
+	ai_chance = {
+		value = 5
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = ttb_has_completed_nor_the_merchant_navy
+			has_variable = ttb_nor_the_merchant_navy
+			NOT = { has_variable = ttb_nor_union_flag_button_var }
+		}
+		NOT = {
+			has_modifier = norway_union_incident
+		}
+	}
+
+	effect = {
+		trigger_event = { id = norway_flavor.6 popup = yes }
+		set_variable = ttb_nor_union_flag_button_var
+		add_modifier = { 
+			name = norway_union_incident
+			years = 1
+		}
+	}
+}
+
+ttb_nor_union_storting_call_button = {
+	name = "ttb_nor_union_storting_call_button"
+	desc = "ttb_nor_union_storting_call_button_desc"
+
+	visible = { always = yes }
+	
+	ai_chance = {
+		value = 5
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = ttb_has_done_nor_demands
+			has_variable = ttb_norway_consular_demands_rejected
+			has_variable = ttb_norway_the_flag_controversy
+			NOT = { has_variable = ttb_nor_union_storting_call_button_var }
+		}
+		NOT = {
+			has_modifier = norway_union_incident
+		}
+	}
+
+	effect = {
+		trigger_event = { id = norway_flavor.7 popup = yes }
+		set_variable = ttb_nor_union_storting_call_button_var
+	}
+}
