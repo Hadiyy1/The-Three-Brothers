@@ -127,7 +127,7 @@
  ttb_radical_movements: "Radical movements"
  ttb_anti_monarchist_in_government: "Republican in government"
  ttb_monarchist_in_government: "Monarchist in government"
- ttb_drawn_to_status_quo: "Neutral draw to Status qou"
+ ttb_drawn_to_status_quo: "Neutral draw to Status quo"
  ttb_add_25_progress_crown_control: "Advances #bold Crown Influence#! by #p 25#!"
  ttb_remove_25_progress_crown_control: "Regresses #bold Crown Influence#! by #n 25#!"
  ttb_add_50_progress_crown_control: "Advances #bold Crown Influence#! by #p 50#!"
@@ -371,7 +371,7 @@
  ttb_state_trait_volcanic_island: "Volcanic Island"
 
  # Game Rules
- rule_ttb_companies_game_rule: "Use Companies from The three Brothers"
+ rule_ttb_companies_game_rule: "Use Companies from The Three Brothers"
  setting_ttb_companies_enabled: "Companies Enabled"
  setting_ttb_companies_enabled_desc: "Companies from the mod will show up in the game."
  setting_ttb_companies_disabled: "Companies Disabled"
