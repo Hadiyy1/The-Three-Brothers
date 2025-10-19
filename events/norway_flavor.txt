@@ -43,6 +43,7 @@ norway_flavor.1 = {
 		}
 	}
 }
+
 # Det store hamskiftet
 norway_flavor.2 = {
 	type = country_event
@@ -121,7 +122,7 @@ norway_flavor.2 = {
 	}
 }
 
-# The Great Merchant Navy
+# Norwegian Merchant Marine
 norway_flavor.3 = {
 	type = country_event
 	
@@ -150,6 +151,7 @@ norway_flavor.3 = {
 		}
 	}
 }
+
 # Return of Aristocracy
 norway_flavor.4 = {
 	type = country_event
@@ -189,5 +191,230 @@ norway_flavor.4 = {
 				days = long_modifier_time
 			}
 		}
+	}
+}
+
+# Consular Demands Rejected
+norway_flavor.5 = {
+	type = country_event
+	
+	title = norway_flavor.5.t
+	desc = norway_flavor.5.d
+	flavor = norway_flavor.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	immediate = {
+		set_variable = ttb_norway_consular_demands_rejected
+	}
+
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	option = {
+		name = norway_flavor.5.a
+		add_loyalists = {
+			value = 0.05
+		}
+		c:SWE = {
+			change_relations = {
+				country = c:NOR
+				value = -30
+			}
+		}
+	}
+	option = {
+		name = norway_flavor.5.b
+		default_option = yes
+		add_radicals = {
+			value = 0.1
+		}
+		c:SWE = {
+			change_relations = {
+				country = c:NOR
+				value = -10
+			}
+		}
+	}
+}
+
+# The Flag Controversy
+norway_flavor.6 = {
+	type = country_event
+	
+	title = norway_flavor.6.t
+	desc = norway_flavor.6.d
+	flavor = norway_flavor.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	immediate = {
+		set_variable = ttb_norway_the_flag_controversy
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	option = {
+		name = norway_flavor.6.a
+		c:SWE = {
+			change_relations = {
+				country = c:NOR
+				value = -20
+			}
+			trigger_event = { id = sweden_crown.12 popup = yes }
+		}
+	}
+	option = {
+		name = norway_flavor.6.b
+		default_option = yes
+		add_loyalists = {
+			value = 0.1
+		}
+		c:SWE = {
+			change_relations = {
+				country = c:NOR
+				value = -30
+			}
+			trigger_event = { id = sweden_crown.12 popup = yes }
+		}
+	}
+}
+
+# Constitutional Crisis: The King Refuses
+norway_flavor.7 = {
+	type = country_event
+	
+	title = norway_flavor.7.t
+	desc = norway_flavor.7.d
+	flavor = norway_flavor.7.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	option = {
+		name = norway_flavor.7.a
+		c:SWE = {
+			trigger_event = { id = sweden_crown.13 popup = yes }
+		}
+		set_variable = ttb_norway_push_for_independence
+	}
+	option = {
+		name = norway_flavor.7.b
+	}
+}
+
+# War for Independence!
+norway_flavor.8 = {
+	type = country_event
+	
+	title = norway_flavor.8.t
+	desc = norway_flavor.8.d
+	flavor = norway_flavor.8.f
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	option = {
+		name = norway_flavor.8.a
+	}
+}
+
+# Christiania Occupied!
+norway_flavor.9 = {
+	type = country_event
+	
+	title = norway_flavor.9.t
+	desc = norway_flavor.9.d
+	flavor = norway_flavor.9.f
+
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	option = {
+		name = norway_flavor.9.a
+	}
+}
+
+# Karlstad Negotiations Proposed
+norway_flavor.10 = {
+	type = country_event
+	
+	title = norway_flavor.10.t
+	desc = norway_flavor.10.d
+	flavor = norway_flavor.10.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	option = {
+		name = norway_flavor.10.a
+		c:SWE = {
+			trigger_event = { id = sweden_crown.15 popup = yes }
+		}
+	}
+}
+
+# Independence Achieved: The Karlstad Accord
+norway_flavor.11 = {
+	type = country_event
+	
+	title = norway_flavor.11.t
+	desc = norway_flavor.11.d
+	flavor = norway_flavor.11.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	option = {
+		name = norway_flavor.11.a
+		c:SWE = {
+			change_relations = {
+				country = c:NOR
+				value = 50
+			}
+		}
+		change_relations = {
+			country = c:SWE
+			value = 50
+		}
+
 	}
 }

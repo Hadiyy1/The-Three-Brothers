@@ -21,6 +21,7 @@ GLOBAL = {
 		activate_law = law_type:law_colonial_slavery
 		activate_law = law_type:law_homesteading
 		activate_law = law_type:law_guild_system
+		activate_law = law_type:law_riksdag_of_the_estates
 		ig:ig_rural_folk = {
 			#remove_ideology = ideology_particularist
 			add_ideology = ideology_nordic_particularist
@@ -59,6 +60,7 @@ GLOBAL = {
 			days = 730
 		}
 		add_journal_entry = { type = nor_the_merchant_navy }
+		add_journal_entry = { type = nor_union }
 	}
 	c:FIN = {
 		#add_primary_culture = swedish	# Re-add if I find better implementation

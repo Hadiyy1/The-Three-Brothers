@@ -189,7 +189,7 @@ sweden_stockholm = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	building_government_administration_throughput_add = 0.10
 	building_university_throughput_add = 0.10
-	state_decree_cost_mult = -0.25
+	state_decree_cost_mult = -0.10
 }
 
 sweden_motala_strike = {
@@ -282,7 +282,7 @@ sweden_army_investment = {
 
 sweden_strong_independent_farmer_culture = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-	interest_group_pop_attraction_mult = 0.25
+	interest_group_pop_attraction_mult = 0.10
 }
 
 sweden_caved_to_norway = {
@@ -331,25 +331,24 @@ norway_the_great_merchant_navy = {
 	country_influence_add = 50
 	country_prestige_mult = 0.1
 }
-norway_military_government_imposed = {
+norway_lost_the_union_crises = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_prestige_mult = -0.15
-	country_officers_pol_str_mult = 2
-	interest_group_ig_armed_forces_pol_str_mult = 3
-	country_soldiers_pol_str_mult = 0.75
-	country_aristocrats_pol_str_mult = 0.75
-	country_law_enactment_time_mult = 0.5
-	country_liberty_desire_add = -0.25
+	country_prestige_mult = -0.10
+	country_liberty_desire_add = -0.10
 }
 
 norway_loyal_government_imposed = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_prestige_mult = -0.15
-	country_officers_pol_str_mult = 0.75
-	country_aristocrats_pol_str_mult = 2
-	interest_group_ig_landowners_pol_str_mult = 3
+	country_prestige_mult = -0.20
+	interest_group_ig_landowners_pol_str_mult = 1
 	country_law_enactment_time_mult = 0.5
 	country_liberty_desire_add = -0.25
+}
+
+norway_union_incident = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_influence_mult = -0.05
+	country_liberty_desire_add = 0.02
 }
 
 
