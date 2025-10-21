@@ -563,7 +563,7 @@ swedish_folkhemmet = {
 	complete = {
 		institution_investment_level = {
 			institution = institution_social_security
-			value = 3
+			value = 4
 		}
 	
 	}

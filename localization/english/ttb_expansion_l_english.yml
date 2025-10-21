@@ -145,7 +145,7 @@
  nor_the_merchant_navy_reason: "Norway is slowly building up a respectable Merchant Marine which it's putting to use to improve it's standing in the world, however to do so it must become large enough to be competetive with the world around it."
  
  nor_union: "The Unequal Union"
- nor_union_reason: "Bound to Sweden by the Kiel Treaty and the Convention of Moss in 1814, Norway endures a union under one crown but with two distinct national spirits. While our cherished Constitution grants domestic autonomy through the Storting, foreign policy and the ultimate authority rest uncomfortably in Stockholm. Norwegian nationalism stirs, fueled by memories of Eidsvoll and a growing sense that our nation is but a junior partner in Sweden's shadow.\n\nWe must assert Norway's unique identity and rights within this union. Strengthening the Storting's power, challenging Swedish dominance in shared affairs like foreign representation, and fostering national pride are paramount. Each victory brings us closer to true equality, or perhaps, ultimate independence. Yet, pushing too hard risks provoking Swedish reaction and tightening the bonds we seek to loosen."
+ nor_union_reason: "Bound to #yellow Sweden#! by #white the Kiel Treaty and the Convention of Moss in 1814#!, #yellow Norway#! endures a #gold union#! under one crown but with two distinct national spirits. While our cherished #white Constitution#! grants domestic autonomy through the #blue Storting#!, foreign policy and the ultimate authority rest uncomfortably in #blue Stockholm#!. Norwegian nationalism stirs, fueled by memories of Eidsvoll and a growing sense that our nation is but a junior partner in #yellow Sweden's#! shadow.\n\nWe must assert Norway's unique identity and rights within this union. Strengthening the #blue Storting's#! power, challenging #yellow Swedish#! dominance in shared affairs like foreign representation, and fostering national pride are paramount. Each victory brings us closer to true equality, or perhaps, ultimate independence. Yet, #red pushing too hard#! risks provoking #yellow Swedish#! reaction and tightening the bonds we seek to loosen."
  nor_union_status: "Manage the relationship with Sweden while strengthening Norwegian autonomy and national identity."
  nor_union_complete: "The Union between Norway and Sweden is dissolved."
  ttb_nor_union_consular_button: "Demand Separate Consular Service"
@@ -156,6 +156,7 @@
  ttb_nor_union_storting_call_button: "Challenge the Royal Veto"
  ttb_nor_union_storting_call_button_desc: "King [ROOT.GetCountry.GetRuler.GetFirstName] refuses to sanction the Consulate Law or appoint a government that supports it. Shall the Storting force the issue, asserting its authority against the Crown? This action will precipitate a '#bold Constitutional Crisis#!', potentially escalating tensions dramatically.\n\n@warning! If they have a #bold Domineering#! attitude towards us, this defiance significantly increases the risk of a Swedish #bold military intervention#! that Norway may not be able to withstand.#!"
  ttb_has_done_nor_demands: "'Has done Demand Separate Consular Service' and 'Assert National Symbols'"
+ nor_union_fail: "Norway independence has ben subdued throw diplomacy."
 
 
  finland_fennoman_movement: "The Language Strife"
@@ -380,3 +381,7 @@
  #Laws
  law_riksdag_of_the_estates: "Riksdag of the Estates"
  law_riksdag_of_the_estates_desc: "A four-chamber parliament where each of the Four Estates of the realm Nobility, Clergy, Burghers, and Peasants deliberates on law and shares legislative authority with the King."
+ law_formmanskapsdistrikt: "Formannskapsdistrikt"
+ law_formmanskapsdistrikt_desc: "A system establishing local self-government through municipalities (Formannskapsdistrikt), governed by locally elected councils (Formannskap), granting greater administrative autonomy from the central government."
+ law_municipal_ordinances: "Municipal Ordinances"
+ law_municipal_ordinances_desc: "This system establishes modern local self-government, transferring significant administrative power from the Crown and Church parishes to secular municipalities (Kommuner) and county councils (Landsting). Governed by locally elected councils, these bodies gain greater autonomy over local affairs like taxation, infrastructure, and education."

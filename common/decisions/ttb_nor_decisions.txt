@@ -21,10 +21,7 @@
 			name = norway_formmanskapsdistrikt_pay
 			months = short_modifier_time
 		}
-		add_modifier = {
-			name = norway_formmanskapsdistrikt_nation
-			months = -1
-		}
+		activate_law = law_type:law_formmanskapsdistrikt
 		ig:ig_rural_folk = {
 			add_modifier = {
 				name = norway_formmanskapsdistrikt

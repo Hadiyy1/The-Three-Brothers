@@ -855,7 +855,7 @@ sweden_crown.13 = {
  					attitude = domineering
 					}
 				}
-				add = 30
+				add = 20
 			}
 				
 		}
@@ -881,7 +881,7 @@ sweden_crown.13 = {
 				trigger = {
 					c:NOR = { army_power_projection > root.army_power_projection }
 				}
-			add = 60
+			add = 100
 			}
 		}
 		c:NOR = {
@@ -928,24 +928,6 @@ sweden_crown.14 = {
 
 	option = {
 		name = sweden_crown.14.a
-		default_option = yes
-		ai_chance = {
-			base = 1
-		}
-		c:NOR = {
-			add_modifier = {
-				name = norway_loyal_government_imposed
-				years = 10
-				is_decaying = yes
-			}
-			add_radicals = {
-				value = 0.20
-			}
-		}
-	}
-
-	option = {
-		name = sweden_crown.14.b
 		ai_chance = {
 			base = 20
 		}
@@ -1018,6 +1000,7 @@ sweden_crown.15 = {
 				country = c:SWE
 				value = 30
 			}
+			set_variable = ttb_norway_dominion
 		}
 	}
 

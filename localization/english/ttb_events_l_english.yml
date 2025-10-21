@@ -319,15 +319,14 @@
  sweden_crown.14.t: "The Occupation of the Storting"
  sweden_crown.14.d: "On the King's command, Norwegian officers still loyal to the crown marched on Christiania. They were met with fierce resistance from barricades manned by mutinous soldiers and citizen militias. For two days, the capital was a battlefield. The tide turned only with the arrival of loyal, Swedish-born regiments, whose reinforcements allowed our forces to break through the defenses and seize the Storting building. Key independence leaders have been arrested, while others have fled into the countryside. The Norwegian tricolor has been torn down and the union flag raised over the occupied parliament. While we may have decapitated their government, the city is seething with resentment, and the regular Norwegian army continues to mobilize against us."
  sweden_crown.14.f: "A telegram arrives from the commanding general in Christiania: 'Per His Majesty's command, the Storting is secure. Norwegian guard units offered spirited resistance but have been neutralized. The primary secessionist leaders are in custody. The city is now quiet, but it is the quiet of a coiled snake. Awaiting further orders on the administration of the occupation.'"
- sweden_crown.14.a: "A new, loyalist Norwegian government will be formed."
- sweden_crown.14.b: "We have maid are point lets not push this any further"
+ sweden_crown.14.a: "We have maid are point lets not push this any further."
 
  sweden_crown.15.t: "The Karlstad Negotiations: A Union's End?"
  sweden_crown.15.d: "Delegates from both kingdoms have gathered in Karlstad. The Norwegians, buoyed by the Storting's defiant declaration, demand nothing less than the full dissolution of the union. Continued insistence on maintaining the union likely means war, a costly prospect with uncertain international backing. Accepting dissolution, while damaging to our prestige, prevents bloodshed and recognizes the seemingly irreconcilable differences between the two peoples."
  sweden_crown.15.f: "For ninety years, our crowns were linked. We shared monarchs, faced the world with a single voice, however strained. But the Norwegian spirit, nurtured by their Storting and their separate identity, chafes under any shared yoke. Perhaps it is wiser to part as friends, however reluctantly, than to let this union curdle into enmity and war."
- sweden_crown.15.a: "Accept the dissolution. Norway shall be independent." # AI should heavily favor this
- sweden_crown.15.b: "Offer them dominion status, a final compromise." # Option if you want complexity, but user requested AI always grants independence
- sweden_crown.15.c: "This defiance cannot stand, Send in the army." # Option if you want complexity
+ sweden_crown.15.a: "Accept the dissolution. Norway shall be independent."
+ sweden_crown.15.b: "Offer them dominion status, a final compromise."
+ sweden_crown.15.c: "This defiance cannot stand, Send in the army."
 
 # Denmark
  denmark_flavor.1.t: "Failure of Our Nation"
@@ -423,10 +422,10 @@
  norway_flavor.8.a: "Mobilize the nation! Defend the Storting!"
  norway_flavor.8.a.t: "Norway enters a state of #bold war#! against #bold Sweden#!.\nGain modifier #bold Norwegian War of Independence#!, significantly boosting military mobilization and defense.\nSignificant increase in #bold Radicals#! and #bold Republican#! momentum."
 
- norway_flavor.9.t: "Christiania Occupied!"
- norway_flavor.9.d: "Despite valiant resistance by loyal soldiers and citizens, Swedish-led forces have stormed Christiania and seized control of the Storting building. Key members of our government have been arrested, though many continue the fight from the countryside. The union flag flies over our occupied capital, a bitter symbol of Swedish oppression, but the Norwegian spirit remains unbroken."
- norway_flavor.9.f: "They hold the stones of the Storting, but they do not hold the hearts of Norwegians! From the fjords to the mountains, the call to resist echoes. This occupation will galvanize our people, not break them. The fight for freedom has just begun!"
- norway_flavor.9.a: "The capital has fallen... perhaps negotiation is now our only path."
+ norway_flavor.9.t: "Christiania Has Fallen"
+ norway_flavor.9.d: "Despite futile resistance by scattered soldiers and desperate citizens, Swedish forces have overwhelmed Christiania, seizing the Storting building. What remains of our government leadership has been arrested or scattered to the winds. The union flag now flies over our capital, a stark symbol of our subjugation. Hope feels like a distant memory under the weight of occupation."
+ norway_flavor.9.f: "Silence hangs heavy over the occupied city. The echoes of resistance have faded, replaced by the heavy tread of Swedish patrols. They hold the Storting, they hold our streets, and fear holds the hearts of those who remain. Whispers of continued fighting in the countryside sound more like death rattles than a call to arms. How long until the spirit finally breaks?"
+ norway_flavor.9.a: "With the capital lost... Negotiation is now our only path."
 
  norway_flavor.10.t: "Karlstad Negotiations Proposed"
  norway_flavor.10.d: "Faced with the Storting's unanimous declaration, King [ROOT.GetCountry.GetRuler.GetFirstName] and the Swedish government have blinked. Instead of resorting immediately to force, they have proposed negotiations in the neutral town of Karlstad to discuss the terms of the union's future, potentially including its dissolution. While this avoids immediate bloodshed, Swedish intentions remain unclear."
