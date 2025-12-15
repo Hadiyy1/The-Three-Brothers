@@ -113,7 +113,7 @@ sweden_good_glass_quality = {
 sweden_sundsvall_timber = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	building_group_bg_logging_throughput_add = 0.05
-	building_furniture_manufacturies_throughput_add = 0.05
+	building_furniture_manufactory_throughput_add = 0.05
 }
 
 sweden_retake_finland = {
@@ -162,7 +162,7 @@ sweden_timber_export = {
 
 sweden_increased_furniture_manufactories = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-	building_furniture_manufacturies_throughput_add = 0.1
+	building_furniture_manufactory_throughput_add = 0.1
 }
 
 sweden_trapatron = {
@@ -173,8 +173,8 @@ sweden_trapatron = {
 sweden_gothenburg = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	building_port_throughput_add = 0.1
-	building_shipyards_throughput_add = 0.05
-	building_military_shipyards_throughput_add = 0.05
+	building_shipyard_throughput_add = 0.05
+	building_military_shipyard_throughput_add = 0.05
 }
 
 sweden_malmo = {
@@ -222,7 +222,7 @@ sweden_matchstick_boom = {
 sweden_sundsvall_fire_modi = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	building_group_bg_logging_throughput_add = 0.05
-	building_furniture_manufacturies_throughput_add = 0.05
+	building_furniture_manufactory_throughput_add = 0.05
 	building_government_administration_throughput_add = 0.05
 	building_university_throughput_add = 0.05
 	state_decree_cost_mult = -0.10
@@ -282,7 +282,8 @@ sweden_army_investment = {
 
 sweden_strong_independent_farmer_culture = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-	interest_group_pop_attraction_mult = 0.10
+	interest_group_pop_attraction_mult = 0.20
+	interest_group_pol_str_mult = 0.15
 }
 
 sweden_caved_to_norway = {
@@ -333,16 +334,8 @@ norway_the_great_merchant_navy = {
 }
 norway_lost_the_union_crises = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_prestige_mult = -0.10
-	country_liberty_desire_add = -0.10
-}
-
-norway_loyal_government_imposed = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	country_prestige_mult = -0.20
-	interest_group_ig_landowners_pol_str_mult = 1
-	country_law_enactment_time_mult = 0.5
-	country_liberty_desire_add = -0.25
+	country_liberty_desire_add = -0.20
 }
 
 norway_union_incident = {

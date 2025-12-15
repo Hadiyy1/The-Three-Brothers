@@ -1,8 +1,8 @@
 {
-  "name" : "The Three Brothers REDUX: A Scandinavian Flavor Pack",
+  "name" : "[1.10]The Three Brothers REDUX: A Scandinavian Flavor Pack",
   "id" : "",
-  "version" : "0.61",
-  "supported_game_version" : "1.9.*",
+  "version" : "0.8",
+  "supported_game_version" : "1.10.*",
   "short_description" : "Scandinavian Flavor!",
   "tags" : [],
   "relationships" : [],

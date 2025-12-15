@@ -27,7 +27,7 @@ GLOBAL = {
 			add_ideology = ideology_nordic_particularist
 			add_modifier = {
 				name = sweden_strong_independent_farmer_culture
-				years = 15
+				years = 20
 			}
 		}
 		ig:ig_intelligentsia = {

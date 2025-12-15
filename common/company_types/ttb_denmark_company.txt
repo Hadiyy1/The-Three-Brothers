@@ -1,5 +1,5 @@
 ﻿# Chr. Hansens teknisk-kemiske Laboratorium A/S
-company_chr_hansens = {
+REPLACE:company_chr_hansens = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/denmark_chr_hansens_teknisk_kemiske_laboratorium.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rye.dds"
 
@@ -9,11 +9,11 @@ company_chr_hansens = {
 
 	building_types = {
 		building_food_industry
-		building_chemical_plants
+		building_chemical_plant
 	}
 
 	extension_building_types = {
-		building_synthetics_plants
+		building_synthetics_plant
 	}
 
 	possible_prestige_goods = {
@@ -46,7 +46,7 @@ company_chr_hansens = {
 			any_scope_building = {
 				OR = {
 					is_building_type = building_food_industry
-					is_building_type = building_chemical_plants
+					is_building_type = building_chemical_plant
 				}
 				level >= 5
 			}
@@ -73,7 +73,7 @@ company_chr_hansens = {
 				state_region = s:STATE_ZEALAND
 			}
 		}
-		building_chemical_plants = {
+		building_chemical_plant = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_ZEALAND
@@ -87,7 +87,7 @@ company_chr_hansens = {
 }
 
 # A.P. Møller (later Mærsk)
-company_ap_moller = {
+REPLACE:company_ap_moller = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/ap_moller.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
 
@@ -100,7 +100,7 @@ company_ap_moller = {
 	}
 
 	extension_building_types = {
-		building_shipyards
+		building_shipyard
 		building_logging_camp
 	}
 
@@ -132,7 +132,7 @@ company_ap_moller = {
 			state_region = s:STATE_ZEALAND
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_shipyards
+				is_building_type = building_shipyard
 				level >= 5
 			}
 		}
@@ -152,7 +152,7 @@ company_ap_moller = {
 	}
 
 	ai_construction_targets = {
-		building_shipyards = {
+		building_shipyard = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_ZEALAND
@@ -167,7 +167,7 @@ company_ap_moller = {
 
 
 # Carlsberg
-ttb_company_Carlsberg_beer = {
+REPLACE_OR_CREATE:ttb_company_carlsberg_beer = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/carlsberg_beer.png"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	
@@ -185,7 +185,7 @@ ttb_company_Carlsberg_beer = {
 	
 	extension_building_types = {
 		building_wheat_farm
-		building_vineyard_plantation
+		building_vineyard
 	}
 
 	potential = {

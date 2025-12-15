@@ -17,17 +17,17 @@ nor_the_great_transformation = {
 		any_scope_building = {
 			OR = {
 				is_building_type = building_food_industry
-				is_building_type = building_textile_mills
-				is_building_type = building_furniture_manufacturies
+				is_building_type = building_textile_mill
+				is_building_type = building_furniture_manufactory
 				is_building_type = building_glassworks
-				is_building_type = building_paper_mills
+				is_building_type = building_paper_mill
 			}
 			occupancy > 0.9
 			level >= 3
 		}
 		#OR = {
 			any_scope_building = {
-				is_building_type = building_tooling_workshops
+				is_building_type = building_tooling_workshop
 				occupancy > 0.9
 				level >= 2
 			}
@@ -58,7 +58,7 @@ nor_the_merchant_navy = {
 		in_default = no
 		NOT = { has_law = law_type:law_isolationism }
 		any_scope_building = {
-			is_building_type = building_shipyards
+			is_building_type = building_shipyard
 			occupancy > 0.9
 			level >= 4
 		}
@@ -84,7 +84,7 @@ nor_the_merchant_navy = {
 	weight = 100
 	should_be_pinned_by_default = yes
 }
-
+### Will be reworked one day ###
 nor_union = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
@@ -100,6 +100,17 @@ nor_union = {
 	}
 	
 	on_complete = {
+	}
+
+	fail = {
+		custom_tooltip = {
+			text = nor_union_fail
+			OR = {
+				has_variable = ttb_norway_christiania_occupied
+				has_variable = ttb_norway_dominion
+			}
+			
+		}
 	}
 	
 	weight = 100

@@ -32,9 +32,10 @@ norway_flavor.1 = {
 			name = norway_formmanskapsdistrikt_pay
 			days = short_modifier_time
 		}
-		add_modifier = {
-			name = norway_formmanskapsdistrikt_nation
-		}
+		activate_law = law_type:law_formmanskapsdistrikt
+		# add_modifier = {
+		# 	name = norway_formmanskapsdistrikt_nation
+		# }
 		ig:ig_rural_folk = {
 			add_modifier = {
 				name = norway_formmanskapsdistrikt
@@ -307,6 +308,7 @@ norway_flavor.7 = {
 	
 	option = {
 		name = norway_flavor.7.a
+		default_option = yes
 		c:SWE = {
 			trigger_event = { id = sweden_crown.13 popup = yes }
 		}
@@ -358,6 +360,7 @@ norway_flavor.9 = {
 	
 	option = {
 		name = norway_flavor.9.a
+		set_variable = ttb_norway_christiania_occupied
 	}
 }
 
