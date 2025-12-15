@@ -394,6 +394,17 @@ finland_concessions_to_old_elite = {
 	country_bureaucracy_mult = -0.05
 	state_assimilation_mult = -0.25
 }
+finland_aland_autonomy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_authority_mult = -0.05
+	country_bureaucracy_mult = -0.05
+	country_influence_mult = 0.05
+}
+finland_finnish_pride = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_prestige_mult = 0.1
+	state_assimilation_mult = 0.05
+}
 
 # Shared
 scandinavian_monetary_union_mod = {

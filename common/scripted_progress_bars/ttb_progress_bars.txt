@@ -245,3 +245,29 @@ ttb_reforming_swedish_army_progress_bar = {
 	min_value = 0
 	max_value = 400
 }
+
+ttb_swedish_finnish_antagonism_progress_bar = {
+	name = ttb_swedish_finnish_antagonism_progress_bar
+	desc = ttb_swedish_finnish_antagonism_progress_bar_desc
+
+	default_bad = yes
+
+	start_value = 0
+	min_value = 0
+	max_value = 100
+}
+
+ttb_aland_negotiations_progress_bar = {
+	name = ttb_aland_negotiations_progress_bar
+	desc = ttb_aland_negotiations_progress_bar_desc
+
+	default = yes
+
+	monthly_progress = {
+		add = 1
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 36
+}

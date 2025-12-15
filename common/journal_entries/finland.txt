@@ -1,15 +1,12 @@
 ﻿# Fennoman Movement
 finland_fennoman_movement = {
 	icon = "gfx/interface/icons/invention_icons/bureaucracy.dds"
-	
 	group = je_group_historical_content
-	
 	is_shown_when_inactive = {
 		exists = c:FIN
 		c:FIN = THIS
 		has_modifier = finland_our_language_outside_courts
 	}
-	
 	possible = {
 		has_technology_researched = dialectics
 		OR = {
@@ -17,9 +14,10 @@ finland_fennoman_movement = {
 			has_technology_researched = pan-nationalism
 		}
 	}
-	
 	on_complete = {
-		trigger_event = { id = finland_flavor.1 }
+		trigger_event = {
+			id = finland_flavor.1
+		}
 		show_as_tooltip = {
 			add_modifier = {
 				name = finland_language_question_solved
@@ -33,7 +31,9 @@ finland_fennoman_movement = {
 		}
 	}
 	on_fail = {
-		trigger_event = { id = finland_flavor.2 }
+		trigger_event = {
+			id = finland_flavor.2
+		}
 		show_as_tooltip = {
 			add_radicals = {
 				culture = cu:finnish
@@ -41,9 +41,10 @@ finland_fennoman_movement = {
 			}
 		}
 	}
-	
 	immediate = {
-		trigger_event = { id = finland_flavor.100 }
+		trigger_event = {
+			id = finland_flavor.100
+		}
 		set_variable = {
 			name = finland_language_debate_var
 			value = 0
@@ -53,20 +54,20 @@ finland_fennoman_movement = {
 			value = 0
 		}
 	}
-	
 	current_value = {
 		value = var:finland_language_debate_var
 	}
-	
 	goal_add_value = {
 		add = 240
 	}
-	
 	progressbar = yes
-	
 	complete = {
-		scope:journal_entry = { is_goal_complete = yes }
-		NOT = { has_modifier = finland_our_language_outside_courts }
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+		NOT = {
+			has_modifier = finland_our_language_outside_courts
+		}
 	}
 	fail = {
 		custom_tooltip = {
@@ -74,7 +75,6 @@ finland_fennoman_movement = {
 			var:finland_language_debate_loss_var >= 15
 		}
 	}
-	
 	on_monthly_pulse = {
 		random_events = {
 			900 = 0
@@ -90,7 +90,73 @@ finland_fennoman_movement = {
 			}
 		}
 	}
-	
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+finland_aland_question = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	scripted_progress_bar = ttb_swedish_finnish_antagonism_progress_bar
+	scripted_progress_bar = ttb_aland_negotiations_progress_bar
+	is_shown_when_inactive = {
+		exists = c:FIN
+		c:FIN = THIS
+	}
+	immediate = {
+		trigger_event = {
+			id = aland_question.1
+			popup = yes
+			days = 3
+		}
+	}
+	possible = {
+		is_subject = no
+		owns_entire_state_region = STATE_ALAND
+	}
+	on_monthly_pulse = {
+		random_events = {
+			chance_to_happen = 20
+			40 = aland_question.3
+			40 = aland_question.5
+			1 = aland_question.6
+		}
+		effect = {
+			if = {
+				limit = {
+					scope:journal_entry = {
+						"scripted_bar_progress(ttb_swedish_finnish_antagonism_progress_bar)" >= 100
+					}
+				}
+				trigger_event = {
+					id = aland_question.8
+				}
+			}
+			if = {
+				limit = {
+					scope:journal_entry = {
+						"scripted_bar_progress(ttb_aland_negotiations_progress_bar)" >= 24
+					}
+				}
+				trigger_event = {
+					id = aland_question.4
+				}
+			}
+		}
+	}
+	complete = {
+		custom_tooltip = {
+			text = ttb_negotiation_has_concluded
+			scope:journal_entry = {
+				"scripted_bar_progress(ttb_aland_negotiations_progress_bar)" >= 36
+			}
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = aland_question.7 popup = yes
+		}
+	}
 	weight = 100
 	should_be_pinned_by_default = yes
 }

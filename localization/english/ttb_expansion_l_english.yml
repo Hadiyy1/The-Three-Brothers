@@ -162,6 +162,17 @@
  finland_fennoman_movement_goal: "The Language Strife has gone on for 20 years without being undermined by the Old Swedish Elite."
  finland_fennoman_movement_reason: "There is a national awakening in Finland, springing up from the Swedish-speaking upper classes who has chosen to promote Finnish culture and language. These Finnish Swedes has become known as the Fennomans, but it's clear that there is opposition to this within our country..."
  has_made_too_many_concessions_to_swedes: "Has made too many concessions to the Old Swedish Elite"
+
+ finland_aland_question: "The Åland Question"
+ finland_aland_question_reason: "With Finland's independence secured, the status of the Åland Islands immediately tests our new nationhood. Predominantly Swedish-speaking and culturally tied to Sweden for centuries, the islanders desire reunification with their former motherland, appealing to shared heritage and language. For Finland, however, asserting sovereignty over Åland is crucial for establishing a cohesive national identity and demonstrating territorial integrity after breaking from Russia. Relinquishing the islands could be seen as undermining Finnish unity just as it begins. Conversely, accommodating Swedish interests and the Ålanders' self-determination could forge closer bonds built on shared Scandinavian values and mutual respect, potentially strengthening our position in the region, but might challenge the vision of a purely Finnish state."
+ ttb_aland_negotiations_progress_bar: "Negotiation"
+ ttb_aland_negotiations_progress_bar_desc: "Negotiation"
+ ttb_swedish_finnish_antagonism_progress_bar: "The Åland situation has brought forth old grievances and created new tensions between the Swedish and Finnish peoples.\n\n@warning! If relations deteriorate to a breaking point, the division between these Nordic brethren may become irreparable.#!"
+ ttb_swedish_finnish_antagonism_progress_bar_desc: "Swedish-Finnish Antagonism"
+ ttb_add_swedish_finnish_antagonism: "Add Swedish-Finnish Antagonism"
+ ttb_negotiation_has_concluded: "Negotiation has concluded"
+
+
  
  # Decisions
  the_norway_formannskapsdistrikt: "Foundation of Formannskapsdistrikt"
@@ -339,6 +350,8 @@
  finland_swedish_oppose_the_academics: "Oppose the Swedish Academics"
  finland_old_elite_opposition: "Opposition of Old Elite"
  finland_concessions_to_old_elite: "Concessions to Old Elite"
+ finland_aland_autonomy: "Åland Autonomy"
+ finland_finnish_pride: "Finnish Pride"
  
  scandinavia_monetary_union_mod: "Scandinavian Monetary Union"
  nordic_neg_pan_nationalism_mod: "Opposing Nordic Pan-Nationalism"
