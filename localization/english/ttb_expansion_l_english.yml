@@ -257,6 +257,15 @@
  ttb_company_motala_verkstad: "AB Motala Verkstad"
  ttb_company_mo_och_domsjo_ab: "Mo och Domsjö AB"
  ttb_company_bofors: "AB Bofors"
+ ttb_company_danske_andels_svineslagteri: "Danske Andels-Svineslagteri"
+ ttb_aalborg_portland_cement_fabrik: "Aalborg Portland-Cement-Fabrik"
+ ttb_company_frichs_maskinfabrik: "Frichs Maskinfabrik"
+ ttb_company_horsholm_klaedefabrik: "Hørsholm Klædefabrik"
+ ttb_company_loiten_braenderis_destillation: "Løiten Brænderis Destillation"
+ ttb_company_orkla_grube_aktiebolag: "Orkla Grube-Aktiebolag"
+ ttb_company_elektrisk_bureau: "Elektrisk Bureau"
+ ttb_company_kosta_glasbruk: "Kosta Glasbruk"
+ ttb_company_hoganasbolaget: "Höganäsbolaget"
 
  # Prestige goods
  prestige_krag_jorgensen: "Krag Jorgensen"
