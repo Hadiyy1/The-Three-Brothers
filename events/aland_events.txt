@@ -78,6 +78,9 @@ aland_question.2 = {
 	option = {
 		name = aland_question.2.a
 		default_option = yes
+		add_loyalists = {
+			value = 0.03
+		}
 		c:FIN = {
 			change_relations = {
 				country = c:SWE
@@ -369,6 +372,7 @@ aland_question.7 = {
 				country = c:FIN
 				value = -50
 			}
+			trigger_event = { id = aland_question.9 popup = yes }
 		}
 		change_infamy = 10
 	}
@@ -377,6 +381,9 @@ aland_question.7 = {
 		add_modifier = {
 			name = finland_aland_autonomy
 			years = 5
+		}
+		c:SWE = {
+			trigger_event = { id = aland_question.10 popup = yes }
 		}
 	}
 	option = {
@@ -389,6 +396,7 @@ aland_question.7 = {
 				country = c:FIN
 				value = 50
 			}
+			trigger_event = { id = aland_question.11 popup = yes }
 		}
 	}
 	
@@ -432,5 +440,101 @@ aland_question.8 = {
 			years = 10
 		}
 	}
+
+}
+
+aland_question.9 = {
+	type = country_event
+
+	title = aland_question.9.t
+	desc = aland_question.9.d
+	flavor = aland_question.9.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = {
+			has_variable = the_finnish_refusal
+		}
+	}
+
+	immediate = {
+		set_variable = the_finnish_refusal
+	}
+
+	option = {
+		name = aland_question.9.a
+	}
+
+
+}
+
+aland_question.10 = {
+	type = country_event
+
+	title = aland_question.10.t
+	desc = aland_question.10.d
+	flavor = aland_question.10.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = {
+			has_variable = a_compromise_in_the_baltic
+		}
+	}
+
+	immediate = {
+		set_variable = a_compromise_in_the_baltic
+	}
+
+	option = {
+		name = aland_question.10.a
+	}
+
+
+}
+
+aland_question.11 = {
+	type = country_event
+
+	title = aland_question.11.t
+	desc = aland_question.11.d
+	flavor = aland_question.11.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = {
+			has_variable = the_return_of_aland
+		}
+	}
+
+	immediate = {
+		set_variable = the_return_of_aland
+	}
+
+	option = {
+		name = aland_question.11.a
+	}
+
 
 }
