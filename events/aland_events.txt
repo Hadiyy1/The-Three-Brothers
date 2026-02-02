@@ -1,0 +1,540 @@
+﻿namespace = aland_question
+
+# Åland Voices Rise
+aland_question.1 = {
+	type = country_event
+
+	title = aland_question.1.t
+	desc = aland_question.1.d
+	flavor = aland_question.1.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = {
+			has_variable = aland_voices_rise
+		}
+	}
+
+	immediate = {
+		set_variable = aland_voices_rise
+	}
+
+	option = {
+		name = aland_question.1.b
+		default_option = yes
+		c:SWE = {
+			trigger_event = { id = aland_question.2 popup = yes days = 30 }
+		}
+		custom_tooltip = {
+			text = ttb_add_swedish_finnish_antagonism
+		je:finland_aland_question = {
+			add_progress = {
+				name = ttb_swedish_finnish_antagonism_progress_bar
+				value = 25
+			}
+		}
+		}
+	}
+	option = {
+		name = aland_question.1.a
+		c:SWE = {
+			trigger_event = { id = aland_question.2 popup = yes days = 30 }
+		}
+	}
+	
+}
+
+# A Call Across the Baltic
+aland_question.2 = {
+	type = country_event
+
+	title = aland_question.2.t
+	desc = aland_question.2.d
+	flavor = aland_question.2.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = aland_question.2.a
+		default_option = yes
+		add_loyalists = {
+			value = 0.03
+		}
+		c:FIN = {
+			change_relations = {
+				country = c:SWE
+				value = -20
+			}
+		}
+	}
+	option = {
+		name = aland_question.2.b
+		c:FIN = {
+			change_relations = {
+				country = c:SWE
+				value = 20
+			}
+		}
+	}
+	
+}
+
+# Provocation at the Diet Steps
+aland_question.3 = {
+	type = country_event
+
+	title = aland_question.3.t
+	desc = aland_question.3.d
+	flavor = aland_question.3.f
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = {
+			has_variable = provocation_at_the_diet_steps
+		}
+	}
+
+	immediate = {
+		set_variable = provocation_at_the_diet_steps
+
+	}
+
+	option = {
+		name = aland_question.3.a
+		default_option = yes
+		add_radicals = {
+			culture = cu:finish
+			value = 0.03
+		}
+
+	}
+	option = {
+		name = aland_question.3.b
+		custom_tooltip = {
+			text = ttb_add_swedish_finnish_antagonism
+		je:finland_aland_question = {
+			add_progress = {
+				name = ttb_swedish_finnish_antagonism_progress_bar
+				value = 25
+			}
+		}
+		}
+		add_loyalists = {
+			culture = cu:finnish
+			value = 0.02
+		}
+		add_radicals = {
+			culture = cu:swedish
+			value = 0.10
+		}
+	}
+	
+}
+
+# Rising Tensions in Åland
+aland_question.4 = {
+	type = country_event
+
+	title = aland_question.4.t
+	desc = aland_question.4.d
+	flavor = aland_question.4.f
+
+	event_image = {
+		video = "votp_conspiring"
+	}
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = {
+			has_variable = rising_tensions_in_aland
+		}
+	}
+
+	immediate = {
+		set_variable = rising_tensions_in_aland
+	}
+
+	option = {
+		name = aland_question.4.a
+		default_option = yes
+		custom_tooltip = {
+			text = ttb_add_swedish_finnish_antagonism
+		je:finland_aland_question = {
+			add_progress = {
+				name = ttb_swedish_finnish_antagonism_progress_bar
+				value = 25
+			}
+		}
+		}
+		add_loyalists = {
+			culture = cu:finnish
+			value = 0.02
+		}
+		add_radicals = {
+			culture = cu:swedish
+			value = 0.05
+		}
+	}
+	option = {
+		name = aland_question.4.b
+		add_radicals = {
+			culture = cu:finnish
+			value = 0.02
+		}
+		add_loyalists = {
+			culture = cu:swedish
+			value = 0.05
+		}
+	}
+	
+}
+
+# Incendiary Seminar at Helsinki
+aland_question.5 = {
+	type = country_event
+
+	title = aland_question.5.t
+	desc = aland_question.5.d
+	flavor = aland_question.5.f
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = {
+			has_variable = incendiary_seminar_at_helsinki
+		}
+	}
+
+	immediate = {
+		set_variable = incendiary_seminar_at_helsinki
+	}
+
+	option = {
+		name = aland_question.5.a
+		default_option = yes
+		add_radicals = {
+			culture = cu:finnish
+			value = 0.02
+		}
+		add_loyalists = {
+			culture = cu:swedish
+			value = 0.05
+		}
+	}
+	option = {
+		name = aland_question.5.b
+		custom_tooltip = {
+			text = ttb_add_swedish_finnish_antagonism
+		je:finland_aland_question = {
+			add_progress = {
+				name = ttb_swedish_finnish_antagonism_progress_bar
+				value = 25
+			}
+		}
+		}
+		add_radicals = {
+			culture = cu:swedish
+			value = 0.05
+		}
+	}
+	
+}
+
+# Impasse in Åland Negotiations
+aland_question.6 = {
+	type = country_event
+
+	title = aland_question.6.t
+	desc = aland_question.6.d
+	flavor = aland_question.6.f
+
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = {
+			has_variable = impasse_in_aland_negotiations
+		}
+	}
+
+	immediate = {
+		set_variable = impasse_in_aland_negotiations
+	}
+
+	option = {
+		name = aland_question.6.a
+		default_option = yes
+		c:SWE = {
+			change_relations = {
+				country = c:FIN
+				value = 10
+			}
+		}
+	}
+	option = {
+		name = aland_question.6.b
+		custom_tooltip = {
+			text = ttb_add_swedish_finnish_antagonism
+		je:finland_aland_question = {
+			add_progress = {
+				name = ttb_swedish_finnish_antagonism_progress_bar
+				value = 25
+			}
+		}
+		}
+		c:SWE = {
+			change_relations = {
+				country = c:FIN
+				value = -10
+			}
+		}
+	}
+	
+}
+
+# The Åland Question: The Final Decision
+aland_question.7 = {
+	type = country_event
+
+	title = aland_question.7.t
+	desc = aland_question.7.d
+	flavor = aland_question.7.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+		random_state = {
+			limit = {
+				state_region = s:STATE_ALAND
+			}
+			save_scope_as = aland_scope
+		}
+		
+	}
+
+	option = {
+		name = aland_question.7.a
+		default_option = yes
+		c:SWE = {
+			change_relations = {
+				country = c:FIN
+				value = -50
+			}
+			trigger_event = { id = aland_question.9 popup = yes }
+		}
+		change_infamy = 10
+	}
+	option = {
+		name = aland_question.7.b
+		add_modifier = {
+			name = finland_aland_autonomy
+			years = 5
+		}
+		c:SWE = {
+			trigger_event = { id = aland_question.10 popup = yes }
+		}
+	}
+	option = {
+		name = aland_question.7.c
+		scope:aland_scope = {
+			set_state_owner = c:SWE
+		}
+		c:SWE = {
+			change_relations = {
+				country = c:FIN
+				value = 50
+			}
+			trigger_event = { id = aland_question.11 popup = yes }
+		}
+	}
+	
+}
+# The Final Straw
+aland_question.8 = {
+	type = country_event
+
+	title = aland_question.8.t
+	desc = aland_question.8.d
+	flavor = aland_question.8.f
+
+	event_image = {
+		video = "southamerica_public_figure_assassination"
+	}
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = {
+			has_variable = the_final_straw
+		}
+	}
+
+	immediate = {
+		set_variable = the_final_straw
+	}
+
+	option = {
+		name = aland_question.8.a
+	}
+
+	option = {
+		name = aland_question.8.b
+		default_option = yes
+		remove_primary_culture = cu:swedish
+		add_modifier = {
+			name = finland_finnish_pride
+			years = 10
+		}
+	}
+
+}
+
+aland_question.9 = {
+	type = country_event
+
+	title = aland_question.9.t
+	desc = aland_question.9.d
+	flavor = aland_question.9.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = {
+			has_variable = the_finnish_refusal
+		}
+	}
+
+	immediate = {
+		set_variable = the_finnish_refusal
+	}
+
+	option = {
+		name = aland_question.9.a
+	}
+
+
+}
+
+aland_question.10 = {
+	type = country_event
+
+	title = aland_question.10.t
+	desc = aland_question.10.d
+	flavor = aland_question.10.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = {
+			has_variable = a_compromise_in_the_baltic
+		}
+	}
+
+	immediate = {
+		set_variable = a_compromise_in_the_baltic
+	}
+
+	option = {
+		name = aland_question.10.a
+	}
+
+
+}
+
+aland_question.11 = {
+	type = country_event
+
+	title = aland_question.11.t
+	desc = aland_question.11.d
+	flavor = aland_question.11.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = {
+			has_variable = the_return_of_aland
+		}
+	}
+
+	immediate = {
+		set_variable = the_return_of_aland
+	}
+
+	option = {
+		name = aland_question.11.a
+	}
+
+
+}
