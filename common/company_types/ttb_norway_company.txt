@@ -17,7 +17,6 @@ REPLACE:company_norsk_hydro = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
 	}
 
 	attainable = {
@@ -86,14 +85,12 @@ REPLACE:company_aker_mek = {
 	}
 
 	extension_building_types = {
-		building_military_shipyard
 	}
 	possible_prestige_goods = {
 		prestige_good_generic_merchant_marine
 		#prestige_good_generic_tools
 	}
 	potential = {
-		has_interest_marker_in_region = region_baltic
 	}
 
 	attainable = {
@@ -168,7 +165,6 @@ REPLACE_OR_CREATE:ttb_company_kongsberg_vapenfabrikk = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
 		has_game_rule = ttb_companies_enabled
 	}
 	
@@ -244,7 +240,6 @@ ttb_company_loiten_braenderis_destillation = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
 		has_game_rule = ttb_companies_enabled
 	}
 
@@ -311,7 +306,6 @@ ttb_company_orkla_grube_aktiebolag = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
 		has_game_rule = ttb_companies_enabled
 	}
 
@@ -378,7 +372,6 @@ ttb_company_elektrisk_bureau = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
 		has_game_rule = ttb_companies_enabled
 	}
 

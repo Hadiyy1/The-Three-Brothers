@@ -131,7 +131,7 @@ aland_question.3 = {
 		name = aland_question.3.a
 		default_option = yes
 		add_radicals = {
-			culture = cu:finish
+			culture = cu:finnish
 			value = 0.03
 		}
 

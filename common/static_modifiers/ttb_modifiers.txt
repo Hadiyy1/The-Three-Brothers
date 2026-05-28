@@ -174,7 +174,6 @@ sweden_gothenburg = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	building_port_throughput_add = 0.1
 	building_shipyard_throughput_add = 0.05
-	building_military_shipbuilding_throughput_add = 0.05
 }
 
 sweden_malmo = {
@@ -505,7 +504,6 @@ focus_on_power = {
 	unit_supply_consumption_mult = -0.25
 	country_military_goods_cost_mult = -0.25
 	building_group_bg_military_throughput_add = 0.25
-	country_declared_interests_add = 3
 }
 
 focus_on_economy = {

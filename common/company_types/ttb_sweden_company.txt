@@ -22,7 +22,6 @@ ttb_company_sandvikens = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
 		has_game_rule = ttb_companies_enabled
 	}
 	
@@ -101,7 +100,6 @@ ttb_company_volvo_auto = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
 		has_game_rule = ttb_companies_enabled
 	}
 	
@@ -174,7 +172,6 @@ ttb_company_motala_verkstad = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
 		has_game_rule = ttb_companies_enabled
 	}
 
@@ -244,7 +241,6 @@ ttb_company_mo_och_domsjo_ab = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
 		has_game_rule = ttb_companies_enabled
 	}
 
@@ -315,7 +311,6 @@ ttb_company_bofors = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
 		has_game_rule = ttb_companies_enabled
 	}
 	
@@ -382,7 +377,6 @@ ttb_company_kosta_glasbruk = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
 		has_game_rule = ttb_companies_enabled
 	}
 
@@ -450,7 +444,6 @@ ttb_company_hoganasbolaget = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
 		has_game_rule = ttb_companies_enabled
 	}
 
