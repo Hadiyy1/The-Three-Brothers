@@ -37,8 +37,8 @@ sweden_flavor.1 = {
 				is_marginal = no
 				OR = {
 					is_in_government = yes
-					has_ideology = ideology_particularist
-					leader = { has_ideology = ideology_jingoist_leader }
+					has_ideology = ideology:ideology_particularist
+					leader = { has_ideology = ideology:ideology_jingoist_leader }
 				}
 			}
 			add_modifier = {
@@ -56,9 +56,9 @@ sweden_flavor.1 = {
 		every_interest_group = {
 			limit = {
 				is_marginal = no
-				NOT = { has_ideology = ideology_particularist }
-				NOT = { has_ideology = ideology_jingoist }
-				leader = { NOT = { has_ideology = ideology_jingoist_leader } }
+				NOT = { has_ideology = ideology:ideology_particularist }
+				NOT = { has_ideology = ideology:ideology_jingoist }
+				leader = { NOT = { has_ideology = ideology:ideology_jingoist_leader } }
 			}
 			add_modifier = {
 				name = sweden_no_compromise_for_army
@@ -271,8 +271,8 @@ sweden_flavor.7 = {
 				limit = {
 					owner = {
 						OR = {
-							c:SWE = THIS
-							c:SCA = THIS	
+							this = c:SWE
+							this = c:SCA	
 						}
 						
 					}
@@ -323,8 +323,8 @@ sweden_flavor.8 = {
 				limit = {
 					owner = {
 						OR = {
-							c:SWE = THIS
-							c:SCA = THIS	
+							this = c:SWE
+							this = c:SCA	
 						}
 						
 					}
@@ -374,8 +374,8 @@ sweden_flavor.9 = {
 				limit = {
 					owner = {
 						OR = {
-							c:SWE = THIS
-							c:SCA = THIS	
+							this = c:SWE
+							this = c:SCA	
 						}
 						
 					}
@@ -460,8 +460,8 @@ sweden_flavor.11 = {
 				limit = {
 					owner = {
 						OR = {
-							c:SWE = THIS
-							c:SCA = THIS	
+							this = c:SWE
+							this = c:SCA	
 						}
 						
 					}
@@ -474,8 +474,8 @@ sweden_flavor.11 = {
 				limit = {
 					owner = {
 						OR = {
-							c:SWE = THIS
-							c:SCA = THIS	
+							this = c:SWE
+							this = c:SCA	
 						}
 						
 					}
@@ -616,8 +616,8 @@ sweden_flavor.16 = {
 				limit = {
 					owner = {
 						OR = {
-							c:SWE = THIS
-							c:SCA = THIS	
+							this = c:SWE
+							this = c:SCA	
 						}
 						
 					}
@@ -664,8 +664,8 @@ sweden_flavor.17 = {
 				limit = {
 					owner = {
 						OR = {
-							c:SWE = THIS
-							c:SCA = THIS	
+							this = c:SWE
+							this = c:SCA	
 						}
 						
 					}
@@ -712,8 +712,8 @@ sweden_flavor.18 = {
 				limit = {
 					owner = {
 						OR = {
-							c:SWE = THIS
-							c:SCA = THIS	
+							this = c:SWE
+							this = c:SCA	
 						}
 						
 					}
@@ -827,8 +827,8 @@ sweden_flavor.20 = {
 				limit = {
 					owner = {
 						OR = {
-							c:SWE = THIS
-							c:SCA = THIS
+							this = c:SWE
+							this = c:SCA
 						}
 					}
 				}
@@ -1496,7 +1496,7 @@ sweden_flavor.36 = {
 			c:SCA = this
 		}
 		country_has_primary_culture = cu:swedish
-		game_date >= 1888
+		year >= 1888
 		NOT = {
 			has_variable = ttb_swe_var_event_36
 		}
@@ -1508,8 +1508,8 @@ sweden_flavor.36 = {
 				limit = {
 					owner = {
 						OR = {
-							c:SWE = THIS
-							c:SCA = THIS
+							this = c:SWE
+							this = c:SCA
 						}
 
 					}

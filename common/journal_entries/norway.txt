@@ -45,7 +45,6 @@ nor_the_great_transformation = {
 	}
 	
 	weight = 100
-	should_be_pinned_by_default = yes
 }
 
 # Famous Merchant Navy
@@ -82,7 +81,6 @@ nor_the_merchant_navy = {
 	}
 	
 	weight = 100
-	should_be_pinned_by_default = yes
 }
 ### Will be reworked one day ###
 nor_union = {
@@ -114,5 +112,4 @@ nor_union = {
 	}
 	
 	weight = 100
-	should_be_pinned_by_default = yes
 }

@@ -99,7 +99,7 @@ denmark_rise_of_holstein_nationalism = {
 	is_shown_when_inactive = {
 		exists = c:HOL
 		exists = c:SCH
-		c:HOL = THIS
+		this = c:DEN
 		c:SCH = { is_subject_of = c:DEN }
 		c:HOL = { is_subject_of = c:DEN }
 	}
@@ -125,17 +125,17 @@ denmark_rise_of_holstein_nationalism = {
 				OR = {
 					NOT = {
 						any_diplomatic_play = {
-							any_scope_play_involved = { this ?= c:DEN }
+							any_scope_play_involved = { this = c:DEN }
 						}
 					}
 					any_diplomatic_play = {
-						initiator_is ?= c:DEN
+						initiator_is = c:DEN
 						OR = {
-							target_is ?= c:SCH
-							target_is ?= c:HOL
+							target_is = c:SCH
+							target_is = c:HOL
 						}
 						OR = {
-							has_play_goal = annex_country
+							has_play_goal = annex
 							has_play_goal = make_puppet
 						}
 					}
@@ -175,8 +175,8 @@ denmark_rise_of_holstein_nationalism = {
 		is_subject = no
 		NOT = {
 			any_diplomatic_play = {
-				initiator_is ?= c:HOL
-				target_is ?= c:DEN
+				initiator_is = c:HOL
+				target_is = c:DEN
 			}
 		}
 	}
@@ -184,8 +184,8 @@ denmark_rise_of_holstein_nationalism = {
 		is_subject = yes
 		NOT = {
 			any_diplomatic_play = {
-				initiator_is ?= c:HOL
-				target_is ?= c:DEN
+				initiator_is = c:HOL
+				target_is = c:DEN
 			}
 		}
 	}
@@ -308,7 +308,7 @@ je_springtime_of_the_peoples_den = {
 	is_shown_when_inactive = {
 	    has_technology_researched = egalitarianism
 		exists = c:DEN
-		c:DEN = THIS
+		this = c:DEN
 	}
 
 	possible = {
@@ -392,7 +392,7 @@ je_springtime_of_the_peoples_den = {
 				}
 				any_scope_character = {
 					has_ideology = ideology:ideology_radical
-					has_role = agitator
+					has_role_of_type = agitator
 				}
 			}
 		}
@@ -429,7 +429,7 @@ je_springtime_of_the_peoples_den = {
 							}
 							any_scope_character = {
 								has_ideology = ideology:ideology_radical
-								has_role = agitator
+								has_role_of_type = agitator
 							}
 						}
 					}
@@ -456,9 +456,6 @@ je_springtime_of_the_peoples_den = {
 	}
 
 	weight = 10000
-	should_be_pinned_by_default = yes
-
-	inheritable = no
 
 	timeout = 3650
 }

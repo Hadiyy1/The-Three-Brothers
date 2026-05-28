@@ -26,6 +26,10 @@
  failure_pan_scan_tt: "The #v Pan-Scandinavian#! Movement fizzles away."
  scandinavianism_progress_succeeds: "The #v Pan-Scandinavian#! Movement has reached #v 350#! Progress"
  pan_scandinavism_suceeds_tt: "#v Pan-Scandinavianism#! dominates society"
+ succesful_sca_movement: "The Scandinavian movement had a great impact on our society."
+ sca_effects_most: "Pan-Scandinavian ideals strongly influenced our nation."
+ sca_effects_avg: "Pan-Scandinavian ideals moderately influenced our nation."
+ sca_effects_least: "Pan-Scandinavian ideals had a minor influence on our nation."
 
  scandinavia_monetary_union: "The Scandinavian Monetary Union"
  scandinavia_monetary_union_reason: "The Scandinavian Monetary Union is a proposed monetary union for the Scandinavian region. It aims to establish a common currency unit, the krone/krona, based on the gold standard."

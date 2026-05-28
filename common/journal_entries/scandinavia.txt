@@ -104,10 +104,10 @@ scandinavian_pan_nationalism = {
 				}
 			}
 			AND = {
-				exists ?= c:SCA
+				exists = c:SCA
 				custom_tooltip = {
 		   			text = has_formed_sca
-		    		c:SCA ?= THIS
+		    		this = c:SCA
 				}
 			}
 
@@ -127,9 +127,7 @@ scandinavian_pan_nationalism = {
 
 		if = {
 			limit = {
-				scope:journal_entry = {
-					"scripted_bar_progress(sca_progress_var)" >= 200
-				}
+				var:sca_progress_var >= 200
 			}
 			custom_tooltip = {
 				text = succesful_sca_movement
@@ -137,17 +135,13 @@ scandinavian_pan_nationalism = {
 			}
 			if = {
 				limit = {
-					scope:journal_entry = {
-						"scripted_bar_progress(sca_progress_var)" >= 300
-					}
+					var:sca_progress_var >= 300
 				}
 				custom_tooltip = sca_effects_most
 			}
 			else_if = {
 				limit = {
-					scope:journal_entry = {
-						"scripted_bar_progress(sca_progress_var)" >= 250
-					}
+					var:sca_progress_var >= 250
 				}
 				custom_tooltip = sca_effects_avg
 			}
@@ -163,7 +157,6 @@ scandinavian_pan_nationalism = {
 		}
 	}
 	
-	should_be_pinned_by_default = yes
 	weight = 1000
 }
 je_form_scandinavia = {
@@ -184,10 +177,10 @@ je_form_scandinavia = {
 	}
 	
 	complete = {
-	    exists ?= c:SCA
+	    exists = c:SCA
 		custom_tooltip = {
 		    text = has_formed_sca
-		    c:SCA ?= THIS
+		    this = c:SCA
 		}
 	}
 	
@@ -195,7 +188,6 @@ je_form_scandinavia = {
 	    trigger_event = { id = scandinavia_flavor.5 popup = yes }
 	}
 	
-	should_be_pinned_by_default = yes
 	weight = 1000
 }
 	
@@ -280,7 +272,6 @@ scandinavia_monetary_union = {
 		}
 	}
 	
-	should_be_pinned_by_default = yes
 	weight = 100
 }
 
@@ -290,8 +281,6 @@ scandinavia_kalmar_constitution = {
 	group = je_group_internal_affairs
 
 	scripted_progress_bar = kalmar_constitution_progress_bar
-
-	should_be_pinned_by_default = yes
 
 	is_shown_when_inactive = {
 		exists = c:SCA

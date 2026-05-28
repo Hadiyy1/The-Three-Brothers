@@ -52,13 +52,13 @@
 	}
 
 	ai_chance = {
-		base = 100
-		modifier = {
-			is_diplomatic_play_committed_participant = yes
+		value = 100
+		if = {
+			limit = { is_diplomatic_play_committed_participant = yes }
 			add = -100
 		}
-		modifier = {
-			has_law = law_type:law_ethnostate
+		if = {
+			limit = { has_law = law_type:law_ethnostate }
 			add = -100
 		}
 	}

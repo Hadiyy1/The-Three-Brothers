@@ -140,7 +140,6 @@ scandinavia_flavor.3 = {
 	title = scandinavia_flavor.3.t
 	desc = scandinavia_flavor.3.d
 	flavor = scandinavia_flavor.3.f
-	dlc = dlc_masir
 
 	duration = 3
 

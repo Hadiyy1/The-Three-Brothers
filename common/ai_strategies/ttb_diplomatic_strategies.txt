@@ -102,6 +102,7 @@
 	
 	wargoal_scores = {
 		conquer_state = {
+			value = 0
 			if = {
 				limit = {
 					scope:target_state = {				
@@ -119,6 +120,7 @@
 			}
 		}
 		return_state = {
+			value = 0
 			if = {
 				limit = {
 					scope:target_state = {					
@@ -139,6 +141,7 @@
 	
 	secret_goal_scores = {
 		befriend = {		
+			value = 0
 			if = {
 				limit = {
 					scope:target_country = {
@@ -149,6 +152,7 @@
 			}		
 		}
 		dominate = {		
+			value = 0
 			if = {
 				limit = {
 					scope:target_country = {
@@ -159,6 +163,7 @@
 			}
 		}
 		conquer = {
+			value = 0
 			if = {
 				limit = {
 					scope:target_country = {

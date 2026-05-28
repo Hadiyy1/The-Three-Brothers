@@ -77,7 +77,6 @@ swedish_the_rise_of_lantmanna_partiet = {
 	}
 	
 	weight = 100
-	should_be_pinned_by_default = yes
 }
 
 # National Defense Question
@@ -126,7 +125,6 @@ swedish_champions_of_national_defence = {
 	}
 	
 	weight = 250
-	should_be_pinned_by_default = yes
 }
 
 # Protectionism vs Free Trade
@@ -137,7 +135,7 @@ swedish_the_trade_problems = {
 	
 	is_shown_when_inactive = {
 		exists = c:SWE
-		c:SWE = THIS
+		this = c:SWE
 	}
 	
 	possible = {
@@ -191,7 +189,6 @@ swedish_the_trade_problems = {
 	}
 	
 	weight = 250
-	should_be_pinned_by_default = yes
 }
 
 # Loss of Lantmanna Partiet's relevance
@@ -280,7 +277,6 @@ swedish_restoration_of_the_military = {
 	}
 	
 	weight = 50
-	should_be_pinned_by_default = yes
 }
 swedish_motala_verkstad = {
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
@@ -313,7 +309,6 @@ swedish_motala_verkstad = {
 		set_variable = ttb_snilleindustri_mortala
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
 }
 swedish_glasriket = {
 	icon = "gfx/interface/icons/goods_icons/glass.dds"
@@ -346,7 +341,6 @@ swedish_glasriket = {
 		set_variable = ttb_snilleindustri_glasriket
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
 }
 swedish_sundsvall_timber = {
 	icon = "gfx/interface/icons/goods_icons/wood.dds"
@@ -385,7 +379,6 @@ swedish_sundsvall_timber = {
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
 }
 swedish_gothenburg_port_expansion = {
 	icon = "gfx/interface/icons/invention_icons/urbanization.dds"
@@ -424,7 +417,6 @@ swedish_gothenburg_port_expansion = {
 		trigger_event = { id = sweden_flavor.16 }
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
 }
 
 swedish_malmo_industrial_boom = {
@@ -463,7 +455,6 @@ swedish_malmo_industrial_boom = {
 		trigger_event = { id = sweden_flavor.17 }
 	}
 	weight = 50
-	should_be_pinned_by_default = yes
 	
 }
 
@@ -503,7 +494,6 @@ swedish_stockholm_urban_growth = {
 		trigger_event = { id = sweden_flavor.18 }
 	}
 	weight = 50
-	should_be_pinned_by_default = yes
 }
 swedish_timber_export = {
 	icon = "gfx/interface/icons/goods_icons/wood.dds"
@@ -542,7 +532,6 @@ swedish_timber_export = {
 	}
 
 	weight = 100
-	should_be_pinned_by_default = yes
 }
 
 swedish_folkhemmet = {
@@ -571,7 +560,6 @@ swedish_folkhemmet = {
 		trigger_event = { id = sweden_flavor.12 }
 	}
 	weight = 75
-	should_be_pinned_by_default = yes
 }
 
 swedish_iron_industry = {
@@ -616,7 +604,6 @@ swedish_iron_industry = {
 		set_variable = ttb_snilleindustri_iron
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
 }
 
 swedish_retake_finland = {
@@ -639,7 +626,6 @@ swedish_retake_finland = {
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
 }
 
 swedish_reklam_the_eastern_land = {
@@ -695,7 +681,6 @@ swedish_snilleindustri = {
 		trigger_event = { id = sweden_flavor.38 }
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
 }
 
 swedish_the_forestry_act = {
@@ -728,14 +713,12 @@ swedish_the_forestry_act = {
 		add_modifier = sweden_forestry_act
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
 }
 
 swedish_nordic_monarchy = {
 	icon = "gfx/interface/icons/event_icons/ttb_great_coat_of_arms_of_sweden.dds"
 	group = je_group_internal_affairs
 
-	should_be_pinned_by_default = yes
 	weight = 1000
 
 

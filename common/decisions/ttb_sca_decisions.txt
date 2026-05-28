@@ -16,9 +16,9 @@
 	}
 
 	ai_chance = {
-		base = 100
-		modifier = {
-			is_diplomatic_play_committed_participant = yes
+		value = 100
+		if = {
+			limit = { is_diplomatic_play_committed_participant = yes }
 			add = -1000
 		}
 	}
@@ -56,17 +56,19 @@ promote_finnish_as_primary_language_in_official_affairs_in_finland = {
 
 	ai_chance = {
 		value = 0
-		modifier = {
-			add = 100
-			ig:ig_intelligentsia = {
-				OR = {
-					is_powerful = yes
-					is_in_government = yes
+		if = {
+			limit = {
+				ig:ig_intelligentsia = {
+					OR = {
+						is_powerful = yes
+						is_in_government = yes
+					}
 				}
 			}
+			add = 100
 		}
-		modifier = {
-			is_diplomatic_play_committed_participant = yes
+		if = {
+			limit = { is_diplomatic_play_committed_participant = yes }
 			add = -1000
 		}
 	}

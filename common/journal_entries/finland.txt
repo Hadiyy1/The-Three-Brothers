@@ -91,7 +91,6 @@ finland_fennoman_movement = {
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
 }
 
 finland_aland_question = {
@@ -158,5 +157,4 @@ finland_aland_question = {
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
 }

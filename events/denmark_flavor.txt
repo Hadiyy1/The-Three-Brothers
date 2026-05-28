@@ -168,7 +168,7 @@ denmark_flavor.4 = {
 	
 	trigger = {
 		any_scope_character = {
-			is_ruler = yes
+			is_ruler_of_own_country = yes
 			has_trait = imperious	# Just to make sure it's him, unlikely to occur otherwise
 		}
 	}
@@ -177,7 +177,7 @@ denmark_flavor.4 = {
 	immediate = {
 		random_scope_character = {
 			limit = {
-				is_ruler = yes
+				is_ruler_of_own_country = yes
 			}
 			save_scope_as = frederik_the_monarch
 		}
